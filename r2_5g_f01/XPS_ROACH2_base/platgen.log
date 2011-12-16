@@ -1,0 +1,567 @@
+Release 11.4 - platgen Xilinx EDK 11.4 Build EDK_LS4.68
+ (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc6vsx475tff1759-1 -lang vhdl -msg
+__xps/ise/xmsgprops.lst system.mhs 
+
+WARNING:EDK - WARNING:Security:42 - Your software subscription period has
+   lapsed. Your current version of Xilinx tools will continue to function, but
+   you no longer qualify for Xilinx software updates or new releases.
+
+
+Parse /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs ...
+
+Read MPD definitions ...
+WARNING:EDK:1582 - IPNAME:opb_v20 INSTANCE:opb0 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 136 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_adc0_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 387 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc0_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 447 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc0_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 454 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc1_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 502 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc1_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 509 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc2_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 557 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc2_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 564 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc3_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 612 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc3_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 619 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc4_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 667 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc4_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 674 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc5_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 722 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc5_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 729 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc6_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 777 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc6_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 784 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc7_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 832 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc7_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 839 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_v20 INSTANCE:opb0 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 136 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_adc0_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 387 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc0_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 447 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc0_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 454 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc1_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 502 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc1_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 509 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc2_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 557 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc2_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 564 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc3_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 612 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc3_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 619 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc4_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 667 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc4_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 674 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc5_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 722 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc5_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 729 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc6_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 777 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc6_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 784 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK:1571 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc7_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 832 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK:1582 - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc7_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 839 -
+   deprecated core for architecture 'virtex6sx'!
+
+Overriding IP level properties ...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   r2_5g_f01_snap_vacc0_bram_ramif:bram_clk. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   r2_5g_f01_snap_vacc1_bram_ramif:bram_clk. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   r2_5g_f01_snap_vacc2_bram_ramif:bram_clk. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   r2_5g_f01_snap_vacc3_bram_ramif:bram_clk. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   r2_5g_f01_snap_vacc4_bram_ramif:bram_clk. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   r2_5g_f01_snap_vacc5_bram_ramif:bram_clk. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   r2_5g_f01_snap_vacc6_bram_ramif:bram_clk. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   r2_5g_f01_snap_vacc7_bram_ramif:bram_clk. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:1560 - IPNAME:opb_v20 INSTANCE:opb0 -
+   /opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/opb_v20_v1_10_c/data/opb_
+   v20_v2_1_0.mpd line 74 - tool is overriding PARAMETER C_NUM_MASTERS value to
+   1
+INFO:EDK:1560 - IPNAME:opb_v20 INSTANCE:opb0 -
+   /opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/opb_v20_v1_10_c/data/opb_
+   v20_v2_1_0.mpd line 75 - tool is overriding PARAMETER C_NUM_SLAVES value to
+   31
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc0_bram_ramblk -
+   /opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/b
+   ram_block_v2_1_0.mpd line 69 - tool is overriding PARAMETER C_MEMSIZE value
+   to 0x2000
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc1_bram_ramblk -
+   /opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/b
+   ram_block_v2_1_0.mpd line 69 - tool is overriding PARAMETER C_MEMSIZE value
+   to 0x2000
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc2_bram_ramblk -
+   /opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/b
+   ram_block_v2_1_0.mpd line 69 - tool is overriding PARAMETER C_MEMSIZE value
+   to 0x2000
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc3_bram_ramblk -
+   /opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/b
+   ram_block_v2_1_0.mpd line 69 - tool is overriding PARAMETER C_MEMSIZE value
+   to 0x2000
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc4_bram_ramblk -
+   /opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/b
+   ram_block_v2_1_0.mpd line 69 - tool is overriding PARAMETER C_MEMSIZE value
+   to 0x2000
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc5_bram_ramblk -
+   /opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/b
+   ram_block_v2_1_0.mpd line 69 - tool is overriding PARAMETER C_MEMSIZE value
+   to 0x2000
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc6_bram_ramblk -
+   /opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/b
+   ram_block_v2_1_0.mpd line 69 - tool is overriding PARAMETER C_MEMSIZE value
+   to 0x2000
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc7_bram_ramblk -
+   /opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/b
+   ram_block_v2_1_0.mpd line 69 - tool is overriding PARAMETER C_MEMSIZE value
+   to 0x2000
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME:opb_v20 INSTANCE:opb0 -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 136 - 1
+master(s) : 31 slave(s)
+
+Checking port drivers...
+WARNING:EDK:2099 - PORT:sys_clk90 CONNECTOR:sys_clk90 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 104 -
+   floating connection!
+WARNING:EDK:2099 - PORT:sys_clk180 CONNECTOR:sys_clk180 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 105 -
+   floating connection!
+WARNING:EDK:2099 - PORT:sys_clk270 CONNECTOR:sys_clk270 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 106 -
+   floating connection!
+WARNING:EDK:2099 - PORT:sys_clk_lock CONNECTOR:sys_clk_lock -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 107 -
+   floating connection!
+WARNING:EDK:2099 - PORT:sys_clk2x CONNECTOR:sys_clk2x -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 108 -
+   floating connection!
+WARNING:EDK:2099 - PORT:sys_clk2x90 CONNECTOR:sys_clk2x90 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 109 -
+   floating connection!
+WARNING:EDK:2099 - PORT:sys_clk2x180 CONNECTOR:sys_clk2x180 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 110 -
+   floating connection!
+WARNING:EDK:2099 - PORT:sys_clk2x270 CONNECTOR:sys_clk2x270 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 111 -
+   floating connection!
+WARNING:EDK:2099 - PORT:idelay_rdy CONNECTOR:idelay_rdy -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 122 -
+   floating connection!
+WARNING:EDK:2099 - PORT:soft_reset CONNECTOR:soft_reset -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 183 -
+   floating connection!
+WARNING:EDK:2099 - PORT:ctrl_clk90_out CONNECTOR:adc0_clk90 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 336 -
+   floating connection!
+WARNING:EDK:2099 - PORT:ctrl_clk180_out CONNECTOR:adc0_clk180 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 337 -
+   floating connection!
+WARNING:EDK:2099 - PORT:ctrl_clk270_out CONNECTOR:adc0_clk270 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 338 -
+   floating connection!
+WARNING:EDK:2099 - PORT:ctrl_dcm_locked CONNECTOR:adc0_dcm_locked -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 339 -
+   floating connection!
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+Release 11.4 - Xilinx CORE Generator L.68 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/implementation/r2_5g_f01_snap
+_adc0_bram_ramblk_wrapper/coregen.log
+Regenerating IP...
+XST: HDL Compilation
+XST: Design Hierarchy Analysis
+XST: HDL Analysis
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Final Report
+Generating Implementation files.
+Generating NGC file.
+
+Command Line: /opt/Xilinx/11.1/ISE/bin/lin64/unwrapped/ngcbuild -intstyle ise
+-dd ./tmp/_cg ./tmp/_cg/bram.edn ./tmp/_cg/bram_unobf.ngc
+
+Executing edif2ngd -noa "tmp/_cg/bram.edn" "tmp/_cg/bram.ngo"
+Release 11.4 - edif2ngd L.68 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 11.4 edif2ngd L.68 (lin64)
+INFO:NgdBuild - Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/bram.ngo"...
+Reading NGO file
+"/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/implementation/r2_5g_f01_sna
+p_adc0_bram_ramblk_wrapper/tmp/_cg/bram.ngo" ...
+Loading design module "./tmp/_cg/bram_blk_mem_gen_v2_6_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/bram_unobf.ngc" ...
+Total REAL time to NGCBUILD completion:  3 sec
+Total CPU time to NGCBUILD completion:   1 sec
+
+Writing NGCBUILD log file "./tmp/_cg/bram_unobf.blc"...
+
+NGCBUILD done.
+Finished Regenerating.
+Generating ISE file...
+Finished ISE file generation.
+Generating FLIST file...
+Finished FLIST file generation.
+Preparing output directory...
+Finished preparing output directory.
+Moving files to output directory...
+Finished moving files to output directory.
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+IPNAME:r2_5g_f01 INSTANCE:r2_5g_f01_xsg_core_config -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 195 - Copying
+(BBD-specified) netlist files.
+IPNAME:bram_block_custom INSTANCE:r2_5g_f01_snap_adc0_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 372 - Copying
+(BBD-specified) netlist files.
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc0_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 447 -
+elaborating IP
+IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc1_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 502 -
+elaborating IP
+IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc2_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 557 -
+elaborating IP
+IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc3_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 612 -
+elaborating IP
+IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc4_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 667 -
+elaborating IP
+IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc5_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 722 -
+elaborating IP
+IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc6_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 777 -
+elaborating IP
+IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc7_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 832 -
+elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:2502 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:opb_adc5g_controller_0 -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 61 - Running
+XST synthesis
+INSTANCE:infrastructure_inst -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 89 - Running
+XST synthesis
+INSTANCE:reset_block_inst -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 125 - Running
+XST synthesis
+INSTANCE:opb0 - /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs
+line 136 - Running XST synthesis
+INSTANCE:epb_opb_bridge_inst -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 145 - Running
+XST synthesis
+INSTANCE:epb_infrastructure_inst -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 162 - Running
+XST synthesis
+INSTANCE:sys_block_inst -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 171 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_xsg_core_config -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 195 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_acc_len -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 282 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_adc5g -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 294 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_cnt_rst -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 360 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_adc0_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 372 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_adc0_bram -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 387 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_adc0_ctrl -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 399 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_adc0_status -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 411 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc0_addr -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 423 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc0_bram_ramif -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 435 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc0_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 447 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc0_bram -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 454 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc0_ctrl -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 466 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc1_addr -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 478 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc1_bram_ramif -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 490 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc1_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 502 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc1_bram -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 509 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc1_ctrl -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 521 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc2_addr -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 533 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc2_bram_ramif -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 545 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc2_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 557 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc2_bram -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 564 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc2_ctrl -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 576 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc3_addr -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 588 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc3_bram_ramif -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 600 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc3_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 612 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc3_bram -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 619 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc3_ctrl -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 631 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc4_addr -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 643 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc4_bram_ramif -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 655 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc4_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 667 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc4_bram -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 674 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc4_ctrl -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 686 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc5_addr -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 698 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc5_bram_ramif -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 710 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc5_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 722 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc5_bram -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 729 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc5_ctrl -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 741 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc6_addr -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 753 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc6_bram_ramif -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 765 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc6_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 777 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc6_bram -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 784 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc6_ctrl -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 796 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc7_addr -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 808 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc7_bram_ramif -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 820 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc7_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 832 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc7_bram -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 839 - Running
+XST synthesis
+INSTANCE:r2_5g_f01_snap_vacc7_ctrl -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 851 - Running
+XST synthesis
+
+Running NGCBUILD ...
+IPNAME:r2_5g_f01_xsg_core_config_wrapper INSTANCE:r2_5g_f01_xsg_core_config -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 195 - Running
+NGCBUILD
+IPNAME:r2_5g_f01_snap_adc0_bram_ramblk_wrapper
+INSTANCE:r2_5g_f01_snap_adc0_bram_ramblk -
+/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 372 - Running
+NGCBUILD
+
+Rebuilding cache ...
+
+Total run time: 691.00 seconds

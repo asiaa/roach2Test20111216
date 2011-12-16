@@ -1,0 +1,32 @@
+Release 11.4 - par L.68 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Tue Dec 13 21:51:40 2011
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 20 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   opb0/opb0/OPB_beAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>30
+   opb0/opb0/OPB_beAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>36
+   opb0/opb0/OPB_beAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>4
+   opb0/opb0/OPB_beAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>41
+   opb0/opb0/OPB_beAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>9
+   opb0/opb0/OPB_dwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>30
+   opb0/opb0/OPB_dwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>36
+   opb0/opb0/OPB_dwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>4
+   opb0/opb0/OPB_dwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>41
+   opb0/opb0/OPB_dwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>9
+   opb0/opb0/OPB_fwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>30
+   opb0/opb0/OPB_fwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>36
+   opb0/opb0/OPB_fwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>4
+   opb0/opb0/OPB_fwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>41
+   opb0/opb0/OPB_fwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>9
+   opb0/opb0/OPB_hwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>30
+   opb0/opb0/OPB_hwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>36
+   opb0/opb0/OPB_hwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>4
+   opb0/opb0/OPB_hwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>41
+   opb0/opb0/OPB_hwAck_I/USE_LUT_OR_GEN.OR_PROCESS.yi<31><0>9
+
+

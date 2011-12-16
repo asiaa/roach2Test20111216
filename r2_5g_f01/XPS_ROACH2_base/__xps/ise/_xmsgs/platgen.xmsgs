@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+</arg>
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb0</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 136</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_adc0_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 387</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc0_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 447</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc0_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 454</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc1_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 502</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc1_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 509</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc2_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 557</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc2_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 564</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc3_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 612</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc3_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 619</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc4_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 667</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc4_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 674</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc5_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 722</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc5_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 729</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc6_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 777</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc6_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 784</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc7_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 832</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc7_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 839</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb0</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 136</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_adc0_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 387</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc0_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 447</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc0_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 454</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc1_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 502</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc1_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 509</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc2_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 557</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc2_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 564</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc3_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 612</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc3_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 619</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc4_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 667</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc4_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 674</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc5_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 722</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc5_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 729</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc6_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 777</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc6_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 784</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1571" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc7_bram_ramblk</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 832</arg> - EARLY ACCESS version not verified on hardware for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="warning" file="EDK" num="1582" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc7_bram</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 839</arg> - deprecated core for architecture &apos;<arg fmt="%s" index="4">virtex6sx</arg>&apos;!
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">infrastructure_inst</arg>:<arg fmt="%s" index="2">epb_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">r2_5g_f01_snap_vacc0_bram_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">r2_5g_f01_snap_vacc1_bram_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">r2_5g_f01_snap_vacc2_bram_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">r2_5g_f01_snap_vacc3_bram_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">r2_5g_f01_snap_vacc4_bram_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">r2_5g_f01_snap_vacc5_bram_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">r2_5g_f01_snap_vacc6_bram_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">r2_5g_f01_snap_vacc7_bram_ramif</arg>:<arg fmt="%s" index="2">bram_clk</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb0</arg> - <arg fmt="%s" index="3">/opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/opb_v20_v1_10_c/data/opb_v20_v2_1_0.mpd line 74</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_NUM_MASTERS</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">opb_v20</arg> INSTANCE:<arg fmt="%s" index="2">opb0</arg> - <arg fmt="%s" index="3">/opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/opb_v20_v1_10_c/data/opb_v20_v2_1_0.mpd line 75</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_NUM_SLAVES</arg> value to <arg fmt="%s" index="7">31</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc0_bram_ramblk</arg> - <arg fmt="%s" index="3">/opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 69</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEMSIZE</arg> value to <arg fmt="%s" index="7">0x2000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc1_bram_ramblk</arg> - <arg fmt="%s" index="3">/opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 69</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEMSIZE</arg> value to <arg fmt="%s" index="7">0x2000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc2_bram_ramblk</arg> - <arg fmt="%s" index="3">/opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 69</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEMSIZE</arg> value to <arg fmt="%s" index="7">0x2000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc3_bram_ramblk</arg> - <arg fmt="%s" index="3">/opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 69</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEMSIZE</arg> value to <arg fmt="%s" index="7">0x2000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc4_bram_ramblk</arg> - <arg fmt="%s" index="3">/opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 69</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEMSIZE</arg> value to <arg fmt="%s" index="7">0x2000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc5_bram_ramblk</arg> - <arg fmt="%s" index="3">/opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 69</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEMSIZE</arg> value to <arg fmt="%s" index="7">0x2000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc6_bram_ramblk</arg> - <arg fmt="%s" index="3">/opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 69</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEMSIZE</arg> value to <arg fmt="%s" index="7">0x2000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">r2_5g_f01_snap_vacc7_bram_ramblk</arg> - <arg fmt="%s" index="3">/opt/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 69</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEMSIZE</arg> value to <arg fmt="%s" index="7">0x2000</arg>
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">sys_clk90</arg> CONNECTOR:<arg fmt="%s" index="2">sys_clk90</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 104</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">sys_clk180</arg> CONNECTOR:<arg fmt="%s" index="2">sys_clk180</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 105</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">sys_clk270</arg> CONNECTOR:<arg fmt="%s" index="2">sys_clk270</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 106</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">sys_clk_lock</arg> CONNECTOR:<arg fmt="%s" index="2">sys_clk_lock</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 107</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">sys_clk2x</arg> CONNECTOR:<arg fmt="%s" index="2">sys_clk2x</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 108</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">sys_clk2x90</arg> CONNECTOR:<arg fmt="%s" index="2">sys_clk2x90</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 109</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">sys_clk2x180</arg> CONNECTOR:<arg fmt="%s" index="2">sys_clk2x180</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 110</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">sys_clk2x270</arg> CONNECTOR:<arg fmt="%s" index="2">sys_clk2x270</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 111</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">idelay_rdy</arg> CONNECTOR:<arg fmt="%s" index="2">idelay_rdy</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 122</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">soft_reset</arg> CONNECTOR:<arg fmt="%s" index="2">soft_reset</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 183</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk90_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc0_clk90</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 336</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk180_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc0_clk180</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 337</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_clk270_out</arg> CONNECTOR:<arg fmt="%s" index="2">adc0_clk270</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 338</arg> - floating connection!
+</msg>
+
+<msg type="warning" file="EDK" num="2099" delta="new" >PORT:<arg fmt="%s" index="1">ctrl_dcm_locked</arg> CONNECTOR:<arg fmt="%s" index="2">adc0_dcm_locked</arg> - <arg fmt="%s" index="3">/home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 339</arg> - floating connection!
+</msg>
+
+<msg type="info" file="EDK" num="2502" delta="new" >The following instances are synthesized with XST. The MPD option IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+</msg>
+
+</messages>
+

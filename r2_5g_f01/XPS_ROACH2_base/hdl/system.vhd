@@ -1,0 +1,2813 @@
+-------------------------------------------------------------------------------
+-- system.vhd
+-------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+
+entity system is
+  port (
+    sys_clk_n : in std_logic;
+    sys_clk_p : in std_logic;
+    aux_clk_n : in std_logic;
+    aux_clk_p : in std_logic;
+    epb_clk_in : in std_logic;
+    epb_data : inout std_logic_vector(0 to 31);
+    epb_addr : in std_logic_vector(5 to 29);
+    epb_cs_n : in std_logic;
+    epb_be_n : in std_logic_vector(0 to 3);
+    epb_r_w_n : in std_logic;
+    epb_oe_n : in std_logic;
+    epb_doe_n : out std_logic;
+    epb_rdy : out std_logic;
+    ppc_irq_n : out std_logic;
+    adc0_adc3wire_clk : out std_logic;
+    adc0_adc3wire_data : out std_logic;
+    adc0_adc3wire_spi_rst : out std_logic;
+    adc0_modepin : out std_logic;
+    adc0clk_p : in std_logic;
+    adc0clk_n : in std_logic;
+    adc0sync_p : in std_logic;
+    adc0sync_n : in std_logic;
+    adc0data0_p_i : in std_logic_vector(7 downto 0);
+    adc0data0_n_i : in std_logic_vector(7 downto 0);
+    adc0data1_p_i : in std_logic_vector(7 downto 0);
+    adc0data1_n_i : in std_logic_vector(7 downto 0);
+    adc0data2_p_i : in std_logic_vector(7 downto 0);
+    adc0data2_n_i : in std_logic_vector(7 downto 0);
+    adc0data3_p_i : in std_logic_vector(7 downto 0);
+    adc0data3_n_i : in std_logic_vector(7 downto 0)
+  );
+end system;
+
+architecture STRUCTURE of system is
+
+  component opb_adc5g_controller_0_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      adc0_adc3wire_clk : out std_logic;
+      adc0_adc3wire_data : out std_logic;
+      adc0_adc3wire_spi_rst : out std_logic;
+      adc0_modepin : out std_logic;
+      adc0_dcm_reset : out std_logic;
+      adc0_psclk : out std_logic;
+      adc0_psen : out std_logic;
+      adc0_psincdec : out std_logic;
+      adc0_psdone : in std_logic;
+      adc0_clk : in std_logic;
+      adc1_adc3wire_clk : out std_logic;
+      adc1_adc3wire_data : out std_logic;
+      adc1_adc3wire_spi_rst : out std_logic;
+      adc1_modepin : out std_logic;
+      adc1_dcm_reset : out std_logic;
+      adc1_psclk : out std_logic;
+      adc1_psen : out std_logic;
+      adc1_psincdec : out std_logic;
+      adc1_psdone : in std_logic;
+      adc1_clk : in std_logic
+    );
+  end component;
+
+  component infrastructure_inst_wrapper is
+    port (
+      sys_clk_n : in std_logic;
+      sys_clk_p : in std_logic;
+      aux_clk_n : in std_logic;
+      aux_clk_p : in std_logic;
+      epb_clk_in : in std_logic;
+      sys_clk : out std_logic;
+      sys_clk90 : out std_logic;
+      sys_clk180 : out std_logic;
+      sys_clk270 : out std_logic;
+      sys_clk_lock : out std_logic;
+      sys_clk2x : out std_logic;
+      sys_clk2x90 : out std_logic;
+      sys_clk2x180 : out std_logic;
+      sys_clk2x270 : out std_logic;
+      aux_clk : out std_logic;
+      aux_clk90 : out std_logic;
+      aux_clk180 : out std_logic;
+      aux_clk270 : out std_logic;
+      aux_clk2x : out std_logic;
+      aux_clk2x90 : out std_logic;
+      aux_clk2x180 : out std_logic;
+      aux_clk2x270 : out std_logic;
+      epb_clk : out std_logic;
+      idelay_rst : in std_logic;
+      idelay_rdy : out std_logic
+    );
+  end component;
+
+  component reset_block_inst_wrapper is
+    port (
+      clk : in std_logic;
+      async_reset_i : in std_logic;
+      reset_i : in std_logic;
+      reset_o : out std_logic
+    );
+  end component;
+
+  component opb0_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : out std_logic;
+      SYS_Rst : in std_logic;
+      Debug_SYS_Rst : in std_logic;
+      WDT_Rst : in std_logic;
+      M_ABus : in std_logic_vector(0 to 31);
+      M_BE : in std_logic_vector(0 to 3);
+      M_beXfer : in std_logic_vector(0 to 0);
+      M_busLock : in std_logic_vector(0 to 0);
+      M_DBus : in std_logic_vector(0 to 31);
+      M_DBusEn : in std_logic_vector(0 to 0);
+      M_DBusEn32_63 : in std_logic_vector(0 to 0);
+      M_dwXfer : in std_logic_vector(0 to 0);
+      M_fwXfer : in std_logic_vector(0 to 0);
+      M_hwXfer : in std_logic_vector(0 to 0);
+      M_request : in std_logic_vector(0 to 0);
+      M_RNW : in std_logic_vector(0 to 0);
+      M_select : in std_logic_vector(0 to 0);
+      M_seqAddr : in std_logic_vector(0 to 0);
+      Sl_beAck : in std_logic_vector(0 to 30);
+      Sl_DBus : in std_logic_vector(0 to 991);
+      Sl_DBusEn : in std_logic_vector(0 to 30);
+      Sl_DBusEn32_63 : in std_logic_vector(0 to 30);
+      Sl_errAck : in std_logic_vector(0 to 30);
+      Sl_dwAck : in std_logic_vector(0 to 30);
+      Sl_fwAck : in std_logic_vector(0 to 30);
+      Sl_hwAck : in std_logic_vector(0 to 30);
+      Sl_retry : in std_logic_vector(0 to 30);
+      Sl_toutSup : in std_logic_vector(0 to 30);
+      Sl_xferAck : in std_logic_vector(0 to 30);
+      OPB_MRequest : out std_logic_vector(0 to 0);
+      OPB_ABus : out std_logic_vector(0 to 31);
+      OPB_BE : out std_logic_vector(0 to 3);
+      OPB_beXfer : out std_logic;
+      OPB_beAck : out std_logic;
+      OPB_busLock : out std_logic;
+      OPB_rdDBus : out std_logic_vector(0 to 31);
+      OPB_wrDBus : out std_logic_vector(0 to 31);
+      OPB_DBus : out std_logic_vector(0 to 31);
+      OPB_errAck : out std_logic;
+      OPB_dwAck : out std_logic;
+      OPB_dwXfer : out std_logic;
+      OPB_fwAck : out std_logic;
+      OPB_fwXfer : out std_logic;
+      OPB_hwAck : out std_logic;
+      OPB_hwXfer : out std_logic;
+      OPB_MGrant : out std_logic_vector(0 to 0);
+      OPB_pendReq : out std_logic_vector(0 to 0);
+      OPB_retry : out std_logic;
+      OPB_RNW : out std_logic;
+      OPB_select : out std_logic;
+      OPB_seqAddr : out std_logic;
+      OPB_timeout : out std_logic;
+      OPB_toutSup : out std_logic;
+      OPB_xferAck : out std_logic
+    );
+  end component;
+
+  component epb_opb_bridge_inst_wrapper is
+    port (
+      epb_clk : in std_logic;
+      epb_doe_n : out std_logic;
+      epb_data_oe_n : out std_logic;
+      epb_cs_n : in std_logic;
+      epb_oe_n : in std_logic;
+      epb_r_w_n : in std_logic;
+      epb_be_n : in std_logic_vector(3 downto 0);
+      epb_addr : in std_logic_vector(5 to 29);
+      epb_data_i : in std_logic_vector(0 to 31);
+      epb_data_o : out std_logic_vector(0 to 31);
+      epb_rdy : out std_logic;
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      M_request : out std_logic;
+      M_busLock : out std_logic;
+      M_select : out std_logic;
+      M_RNW : out std_logic;
+      M_BE : out std_logic_vector(0 to 3);
+      M_seqAddr : out std_logic;
+      M_DBus : out std_logic_vector(0 to 31);
+      M_ABus : out std_logic_vector(0 to 31);
+      OPB_MGrant : in std_logic;
+      OPB_xferAck : in std_logic;
+      OPB_errAck : in std_logic;
+      OPB_retry : in std_logic;
+      OPB_timeout : in std_logic;
+      OPB_DBus : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component epb_infrastructure_inst_wrapper is
+    port (
+      epb_data_buf : inout std_logic_vector(31 downto 0);
+      epb_data_oe_n_i : in std_logic;
+      epb_data_out_i : in std_logic_vector(31 downto 0);
+      epb_data_in_o : out std_logic_vector(31 downto 0)
+    );
+  end component;
+
+  component sys_block_inst_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      soft_reset : out std_logic;
+      irq_n : out std_logic;
+      app_irq : in std_logic_vector(15 downto 0);
+      fab_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_xsg_core_config_wrapper is
+    port (
+      clk : in std_logic;
+      r2_5g_f01_acc_len_user_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_adc5g_sync : in std_logic;
+      r2_5g_f01_adc5g_user_data_i0 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_i1 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_i2 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_i3 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_i4 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_i5 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_i6 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_i7 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_q0 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_q1 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_q2 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_q3 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_q4 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_q5 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_q6 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_adc5g_user_data_q7 : in std_logic_vector(7 downto 0);
+      r2_5g_f01_cnt_rst_user_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_adc0_bram_data_out : in std_logic_vector(127 downto 0);
+      r2_5g_f01_snap_adc0_bram_addr : out std_logic_vector(11 downto 0);
+      r2_5g_f01_snap_adc0_bram_data_in : out std_logic_vector(127 downto 0);
+      r2_5g_f01_snap_adc0_bram_we : out std_logic;
+      r2_5g_f01_snap_adc0_ctrl_user_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_adc0_status_user_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc0_addr_user_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc0_bram_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc0_bram_addr : out std_logic_vector(10 downto 0);
+      r2_5g_f01_snap_vacc0_bram_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc0_bram_we : out std_logic;
+      r2_5g_f01_snap_vacc0_ctrl_user_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc1_addr_user_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc1_bram_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc1_bram_addr : out std_logic_vector(10 downto 0);
+      r2_5g_f01_snap_vacc1_bram_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc1_bram_we : out std_logic;
+      r2_5g_f01_snap_vacc1_ctrl_user_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc2_addr_user_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc2_bram_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc2_bram_addr : out std_logic_vector(10 downto 0);
+      r2_5g_f01_snap_vacc2_bram_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc2_bram_we : out std_logic;
+      r2_5g_f01_snap_vacc2_ctrl_user_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc3_addr_user_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc3_bram_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc3_bram_addr : out std_logic_vector(10 downto 0);
+      r2_5g_f01_snap_vacc3_bram_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc3_bram_we : out std_logic;
+      r2_5g_f01_snap_vacc3_ctrl_user_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc4_addr_user_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc4_bram_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc4_bram_addr : out std_logic_vector(10 downto 0);
+      r2_5g_f01_snap_vacc4_bram_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc4_bram_we : out std_logic;
+      r2_5g_f01_snap_vacc4_ctrl_user_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc5_addr_user_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc5_bram_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc5_bram_addr : out std_logic_vector(10 downto 0);
+      r2_5g_f01_snap_vacc5_bram_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc5_bram_we : out std_logic;
+      r2_5g_f01_snap_vacc5_ctrl_user_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc6_addr_user_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc6_bram_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc6_bram_addr : out std_logic_vector(10 downto 0);
+      r2_5g_f01_snap_vacc6_bram_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc6_bram_we : out std_logic;
+      r2_5g_f01_snap_vacc6_ctrl_user_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc7_addr_user_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc7_bram_data_out : in std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc7_bram_addr : out std_logic_vector(10 downto 0);
+      r2_5g_f01_snap_vacc7_bram_data_in : out std_logic_vector(31 downto 0);
+      r2_5g_f01_snap_vacc7_bram_we : out std_logic;
+      r2_5g_f01_snap_vacc7_ctrl_user_data_out : in std_logic_vector(31 downto 0)
+    );
+  end component;
+
+  component r2_5g_f01_acc_len_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_adc5g_wrapper is
+    port (
+      adc_clk_p_i : in std_logic;
+      adc_clk_n_i : in std_logic;
+      adc_data0_p_i : in std_logic_vector(7 downto 0);
+      adc_data0_n_i : in std_logic_vector(7 downto 0);
+      adc_data1_p_i : in std_logic_vector(7 downto 0);
+      adc_data1_n_i : in std_logic_vector(7 downto 0);
+      adc_data2_p_i : in std_logic_vector(7 downto 0);
+      adc_data2_n_i : in std_logic_vector(7 downto 0);
+      adc_data3_p_i : in std_logic_vector(7 downto 0);
+      adc_data3_n_i : in std_logic_vector(7 downto 0);
+      adc_reset_o : out std_logic;
+      adc_sync_p : in std_logic;
+      adc_sync_n : in std_logic;
+      sync : out std_logic;
+      user_data_i0 : out std_logic_vector(7 downto 0);
+      user_data_i1 : out std_logic_vector(7 downto 0);
+      user_data_i2 : out std_logic_vector(7 downto 0);
+      user_data_i3 : out std_logic_vector(7 downto 0);
+      user_data_i4 : out std_logic_vector(7 downto 0);
+      user_data_i5 : out std_logic_vector(7 downto 0);
+      user_data_i6 : out std_logic_vector(7 downto 0);
+      user_data_i7 : out std_logic_vector(7 downto 0);
+      user_data_q0 : out std_logic_vector(7 downto 0);
+      user_data_q1 : out std_logic_vector(7 downto 0);
+      user_data_q2 : out std_logic_vector(7 downto 0);
+      user_data_q3 : out std_logic_vector(7 downto 0);
+      user_data_q4 : out std_logic_vector(7 downto 0);
+      user_data_q5 : out std_logic_vector(7 downto 0);
+      user_data_q6 : out std_logic_vector(7 downto 0);
+      user_data_q7 : out std_logic_vector(7 downto 0);
+      dcm_reset : in std_logic;
+      ctrl_reset : in std_logic;
+      ctrl_clk_in : in std_logic;
+      ctrl_clk_out : out std_logic;
+      ctrl_clk90_out : out std_logic;
+      ctrl_clk180_out : out std_logic;
+      ctrl_clk270_out : out std_logic;
+      ctrl_dcm_locked : out std_logic;
+      dcm_psclk : in std_logic;
+      dcm_psen : in std_logic;
+      dcm_psincdec : in std_logic;
+      dcm_psdone : out std_logic
+    );
+  end component;
+
+  component r2_5g_f01_cnt_rst_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_adc0_bram_ramblk_wrapper is
+    port (
+      clk : in std_logic;
+      bram_we : in std_logic;
+      bram_addr : in std_logic_vector(11 downto 0);
+      bram_rd_data : out std_logic_vector(127 downto 0);
+      bram_wr_data : in std_logic_vector(127 downto 0);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_adc0_bram_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_adc0_ctrl_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_adc0_status_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_in : in std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc0_addr_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_in : in std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc0_bram_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(10 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc0_bram_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc0_bram_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc0_ctrl_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc1_addr_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_in : in std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc1_bram_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(10 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc1_bram_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc1_bram_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc1_ctrl_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc2_addr_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_in : in std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc2_bram_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(10 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc2_bram_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc2_bram_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc2_ctrl_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc3_addr_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_in : in std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc3_bram_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(10 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc3_bram_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc3_bram_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc3_ctrl_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc4_addr_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_in : in std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc4_bram_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(10 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc4_bram_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc4_bram_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc4_ctrl_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc5_addr_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_in : in std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc5_bram_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(10 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc5_bram_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc5_bram_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc5_ctrl_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc6_addr_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_in : in std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc6_bram_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(10 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc6_bram_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc6_bram_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc6_ctrl_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc7_addr_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_in : in std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc7_bram_ramif_wrapper is
+    port (
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31);
+      clk_in : in std_logic;
+      addr : in std_logic_vector(10 downto 0);
+      data_in : in std_logic_vector(31 downto 0);
+      data_out : out std_logic_vector(31 downto 0);
+      we : in std_logic
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc7_bram_ramblk_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc7_bram_wrapper is
+    port (
+      opb_clk : in std_logic;
+      opb_rst : in std_logic;
+      opb_abus : in std_logic_vector(0 to 31);
+      opb_dbus : in std_logic_vector(0 to 31);
+      sln_dbus : out std_logic_vector(0 to 31);
+      opb_select : in std_logic;
+      opb_rnw : in std_logic;
+      opb_seqaddr : in std_logic;
+      opb_be : in std_logic_vector(0 to 3);
+      sln_xferack : out std_logic;
+      sln_errack : out std_logic;
+      sln_toutsup : out std_logic;
+      sln_retry : out std_logic;
+      bram_rst : out std_logic;
+      bram_clk : out std_logic;
+      bram_en : out std_logic;
+      bram_wen : out std_logic_vector(0 to 3);
+      bram_addr : out std_logic_vector(0 to 31);
+      bram_din : in std_logic_vector(0 to 31);
+      bram_dout : out std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component r2_5g_f01_snap_vacc7_ctrl_wrapper is
+    port (
+      OPB_Clk : in std_logic;
+      OPB_Rst : in std_logic;
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_errAck : out std_logic;
+      Sl_retry : out std_logic;
+      Sl_toutSup : out std_logic;
+      Sl_xferAck : out std_logic;
+      OPB_ABus : in std_logic_vector(0 to 31);
+      OPB_BE : in std_logic_vector(0 to 3);
+      OPB_DBus : in std_logic_vector(0 to 31);
+      OPB_RNW : in std_logic;
+      OPB_select : in std_logic;
+      OPB_seqAddr : in std_logic;
+      user_data_out : out std_logic_vector(31 downto 0);
+      user_clk : in std_logic
+    );
+  end component;
+
+  -- Internal signals
+
+  signal adc0_clk : std_logic;
+  signal adc0_dcm_reset : std_logic;
+  signal adc0_psclk : std_logic;
+  signal adc0_psdone : std_logic;
+  signal adc0_psen : std_logic;
+  signal adc0_psincdec : std_logic;
+  signal epb_clk : std_logic;
+  signal epb_data_i : std_logic_vector(0 to 31);
+  signal epb_data_o : std_logic_vector(31 downto 0);
+  signal epb_data_oe_n : std_logic;
+  signal net_gnd0 : std_logic;
+  signal net_gnd1 : std_logic_vector(0 to 0);
+  signal net_gnd31 : std_logic_vector(0 to 30);
+  signal net_vcc1 : std_logic_vector(0 to 0);
+  signal net_vcc31 : std_logic_vector(0 to 30);
+  signal opb0_M_ABus : std_logic_vector(0 to 31);
+  signal opb0_M_BE : std_logic_vector(0 to 3);
+  signal opb0_M_DBus : std_logic_vector(0 to 31);
+  signal opb0_M_RNW : std_logic_vector(0 to 0);
+  signal opb0_M_busLock : std_logic_vector(0 to 0);
+  signal opb0_M_request : std_logic_vector(0 to 0);
+  signal opb0_M_select : std_logic_vector(0 to 0);
+  signal opb0_M_seqAddr : std_logic_vector(0 to 0);
+  signal opb0_OPB_ABus : std_logic_vector(0 to 31);
+  signal opb0_OPB_BE : std_logic_vector(0 to 3);
+  signal opb0_OPB_DBus : std_logic_vector(0 to 31);
+  signal opb0_OPB_MGrant : std_logic_vector(0 to 0);
+  signal opb0_OPB_RNW : std_logic;
+  signal opb0_OPB_Rst : std_logic;
+  signal opb0_OPB_errAck : std_logic;
+  signal opb0_OPB_retry : std_logic;
+  signal opb0_OPB_select : std_logic;
+  signal opb0_OPB_seqAddr : std_logic;
+  signal opb0_OPB_timeout : std_logic;
+  signal opb0_OPB_xferAck : std_logic;
+  signal opb0_Sl_DBus : std_logic_vector(0 to 991);
+  signal opb0_Sl_errAck : std_logic_vector(0 to 30);
+  signal opb0_Sl_retry : std_logic_vector(0 to 30);
+  signal opb0_Sl_toutSup : std_logic_vector(0 to 30);
+  signal opb0_Sl_xferAck : std_logic_vector(0 to 30);
+  signal pgassign1 : std_logic;
+  signal pgassign2 : std_logic_vector(15 downto 0);
+  signal r2_5g_f01_acc_len_user_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_adc5g_sync : std_logic;
+  signal r2_5g_f01_adc5g_user_data_i0 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_i1 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_i2 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_i3 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_i4 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_i5 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_i6 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_i7 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_q0 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_q1 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_q2 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_q3 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_q4 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_q5 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_q6 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_adc5g_user_data_q7 : std_logic_vector(7 downto 0);
+  signal r2_5g_f01_cnt_rst_user_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_adc0_bram_addr : std_logic_vector(11 downto 0);
+  signal r2_5g_f01_snap_adc0_bram_data_in : std_logic_vector(127 downto 0);
+  signal r2_5g_f01_snap_adc0_bram_data_out : std_logic_vector(127 downto 0);
+  signal r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_adc0_bram_we : std_logic;
+  signal r2_5g_f01_snap_adc0_ctrl_user_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_adc0_status_user_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc0_addr_user_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc0_bram_addr : std_logic_vector(10 downto 0);
+  signal r2_5g_f01_snap_vacc0_bram_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc0_bram_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc0_bram_we : std_logic;
+  signal r2_5g_f01_snap_vacc0_ctrl_user_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc1_addr_user_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc1_bram_addr : std_logic_vector(10 downto 0);
+  signal r2_5g_f01_snap_vacc1_bram_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc1_bram_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc1_bram_we : std_logic;
+  signal r2_5g_f01_snap_vacc1_ctrl_user_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc2_addr_user_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc2_bram_addr : std_logic_vector(10 downto 0);
+  signal r2_5g_f01_snap_vacc2_bram_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc2_bram_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc2_bram_we : std_logic;
+  signal r2_5g_f01_snap_vacc2_ctrl_user_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc3_addr_user_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc3_bram_addr : std_logic_vector(10 downto 0);
+  signal r2_5g_f01_snap_vacc3_bram_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc3_bram_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc3_bram_we : std_logic;
+  signal r2_5g_f01_snap_vacc3_ctrl_user_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc4_addr_user_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc4_bram_addr : std_logic_vector(10 downto 0);
+  signal r2_5g_f01_snap_vacc4_bram_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc4_bram_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc4_bram_we : std_logic;
+  signal r2_5g_f01_snap_vacc4_ctrl_user_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc5_addr_user_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc5_bram_addr : std_logic_vector(10 downto 0);
+  signal r2_5g_f01_snap_vacc5_bram_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc5_bram_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc5_bram_we : std_logic;
+  signal r2_5g_f01_snap_vacc5_ctrl_user_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc6_addr_user_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc6_bram_addr : std_logic_vector(10 downto 0);
+  signal r2_5g_f01_snap_vacc6_bram_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc6_bram_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc6_bram_we : std_logic;
+  signal r2_5g_f01_snap_vacc6_ctrl_user_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc7_addr_user_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc7_bram_addr : std_logic_vector(10 downto 0);
+  signal r2_5g_f01_snap_vacc7_bram_data_in : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc7_bram_data_out : std_logic_vector(31 downto 0);
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Addr : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Clk : std_logic;
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Din : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Dout : std_logic_vector(0 to 31);
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_EN : std_logic;
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Rst : std_logic;
+  signal r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_WEN : std_logic_vector(0 to 3);
+  signal r2_5g_f01_snap_vacc7_bram_we : std_logic;
+  signal r2_5g_f01_snap_vacc7_ctrl_user_data_out : std_logic_vector(31 downto 0);
+  signal sys_clk : std_logic;
+  signal sys_reset : std_logic;
+
+  attribute BOX_TYPE : STRING;
+  attribute BOX_TYPE of opb_adc5g_controller_0_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of infrastructure_inst_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of reset_block_inst_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of opb0_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of epb_opb_bridge_inst_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of epb_infrastructure_inst_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of sys_block_inst_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_xsg_core_config_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_acc_len_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_adc5g_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_cnt_rst_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_adc0_bram_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_adc0_bram_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_adc0_ctrl_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_adc0_status_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc0_addr_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc0_bram_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc0_bram_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc0_bram_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc0_ctrl_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc1_addr_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc1_bram_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc1_bram_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc1_bram_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc1_ctrl_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc2_addr_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc2_bram_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc2_bram_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc2_bram_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc2_ctrl_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc3_addr_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc3_bram_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc3_bram_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc3_bram_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc3_ctrl_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc4_addr_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc4_bram_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc4_bram_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc4_bram_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc4_ctrl_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc5_addr_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc5_bram_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc5_bram_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc5_bram_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc5_ctrl_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc6_addr_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc6_bram_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc6_bram_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc6_bram_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc6_ctrl_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc7_addr_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc7_bram_ramif_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc7_bram_ramblk_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc7_bram_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of r2_5g_f01_snap_vacc7_ctrl_wrapper : component is "user_black_box";
+
+begin
+
+  -- Internal assignments
+
+  pgassign1 <= '0';
+  pgassign2(15 downto 0) <= X"0000";
+  net_gnd0 <= '0';
+  net_gnd1(0 to 0) <= B"0";
+  net_gnd31(0 to 30) <= B"0000000000000000000000000000000";
+  net_vcc1(0 to 0) <= B"1";
+  net_vcc31(0 to 30) <= B"1111111111111111111111111111111";
+
+  opb_adc5g_controller_0 : opb_adc5g_controller_0_wrapper
+    port map (
+      OPB_Clk => epb_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(0 to 31),
+      Sl_errAck => opb0_Sl_errAck(0),
+      Sl_retry => opb0_Sl_retry(0),
+      Sl_toutSup => opb0_Sl_toutSup(0),
+      Sl_xferAck => opb0_Sl_xferAck(0),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      adc0_adc3wire_clk => adc0_adc3wire_clk,
+      adc0_adc3wire_data => adc0_adc3wire_data,
+      adc0_adc3wire_spi_rst => adc0_adc3wire_spi_rst,
+      adc0_modepin => adc0_modepin,
+      adc0_dcm_reset => adc0_dcm_reset,
+      adc0_psclk => adc0_psclk,
+      adc0_psen => adc0_psen,
+      adc0_psincdec => adc0_psincdec,
+      adc0_psdone => adc0_psdone,
+      adc0_clk => adc0_clk,
+      adc1_adc3wire_clk => open,
+      adc1_adc3wire_data => open,
+      adc1_adc3wire_spi_rst => open,
+      adc1_modepin => open,
+      adc1_dcm_reset => open,
+      adc1_psclk => open,
+      adc1_psen => open,
+      adc1_psincdec => open,
+      adc1_psdone => net_gnd0,
+      adc1_clk => net_gnd0
+    );
+
+  infrastructure_inst : infrastructure_inst_wrapper
+    port map (
+      sys_clk_n => sys_clk_n,
+      sys_clk_p => sys_clk_p,
+      aux_clk_n => aux_clk_n,
+      aux_clk_p => aux_clk_p,
+      epb_clk_in => epb_clk_in,
+      sys_clk => sys_clk,
+      sys_clk90 => open,
+      sys_clk180 => open,
+      sys_clk270 => open,
+      sys_clk_lock => open,
+      sys_clk2x => open,
+      sys_clk2x90 => open,
+      sys_clk2x180 => open,
+      sys_clk2x270 => open,
+      aux_clk => open,
+      aux_clk90 => open,
+      aux_clk180 => open,
+      aux_clk270 => open,
+      aux_clk2x => open,
+      aux_clk2x90 => open,
+      aux_clk2x180 => open,
+      aux_clk2x270 => open,
+      epb_clk => epb_clk,
+      idelay_rst => sys_reset,
+      idelay_rdy => open
+    );
+
+  reset_block_inst : reset_block_inst_wrapper
+    port map (
+      clk => sys_clk,
+      async_reset_i => pgassign1,
+      reset_i => pgassign1,
+      reset_o => sys_reset
+    );
+
+  opb0 : opb0_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      SYS_Rst => pgassign1,
+      Debug_SYS_Rst => net_gnd0,
+      WDT_Rst => net_gnd0,
+      M_ABus => opb0_M_ABus,
+      M_BE => opb0_M_BE,
+      M_beXfer => net_gnd1(0 to 0),
+      M_busLock => opb0_M_busLock(0 to 0),
+      M_DBus => opb0_M_DBus,
+      M_DBusEn => net_gnd1(0 to 0),
+      M_DBusEn32_63 => net_vcc1(0 to 0),
+      M_dwXfer => net_gnd1(0 to 0),
+      M_fwXfer => net_gnd1(0 to 0),
+      M_hwXfer => net_gnd1(0 to 0),
+      M_request => opb0_M_request(0 to 0),
+      M_RNW => opb0_M_RNW(0 to 0),
+      M_select => opb0_M_select(0 to 0),
+      M_seqAddr => opb0_M_seqAddr(0 to 0),
+      Sl_beAck => net_gnd31,
+      Sl_DBus => opb0_Sl_DBus,
+      Sl_DBusEn => net_vcc31,
+      Sl_DBusEn32_63 => net_vcc31,
+      Sl_errAck => opb0_Sl_errAck,
+      Sl_dwAck => net_gnd31,
+      Sl_fwAck => net_gnd31,
+      Sl_hwAck => net_gnd31,
+      Sl_retry => opb0_Sl_retry,
+      Sl_toutSup => opb0_Sl_toutSup,
+      Sl_xferAck => opb0_Sl_xferAck,
+      OPB_MRequest => open,
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_beXfer => open,
+      OPB_beAck => open,
+      OPB_busLock => open,
+      OPB_rdDBus => open,
+      OPB_wrDBus => open,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_errAck => opb0_OPB_errAck,
+      OPB_dwAck => open,
+      OPB_dwXfer => open,
+      OPB_fwAck => open,
+      OPB_fwXfer => open,
+      OPB_hwAck => open,
+      OPB_hwXfer => open,
+      OPB_MGrant => opb0_OPB_MGrant(0 to 0),
+      OPB_pendReq => open,
+      OPB_retry => opb0_OPB_retry,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      OPB_timeout => opb0_OPB_timeout,
+      OPB_toutSup => open,
+      OPB_xferAck => opb0_OPB_xferAck
+    );
+
+  epb_opb_bridge_inst : epb_opb_bridge_inst_wrapper
+    port map (
+      epb_clk => epb_clk,
+      epb_doe_n => epb_doe_n,
+      epb_data_oe_n => epb_data_oe_n,
+      epb_cs_n => epb_cs_n,
+      epb_oe_n => epb_oe_n,
+      epb_r_w_n => epb_r_w_n,
+      epb_be_n => epb_be_n(0 to 3),
+      epb_addr => epb_addr,
+      epb_data_i => epb_data_i,
+      epb_data_o => epb_data_o(31 downto 0),
+      epb_rdy => epb_rdy,
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      M_request => opb0_M_request(0),
+      M_busLock => opb0_M_busLock(0),
+      M_select => opb0_M_select(0),
+      M_RNW => opb0_M_RNW(0),
+      M_BE => opb0_M_BE,
+      M_seqAddr => opb0_M_seqAddr(0),
+      M_DBus => opb0_M_DBus,
+      M_ABus => opb0_M_ABus,
+      OPB_MGrant => opb0_OPB_MGrant(0),
+      OPB_xferAck => opb0_OPB_xferAck,
+      OPB_errAck => opb0_OPB_errAck,
+      OPB_retry => opb0_OPB_retry,
+      OPB_timeout => opb0_OPB_timeout,
+      OPB_DBus => opb0_OPB_DBus
+    );
+
+  epb_infrastructure_inst : epb_infrastructure_inst_wrapper
+    port map (
+      epb_data_buf => epb_data(0 to 31),
+      epb_data_oe_n_i => epb_data_oe_n,
+      epb_data_out_i => epb_data_o,
+      epb_data_in_o => epb_data_i(0 to 31)
+    );
+
+  sys_block_inst : sys_block_inst_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(32 to 63),
+      Sl_errAck => opb0_Sl_errAck(1),
+      Sl_retry => opb0_Sl_retry(1),
+      Sl_toutSup => opb0_Sl_toutSup(1),
+      Sl_xferAck => opb0_Sl_xferAck(1),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      soft_reset => open,
+      irq_n => ppc_irq_n,
+      app_irq => pgassign2,
+      fab_clk => adc0_clk
+    );
+
+  r2_5g_f01_XSG_core_config : r2_5g_f01_xsg_core_config_wrapper
+    port map (
+      clk => adc0_clk,
+      r2_5g_f01_acc_len_user_data_out => r2_5g_f01_acc_len_user_data_out,
+      r2_5g_f01_adc5g_sync => r2_5g_f01_adc5g_sync,
+      r2_5g_f01_adc5g_user_data_i0 => r2_5g_f01_adc5g_user_data_i0,
+      r2_5g_f01_adc5g_user_data_i1 => r2_5g_f01_adc5g_user_data_i1,
+      r2_5g_f01_adc5g_user_data_i2 => r2_5g_f01_adc5g_user_data_i2,
+      r2_5g_f01_adc5g_user_data_i3 => r2_5g_f01_adc5g_user_data_i3,
+      r2_5g_f01_adc5g_user_data_i4 => r2_5g_f01_adc5g_user_data_i4,
+      r2_5g_f01_adc5g_user_data_i5 => r2_5g_f01_adc5g_user_data_i5,
+      r2_5g_f01_adc5g_user_data_i6 => r2_5g_f01_adc5g_user_data_i6,
+      r2_5g_f01_adc5g_user_data_i7 => r2_5g_f01_adc5g_user_data_i7,
+      r2_5g_f01_adc5g_user_data_q0 => r2_5g_f01_adc5g_user_data_q0,
+      r2_5g_f01_adc5g_user_data_q1 => r2_5g_f01_adc5g_user_data_q1,
+      r2_5g_f01_adc5g_user_data_q2 => r2_5g_f01_adc5g_user_data_q2,
+      r2_5g_f01_adc5g_user_data_q3 => r2_5g_f01_adc5g_user_data_q3,
+      r2_5g_f01_adc5g_user_data_q4 => r2_5g_f01_adc5g_user_data_q4,
+      r2_5g_f01_adc5g_user_data_q5 => r2_5g_f01_adc5g_user_data_q5,
+      r2_5g_f01_adc5g_user_data_q6 => r2_5g_f01_adc5g_user_data_q6,
+      r2_5g_f01_adc5g_user_data_q7 => r2_5g_f01_adc5g_user_data_q7,
+      r2_5g_f01_cnt_rst_user_data_out => r2_5g_f01_cnt_rst_user_data_out,
+      r2_5g_f01_snap_adc0_bram_data_out => r2_5g_f01_snap_adc0_bram_data_out,
+      r2_5g_f01_snap_adc0_bram_addr => r2_5g_f01_snap_adc0_bram_addr,
+      r2_5g_f01_snap_adc0_bram_data_in => r2_5g_f01_snap_adc0_bram_data_in,
+      r2_5g_f01_snap_adc0_bram_we => r2_5g_f01_snap_adc0_bram_we,
+      r2_5g_f01_snap_adc0_ctrl_user_data_out => r2_5g_f01_snap_adc0_ctrl_user_data_out,
+      r2_5g_f01_snap_adc0_status_user_data_in => r2_5g_f01_snap_adc0_status_user_data_in,
+      r2_5g_f01_snap_vacc0_addr_user_data_in => r2_5g_f01_snap_vacc0_addr_user_data_in,
+      r2_5g_f01_snap_vacc0_bram_data_out => r2_5g_f01_snap_vacc0_bram_data_out,
+      r2_5g_f01_snap_vacc0_bram_addr => r2_5g_f01_snap_vacc0_bram_addr,
+      r2_5g_f01_snap_vacc0_bram_data_in => r2_5g_f01_snap_vacc0_bram_data_in,
+      r2_5g_f01_snap_vacc0_bram_we => r2_5g_f01_snap_vacc0_bram_we,
+      r2_5g_f01_snap_vacc0_ctrl_user_data_out => r2_5g_f01_snap_vacc0_ctrl_user_data_out,
+      r2_5g_f01_snap_vacc1_addr_user_data_in => r2_5g_f01_snap_vacc1_addr_user_data_in,
+      r2_5g_f01_snap_vacc1_bram_data_out => r2_5g_f01_snap_vacc1_bram_data_out,
+      r2_5g_f01_snap_vacc1_bram_addr => r2_5g_f01_snap_vacc1_bram_addr,
+      r2_5g_f01_snap_vacc1_bram_data_in => r2_5g_f01_snap_vacc1_bram_data_in,
+      r2_5g_f01_snap_vacc1_bram_we => r2_5g_f01_snap_vacc1_bram_we,
+      r2_5g_f01_snap_vacc1_ctrl_user_data_out => r2_5g_f01_snap_vacc1_ctrl_user_data_out,
+      r2_5g_f01_snap_vacc2_addr_user_data_in => r2_5g_f01_snap_vacc2_addr_user_data_in,
+      r2_5g_f01_snap_vacc2_bram_data_out => r2_5g_f01_snap_vacc2_bram_data_out,
+      r2_5g_f01_snap_vacc2_bram_addr => r2_5g_f01_snap_vacc2_bram_addr,
+      r2_5g_f01_snap_vacc2_bram_data_in => r2_5g_f01_snap_vacc2_bram_data_in,
+      r2_5g_f01_snap_vacc2_bram_we => r2_5g_f01_snap_vacc2_bram_we,
+      r2_5g_f01_snap_vacc2_ctrl_user_data_out => r2_5g_f01_snap_vacc2_ctrl_user_data_out,
+      r2_5g_f01_snap_vacc3_addr_user_data_in => r2_5g_f01_snap_vacc3_addr_user_data_in,
+      r2_5g_f01_snap_vacc3_bram_data_out => r2_5g_f01_snap_vacc3_bram_data_out,
+      r2_5g_f01_snap_vacc3_bram_addr => r2_5g_f01_snap_vacc3_bram_addr,
+      r2_5g_f01_snap_vacc3_bram_data_in => r2_5g_f01_snap_vacc3_bram_data_in,
+      r2_5g_f01_snap_vacc3_bram_we => r2_5g_f01_snap_vacc3_bram_we,
+      r2_5g_f01_snap_vacc3_ctrl_user_data_out => r2_5g_f01_snap_vacc3_ctrl_user_data_out,
+      r2_5g_f01_snap_vacc4_addr_user_data_in => r2_5g_f01_snap_vacc4_addr_user_data_in,
+      r2_5g_f01_snap_vacc4_bram_data_out => r2_5g_f01_snap_vacc4_bram_data_out,
+      r2_5g_f01_snap_vacc4_bram_addr => r2_5g_f01_snap_vacc4_bram_addr,
+      r2_5g_f01_snap_vacc4_bram_data_in => r2_5g_f01_snap_vacc4_bram_data_in,
+      r2_5g_f01_snap_vacc4_bram_we => r2_5g_f01_snap_vacc4_bram_we,
+      r2_5g_f01_snap_vacc4_ctrl_user_data_out => r2_5g_f01_snap_vacc4_ctrl_user_data_out,
+      r2_5g_f01_snap_vacc5_addr_user_data_in => r2_5g_f01_snap_vacc5_addr_user_data_in,
+      r2_5g_f01_snap_vacc5_bram_data_out => r2_5g_f01_snap_vacc5_bram_data_out,
+      r2_5g_f01_snap_vacc5_bram_addr => r2_5g_f01_snap_vacc5_bram_addr,
+      r2_5g_f01_snap_vacc5_bram_data_in => r2_5g_f01_snap_vacc5_bram_data_in,
+      r2_5g_f01_snap_vacc5_bram_we => r2_5g_f01_snap_vacc5_bram_we,
+      r2_5g_f01_snap_vacc5_ctrl_user_data_out => r2_5g_f01_snap_vacc5_ctrl_user_data_out,
+      r2_5g_f01_snap_vacc6_addr_user_data_in => r2_5g_f01_snap_vacc6_addr_user_data_in,
+      r2_5g_f01_snap_vacc6_bram_data_out => r2_5g_f01_snap_vacc6_bram_data_out,
+      r2_5g_f01_snap_vacc6_bram_addr => r2_5g_f01_snap_vacc6_bram_addr,
+      r2_5g_f01_snap_vacc6_bram_data_in => r2_5g_f01_snap_vacc6_bram_data_in,
+      r2_5g_f01_snap_vacc6_bram_we => r2_5g_f01_snap_vacc6_bram_we,
+      r2_5g_f01_snap_vacc6_ctrl_user_data_out => r2_5g_f01_snap_vacc6_ctrl_user_data_out,
+      r2_5g_f01_snap_vacc7_addr_user_data_in => r2_5g_f01_snap_vacc7_addr_user_data_in,
+      r2_5g_f01_snap_vacc7_bram_data_out => r2_5g_f01_snap_vacc7_bram_data_out,
+      r2_5g_f01_snap_vacc7_bram_addr => r2_5g_f01_snap_vacc7_bram_addr,
+      r2_5g_f01_snap_vacc7_bram_data_in => r2_5g_f01_snap_vacc7_bram_data_in,
+      r2_5g_f01_snap_vacc7_bram_we => r2_5g_f01_snap_vacc7_bram_we,
+      r2_5g_f01_snap_vacc7_ctrl_user_data_out => r2_5g_f01_snap_vacc7_ctrl_user_data_out
+    );
+
+  r2_5g_f01_acc_len : r2_5g_f01_acc_len_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(64 to 95),
+      Sl_errAck => opb0_Sl_errAck(2),
+      Sl_retry => opb0_Sl_retry(2),
+      Sl_toutSup => opb0_Sl_toutSup(2),
+      Sl_xferAck => opb0_Sl_xferAck(2),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => r2_5g_f01_acc_len_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_adc5g : r2_5g_f01_adc5g_wrapper
+    port map (
+      adc_clk_p_i => adc0clk_p,
+      adc_clk_n_i => adc0clk_n,
+      adc_data0_p_i => adc0data0_p_i,
+      adc_data0_n_i => adc0data0_n_i,
+      adc_data1_p_i => adc0data1_p_i,
+      adc_data1_n_i => adc0data1_n_i,
+      adc_data2_p_i => adc0data2_p_i,
+      adc_data2_n_i => adc0data2_n_i,
+      adc_data3_p_i => adc0data3_p_i,
+      adc_data3_n_i => adc0data3_n_i,
+      adc_reset_o => open,
+      adc_sync_p => adc0sync_p,
+      adc_sync_n => adc0sync_n,
+      sync => r2_5g_f01_adc5g_sync,
+      user_data_i0 => r2_5g_f01_adc5g_user_data_i0,
+      user_data_i1 => r2_5g_f01_adc5g_user_data_i1,
+      user_data_i2 => r2_5g_f01_adc5g_user_data_i2,
+      user_data_i3 => r2_5g_f01_adc5g_user_data_i3,
+      user_data_i4 => r2_5g_f01_adc5g_user_data_i4,
+      user_data_i5 => r2_5g_f01_adc5g_user_data_i5,
+      user_data_i6 => r2_5g_f01_adc5g_user_data_i6,
+      user_data_i7 => r2_5g_f01_adc5g_user_data_i7,
+      user_data_q0 => r2_5g_f01_adc5g_user_data_q0,
+      user_data_q1 => r2_5g_f01_adc5g_user_data_q1,
+      user_data_q2 => r2_5g_f01_adc5g_user_data_q2,
+      user_data_q3 => r2_5g_f01_adc5g_user_data_q3,
+      user_data_q4 => r2_5g_f01_adc5g_user_data_q4,
+      user_data_q5 => r2_5g_f01_adc5g_user_data_q5,
+      user_data_q6 => r2_5g_f01_adc5g_user_data_q6,
+      user_data_q7 => r2_5g_f01_adc5g_user_data_q7,
+      dcm_reset => adc0_dcm_reset,
+      ctrl_reset => net_gnd0,
+      ctrl_clk_in => adc0_clk,
+      ctrl_clk_out => adc0_clk,
+      ctrl_clk90_out => open,
+      ctrl_clk180_out => open,
+      ctrl_clk270_out => open,
+      ctrl_dcm_locked => open,
+      dcm_psclk => adc0_psclk,
+      dcm_psen => adc0_psen,
+      dcm_psincdec => adc0_psincdec,
+      dcm_psdone => adc0_psdone
+    );
+
+  r2_5g_f01_cnt_rst : r2_5g_f01_cnt_rst_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(96 to 127),
+      Sl_errAck => opb0_Sl_errAck(3),
+      Sl_retry => opb0_Sl_retry(3),
+      Sl_toutSup => opb0_Sl_toutSup(3),
+      Sl_xferAck => opb0_Sl_xferAck(3),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => r2_5g_f01_cnt_rst_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_adc0_bram_ramblk : r2_5g_f01_snap_adc0_bram_ramblk_wrapper
+    port map (
+      clk => adc0_clk,
+      bram_we => r2_5g_f01_snap_adc0_bram_we,
+      bram_addr => r2_5g_f01_snap_adc0_bram_addr,
+      bram_rd_data => r2_5g_f01_snap_adc0_bram_data_out,
+      bram_wr_data => r2_5g_f01_snap_adc0_bram_data_in,
+      BRAM_Rst_B => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_adc0_bram : r2_5g_f01_snap_adc0_bram_wrapper
+    port map (
+      opb_clk => sys_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(128 to 159),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(4),
+      sln_errack => opb0_Sl_errAck(4),
+      sln_toutsup => opb0_Sl_toutSup(4),
+      sln_retry => opb0_Sl_retry(4),
+      bram_rst => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_adc0_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_adc0_ctrl : r2_5g_f01_snap_adc0_ctrl_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(160 to 191),
+      Sl_errAck => opb0_Sl_errAck(5),
+      Sl_retry => opb0_Sl_retry(5),
+      Sl_toutSup => opb0_Sl_toutSup(5),
+      Sl_xferAck => opb0_Sl_xferAck(5),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => r2_5g_f01_snap_adc0_ctrl_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_adc0_status : r2_5g_f01_snap_adc0_status_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(192 to 223),
+      Sl_errAck => opb0_Sl_errAck(6),
+      Sl_retry => opb0_Sl_retry(6),
+      Sl_toutSup => opb0_Sl_toutSup(6),
+      Sl_xferAck => opb0_Sl_xferAck(6),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => r2_5g_f01_snap_adc0_status_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc0_addr : r2_5g_f01_snap_vacc0_addr_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(224 to 255),
+      Sl_errAck => opb0_Sl_errAck(7),
+      Sl_retry => opb0_Sl_retry(7),
+      Sl_toutSup => opb0_Sl_toutSup(7),
+      Sl_xferAck => opb0_Sl_xferAck(7),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => r2_5g_f01_snap_vacc0_addr_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc0_bram_ramif : r2_5g_f01_snap_vacc0_bram_ramif_wrapper
+    port map (
+      bram_rst => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => r2_5g_f01_snap_vacc0_bram_addr,
+      data_in => r2_5g_f01_snap_vacc0_bram_data_in,
+      data_out => r2_5g_f01_snap_vacc0_bram_data_out,
+      we => r2_5g_f01_snap_vacc0_bram_we
+    );
+
+  r2_5g_f01_snap_vacc0_bram_ramblk : r2_5g_f01_snap_vacc0_bram_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => r2_5g_f01_snap_vacc0_bram_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc0_bram : r2_5g_f01_snap_vacc0_bram_wrapper
+    port map (
+      opb_clk => sys_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(256 to 287),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(8),
+      sln_errack => opb0_Sl_errAck(8),
+      sln_toutsup => opb0_Sl_toutSup(8),
+      sln_retry => opb0_Sl_retry(8),
+      bram_rst => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc0_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc0_ctrl : r2_5g_f01_snap_vacc0_ctrl_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(288 to 319),
+      Sl_errAck => opb0_Sl_errAck(9),
+      Sl_retry => opb0_Sl_retry(9),
+      Sl_toutSup => opb0_Sl_toutSup(9),
+      Sl_xferAck => opb0_Sl_xferAck(9),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => r2_5g_f01_snap_vacc0_ctrl_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc1_addr : r2_5g_f01_snap_vacc1_addr_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(320 to 351),
+      Sl_errAck => opb0_Sl_errAck(10),
+      Sl_retry => opb0_Sl_retry(10),
+      Sl_toutSup => opb0_Sl_toutSup(10),
+      Sl_xferAck => opb0_Sl_xferAck(10),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => r2_5g_f01_snap_vacc1_addr_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc1_bram_ramif : r2_5g_f01_snap_vacc1_bram_ramif_wrapper
+    port map (
+      bram_rst => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => r2_5g_f01_snap_vacc1_bram_addr,
+      data_in => r2_5g_f01_snap_vacc1_bram_data_in,
+      data_out => r2_5g_f01_snap_vacc1_bram_data_out,
+      we => r2_5g_f01_snap_vacc1_bram_we
+    );
+
+  r2_5g_f01_snap_vacc1_bram_ramblk : r2_5g_f01_snap_vacc1_bram_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => r2_5g_f01_snap_vacc1_bram_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc1_bram : r2_5g_f01_snap_vacc1_bram_wrapper
+    port map (
+      opb_clk => sys_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(352 to 383),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(11),
+      sln_errack => opb0_Sl_errAck(11),
+      sln_toutsup => opb0_Sl_toutSup(11),
+      sln_retry => opb0_Sl_retry(11),
+      bram_rst => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc1_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc1_ctrl : r2_5g_f01_snap_vacc1_ctrl_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(384 to 415),
+      Sl_errAck => opb0_Sl_errAck(12),
+      Sl_retry => opb0_Sl_retry(12),
+      Sl_toutSup => opb0_Sl_toutSup(12),
+      Sl_xferAck => opb0_Sl_xferAck(12),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => r2_5g_f01_snap_vacc1_ctrl_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc2_addr : r2_5g_f01_snap_vacc2_addr_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(416 to 447),
+      Sl_errAck => opb0_Sl_errAck(13),
+      Sl_retry => opb0_Sl_retry(13),
+      Sl_toutSup => opb0_Sl_toutSup(13),
+      Sl_xferAck => opb0_Sl_xferAck(13),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => r2_5g_f01_snap_vacc2_addr_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc2_bram_ramif : r2_5g_f01_snap_vacc2_bram_ramif_wrapper
+    port map (
+      bram_rst => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => r2_5g_f01_snap_vacc2_bram_addr,
+      data_in => r2_5g_f01_snap_vacc2_bram_data_in,
+      data_out => r2_5g_f01_snap_vacc2_bram_data_out,
+      we => r2_5g_f01_snap_vacc2_bram_we
+    );
+
+  r2_5g_f01_snap_vacc2_bram_ramblk : r2_5g_f01_snap_vacc2_bram_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => r2_5g_f01_snap_vacc2_bram_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc2_bram : r2_5g_f01_snap_vacc2_bram_wrapper
+    port map (
+      opb_clk => sys_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(448 to 479),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(14),
+      sln_errack => opb0_Sl_errAck(14),
+      sln_toutsup => opb0_Sl_toutSup(14),
+      sln_retry => opb0_Sl_retry(14),
+      bram_rst => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc2_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc2_ctrl : r2_5g_f01_snap_vacc2_ctrl_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(480 to 511),
+      Sl_errAck => opb0_Sl_errAck(15),
+      Sl_retry => opb0_Sl_retry(15),
+      Sl_toutSup => opb0_Sl_toutSup(15),
+      Sl_xferAck => opb0_Sl_xferAck(15),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => r2_5g_f01_snap_vacc2_ctrl_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc3_addr : r2_5g_f01_snap_vacc3_addr_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(512 to 543),
+      Sl_errAck => opb0_Sl_errAck(16),
+      Sl_retry => opb0_Sl_retry(16),
+      Sl_toutSup => opb0_Sl_toutSup(16),
+      Sl_xferAck => opb0_Sl_xferAck(16),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => r2_5g_f01_snap_vacc3_addr_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc3_bram_ramif : r2_5g_f01_snap_vacc3_bram_ramif_wrapper
+    port map (
+      bram_rst => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => r2_5g_f01_snap_vacc3_bram_addr,
+      data_in => r2_5g_f01_snap_vacc3_bram_data_in,
+      data_out => r2_5g_f01_snap_vacc3_bram_data_out,
+      we => r2_5g_f01_snap_vacc3_bram_we
+    );
+
+  r2_5g_f01_snap_vacc3_bram_ramblk : r2_5g_f01_snap_vacc3_bram_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => r2_5g_f01_snap_vacc3_bram_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc3_bram : r2_5g_f01_snap_vacc3_bram_wrapper
+    port map (
+      opb_clk => sys_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(544 to 575),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(17),
+      sln_errack => opb0_Sl_errAck(17),
+      sln_toutsup => opb0_Sl_toutSup(17),
+      sln_retry => opb0_Sl_retry(17),
+      bram_rst => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc3_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc3_ctrl : r2_5g_f01_snap_vacc3_ctrl_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(576 to 607),
+      Sl_errAck => opb0_Sl_errAck(18),
+      Sl_retry => opb0_Sl_retry(18),
+      Sl_toutSup => opb0_Sl_toutSup(18),
+      Sl_xferAck => opb0_Sl_xferAck(18),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => r2_5g_f01_snap_vacc3_ctrl_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc4_addr : r2_5g_f01_snap_vacc4_addr_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(608 to 639),
+      Sl_errAck => opb0_Sl_errAck(19),
+      Sl_retry => opb0_Sl_retry(19),
+      Sl_toutSup => opb0_Sl_toutSup(19),
+      Sl_xferAck => opb0_Sl_xferAck(19),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => r2_5g_f01_snap_vacc4_addr_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc4_bram_ramif : r2_5g_f01_snap_vacc4_bram_ramif_wrapper
+    port map (
+      bram_rst => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => r2_5g_f01_snap_vacc4_bram_addr,
+      data_in => r2_5g_f01_snap_vacc4_bram_data_in,
+      data_out => r2_5g_f01_snap_vacc4_bram_data_out,
+      we => r2_5g_f01_snap_vacc4_bram_we
+    );
+
+  r2_5g_f01_snap_vacc4_bram_ramblk : r2_5g_f01_snap_vacc4_bram_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => r2_5g_f01_snap_vacc4_bram_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc4_bram : r2_5g_f01_snap_vacc4_bram_wrapper
+    port map (
+      opb_clk => sys_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(640 to 671),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(20),
+      sln_errack => opb0_Sl_errAck(20),
+      sln_toutsup => opb0_Sl_toutSup(20),
+      sln_retry => opb0_Sl_retry(20),
+      bram_rst => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc4_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc4_ctrl : r2_5g_f01_snap_vacc4_ctrl_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(672 to 703),
+      Sl_errAck => opb0_Sl_errAck(21),
+      Sl_retry => opb0_Sl_retry(21),
+      Sl_toutSup => opb0_Sl_toutSup(21),
+      Sl_xferAck => opb0_Sl_xferAck(21),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => r2_5g_f01_snap_vacc4_ctrl_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc5_addr : r2_5g_f01_snap_vacc5_addr_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(704 to 735),
+      Sl_errAck => opb0_Sl_errAck(22),
+      Sl_retry => opb0_Sl_retry(22),
+      Sl_toutSup => opb0_Sl_toutSup(22),
+      Sl_xferAck => opb0_Sl_xferAck(22),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => r2_5g_f01_snap_vacc5_addr_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc5_bram_ramif : r2_5g_f01_snap_vacc5_bram_ramif_wrapper
+    port map (
+      bram_rst => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => r2_5g_f01_snap_vacc5_bram_addr,
+      data_in => r2_5g_f01_snap_vacc5_bram_data_in,
+      data_out => r2_5g_f01_snap_vacc5_bram_data_out,
+      we => r2_5g_f01_snap_vacc5_bram_we
+    );
+
+  r2_5g_f01_snap_vacc5_bram_ramblk : r2_5g_f01_snap_vacc5_bram_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => r2_5g_f01_snap_vacc5_bram_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc5_bram : r2_5g_f01_snap_vacc5_bram_wrapper
+    port map (
+      opb_clk => sys_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(736 to 767),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(23),
+      sln_errack => opb0_Sl_errAck(23),
+      sln_toutsup => opb0_Sl_toutSup(23),
+      sln_retry => opb0_Sl_retry(23),
+      bram_rst => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc5_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc5_ctrl : r2_5g_f01_snap_vacc5_ctrl_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(768 to 799),
+      Sl_errAck => opb0_Sl_errAck(24),
+      Sl_retry => opb0_Sl_retry(24),
+      Sl_toutSup => opb0_Sl_toutSup(24),
+      Sl_xferAck => opb0_Sl_xferAck(24),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => r2_5g_f01_snap_vacc5_ctrl_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc6_addr : r2_5g_f01_snap_vacc6_addr_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(800 to 831),
+      Sl_errAck => opb0_Sl_errAck(25),
+      Sl_retry => opb0_Sl_retry(25),
+      Sl_toutSup => opb0_Sl_toutSup(25),
+      Sl_xferAck => opb0_Sl_xferAck(25),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => r2_5g_f01_snap_vacc6_addr_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc6_bram_ramif : r2_5g_f01_snap_vacc6_bram_ramif_wrapper
+    port map (
+      bram_rst => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => r2_5g_f01_snap_vacc6_bram_addr,
+      data_in => r2_5g_f01_snap_vacc6_bram_data_in,
+      data_out => r2_5g_f01_snap_vacc6_bram_data_out,
+      we => r2_5g_f01_snap_vacc6_bram_we
+    );
+
+  r2_5g_f01_snap_vacc6_bram_ramblk : r2_5g_f01_snap_vacc6_bram_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => r2_5g_f01_snap_vacc6_bram_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc6_bram : r2_5g_f01_snap_vacc6_bram_wrapper
+    port map (
+      opb_clk => sys_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(832 to 863),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(26),
+      sln_errack => opb0_Sl_errAck(26),
+      sln_toutsup => opb0_Sl_toutSup(26),
+      sln_retry => opb0_Sl_retry(26),
+      bram_rst => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc6_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc6_ctrl : r2_5g_f01_snap_vacc6_ctrl_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(864 to 895),
+      Sl_errAck => opb0_Sl_errAck(27),
+      Sl_retry => opb0_Sl_retry(27),
+      Sl_toutSup => opb0_Sl_toutSup(27),
+      Sl_xferAck => opb0_Sl_xferAck(27),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => r2_5g_f01_snap_vacc6_ctrl_user_data_out,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc7_addr : r2_5g_f01_snap_vacc7_addr_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(896 to 927),
+      Sl_errAck => opb0_Sl_errAck(28),
+      Sl_retry => opb0_Sl_retry(28),
+      Sl_toutSup => opb0_Sl_toutSup(28),
+      Sl_xferAck => opb0_Sl_xferAck(28),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_in => r2_5g_f01_snap_vacc7_addr_user_data_in,
+      user_clk => adc0_clk
+    );
+
+  r2_5g_f01_snap_vacc7_bram_ramif : r2_5g_f01_snap_vacc7_bram_ramif_wrapper
+    port map (
+      bram_rst => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Dout,
+      clk_in => adc0_clk,
+      addr => r2_5g_f01_snap_vacc7_bram_addr,
+      data_in => r2_5g_f01_snap_vacc7_bram_data_in,
+      data_out => r2_5g_f01_snap_vacc7_bram_data_out,
+      we => r2_5g_f01_snap_vacc7_bram_we
+    );
+
+  r2_5g_f01_snap_vacc7_bram_ramblk : r2_5g_f01_snap_vacc7_bram_ramblk_wrapper
+    port map (
+      BRAM_Rst_A => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Rst,
+      BRAM_Clk_A => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Clk,
+      BRAM_EN_A => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_EN,
+      BRAM_WEN_A => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_WEN,
+      BRAM_Addr_A => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Addr,
+      BRAM_Din_A => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Din,
+      BRAM_Dout_A => r2_5g_f01_snap_vacc7_bram_ramblk_porta_BRAM_Dout,
+      BRAM_Rst_B => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Rst,
+      BRAM_Clk_B => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Clk,
+      BRAM_EN_B => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_EN,
+      BRAM_WEN_B => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_WEN,
+      BRAM_Addr_B => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Addr,
+      BRAM_Din_B => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Din,
+      BRAM_Dout_B => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc7_bram : r2_5g_f01_snap_vacc7_bram_wrapper
+    port map (
+      opb_clk => sys_clk,
+      opb_rst => opb0_OPB_Rst,
+      opb_abus => opb0_OPB_ABus,
+      opb_dbus => opb0_OPB_DBus,
+      sln_dbus => opb0_Sl_DBus(928 to 959),
+      opb_select => opb0_OPB_select,
+      opb_rnw => opb0_OPB_RNW,
+      opb_seqaddr => opb0_OPB_seqAddr,
+      opb_be => opb0_OPB_BE,
+      sln_xferack => opb0_Sl_xferAck(29),
+      sln_errack => opb0_Sl_errAck(29),
+      sln_toutsup => opb0_Sl_toutSup(29),
+      sln_retry => opb0_Sl_retry(29),
+      bram_rst => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Rst,
+      bram_clk => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Clk,
+      bram_en => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_EN,
+      bram_wen => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_WEN,
+      bram_addr => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Addr,
+      bram_din => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Din,
+      bram_dout => r2_5g_f01_snap_vacc7_bram_ramblk_portb_BRAM_Dout
+    );
+
+  r2_5g_f01_snap_vacc7_ctrl : r2_5g_f01_snap_vacc7_ctrl_wrapper
+    port map (
+      OPB_Clk => sys_clk,
+      OPB_Rst => opb0_OPB_Rst,
+      Sl_DBus => opb0_Sl_DBus(960 to 991),
+      Sl_errAck => opb0_Sl_errAck(30),
+      Sl_retry => opb0_Sl_retry(30),
+      Sl_toutSup => opb0_Sl_toutSup(30),
+      Sl_xferAck => opb0_Sl_xferAck(30),
+      OPB_ABus => opb0_OPB_ABus,
+      OPB_BE => opb0_OPB_BE,
+      OPB_DBus => opb0_OPB_DBus,
+      OPB_RNW => opb0_OPB_RNW,
+      OPB_select => opb0_OPB_select,
+      OPB_seqAddr => opb0_OPB_seqAddr,
+      user_data_out => r2_5g_f01_snap_vacc7_ctrl_user_data_out,
+      user_clk => adc0_clk
+    );
+
+end architecture STRUCTURE;
+

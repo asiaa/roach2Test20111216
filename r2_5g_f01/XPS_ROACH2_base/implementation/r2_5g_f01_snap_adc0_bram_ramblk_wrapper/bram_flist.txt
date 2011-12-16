@@ -1,0 +1,15 @@
+# Output products list for <bram>
+_xmsgs/
+blk_mem_gen_ds512.pdf
+bram.asy
+bram.gise
+bram.ise
+bram.ngc
+bram.v
+bram.veo
+bram.xco
+bram.xise
+bram_flist.txt
+bram_readme.txt
+bram_xdb/tmp/
+bram_xmdf.tcl

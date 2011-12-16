@@ -1,0 +1,71 @@
+Saved contents of this file to system_log.11.3 during revup to EDK 11.4.
+
+=====================
+Opened log file
+=====================
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 11.4 Build EDK_LS4.68
+
+Xilinx EDK 11.4 Build EDK_LS4.68
+
+WARNING:EDK - IPNAME:opb_v20 INSTANCE:opb0 -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 136 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_adc0_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 387 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc0_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 447 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc0_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 454 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc1_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 502 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc1_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 509 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc2_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 557 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc2_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 564 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc3_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 612 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc3_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 619 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc4_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 667 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc4_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 674 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc5_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 722 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc5_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 729 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc6_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 777 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc6_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 784 -
+   deprecated core for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:bram_block INSTANCE:r2_5g_f01_snap_vacc7_bram_ramblk -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 832 -
+   EARLY ACCESS version not verified on hardware for architecture 'virtex6sx'!
+WARNING:EDK - IPNAME:opb_bram_if_cntlr INSTANCE:r2_5g_f01_snap_vacc7_bram -
+   /home/homin/roach2/model/r2_5g_f01/XPS_ROACH2_base/system.mhs line 839 -
+   deprecated core for architecture 'virtex6sx'!
+
+XPS% Evaluating file run_xps.tcl
+No changes to be saved in MSS file
+Saved project XMP file
