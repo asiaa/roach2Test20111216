@@ -1,0 +1,164 @@
+--------------------------------------------------------------------------------
+Release 11.4 Trace  (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/11.1/ISE/bin/lin64/unwrapped/trce -ise ../__xps/ise/system.ise -e
+200 -xml system.twx system.ncd system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc6vsx475t,ff1759,C,-1 (ADVANCED 1.02 2009-11-16)
+Report level:             error report, limited to 200 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET 
+"adc5g_r2_char_b02_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc5g/adc_clk"         
+PERIOD = 4 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"adc5g_r2_char_b02_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc5g/adc_clk"         
+PERIOD = 4 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.428ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"adc5g_r2_char_b02_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc5g/mmcm_clkout1" 
+derived from  NET 
+"adc5g_r2_char_b02_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc5g/adc_clk"        
+PERIOD = 4 ns HIGH 50%;  multiplied by 2.00 to 8 nS   
+
+ 2210 paths analyzed, 1255 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   7.091ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"adc5g_r2_char_b02_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc5g/mmcm_clkout0" 
+derived from  NET 
+"adc5g_r2_char_b02_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc5g/adc_clk"        
+PERIOD = 4 ns HIGH 50%; 
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.429ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sys_clk = PERIOD TIMEGRP "sys_clk" 100 MHz HIGH 50%;
+
+ 87952 paths analyzed, 1536 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.367ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for adc5g_r2_char_b02_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc5g/adc_clk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|adc5g_r2_char_b02_asiaa_adc5g/a|      4.000ns|      2.428ns|      3.546ns|            0|            0|            0|         2210|
+|dc5g_r2_char_b02_asiaa_adc5g/ad|             |             |             |             |             |             |             |
+|c_clk                          |             |             |             |             |             |             |             |
+| adc5g_r2_char_b02_asiaa_adc5g/|      8.000ns|      7.091ns|          N/A|            0|            0|         2210|            0|
+| adc5g_r2_char_b02_asiaa_adc5g/|             |             |             |             |             |             |             |
+| mmcm_clkout1                  |             |             |             |             |             |             |             |
+| adc5g_r2_char_b02_asiaa_adc5g/|      4.000ns|      1.429ns|          N/A|            0|            0|            0|            0|
+| adc5g_r2_char_b02_asiaa_adc5g/|             |             |             |             |             |             |             |
+| mmcm_clkout0                  |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock adc0clk_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    7.091|         |         |         |
+adc0clk_p      |    7.091|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc0clk_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    7.091|         |         |         |
+adc0clk_p      |    7.091|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sys_clk_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sys_clk_n      |    8.367|         |         |         |
+sys_clk_p      |    8.367|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sys_clk_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sys_clk_n      |    8.367|         |         |         |
+sys_clk_p      |    8.367|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 90162 paths, 0 nets, and 4168 connections
+
+Design statistics:
+   Minimum period:   8.367ns   (Maximum frequency: 119.517MHz)
+
+
+Analysis completed Tue Dec 13 16:36:10 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 1059 MB
+
+Total REAL time to Trace completion: 27 secs 
+Total CPU time to Trace completion: 26 secs 
+
+
+

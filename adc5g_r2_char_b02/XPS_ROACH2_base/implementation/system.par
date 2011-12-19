@@ -1,0 +1,213 @@
+Release 11.4 par L.68 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+hominDeskSL::  Tue Dec 13 16:33:36 2011
+
+par -ise ../__xps/ise/system.ise -xe n -w -ol high system_map.ncd system.ncd
+system.pcf 
+
+
+Constraints file: system.pcf.
+   "system" is an NCD, version 3.2, device xc6vsx475t, package ff1759, speed -1
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:56 - Part 'xc6vsx475t' is not a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+WARNING:ConstraintSystem:65 - Constraint <NET "adc5g_r2_char_b02_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc5g/adc_clk"     
+      PERIOD = 4 ns HIGH 50%;> [system.pcf(856)] overrides constraint <NET
+   "adc5g_r2_char_b02_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc5g/adc_clk"         PERIOD = 4 ns HIGH 50%;>
+   [system.pcf(854)].
+
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "ADVANCED 1.02 2009-11-16".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           5 out of 32     15%
+   Number of DSP48E1s                        1 out of 2016    1%
+   Number of ILOGICE1s                      63 out of 1080    5%
+   Number of External IOBs                 140 out of 840    16%
+      Number of LOCed IOBs                 139 out of 140    99%
+
+   Number of ISERDESE1s                     32 out of 1080    2%
+   Number of MMCM_ADVs                       2 out of 18     11%
+   Number of OLOGICE1s                      33 out of 1080    3%
+   Number of RAMB36E1s                      16 out of 1064    1%
+   Number of Slice Registers               736 out of 595200  1%
+      Number used as Flip Flops            736
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                   1065 out of 297600  1%
+   Number of Slice LUT-Flip Flop pairs    1091 out of 297600  1%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 23 secs 
+Finished initial Timing Analysis.  REAL time: 23 secs 
+
+WARNING:Par:288 - The signal opb0/OPB_beAck has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal opb0/OPB_hwAck has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal opb0/OPB_dwAck has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal opb0/OPB_fwAck has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Wirelength Stats for nets on all pins. NumPins: 6596
+
+Phase  1  : 8716 unrouted;      REAL time: 36 secs 
+
+Phase  2  : 6035 unrouted;      REAL time: 39 secs 
+
+Phase  3  : 1739 unrouted;      REAL time: 54 secs 
+
+Phase  4  : 1738 unrouted; (Setup:0, Hold:1427, Component Switching Limit:0)     REAL time: 1 mins 36 secs 
+
+Updating file: system.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:1243, Component Switching Limit:0)     REAL time: 1 mins 39 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:1243, Component Switching Limit:0)     REAL time: 1 mins 39 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:1243, Component Switching Limit:0)     REAL time: 1 mins 39 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:1243, Component Switching Limit:0)     REAL time: 1 mins 39 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 46 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 47 secs 
+Total REAL time to Router completion: 1 mins 47 secs 
+Total CPU time to Router completion: 1 mins 45 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|adc5g_r2_char_b02_sn |              |      |      |            |             |
+|apshot0_bram_ramblk_ |              |      |      |            |             |
+|      portb_BRAM_Clk |BUFGCTRL_X0Y31| No   |  218 |  0.261     |  2.028      |
++---------------------+--------------+------+------+------------+-------------+
+|          adc0_psclk |BUFGCTRL_X0Y30| No   |   88 |  0.592     |  2.420      |
++---------------------+--------------+------+------+------------+-------------+
+|            adc0_clk | BUFGCTRL_X0Y2| No   |  127 |  0.235     |  2.113      |
++---------------------+--------------+------+------+------------+-------------+
+|adc5g_r2_char_b02_as |              |      |      |            |             |
+|iaa_adc5g/adc5g_r2_c |              |      |      |            |             |
+|har_b02_asiaa_adc5g/ |              |      |      |            |             |
+|             isd_clk | BUFGCTRL_X0Y1| No   |   64 |  0.207     |  2.189      |
++---------------------+--------------+------+------+------------+-------------+
+|            net_gnd0 |         Local|      |   29 |  0.121     |  1.968      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "adc5g_r2_char_b0 | SETUP       |     0.909ns|     7.091ns|       0|           0
+  2_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc | HOLD        |     0.015ns|            |       0|           0
+  5g/mmcm_clkout1" derived from  NET "adc5g |             |            |            |        |            
+  _r2_char_b02_asiaa_adc5g/adc5g_r2_char_b0 |             |            |            |        |            
+  2_asiaa_adc5g/adc_clk"        PERIOD = 4  |             |            |            |        |            
+  ns HIGH 50%                               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "adc5g_r2_char_b02_asiaa_adc5g/adc5g_ | MINLOWPULSE |     1.572ns|     2.428ns|       0|           0
+  r2_char_b02_asiaa_adc5g/adc_clk"          |             |            |            |        |            
+  PERIOD = 4 ns HIGH 50%                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_sys_clk = PERIOD TIMEGRP "sys_clk" 100 | SETUP       |     1.633ns|     8.367ns|       0|           0
+   MHz HIGH 50%                             | HOLD        |     0.118ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "adc5g_r2_char_b0 | MINPERIOD   |     2.571ns|     1.429ns|       0|           0
+  2_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc |             |            |            |        |            
+  5g/mmcm_clkout0" derived from  NET "adc5g |             |            |            |        |            
+  _r2_char_b02_asiaa_adc5g/adc5g_r2_char_b0 |             |            |            |        |            
+  2_asiaa_adc5g/adc_clk"        PERIOD = 4  |             |            |            |        |            
+  ns HIGH 50%                               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "adc5g_r2_char_b02_asiaa_adc5g/adc5g_ | N/A         |         N/A|         N/A|     N/A|         N/A
+  r2_char_b02_asiaa_adc5g/adc_clk"          |             |            |            |        |            
+  PERIOD = 4 ns HIGH 50%                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for adc5g_r2_char_b02_asiaa_adc5g/adc5g_r2_char_b02_asiaa_adc5g/adc_clk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|adc5g_r2_char_b02_asiaa_adc5g/a|      4.000ns|      2.428ns|      3.546ns|            0|            0|            0|         2210|
+|dc5g_r2_char_b02_asiaa_adc5g/ad|             |             |             |             |             |             |             |
+|c_clk                          |             |             |             |             |             |             |             |
+| adc5g_r2_char_b02_asiaa_adc5g/|      8.000ns|      7.091ns|          N/A|            0|            0|         2210|            0|
+| adc5g_r2_char_b02_asiaa_adc5g/|             |             |             |             |             |             |             |
+| mmcm_clkout1                  |             |             |             |             |             |             |             |
+| adc5g_r2_char_b02_asiaa_adc5g/|      4.000ns|      1.429ns|          N/A|            0|            0|            0|            0|
+| adc5g_r2_char_b02_asiaa_adc5g/|             |             |             |             |             |             |             |
+| mmcm_clkout0                  |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 4 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 2 mins 4 secs 
+Total CPU time to PAR completion: 2 mins 1 secs 
+
+Peak Memory Usage:  1207 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 7
+Number of info messages: 0
+
+Writing design to file system.ncd
+
+
+
+PAR done!

@@ -1,0 +1,347 @@
+# ##############################################################################
+# Target Board:  ROACH v2.0
+# Family:	     virtex6
+# Device:	     xc6vsx475t
+# Package:	     ff1759
+# Speed Grade:	 -1
+# Processor:     None
+# System clock frequency: 100.000000 MHz
+# ##############################################################################
+
+ PARAMETER VERSION = 2.1.0
+
+
+# Clock Ports
+ PORT sys_clk_n = sys_clk_n, DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+ PORT sys_clk_p = sys_clk_p, DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+ #PORT aux_clk_n = aux_clk_n, DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+ #PORT aux_clk_p = aux_clk_p, DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+PORT aux_clk_n  = aux_clk_n,  DIR = I, SIGIS = CLK, CLK_FREQ = 250000000
+PORT aux_clk_p  = aux_clk_p,  DIR = I, SIGIS = CLK, CLK_FREQ = 250000000
+# PORT aux_synci_n = aux_synci_n,   DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+# PORT aux_synci_p = aux_synci_p,   DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+# PORT aux_synco_n = aux_synco_n,   DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+# PORT aux_synco_p = aux_synco_p,   DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+# EPB Ports
+ PORT epb_clk_in = epb_clk_in, DIR = I
+ PORT epb_data = epb_data, DIR = IO, VEC = [0:31]
+ PORT epb_addr = epb_addr, DIR = I, VEC = [5:29]
+ PORT epb_cs_n = epb_cs_n, DIR = I
+ PORT epb_be_n = epb_be_n, DIR = I, VEC = [0:3]
+ PORT epb_r_w_n = epb_r_w_n, DIR = I
+ PORT epb_oe_n = epb_oe_n, DIR = I
+ PORT epb_doe_n = epb_doe_n, DIR = O
+ PORT epb_rdy = epb_rdy, DIR = O
+ PORT ppc_irq_n = ppc_irq_n, DIR = O
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### added 2011-05-05 kim.guzzino (copy of Homin's with name change)
+### changed 2011-08-04 rurik to adc5g
+#
+# control wires for adc0
+PORT adc0_adc3wire_clk = adc0_adc3wire_clk, DIR = O
+PORT adc0_adc3wire_data = adc0_adc3wire_data, DIR = O
+PORT adc0_adc3wire_spi_rst= adc0_adc3wire_spi_rst, DIR = O
+PORT adc0_modepin = adc0_modepin, DIR = O
+### added 2011-05-05 kim.guzzino same interface as adc_5g
+### changed 2011-08-04 rurik to adc5g
+#
+BEGIN opb_adc5g_controller
+ #
+ PARAMETER INSTANCE     = opb_adc5g_controller_0
+ PARAMETER HW_VER       = 1.00.a
+ PARAMETER C_BASEADDR   = 0x00020000
+ PARAMETER C_HIGHADDR   = 0x0002ffff
+ BUS_INTERFACE SOPB = opb0
+ PARAMETER INITIAL_CONFIG_MODE_0 = 0
+ # 
+ # misc ports
+ PORT OPB_Clk = epb_clk
+ #
+ # control signals for adc0
+ PORT adc0_adc3wire_clk     = adc0_adc3wire_clk
+ PORT adc0_adc3wire_data    = adc0_adc3wire_data
+ PORT adc0_adc3wire_spi_rst = adc0_adc3wire_spi_rst
+ PORT adc0_modepin          = adc0_modepin
+ PORT adc0_dcm_reset        = adc0_dcm_reset
+ PORT adc0_psclk            = adc0_psclk
+ PORT adc0_psen             = adc0_psen
+ PORT adc0_psincdec         = adc0_psincdec
+ PORT adc0_psdone           = adc0_psdone
+ PORT adc0_clk              = adc0_clk
+ #
+ # control signals for adc1
+ #
+END
+
+BEGIN roach_infrastructure
+ PARAMETER INSTANCE = infrastructure_inst
+ PARAMETER HW_VER = 1.00.a
+  PARAMETER CLK_FREQ = 250
+ #PARAMETER CLK_FREQ = 100
+ PORT sys_clk_n = sys_clk_n
+ PORT sys_clk_p = sys_clk_p
+ PORT aux_clk_n = aux_clk_n
+ PORT aux_clk_p = aux_clk_p
+# PORT aux_synci_n   = aux1_clk_n
+# PORT aux_synci_p   = aux1_clk_p
+# PORT aux_synco_n   = aux1_clk_n
+# PORT aux_synco_p   = aux1_clk_p
+ PORT epb_clk_in = epb_clk_in
+ PORT sys_clk = sys_clk
+ PORT sys_clk90 = sys_clk90
+ PORT sys_clk180 = sys_clk180
+ PORT sys_clk270 = sys_clk270
+ PORT sys_clk_lock = sys_clk_lock
+ PORT sys_clk2x = sys_clk2x
+ PORT sys_clk2x90 = sys_clk2x90
+ PORT sys_clk2x180 = sys_clk2x180
+ PORT sys_clk2x270 = sys_clk2x270
+# PORT aux_clk       = aux_clk
+# PORT aux_clk90     = aux_clk90
+# PORT aux_clk180    = aux_clk180
+# PORT aux_clk270    = aux_clk270
+# PORT aux_clk2x     = aux_clk2x
+# PORT aux_clk2x90   = aux_clk2x90
+# PORT aux_clk2x180  = aux_clk2x180
+# PORT aux_clk2x270  = aux_clk2x270
+ PORT epb_clk = epb_clk
+ PORT idelay_rst = sys_reset
+ PORT idelay_rdy = idelay_rdy
+END
+
+BEGIN reset_block
+ PARAMETER INSTANCE = reset_block_inst
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER DELAY = 10
+ PARAMETER WIDTH = 50
+ PORT clk = sys_clk
+ PORT async_reset_i = 0b0
+ PORT reset_i = 0b0
+ PORT reset_o = sys_reset
+END
+
+BEGIN opb_v20
+ PARAMETER INSTANCE = opb0
+ PARAMETER HW_VER = 1.10.c
+ PARAMETER C_EXT_RESET_HIGH = 1
+ PARAMETER C_REG_GRANTS = 0
+ PORT SYS_Rst = 0b0
+ PORT OPB_Clk = sys_clk
+END
+
+BEGIN epb32_opb_bridge
+ PARAMETER INSTANCE = epb_opb_bridge_inst
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE MOPB = opb0
+ PORT epb_clk = epb_clk
+ PORT epb_cs_n = epb_cs_n
+ PORT epb_oe_n = epb_oe_n
+ PORT epb_r_w_n = epb_r_w_n
+ PORT epb_be_n = epb_be_n
+ PORT epb_addr = epb_addr
+ PORT epb_doe_n = epb_doe_n
+ PORT epb_data_oe_n = epb_data_oe_n
+ PORT epb_data_i = epb_data_i
+ PORT epb_data_o = epb_data_o
+ PORT epb_rdy = epb_rdy
+END
+
+BEGIN epb_infrastructure
+ PARAMETER INSTANCE = epb_infrastructure_inst
+ PARAMETER HW_VER = 1.00.a
+ PORT epb_data_oe_n_i = epb_data_oe_n
+ PORT epb_data_out_i = epb_data_o
+ PORT epb_data_in_o = epb_data_i
+ PORT epb_data_buf = epb_data
+END
+
+BEGIN sys_block
+ PARAMETER INSTANCE = sys_block_inst
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER BOARD_ID = 0xbabe
+ PARAMETER REV_MAJOR = 0x1
+ PARAMETER REV_MINOR = 0x0
+ PARAMETER REV_RCS = 0x0
+ PARAMETER RCS_UPTODATE = 0x0
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x0000FFFF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = sys_clk
+ PORT soft_reset = soft_reset
+ PORT irq_n = ppc_irq_n
+ PORT app_irq = 0x0000
+ #PORT fab_clk    = sys_clk
+  PORT fab_clk    = adc0_clk
+END
+
+
+##############################################
+# User XSG IP core                           #
+##############################################
+
+BEGIN adc5g_r2_char_b02
+ PARAMETER INSTANCE = adc5g_r2_char_b02_XSG_core_config
+ PARAMETER HW_VER = 1.00.a
+ PORT clk = adc0_clk
+ PORT adc5g_r2_char_b02_asiaa_adc5g_sync = adc5g_r2_char_b02_asiaa_adc5g_sync
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_i0 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i0
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_i1 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i1
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_i2 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i2
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_i3 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i3
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_i4 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i4
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_i5 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i5
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_i6 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i6
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_i7 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i7
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_q0 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q0
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_q1 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q1
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_q2 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q2
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_q3 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q3
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_q4 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q4
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_q5 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q5
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_q6 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q6
+ PORT adc5g_r2_char_b02_asiaa_adc5g_user_data_q7 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q7
+ PORT adc5g_r2_char_b02_snapshot0_bram_data_out = adc5g_r2_char_b02_snapshot0_bram_data_out
+ PORT adc5g_r2_char_b02_snapshot0_bram_addr = adc5g_r2_char_b02_snapshot0_bram_addr
+ PORT adc5g_r2_char_b02_snapshot0_bram_data_in = adc5g_r2_char_b02_snapshot0_bram_data_in
+ PORT adc5g_r2_char_b02_snapshot0_bram_we = adc5g_r2_char_b02_snapshot0_bram_we
+ PORT adc5g_r2_char_b02_snapshot0_ctrl_user_data_out = adc5g_r2_char_b02_snapshot0_ctrl_user_data_out
+ PORT adc5g_r2_char_b02_snapshot0_status_user_data_in = adc5g_r2_char_b02_snapshot0_status_user_data_in
+END
+
+############################
+# Simulink interfaces      #
+############################
+
+# adc5g_r2_char_b02/XSG core config
+
+
+# adc5g_r2_char_b02/asiaa_adc5g
+BEGIN adc5g_dmux1_interface
+ PARAMETER INSTANCE = adc5g_r2_char_b02_asiaa_adc5g
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER CLKIN_PERIOD = 4.0000
+ PARAMETER MMCM_M = 6.0000
+ PARAMETER MMCM_D = 2
+ PARAMETER MMCM_O0 = 3
+ PARAMETER MMCM_O1 = 6
+ PARAMETER USE_ADC0 = 1
+ PARAMETER USE_ADC1 = 0
+ PARAMETER MODE = 0
+ PORT sync = adc5g_r2_char_b02_asiaa_adc5g_sync
+ PORT user_data_i0 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i0
+ PORT user_data_i1 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i1
+ PORT user_data_i2 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i2
+ PORT user_data_i3 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i3
+ PORT user_data_i4 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i4
+ PORT user_data_i5 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i5
+ PORT user_data_i6 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i6
+ PORT user_data_i7 = adc5g_r2_char_b02_asiaa_adc5g_user_data_i7
+ PORT user_data_q0 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q0
+ PORT user_data_q1 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q1
+ PORT user_data_q2 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q2
+ PORT user_data_q3 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q3
+ PORT user_data_q4 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q4
+ PORT user_data_q5 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q5
+ PORT user_data_q6 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q6
+ PORT user_data_q7 = adc5g_r2_char_b02_asiaa_adc5g_user_data_q7
+ PORT adc_clk_p_i = adc0clk_p
+ PORT adc_clk_n_i = adc0clk_n
+ PORT adc_sync_p = adc0sync_p
+ PORT adc_sync_n = adc0sync_n
+ PORT adc_data0_p_i = adc0data0_p_i
+ PORT adc_data0_n_i = adc0data0_n_i
+ PORT adc_data1_p_i = adc0data1_p_i
+ PORT adc_data1_n_i = adc0data1_n_i
+ PORT adc_data2_p_i = adc0data2_p_i
+ PORT adc_data2_n_i = adc0data2_n_i
+ PORT adc_data3_p_i = adc0data3_p_i
+ PORT adc_data3_n_i = adc0data3_n_i
+ PORT ctrl_clk_in = adc0_clk
+ PORT ctrl_clk_out = adc0_clk
+ PORT ctrl_clk90_out = adc0_clk90
+ PORT ctrl_clk180_out = adc0_clk180
+ PORT ctrl_clk270_out = adc0_clk270
+ PORT ctrl_dcm_locked = adc0_dcm_locked
+ PORT dcm_reset = adc0_dcm_reset
+ PORT dcm_psdone = adc0_psdone
+ PORT dcm_psclk = adc0_psclk
+ PORT dcm_psen = adc0_psen
+ PORT dcm_psincdec = adc0_psincdec
+END
+PORT adc0clk_p = adc0clk_p, DIR = in, SIGIS = CLK, CLK_FREQ = 250000000
+PORT adc0clk_n = adc0clk_n, DIR = in, SIGIS = CLK, CLK_FREQ = 250000000
+PORT adc0sync_p = adc0sync_p, DIR = in
+PORT adc0sync_n = adc0sync_n, DIR = in
+PORT adc0data0_p_i = adc0data0_p_i, DIR = in, VEC = [7:0]
+PORT adc0data0_n_i = adc0data0_n_i, DIR = in, VEC = [7:0]
+PORT adc0data1_p_i = adc0data1_p_i, DIR = in, VEC = [7:0]
+PORT adc0data1_n_i = adc0data1_n_i, DIR = in, VEC = [7:0]
+PORT adc0data2_p_i = adc0data2_p_i, DIR = in, VEC = [7:0]
+PORT adc0data2_n_i = adc0data2_n_i, DIR = in, VEC = [7:0]
+PORT adc0data3_p_i = adc0data3_p_i, DIR = in, VEC = [7:0]
+PORT adc0data3_n_i = adc0data3_n_i, DIR = in, VEC = [7:0]
+
+# adc5g_r2_char_b02/snapshot0/bram
+BEGIN bram_block_custom
+ PARAMETER INSTANCE = adc5g_r2_char_b02_snapshot0_bram_ramblk
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_PORTA_DWIDTH = 128
+ PARAMETER C_PORTA_NUM_WE = 16
+ PARAMETER C_PORTA_DEPTH  = 12
+ PARAMETER C_PORTB_DEPTH  = 14
+ PORT clk           = adc0_clk
+ PORT bram_addr     = adc5g_r2_char_b02_snapshot0_bram_addr    
+ PORT bram_rd_data  = adc5g_r2_char_b02_snapshot0_bram_data_out
+ PORT bram_wr_data  = adc5g_r2_char_b02_snapshot0_bram_data_in 
+ PORT bram_we       = adc5g_r2_char_b02_snapshot0_bram_we      
+ BUS_INTERFACE PORTB = adc5g_r2_char_b02_snapshot0_bram_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = adc5g_r2_char_b02_snapshot0_bram
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01000000
+ PARAMETER C_HIGHADDR = 0x0100FFFF
+ BUS_INTERFACE SOPB = opb0
+ BUS_INTERFACE PORTA = adc5g_r2_char_b02_snapshot0_bram_ramblk_portb
+END
+
+
+# adc5g_r2_char_b02/snapshot0/ctrl
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = adc5g_r2_char_b02_snapshot0_ctrl
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01010000
+ PARAMETER C_HIGHADDR = 0x010100FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = sys_clk
+ PORT user_data_out = adc5g_r2_char_b02_snapshot0_ctrl_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# adc5g_r2_char_b02/snapshot0/status
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = adc5g_r2_char_b02_snapshot0_status
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01010100
+ PARAMETER C_HIGHADDR = 0x010101FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = sys_clk
+ PORT user_data_in = adc5g_r2_char_b02_snapshot0_status_user_data_in
+ PORT user_clk = adc0_clk
+END
+

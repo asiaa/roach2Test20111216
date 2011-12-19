@@ -1,0 +1,13 @@
+WARNING:PhysDesignRules:372 - Gated clock. Clock net net_gnd0 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <opb0/OPB_beAck> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <opb0/OPB_hwAck> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <opb0/OPB_dwAck> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <opb0/OPB_fwAck> is incomplete. The
+   signal does not drive any load pins in the design.
+DRC detected 0 errors and 5 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

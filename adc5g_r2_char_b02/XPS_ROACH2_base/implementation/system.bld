@@ -1,0 +1,2879 @@
+Release 11.4 ngdbuild L.68 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/11.1/ISE/bin/lin64/unwrapped/ngdbuild -ise
+../__xps/ise/system.ise -p xc6vsx475tff1759-1 -nt timestamp -sd ../pcores -uc
+system.ucf
+/home/homin/roach2/model/adc5g_r2_char_b02/XPS_ROACH2_base/implementation/system
+.ngc system.ngd
+
+Reading NGO file
+"/home/homin/roach2/model/adc5g_r2_char_b02/XPS_ROACH2_base/implementation/syste
+m.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+Checking Partitions ...
+
+Checking expanded design ...
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[0].iserdes3" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[0].iserdes2" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[0].iserdes1" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[0].iserdes0" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[1].iserdes3" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[1].iserdes2" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[1].iserdes1" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[1].iserdes0" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[2].iserdes3" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[2].iserdes2" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[2].iserdes1" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[2].iserdes0" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[3].iserdes3" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[3].iserdes2" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[3].iserdes1" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[3].iserdes0" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[4].iserdes3" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[4].iserdes2" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[4].iserdes1" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[4].iserdes0" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[5].iserdes3" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[5].iserdes2" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[5].iserdes1" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[5].iserdes0" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[6].iserdes3" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[6].iserdes2" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[6].iserdes1" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[6].iserdes0" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[7].iserdes3" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[7].iserdes2" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[7].iserdes1" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "BITSLIP_ENABLE" is not allowed on symbol
+   "adc5g_r2_char_b02_asiaa_adc5g/iserdesx[7].iserdes0" of type "ISERDESE1". 
+   This attribute will be ignored.
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/default_
+   clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_
+   prim_array[0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/bram_82d8c15af1/calc_add_bb40a66d72/add_sub
+   /prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/bram_82d8c15af1/calc_add_bb40a66d72/add_sub
+   /prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].
+   bit_is_1.fdse_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/bram_82d8c15af1/calc_add_bb40a66d72/add_sub
+   /prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/delay2/srl_delay.synt
+   h_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2' has
+   unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/delay3/srl_delay.synt
+   h_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2' has
+   unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /delay1/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde
+   _used.u2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   27].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   26].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   25].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   24].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   23].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   22].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   21].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   20].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   19].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   18].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   17].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   16].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   15].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   14].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   13].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   12].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   11].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   10].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   09].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   08].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   07].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   06].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   05].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   04].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   03].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   02].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   01].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   00].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9
+   9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9
+   8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9
+   7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9
+   6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9
+   5].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9
+   4].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9
+   3].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9
+   2].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9
+   1].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9
+   0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8
+   9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8
+   8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8
+   7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8
+   6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8
+   5].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8
+   4].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8
+   3].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8
+   2].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8
+   1].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8
+   0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7
+   9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7
+   8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7
+   7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7
+   6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7
+   5].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7
+   4].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7
+   3].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7
+   2].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7
+   1].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7
+   0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6
+   9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6
+   8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6
+   7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6
+   6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6
+   5].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6
+   4].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6
+   3].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6
+   2].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6
+   1].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6
+   0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5
+   9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5
+   8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5
+   7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5
+   6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5
+   5].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5
+   4].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5
+   3].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5
+   2].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5
+   1].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5
+   0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4
+   9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4
+   8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4
+   7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4
+   6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4
+   5].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4
+   4].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4
+   3].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4
+   2].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4
+   1].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4
+   0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3
+   9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3
+   8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3
+   7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3
+   6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3
+   5].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3
+   4].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3
+   3].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3
+   2].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3
+   1].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3
+   0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2
+   9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2
+   8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2
+   7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2
+   6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2
+   5].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2
+   4].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2
+   3].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2
+   2].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2
+   1].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2
+   0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   9].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   8].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   7].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   6].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   5].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   4].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   3].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   2].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   1].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[127
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[126
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[125
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[124
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[123
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[122
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[121
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[120
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[119
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[118
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[117
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[116
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[115
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[114
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[113
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[112
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[111
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[110
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[109
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[108
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[107
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[106
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[105
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[104
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[103
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[102
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[101
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[100
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[99]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[98]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[97]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[96]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[95]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[94]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[93]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[92]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[91]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[90]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[89]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[88]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[87]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[86]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[85]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[84]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[83]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[82]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[81]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[80]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[79]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[78]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[77]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[76]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[75]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[74]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[73]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[72]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[71]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[70]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[69]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[68]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[67]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[66]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[65]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[64]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[63]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[62]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[61]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[60]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[59]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[58]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[57]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[56]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[55]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[54]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[53]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[52]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[51]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[50]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[49]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[48]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[47]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[46]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[45]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[44]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[43]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[42]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[41]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[40]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[39]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[38]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[37]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[36]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[35]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[34]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[33]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[32]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[31]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[30]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[29]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[28]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[27]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[26]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[25]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[24]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[23]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[22]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[21]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[20]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[19]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[18]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[17]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[127
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[126
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[125
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[124
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[123
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[122
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[121
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[120
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[119
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[118
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[117
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[116
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[115
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[114
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[113
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[112
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[111
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[110
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[109
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[108
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[107
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[106
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[105
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[104
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[103
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[102
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[101
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[100
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[99]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[98]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[97]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[96]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[95]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[94]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[93]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[92]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[91]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[90]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[89]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[88]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[87]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[86]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[85]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[84]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[83]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[82]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[81]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[80]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[79]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[78]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[77]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[76]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[75]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[74]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[73]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[72]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[71]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[70]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[69]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[68]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[67]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[66]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[65]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[64]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[63]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[62]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[61]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[60]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[59]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[58]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[57]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[56]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[55]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[54]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[53]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[52]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[51]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[50]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[49]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[48]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[47]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[46]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[45]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[44]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[43]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[42]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[41]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[40]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[39]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[38]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[37]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[36]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[35]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[34]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[33]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[32]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[31]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[30]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[29]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[28]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[27]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[26]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[25]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[24]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[23]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[22]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[21]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[20]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[19]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[18]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[17]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register2/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[127
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[126
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[125
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[124
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[123
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[122
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[121
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[120
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[119
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[118
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[117
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[116
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[115
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[114
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[113
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[112
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[111
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[110
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[109
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[108
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[107
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[106
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[105
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[104
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[103
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[102
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[101
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[100
+   ].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[99]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[98]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[97]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[96]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[95]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[94]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[93]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[92]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[91]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[90]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[89]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[88]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[87]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[86]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[85]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[84]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[83]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[82]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[81]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[80]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[79]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[78]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[77]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[76]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[75]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[74]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[73]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[72]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[71]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[70]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[69]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[68]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[67]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[66]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[65]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[64]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[63]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[62]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[61]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[60]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[59]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[58]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[57]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[56]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[55]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[54]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[53]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[52]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[51]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[50]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[49]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[48]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[47]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[46]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[45]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[44]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[43]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[42]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[41]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[40]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[39]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[38]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[37]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[36]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[35]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[34]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[33]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[32]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[31]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[30]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[29]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[28]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[27]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[26]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[25]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[24]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[23]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[22]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[21]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[20]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[19]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[18]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[17]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[16]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[12]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[11]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10]
+   .bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[7].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[6].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/basic_ctrl_252e55e502/dram_munge_a5b1278618
+   /register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].
+   bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[15].ram.r/v5_noinit.ram/TRUE_DP.SING
+   LE_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[14].ram.r/v5_noinit.ram/TRUE_DP.SING
+   LE_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[13].ram.r/v5_noinit.ram/TRUE_DP.SING
+   LE_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[12].ram.r/v5_noinit.ram/TRUE_DP.SING
+   LE_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[11].ram.r/v5_noinit.ram/TRUE_DP.SING
+   LE_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[10].ram.r/v5_noinit.ram/TRUE_DP.SING
+   LE_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v5_noinit.ram/TRUE_DP.SINGL
+   E_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v5_noinit.ram/TRUE_DP.SINGL
+   E_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/TRUE_DP.SINGL
+   E_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/TRUE_DP.SINGL
+   E_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/TRUE_DP.SINGL
+   E_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/TRUE_DP.SINGL
+   E_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/TRUE_DP.SINGL
+   E_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/TRUE_DP.SINGL
+   E_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/TRUE_DP.SINGL
+   E_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/TRUE_DP.SINGL
+   E_PRIM36.TDP" of type "RAMB36_EXP".  This attribute will be ignored.
+WARNING:NgdBuild:452 - logical net 'N34' has no driver
+WARNING:NgdBuild:452 - logical net 'N35' has no driver
+WARNING:NgdBuild:452 - logical net 'N36' has no driver
+WARNING:NgdBuild:452 - logical net 'N37' has no driver
+WARNING:NgdBuild:452 - logical net 'N38' has no driver
+WARNING:NgdBuild:452 - logical net 'N39' has no driver
+WARNING:NgdBuild:452 - logical net 'N40' has no driver
+WARNING:NgdBuild:452 - logical net 'N41' has no driver
+WARNING:NgdBuild:452 - logical net 'N42' has no driver
+WARNING:NgdBuild:452 - logical net 'N43' has no driver
+WARNING:NgdBuild:452 - logical net 'N44' has no driver
+WARNING:NgdBuild:452 - logical net 'N45' has no driver
+WARNING:NgdBuild:452 - logical net 'N46' has no driver
+WARNING:NgdBuild:452 - logical net 'N47' has no driver
+WARNING:NgdBuild:452 - logical net 'N48' has no driver
+WARNING:NgdBuild:452 - logical net 'N49' has no driver
+WARNING:NgdBuild:452 - logical net 'N50' has no driver
+WARNING:NgdBuild:452 - logical net 'N51' has no driver
+WARNING:NgdBuild:452 - logical net 'N52' has no driver
+WARNING:NgdBuild:452 - logical net 'N53' has no driver
+WARNING:NgdBuild:452 - logical net 'N54' has no driver
+WARNING:NgdBuild:452 - logical net 'N55' has no driver
+WARNING:NgdBuild:452 - logical net 'N56' has no driver
+WARNING:NgdBuild:452 - logical net 'N57' has no driver
+WARNING:NgdBuild:452 - logical net 'N58' has no driver
+WARNING:NgdBuild:452 - logical net 'N59' has no driver
+WARNING:NgdBuild:452 - logical net 'N60' has no driver
+WARNING:NgdBuild:452 - logical net 'N61' has no driver
+WARNING:NgdBuild:452 - logical net 'N62' has no driver
+WARNING:NgdBuild:452 - logical net 'N63' has no driver
+WARNING:NgdBuild:452 - logical net 'N64' has no driver
+WARNING:NgdBuild:452 - logical net 'N65' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(16)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(15)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(14)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(13)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(12)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(11)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(10)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(9)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(8)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(7)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(6)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(5)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(4)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(3)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(2)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(1)' has no driver
+WARNING:NgdBuild:452 - logical net
+   'adc5g_r2_char_b02_XSG_core_config/adc5g_r2_char_b02_XSG_core_config/adc5g_r2
+   _char_b02_x0/snapshot0_54f9ff9dd5/add_gen_f2c4552d5d/add_gen/comp0.core_insta
+   nce0/BU2/l(0)' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 616
+
+Total memory usage is 378968 kilobytes
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  11 sec
+Total CPU time to NGDBUILD completion:   7 sec
+
+Writing NGDBUILD log file "system.bld"...

@@ -1,0 +1,16 @@
+Release 11.4 - par L.68 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Tue Dec 13 16:35:40 2011
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 4 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   opb0/OPB_beAck
+   opb0/OPB_dwAck
+   opb0/OPB_fwAck
+   opb0/OPB_hwAck
+
+
