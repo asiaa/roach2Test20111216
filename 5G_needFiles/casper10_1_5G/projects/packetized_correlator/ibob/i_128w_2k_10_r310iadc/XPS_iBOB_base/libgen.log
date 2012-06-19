@@ -1,0 +1,265 @@
+Release 10.1.03 - libgen Xilinx EDK 10.1.03
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -mhs system.mhs -p xc2vp50ff1152-7 system.mss 
+
+Output Directory (-od)		:
+D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB
+_base\
+Part (-p)			: virtex2p
+
+Software Specification file	: system.mss
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\opb_clockcontroller_v1_00_a\data\opb_clockcontroller_v2_1_0.m
+   pd line 22  is deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\opb_adccontroller_v1_00_a\data\opb_adccontroller_v2_1_0.mpd
+   line 22  is deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+WARNING:MDT - IPNAME:proc_sys_reset INSTANCE:reset_block -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mhs line 30 - deprecated core for architecture 'virtex2p'!
+WARNING:MDT - IPNAME:jtagppc_cntlr INSTANCE:jtagppc_0 -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mhs line 137 - deprecated core for architecture 'virtex2p'!
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\diffclk_buf_v1_00_a\data\diffclk_buf_v2_1_0.mpd line 15  is
+   deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\XAUI_interface_v1_00_a\data\XAUI_interface_v2_1_0.mpd line 23
+    is deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\adc_interface_v1_00_a\data\adc_interface_v2_1_0.mpd line 22 
+   is deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\sram_interface_v1_00_a\data\sram_interface_v2_1_0.mpd line 15
+    is deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+
+Overriding IP level properties ...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor ppc405_1
+  (0b0000010000-0b0000010011) ppc405_1	
+  (0b0000100000-0b0000100011) ppc405_1	
+  (0xd0ffdd00-0xd0ffddff) opb_clockcontroller_0	plb->plb2opb_bridge_0->opb0
+  (0xd0ffde00-0xd0ffdeff) opb_adccontroller_0	plb->plb2opb_bridge_0->opb0
+  (0xd0ffdf00-0xd0ffdfff) RS232_UART_1	plb->plb2opb_bridge_0->opb0
+  (0xffff0000-0xffffffff) plb_bram_if_cntlr_1	plb
+Address Map for Processor ppc405_0
+  (0b0000010000-0b0000010011) ppc405_0	
+  (0b0000100000-0b0000100011) ppc405_0	
+
+Check platform address map ...
+
+Computing clock values...
+INFO:MDT - Cannot determine the input clock associated with port :
+   i_128w_2k_10_r310iadc_adc0:ctrl_clk_out. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+
+Overriding system level properties ...
+INFO:MDT - IPNAME:plb_bram_if_cntlr_1_bram INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 36 - tool is overriding PARAMETER C_MEMSIZE value to
+   0x10000
+INFO:MDT - IPNAME:plb_bram_if_cntlr_1_bram INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 37 - tool is overriding PARAMETER C_PORT_DWIDTH value
+   to 64
+INFO:MDT - IPNAME:plb_bram_if_cntlr_1_bram INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 39 - tool is overriding PARAMETER C_NUM_WE value to 8
+INFO:MDT - IPNAME:plb_bram_if_cntlr_1 INSTANCE:plb_bram_if_cntlr -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb_bram_if_cntlr_v1_00_b\d
+   ata\plb_bram_if_cntlr_v2_1_0.mpd line 42 - tool is overriding PARAMETER
+   c_num_masters value to 2
+INFO:MDT - IPNAME:plb_bram_if_cntlr_1 INSTANCE:plb_bram_if_cntlr -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb_bram_if_cntlr_v1_00_b\d
+   ata\plb_bram_if_cntlr_v2_1_0.mpd line 49 - tool is overriding PARAMETER
+   c_plb_mid_width value to 1
+INFO:MDT - IPNAME:plb2opb_bridge_0 INSTANCE:plb2opb_bridge -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb2opb_bridge_v1_01_a\data
+   \plb2opb_bridge_v2_1_0.mpd line 49 - tool is overriding PARAMETER
+   C_PLB_NUM_MASTERS value to 2
+INFO:MDT - IPNAME:plb2opb_bridge_0 INSTANCE:plb2opb_bridge -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb2opb_bridge_v1_01_a\data
+   \plb2opb_bridge_v2_1_0.mpd line 50 - tool is overriding PARAMETER
+   C_PLB_MID_WIDTH value to 1
+INFO:MDT - IPNAME:plb INSTANCE:plb_v34 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v3
+   4_v2_1_0.mpd line 40 - tool is overriding PARAMETER C_PLB_NUM_MASTERS value
+   to 2
+INFO:MDT - IPNAME:plb INSTANCE:plb_v34 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v3
+   4_v2_1_0.mpd line 41 - tool is overriding PARAMETER C_PLB_NUM_SLAVES value to
+   2
+INFO:MDT - IPNAME:plb INSTANCE:plb_v34 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\plb_v34_v1_02_a\data\plb_v3
+   4_v2_1_0.mpd line 42 - tool is overriding PARAMETER C_PLB_MID_WIDTH value to
+   1
+INFO:MDT - IPNAME:opb0 INSTANCE:opb_v20 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v2
+   0_v2_1_0.mpd line 38 - tool is overriding PARAMETER C_NUM_MASTERS value to 1
+INFO:MDT - IPNAME:opb0 INSTANCE:opb_v20 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v2
+   0_v2_1_0.mpd line 39 - tool is overriding PARAMETER C_NUM_SLAVES value to 3
+
+Running system level Update ...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Check platform configuration ...
+IPNAME:plb_v34 INSTANCE:plb -
+D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB
+_base\system.mhs line 174 - 2 master(s) : 2 slave(s)
+IPNAME:opb_v20 INSTANCE:opb0 -
+D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB
+_base\system.mhs line 183 - 1 master(s) : 3 slave(s)
+
+Check port drivers...
+WARNING:MDT - PORT:CLK90 CONNECTOR:sys_clk90 -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mhs line 65 - floating connection!
+WARNING:MDT - PORT:CLKFX CONNECTOR:sys_clk3x -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mhs line 66 - floating connection!
+WARNING:MDT - PORT:CLK90 CONNECTOR:sys_clk2x90 -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mhs line 81 - floating connection!
+WARNING:MDT - PORT:CLK90 CONNECTOR:usr_clk90 -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mhs line 103 - floating connection!
+WARNING:MDT - PORT:CLK90 CONNECTOR:usr_clk2x90 -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mhs line 118 - floating connection!
+WARNING:MDT - PORT:ctrl_dcm_locked CONNECTOR:adc0_dcm_locked -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mhs line 453 - floating connection!
+WARNING:MDT - PORT:ctrl_clk90_out CONNECTOR:adc1_clk90 -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mhs line 519 - floating connection!
+WARNING:MDT - PORT:ctrl_dcm_locked CONNECTOR:adc1_dcm_locked -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mhs line 520 - floating connection!
+
+Performing Clock DRCs...
+
+WARNING:MDT - uartlite -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mss line 38 - deprecated driver!
+WARNING:MDT - cpu_ppc405 -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mss line 20 - deprecated processor!
+WARNING:MDT - cpu_ppc405 -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mss line 28 - deprecated processor!
+WARNING:MDT - standalone -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mss line 5 - deprecated os!
+WARNING:MDT - standalone -
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\system.mss line 11 - deprecated os!
+INFO:MDT - List of peripherals addressable from processor instance ppc405_1 : 
+  - plb_bram_if_cntlr_1
+  - opb0
+  - RS232_UART_1
+  - opb_clockcontroller_0
+  - opb_adccontroller_0
+INFO:MDT - List of peripherals addressable from processor instance ppc405_0 : 
+
+Building Directory Structure for ppc405_1
+
+Generating platform libraries and device drivers ...
+
+Running CopyFiles ...
+
+Copying files for os standalone_v1_00_a from
+C:\Xilinx\10.1\EDK\sw\lib\bsp\standalone_v1_00_a\src\ to
+D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB
+_base\ppc405_1\libsrc\standalone_v1_00_a\ ...
+
+Copying files for driver uartlite_v1_02_a from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\uartlite_v1_02_a\src\ to
+D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB
+_base\ppc405_1\libsrc\uartlite_v1_02_a\ ...
+
+Copying files for driver cpu_ppc405_v1_00_a from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\cpu_ppc405_v1_00_a\src\ to
+D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB
+_base\ppc405_1\libsrc\cpu_ppc405_v1_00_a\ ...
+
+Running DRCs for OSes, Drivers and Libraries ... 
+
+Running generate for OS'es, Drivers and Libraries ... 
+
+Running post_generate for OS'es, Drivers and Libraries ... 
+
+Running make for Drivers and Libraries ... 
+
+Configuring make for target include using:
+
+make -s include "COMPILER=powerpc-eabi-gcc" "ARCHIVER=powerpc-eabi-ar"
+"COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g" 
+
+Configuring make for target libs using:
+
+make -s libs "COMPILER=powerpc-eabi-gcc" "ARCHIVER=powerpc-eabi-ar"
+"COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g" 
+
+Libraries generated in
+D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB
+_base\ppc405_1\lib\ directory
+
+Running execs_generate for OS'es, Drivers and Libraries ... 
+
+Building Directory Structure for ppc405_0
+
+Generating platform libraries and device drivers ...
+
+Running CopyFiles ...
+
+Copying files for os standalone_v1_00_a from
+C:\Xilinx\10.1\EDK\sw\lib\bsp\standalone_v1_00_a\src\ to
+D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB
+_base\ppc405_0\libsrc\standalone_v1_00_a\ ...
+
+Copying files for driver cpu_ppc405_v1_00_a from
+C:\Xilinx\10.1\EDK\sw\XilinxProcessorIPLib\drivers\cpu_ppc405_v1_00_a\src\ to
+D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB
+_base\ppc405_0\libsrc\cpu_ppc405_v1_00_a\ ...
+
+Running DRCs for OSes, Drivers and Libraries ... 
+
+Running generate for OS'es, Drivers and Libraries ... 
+
+Running post_generate for OS'es, Drivers and Libraries ... 
+
+Running make for Drivers and Libraries ... 
+
+Configuring make for target include using:
+
+make -s include "COMPILER=powerpc-eabi-gcc" "ARCHIVER=powerpc-eabi-ar"
+"COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g" 
+
+Configuring make for target libs using:
+
+make -s libs "COMPILER=powerpc-eabi-gcc" "ARCHIVER=powerpc-eabi-ar"
+"COMPILER_FLAGS= -O2 -c" "EXTRA_COMPILER_FLAGS=-g" 
+
+Libraries generated in
+D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB
+_base\ppc405_0\lib\ directory
+
+Running execs_generate for OS'es, Drivers and Libraries ... 
+
+LibGen Done. 

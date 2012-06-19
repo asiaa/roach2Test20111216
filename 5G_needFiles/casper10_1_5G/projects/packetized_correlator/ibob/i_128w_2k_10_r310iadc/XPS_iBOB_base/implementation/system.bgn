@@ -1,0 +1,272 @@
+Release 10.1.03 - Bitgen K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Loading device for application Rf_Device from file '2vp50.nph' in environment
+c:\Xilinx\10.1\ISE.
+   "system" is an NCD, version 3.2, device xc2vp50, package ff1152, speed -7
+Opened constraints file system.pcf.
+
+Tue Jul 20 12:16:19 2010
+
+c:\Xilinx\10.1\ISE\bin\nt\unwrapped\bitgen.exe -w -g ConfigRate:4 -g CclkPin:PULLUP -g TdoPin:PULLNONE -g M1Pin:PULLDOWN -g DonePin:PULLUP -g DriveDone:No -g StartUpClk:JTAGCLK -g DONE_cycle:4 -g GTS_cycle:5 -g M0Pin:PULLUP -g M2Pin:PULLUP -g ProgPin:PULLUP -g TckPin:PULLUP -g TdiPin:PULLUP -g TmsPin:PULLUP -g DonePipe:No -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:NONE -g Persist:No system.ncd 
+
+Summary of Bitgen Options:
++----------------------+----------------------+
+| Option Name          | Current Setting      |
++----------------------+----------------------+
+| Compress             | (Not Specified)*     |
++----------------------+----------------------+
+| Readback             | (Not Specified)*     |
++----------------------+----------------------+
+| CRC                  | Enable*              |
++----------------------+----------------------+
+| DebugBitstream       | No*                  |
++----------------------+----------------------+
+| ConfigRate           | 4**                  |
++----------------------+----------------------+
+| StartupClk           | JtagClk              |
++----------------------+----------------------+
+| DCMShutdown          | Disable*             |
++----------------------+----------------------+
+| DisableBandgap       | No*                  |
++----------------------+----------------------+
+| CclkPin              | Pullup**             |
++----------------------+----------------------+
+| DonePin              | Pullup**             |
++----------------------+----------------------+
+| HswapenPin           | Pullup*              |
++----------------------+----------------------+
+| M0Pin                | Pullup**             |
++----------------------+----------------------+
+| M1Pin                | Pulldown             |
++----------------------+----------------------+
+| M2Pin                | Pullup**             |
++----------------------+----------------------+
+| PowerdownPin         | Pullup*              |
++----------------------+----------------------+
+| ProgPin              | Pullup**             |
++----------------------+----------------------+
+| TckPin               | Pullup**             |
++----------------------+----------------------+
+| TdiPin               | Pullup**             |
++----------------------+----------------------+
+| TdoPin               | Pullnone             |
++----------------------+----------------------+
+| TmsPin               | Pullup**             |
++----------------------+----------------------+
+| UnusedPin            | Pulldown*            |
++----------------------+----------------------+
+| GWE_cycle            | 6**                  |
++----------------------+----------------------+
+| GTS_cycle            | 5**                  |
++----------------------+----------------------+
+| LCK_cycle            | NoWait**             |
++----------------------+----------------------+
+| Match_cycle          | NoWait               |
++----------------------+----------------------+
+| DONE_cycle           | 4**                  |
++----------------------+----------------------+
+| Persist              | No**                 |
++----------------------+----------------------+
+| DriveDone            | No**                 |
++----------------------+----------------------+
+| DonePipe             | No**                 |
++----------------------+----------------------+
+| Security             | None**               |
++----------------------+----------------------+
+| UserID               | 0xFFFFFFFF*          |
++----------------------+----------------------+
+| ActivateGclk         | No*                  |
++----------------------+----------------------+
+| ActiveReconfig       | No*                  |
++----------------------+----------------------+
+| PartialMask0         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialMask1         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialMask2         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialGclk          | (Not Specified)*     |
++----------------------+----------------------+
+| PartialLeft          | (Not Specified)*     |
++----------------------+----------------------+
+| PartialRight         | (Not Specified)*     |
++----------------------+----------------------+
+| Encrypt              | No*                  |
++----------------------+----------------------+
+| Key0                 | pick*                |
++----------------------+----------------------+
+| Key1                 | pick*                |
++----------------------+----------------------+
+| Key2                 | pick*                |
++----------------------+----------------------+
+| Key3                 | pick*                |
++----------------------+----------------------+
+| Key4                 | pick*                |
++----------------------+----------------------+
+| Key5                 | pick*                |
++----------------------+----------------------+
+| Keyseq0              | M*                   |
++----------------------+----------------------+
+| Keyseq1              | M*                   |
++----------------------+----------------------+
+| Keyseq2              | M*                   |
++----------------------+----------------------+
+| Keyseq3              | M*                   |
++----------------------+----------------------+
+| Keyseq4              | M*                   |
++----------------------+----------------------+
+| Keyseq5              | M*                   |
++----------------------+----------------------+
+| KeyFile              | (Not Specified)*     |
++----------------------+----------------------+
+| StartKey             | 0*                   |
++----------------------+----------------------+
+| StartCBC             | pick*                |
++----------------------+----------------------+
+| FreezeDCI            | No*                  |
++----------------------+----------------------+
+| DCIUpdateMode        | AsRequired*          |
++----------------------+----------------------+
+| IEEE1532             | No*                  |
++----------------------+----------------------+
+| Binary               | No*                  |
++----------------------+----------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+Running DRC.
+WARNING:PhysDesignRules:767 - Unexpected DCM configuration. The signal on the
+   CLKIN pin of DCM comp dcm_2/dcm_2/Using_Virtex.DCM_INST is not driven by an
+   IOB or BUFGMUX therefore the phase relationship of output clocks to CLKIN
+   cannot be guaranteed.
+WARNING:PhysDesignRules:1009 - Blockcheck: The clock pin BRAMISOCMCLK for the
+   comp ppc405_1/ppc405_1/PPC405_i is not connected to the output of a DCM
+   driven clock buffer.
+WARNING:PhysDesignRules:1009 - Blockcheck: The clock pin BRAMDSOCMCLK for the
+   comp ppc405_1/ppc405_1/PPC405_i is not connected to the output of a DCM
+   driven clock buffer.
+WARNING:PhysDesignRules:1009 - Blockcheck: The clock pin CPMC405CLOCK for the
+   comp ppc405_0/ppc405_0/PPC405_i is not connected to the output of a DCM
+   driven clock buffer.
+WARNING:PhysDesignRules:1009 - Blockcheck: The clock pin PLBCLK for the comp
+   ppc405_0/ppc405_0/PPC405_i is not connected to the output of a DCM driven
+   clock buffer.
+WARNING:PhysDesignRules:1009 - Blockcheck: The clock pin BRAMISOCMCLK for the
+   comp ppc405_0/ppc405_0/PPC405_i is not connected to the output of a DCM
+   driven clock buffer.
+WARNING:PhysDesignRules:1009 - Blockcheck: The clock pin BRAMDSOCMCLK for the
+   comp ppc405_0/ppc405_0/PPC405_i is not connected to the output of a DCM
+   driven clock buffer.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<i_128w_2k_10_r310iadc_XAUI0/i_128w_2k_10_r310iadc_XAUI0/TX_FIFO_GEN_DE
+   MUX1.xaui_tx_fifo/BU2/U0/fgas/memblk/tx_fifo_fifo_generator_v2_2_xst_1_corein
+   st/tx_fifo_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst/bm/mem/arch_v2/prim/1/
+   b1/chk0/col/0/b2/mextd/arch_v2/c1/ram1/v2/d512/by36/newSim8.A>:<RAMB16_RAMB16
+   A>.  The block is configured to use input parity pins. There are dangling
+   output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<i_128w_2k_10_r310iadc_XAUI0/i_128w_2k_10_r310iadc_XAUI0/RX_FIFO_GEN_DE
+   MUX1.xaui_rx_fifo/BU2/U0/fgas/memblk/rx_fifo_fifo_generator_v2_2_xst_1_corein
+   st/rx_fifo_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst/bm/mem/arch_v2/prim/1/
+   b1/chk0/col/0/b2/mextd/arch_v2/c1/ram1/v2/d512/by36/newSim8.A>:<RAMB16_RAMB16
+   A>.  The block is configured to use input parity pins. There are dangling
+   output parity pins.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir0_53493745fd/pol1_in1_tap3_589ea34790/d
+   elay_bram_4a528b24a9/single_port_ram/comp11.core_instance11/B29.A>:<RAMB16_RA
+   MB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir0_53493745fd/pol1_in1_tap2_51b09e6130/d
+   elay_bram_9520bc6fa1/single_port_ram/comp11.core_instance11/B29.A>:<RAMB16_RA
+   MB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir0_53493745fd/pol1_in1_first_tap_f782e4f
+   ba8/delay_bram_7429e167ee/single_port_ram/comp11.core_instance11/B29.A>:<RAMB
+   16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir3_1446973b28/pol1_in1_tap3_6f6be6c408/d
+   elay_bram_c8ef7b2746/single_port_ram/comp11.core_instance11/B29.A>:<RAMB16_RA
+   MB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir3_1446973b28/pol1_in1_tap2_46b2d9fc6b/d
+   elay_bram_ace0ebc832/single_port_ram/comp11.core_instance11/B29.A>:<RAMB16_RA
+   MB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir3_1446973b28/pol1_in1_first_tap_49bfd9f
+   585/delay_bram_94e64312d9/single_port_ram/comp11.core_instance11/B29.A>:<RAMB
+   16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir2_42ba2486b8/pol1_in1_tap3_6f6be6c408/d
+   elay_bram_c8ef7b2746/single_port_ram/comp11.core_instance11/B29.A>:<RAMB16_RA
+   MB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir2_42ba2486b8/pol1_in1_tap2_46b2d9fc6b/d
+   elay_bram_ace0ebc832/single_port_ram/comp11.core_instance11/B29.A>:<RAMB16_RA
+   MB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir2_42ba2486b8/pol1_in1_first_tap_49bfd9f
+   585/delay_bram_94e64312d9/single_port_ram/comp11.core_instance11/B29.A>:<RAMB
+   16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir1_6880f213e5/pol1_in1_tap3_6f6be6c408/d
+   elay_bram_c8ef7b2746/single_port_ram/comp11.core_instance11/B29.A>:<RAMB16_RA
+   MB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir1_6880f213e5/pol1_in1_tap2_46b2d9fc6b/d
+   elay_bram_ace0ebc832/single_port_ram/comp11.core_instance11/B29.A>:<RAMB16_RA
+   MB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/pfb_fir1_6880f213e5/pol1_in1_first_tap_49bfd9f
+   585/delay_bram_94e64312d9/single_port_ram/comp11.core_instance11/B29.A>:<RAMB
+   16_RAMB16A>.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/eq0_91bbc3edb5/dual_port_ram/comp0.core_instan
+   ce0/B6.B>:<RAMB16_RAMB16B>.  The block is configured to use input parity
+   pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/eq3_b46f566842/dual_port_ram/comp0.core_instan
+   ce0/B6.B>:<RAMB16_RAMB16B>.  The block is configured to use input parity
+   pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/eq2_259d73dbcc/dual_port_ram/comp0.core_instan
+   ce0/B6.B>:<RAMB16_RAMB16B>.  The block is configured to use input parity
+   pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<i_128w_2k_10_r310iadc_XSG_core_config/i_128w_2k_10_r310iadc_XSG_core_c
+   onfig/i_128w_2k_10_r310iadc_x0/eq1_9996d1cf51/dual_port_ram/comp0.core_instan
+   ce0/B6.B>:<RAMB16_RAMB16B>.  The block is configured to use input parity
+   pins. There are dangling output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<i_128w_2k_10_r310iadc_XAUI0/i_128w_2k_10_r310iadc_XAUI0/TX_FIFO_GEN_DE
+   MUX1.xaui_tx_fifo/BU2/U0/fgas/memblk/tx_fifo_fifo_generator_v2_2_xst_1_corein
+   st/tx_fifo_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst/bm/mem/arch_v2/prim/1/
+   b1/chk0/col/1/b2/mextd/arch_v2/c1/ram1/v2/d512/by36/newSim12.A>:<RAMB16_RAMB1
+   6A>.  The block is configured to use input parity pins. There are dangling
+   output parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<i_128w_2k_10_r310iadc_XAUI0/i_128w_2k_10_r310iadc_XAUI0/RX_FIFO_GEN_DE
+   MUX1.xaui_rx_fifo/BU2/U0/fgas/memblk/rx_fifo_fifo_generator_v2_2_xst_1_corein
+   st/rx_fifo_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst/bm/mem/arch_v2/prim/1/
+   b1/chk0/col/1/b2/mextd/arch_v2/c1/ram1/v2/d512/by36/newSim12.A>:<RAMB16_RAMB1
+   6A>.  The block is configured to use input parity pins. There are dangling
+   output parity pins.
+DRC detected 0 errors and 27 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
+Creating bit map...
+Saving bit stream in "system.bit".
+Bitstream generation is complete.

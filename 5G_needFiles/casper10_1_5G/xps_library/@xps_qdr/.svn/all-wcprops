@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1751/trunk/mlib_devel_10_1/xps_library/@xps_qdr
+END
+drc.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1301/trunk/mlib_devel_10_1/xps_library/@xps_qdr/drc.m
+END
+gen_mhs_ip.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1751/trunk/mlib_devel_10_1/xps_library/@xps_qdr/gen_mhs_ip.m
+END
+set.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1301/trunk/mlib_devel_10_1/xps_library/@xps_qdr/set.m
+END
+get.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1301/trunk/mlib_devel_10_1/xps_library/@xps_qdr/get.m
+END
+xps_qdr.m
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1751/trunk/mlib_devel_10_1/xps_library/@xps_qdr/xps_qdr.m
+END

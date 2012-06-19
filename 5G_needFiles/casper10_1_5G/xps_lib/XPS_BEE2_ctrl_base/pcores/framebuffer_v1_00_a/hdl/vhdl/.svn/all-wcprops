@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/framebuffer_v1_00_a/hdl/vhdl
+END
+pixel_ram.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/framebuffer_v1_00_a/hdl/vhdl/pixel_ram.vhd
+END
+framebuffer.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/framebuffer_v1_00_a/hdl/vhdl/framebuffer.vhd
+END

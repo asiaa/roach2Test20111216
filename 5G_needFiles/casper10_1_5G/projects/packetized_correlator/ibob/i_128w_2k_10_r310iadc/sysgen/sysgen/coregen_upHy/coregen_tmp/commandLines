@@ -1,0 +1,2 @@
+C:/Xilinx/10.1/DSP_Tools/sysgen/bin/saferun.exe -a D:/casper10_1/projects/packetized_correlator/ibob/i_128w_2k_10_r310iadc/sysgen/sysgen/coregen_upHy/coregen_tmp/first_pass_coregen.txt -- c:/xilinx/10.1/ise/bin/nt/coregen.exe -b makeproj
+C:/Xilinx/10.1/DSP_Tools/sysgen/bin/saferun.exe -a D:/casper10_1/projects/packetized_correlator/ibob/i_128w_2k_10_r310iadc/sysgen/sysgen/coregen_upHy/coregen_tmp/second_pass_coregen.txt -- c:/xilinx/10.1/ise/bin/nt/coregen.exe -p . -b coregen.cgxco

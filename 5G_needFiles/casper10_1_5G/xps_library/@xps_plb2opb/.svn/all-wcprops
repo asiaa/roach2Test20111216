@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1579/trunk/mlib_devel_10_1/xps_library/@xps_plb2opb
+END
+gen_m_core_info.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/@xps_plb2opb/gen_m_core_info.m
+END
+gen_mhs_ip.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1579/trunk/mlib_devel_10_1/xps_library/@xps_plb2opb/gen_mhs_ip.m
+END
+xps_plb2opb.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1474/trunk/mlib_devel_10_1/xps_library/@xps_plb2opb/xps_plb2opb.m
+END
+gen_mss.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/@xps_plb2opb/gen_mss.m
+END
+set.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/@xps_plb2opb/set.m
+END
+gen_borf_info.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/1432/trunk/mlib_devel_10_1/xps_library/@xps_plb2opb/gen_borf_info.m
+END
+gen_c_core_info.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/@xps_plb2opb/gen_c_core_info.m
+END
+get.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/@xps_plb2opb/get.m
+END

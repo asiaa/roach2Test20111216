@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog
+END
+cmd_gen.v
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/cmd_gen.v
+END
+up_count.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/up_count.v
+END
+d_ff.v
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/d_ff.v
+END
+sr_ff.v
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/sr_ff.v
+END
+ud_count.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/ud_count.v
+END
+plb_ctrl.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/plb_ctrl.v
+END
+byte_enable_gen.v
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/byte_enable_gen.v
+END
+dword_stage.v
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/dword_stage.v
+END
+gen_dec.v
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/gen_dec.v
+END
+fifo_sync_144x16.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/fifo_sync_144x16.v
+END
+fifo_sync_128x16.v
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/fifo_sync_128x16.v
+END
+plb_ddr2.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/hdl/verilog/plb_ddr2.v
+END

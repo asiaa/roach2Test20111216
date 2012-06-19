@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2036/trunk/projects/packetized_correlator/corr-0.2.3/build/scripts-2.5
+END
+init_corr.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/scripts-2.5/init_corr.py
+END
+start_tx.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/scripts-2.5/start_tx.py
+END
+cn_rx.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1853/trunk/projects/packetized_correlator/corr-0.2.3/build/scripts-2.5/cn_rx.py
+END
+conf_eq.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/scripts-2.5/conf_eq.py
+END
+arm_sync.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/scripts-2.5/arm_sync.py
+END
+cn_tx.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/scripts-2.5/cn_tx.py
+END
+adc_amplitudes.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/scripts-2.5/adc_amplitudes.py
+END
+stop_tx.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/scripts-2.5/stop_tx.py
+END
+plot_auto.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/scripts-2.5/plot_auto.py
+END

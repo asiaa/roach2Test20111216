@@ -1,0 +1,6 @@
+CommandLine
+c:\xilinx\10.1\ise\bin\nt\unwrapped\xst.exe -ifn xst_i_128w_2k_10_r310iadc.scr -ofn i_128w_2k_10_r310iadc.results -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

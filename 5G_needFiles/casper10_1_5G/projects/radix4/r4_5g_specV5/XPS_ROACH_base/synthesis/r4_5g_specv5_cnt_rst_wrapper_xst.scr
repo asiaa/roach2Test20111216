@@ -1,0 +1,12 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc5vsx95tff1136-1
+-top r4_5g_specv5_cnt_rst_wrapper
+-ifmt MIXED
+-ifn r4_5g_specv5_cnt_rst_wrapper_xst.prj
+-ofn ../implementation/r4_5g_specv5_cnt_rst_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation/r4_5g_specv5_cnt_rst_wrapper}

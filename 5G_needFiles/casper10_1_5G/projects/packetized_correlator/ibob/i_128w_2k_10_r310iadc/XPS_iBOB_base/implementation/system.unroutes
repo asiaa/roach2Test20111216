@@ -1,0 +1,76 @@
+Release 10.1.03 - par K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Tue Jul 20 12:14:42 2010
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 64 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<0>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<10>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<11>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<12>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<13>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<14>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<15>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<16>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<17>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<18>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<19>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<1>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<20>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<21>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<22>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<23>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<24>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<25>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<26>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<27>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<28>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<29>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<2>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<30>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<31>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<32>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<33>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<34>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<35>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<36>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<37>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<38>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<39>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<3>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<40>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<41>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<42>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<43>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<44>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<45>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<46>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<47>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<48>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<49>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<4>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<50>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<51>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<52>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<53>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<54>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<55>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<56>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<57>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<58>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<59>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<5>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<60>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<61>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<62>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<63>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<6>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<7>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<8>
+   plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/BRAM_Din_B<9>
+
+

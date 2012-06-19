@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/verilog
+END
+ddr2.v
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/verilog/ddr2.v
+END
+ddr2dimm.v
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/verilog/ddr2dimm.v
+END
+ddr2_parameters.vh
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/verilog/ddr2_parameters.vh
+END

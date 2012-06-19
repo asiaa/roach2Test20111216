@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_01_a/bfmsim/etc
+END
+bitgen.ut
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_01_a/bfmsim/etc/bitgen.ut
+END
+fast_runtime.opt
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_01_a/bfmsim/etc/fast_runtime.opt
+END
+bitgen_spartan3.ut
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_01_a/bfmsim/etc/bitgen_spartan3.ut
+END

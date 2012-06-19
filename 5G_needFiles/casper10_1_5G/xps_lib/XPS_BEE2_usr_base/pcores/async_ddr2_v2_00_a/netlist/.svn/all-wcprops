@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist
+END
+cmd_addr_fifo_29_29_512.edn
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/cmd_addr_fifo_29_29_512.edn
+END
+wr_data_fifo_144_72_512.edn
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/wr_data_fifo_144_72_512.edn
+END
+tag_fifo_32_32_1024_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/tag_fifo_32_32_1024_fifo_generator_v2_2_xst_1.ngc
+END
+rd_data_fifo_72_144_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/rd_data_fifo_72_144_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+tag_fifo_32_32_512.edn
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/tag_fifo_32_32_512.edn
+END
+tag_fifo_32_32_1024_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/tag_fifo_32_32_1024_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+cmd_addr_fifo_29_29_256.edn
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/cmd_addr_fifo_29_29_256.edn
+END
+wr_data_be_fifo_162_162_512_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/wr_data_be_fifo_162_162_512_fifo_generator_v2_2_xst_1.ngc
+END
+wr_data_be_fifo_162_162_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/wr_data_be_fifo_162_162_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+rd_data_fifo_72_144_512.edn
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/rd_data_fifo_72_144_512.edn
+END
+rd_data_fifo_144_144_512_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/rd_data_fifo_144_144_512_fifo_generator_v2_2_xst_1.ngc
+END
+wr_be_fifo_36_18_512_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/wr_be_fifo_36_18_512_fifo_generator_v2_2_xst_1.ngc
+END
+cmd_addr_fifo_29_29_512_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/cmd_addr_fifo_29_29_512_fifo_generator_v2_2_xst_1.ngc
+END
+wr_data_fifo_144_72_512_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/wr_data_fifo_144_72_512_fifo_generator_v2_2_xst_1.ngc
+END
+tag_fifo_32_32_1024.edn
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/tag_fifo_32_32_1024.edn
+END
+rd_data_fifo_144_144_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/rd_data_fifo_144_144_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+wr_be_fifo_36_18_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/wr_be_fifo_36_18_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+tag_fifo_32_32_512_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/tag_fifo_32_32_512_fifo_generator_v2_2_xst_1.ngc
+END
+cmd_addr_fifo_29_29_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/cmd_addr_fifo_29_29_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+wr_data_fifo_144_72_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/wr_data_fifo_144_72_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+cmd_addr_fifo_29_29_256_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/cmd_addr_fifo_29_29_256_fifo_generator_v2_2_xst_1.ngc
+END
+tag_fifo_32_32_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/tag_fifo_32_32_512_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+wr_data_be_fifo_162_162_512.edn
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/wr_data_be_fifo_162_162_512.edn
+END
+cmd_addr_fifo_29_29_256_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/cmd_addr_fifo_29_29_256_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+rd_data_fifo_72_144_512_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/rd_data_fifo_72_144_512_fifo_generator_v2_2_xst_1.ngc
+END
+rd_data_fifo_144_144_512.edn
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/rd_data_fifo_144_144_512.edn
+END
+wr_be_fifo_36_18_512.edn
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/async_ddr2_v2_00_a/netlist/wr_be_fifo_36_18_512.edn
+END

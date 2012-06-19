@@ -1,0 +1,37 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 10.1.3.1386            C:/Xilinx/10.1/DSP_Tools/common/bin/../../sysgen
+AccelDSP 10.1.3.1386                    C:/Xilinx/10.1/DSP_Tools/AccelDSP
+Matlab 7.5.0.342 (R2007b)               C:/Program Files/MATLAB/R2007b
+ISE 10.1.03i                            C:/Xilinx/10.1/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal parameterization: Width of slice (number of bits)
+     Block: 'r4_iadc_spec/r4_power19_4/c_to_ri/slice_re'
+Error 0002: Incorrect slice end point
+     Block: 'r4_iadc_spec/r4_power19_4/c_to_ri/slice_re'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'r4_iadc_spec/r4_power19_4/c_to_ri/slice_re'
+
+Details:
+Width of slice (number of bits) is set to a value of 19, but the
+value must be less than or equal to 8.  The input signal
+bit-width, 8, determines the upper bound for the width of the slice.
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
+
+Error 0002:
+
+Reported by:
+  'r4_iadc_spec/r4_power19_4/c_to_ri/slice_re'
+
+Details:
+Slice endpoints must lie between the LSB and MSB
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------

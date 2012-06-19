@@ -1,0 +1,1 @@
+C:/Xilinx/10.1/DSP_Tools/sysgen/bin/saferun.exe -a D:\casper10_1\projects\radix4\r4_5g_specD5\sysgen\sysgen\r4_5g_specd5_cw_import.log -- c:/xilinx/10.1/ise/bin/nt/xtclsh.exe r4_5g_specd5_cw_import.tcl

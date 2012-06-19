@@ -1,0 +1,6 @@
+CommandLine
+c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -p xc5vsx95t-1ff1136 r4_5g_specv5_cw r4_5g_specv5_cw_complete.ngc
+s
+FormatString
+ngcbuild [-p <partname>] {-sd <source_dir>} [-ur <rules_file[.urf]>] [-dd <output_dir>] [-r] [-nt timestamp|on|off] [-uc <ucf_file[.ucf]>] [-aul] [-i] [-intstyle ise|xflow|silent] [-quiet] [-verbose] [-active <active_module_name>] [-insert_keep_hierarchy] [--insert_secure_netlist prohibit|encrypt|noinit|enable_unisim_hdl|off] [--insert_secure_config off|protect] [--insert_secure_bitstream <bitstream_value>] [--insert_check_license <license_value> ] [--forcengd] [--script <tcl_file>] <design_name> <ngc_file[.ngc]>
+s

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/sim/work/ten_gb_eth
+END
+ten_gb_eth_arch.dat
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/sim/work/ten_gb_eth/ten_gb_eth_arch.dat
+END
+_primary.dat
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/sim/work/ten_gb_eth/_primary.dat
+END
+ten_gb_eth_arch.asm
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/sim/work/ten_gb_eth/ten_gb_eth_arch.asm
+END

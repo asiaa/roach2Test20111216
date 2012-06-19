@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2532/trunk/projects/packetized_correlator/corr-0.4.0/src
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2107/trunk/projects/packetized_correlator/corr-0.4.0/src/LICENSE.txt
+END
+borph.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2107/trunk/projects/packetized_correlator/corr-0.4.0/src/borph.py
+END
+katcp_lite_bak.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2107/trunk/projects/packetized_correlator/corr-0.4.0/src/katcp_lite_bak.py
+END
+corr_functions.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2532/trunk/projects/packetized_correlator/corr-0.4.0/src/corr_functions.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2377/trunk/projects/packetized_correlator/corr-0.4.0/src/__init__.py
+END
+c2m.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2107/trunk/projects/packetized_correlator/corr-0.4.0/src/c2m.py
+END
+log_handlers.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2107/trunk/projects/packetized_correlator/corr-0.4.0/src/log_handlers.py
+END
+sim_cn_data.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2107/trunk/projects/packetized_correlator/corr-0.4.0/src/sim_cn_data.py
+END
+katcp_wrapper.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2532/trunk/projects/packetized_correlator/corr-0.4.0/src/katcp_wrapper.py
+END
+plotdb.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/2107/trunk/projects/packetized_correlator/corr-0.4.0/src/plotdb.py
+END
+cn_conf.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2532/trunk/projects/packetized_correlator/corr-0.4.0/src/cn_conf.py
+END
+old_packet.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2377/trunk/projects/packetized_correlator/corr-0.4.0/src/old_packet.py
+END
+udp_client.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2107/trunk/projects/packetized_correlator/corr-0.4.0/src/udp_client.py
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/work/packet_buffer_cpu
+END
+packet_buffer_cpu_a.asm
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/work/packet_buffer_cpu/packet_buffer_cpu_a.asm
+END
+_primary.dat
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/work/packet_buffer_cpu/_primary.dat
+END
+packet_buffer_cpu_a.dat
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/work/packet_buffer_cpu/packet_buffer_cpu_a.dat
+END

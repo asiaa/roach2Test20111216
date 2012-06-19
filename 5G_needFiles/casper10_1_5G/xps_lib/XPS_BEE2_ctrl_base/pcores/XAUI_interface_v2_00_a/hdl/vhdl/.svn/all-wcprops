@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v2_00_a/hdl/vhdl
+END
+transceiver.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v2_00_a/hdl/vhdl/transceiver.vhd
+END
+XAUI_interface.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v2_00_a/hdl/vhdl/XAUI_interface.vhd
+END

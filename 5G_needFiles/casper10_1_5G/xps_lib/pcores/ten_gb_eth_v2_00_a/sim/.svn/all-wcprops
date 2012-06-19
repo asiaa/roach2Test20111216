@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim
+END
+vsim.wlf
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/vsim.wlf
+END
+start_sim.do
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/start_sim.do
+END
+modelsim.ini
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/modelsim.ini
+END
+transcript
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/transcript
+END
+ten_gb_eth_bench.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/ten_gb_eth_bench.vhd
+END

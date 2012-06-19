@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="nt" product="ISE" version="10.1.03">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="par" timeStamp="Fri Oct 01 09:38:37 2010">
+    <task stringID="PAR_DEVICE_UTILIZATION">
+      <section stringID="PAR_DEVICE_UTLIZATION">
+        <item AVAILABLE="32" dataType="int" stringID="PAR_BUFG" value="3"/>
+        <item AVAILABLE="640" dataType="int" stringID="PAR_EXTERNAL_IOB" value="92">
+          <item AVAILABLE="92" dataType="int" stringID="PAR_LOC_IOB" value="92"/>
+        </item>
+        <item AVAILABLE="58880" dataType="int" stringID="PAR_SLICE_REGISTERS" value="14442">
+          <item dataType="int" stringID="PAR_FLIP_FLOPS" value="14442"/>
+          <item dataType="int" stringID="PAR_LATCHES" value="0"/>
+          <item dataType="int" stringID="PAR_LATCH_THRUS" value="0"/>
+        </item>
+        <item AVAILABLE="58880" dataType="int" stringID="PAR_SLICE_LUTS" value="12138"/>
+        <item AVAILABLE="58880" dataType="int" stringID="PAR_SLICE_LUT_FLIPFLOP_PAIRS" value="16032"/>
+      </section>
+    </task>
+    <task stringID="PAR_PAR">
+      <section stringID="PAR_DESIGN_SUMMARY">
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="3 mins 3 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="2 mins 50 secs "/>
+        <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
+        <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="3 mins 13 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="2 mins 59 secs "/>
+      </section>
+    </task>
+    <task stringID="PAR_par">
+      <section stringID="PAR_DLY_CLK_REPORT"/>
+      <section stringID="PAR_CLOCK_REPORT">
+        <table stringID="PAR_CLOCK_TABLE">
+          <row stringID="row" value="1"></row>
+          <row stringID="row" value="2"></row>
+        </table>
+      </section>
+      <section stringID="PAR_PAD_PIN_REPORT"></section>
+      <section stringID="PAR_UNROUTES_REPORT">
+        <item dataType="int" stringID="PAR_UNROUTED_NETS" value="0"/>
+        <item dataType="int" stringID="PAR_TOTAL_SOURCELESS_NETS" value="0"/>
+        <item dataType="int" stringID="PAR_TOTAL_LOADLESS_NETS" value="162"/>
+      </section>
+    </task>
+  </application>
+
+</document>

@@ -1,0 +1,102 @@
+WARNING:PhysDesignRules:367 - The signal <infrastructure_inst/dly_clk> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <sys_reset> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[16]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[17]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[18]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[19]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[20]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[21]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[22]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[23]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[0]>:<ILOGI
+   C_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[1]>:<ILOGI
+   C_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[2]>:<ILOGI
+   C_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[3]>:<ILOGI
+   C_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[4]>:<ILOGI
+   C_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[5]>:<ILOGI
+   C_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[6]>:<ILOGI
+   C_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[7]>:<ILOGI
+   C_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[24]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[25]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[26]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[27]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[28]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[29]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[30]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[31]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[8]>:<ILOGI
+   C_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[9]>:<ILOGI
+   C_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[10]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[11]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[12]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[13]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[14]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+WARNING:PhysDesignRules:1269 - Dangling pins on
+   block:<r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/iddr_data[15]>:<ILOG
+   IC_IFF>.  The Q1 output pin of IFF is not used.
+DRC detected 0 errors and 34 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

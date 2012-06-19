@@ -1,0 +1,414 @@
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex5
+SET devicefamily = virtex5
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Block_Memory_Generator Virtex5 Xilinx,_Inc. 2.4
+# 10.1.03i
+CSET algorithm = Minimum_Area
+CSET assume_synchronous_clk = false
+CSET byte_size = 9
+CSET coe_file = bmg_24_vx5_685a21f0e7f36bff.coe
+CSET collision_warnings = ALL
+CSET disable_collision_warnings = false
+CSET enable_a = Use_ENA_Pin
+CSET enable_b = Always_Enabled
+CSET load_init_file = TRUE
+CSET memory_type = Single_Port_RAM
+CSET operating_mode_a = READ_FIRST
+CSET operating_mode_b = WRITE_FIRST
+CSET output_reset_value_a = 0
+CSET output_reset_value_b = 0
+CSET primitive = 8kx2
+CSET read_width_a = 10
+CSET read_width_b = 10
+CSET register_output_of_memory_core = false
+CSET register_output_of_memory_primitives = false
+CSET remaining_memory_locations = 0
+CSET use_byte_write_enable = false
+CSET use_regcea_pin = false
+CSET use_regceb_pin = false
+CSET use_ssra_pin = FALSE
+CSET use_ssrb_pin = FALSE
+CSET write_depth_a = 512
+CSET write_width_a = 10
+CSET write_width_b = 10
+CSET component_name = bmg_24_vx5_685a21f0e7f36bff
+GENERATE
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex5
+SET devicefamily = virtex5
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Block_Memory_Generator Virtex5 Xilinx,_Inc. 2.4
+# 10.1.03i
+CSET algorithm = Minimum_Area
+CSET assume_synchronous_clk = false
+CSET byte_size = 9
+CSET coe_file = bmg_24_vx5_6fb941694e0a834d.coe
+CSET collision_warnings = ALL
+CSET disable_collision_warnings = false
+CSET enable_a = Use_ENA_Pin
+CSET enable_b = Always_Enabled
+CSET load_init_file = TRUE
+CSET memory_type = Single_Port_RAM
+CSET operating_mode_a = READ_FIRST
+CSET operating_mode_b = WRITE_FIRST
+CSET output_reset_value_a = 0
+CSET output_reset_value_b = 0
+CSET primitive = 8kx2
+CSET read_width_a = 10
+CSET read_width_b = 10
+CSET register_output_of_memory_core = false
+CSET register_output_of_memory_primitives = false
+CSET remaining_memory_locations = 0
+CSET use_byte_write_enable = false
+CSET use_regcea_pin = false
+CSET use_regceb_pin = false
+CSET use_ssra_pin = FALSE
+CSET use_ssrb_pin = FALSE
+CSET write_depth_a = 256
+CSET write_width_a = 10
+CSET write_width_b = 10
+CSET component_name = bmg_24_vx5_6fb941694e0a834d
+GENERATE
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex5
+SET devicefamily = virtex5
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Block_Memory_Generator Virtex5 Xilinx,_Inc. 2.4
+# 10.1.03i
+CSET algorithm = Minimum_Area
+CSET assume_synchronous_clk = false
+CSET byte_size = 9
+CSET coe_file = bmg_24_vx5_8710d0c563708d0d.coe
+CSET collision_warnings = ALL
+CSET disable_collision_warnings = false
+CSET enable_a = Use_ENA_Pin
+CSET enable_b = Always_Enabled
+CSET load_init_file = TRUE
+CSET memory_type = Single_Port_RAM
+CSET operating_mode_a = READ_FIRST
+CSET operating_mode_b = WRITE_FIRST
+CSET output_reset_value_a = 0
+CSET output_reset_value_b = 0
+CSET primitive = 8kx2
+CSET read_width_a = 14
+CSET read_width_b = 14
+CSET register_output_of_memory_core = false
+CSET register_output_of_memory_primitives = false
+CSET remaining_memory_locations = 0
+CSET use_byte_write_enable = false
+CSET use_regcea_pin = false
+CSET use_regceb_pin = false
+CSET use_ssra_pin = FALSE
+CSET use_ssrb_pin = FALSE
+CSET write_depth_a = 64
+CSET write_width_a = 14
+CSET write_width_b = 14
+CSET component_name = bmg_24_vx5_8710d0c563708d0d
+GENERATE
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex5
+SET devicefamily = virtex5
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Block_Memory_Generator Virtex5 Xilinx,_Inc. 2.4
+# 10.1.03i
+CSET algorithm = Minimum_Area
+CSET assume_synchronous_clk = false
+CSET byte_size = 9
+CSET coe_file = bmg_24_vx5_9fbc240f5763bb94.coe
+CSET collision_warnings = ALL
+CSET disable_collision_warnings = false
+CSET enable_a = Use_ENA_Pin
+CSET enable_b = Always_Enabled
+CSET load_init_file = TRUE
+CSET memory_type = Single_Port_RAM
+CSET operating_mode_a = READ_FIRST
+CSET operating_mode_b = WRITE_FIRST
+CSET output_reset_value_a = 0
+CSET output_reset_value_b = 0
+CSET primitive = 8kx2
+CSET read_width_a = 4
+CSET read_width_b = 4
+CSET register_output_of_memory_core = false
+CSET register_output_of_memory_primitives = false
+CSET remaining_memory_locations = 0
+CSET use_byte_write_enable = false
+CSET use_regcea_pin = false
+CSET use_regceb_pin = false
+CSET use_ssra_pin = FALSE
+CSET use_ssrb_pin = FALSE
+CSET write_depth_a = 1024
+CSET write_width_a = 4
+CSET write_width_b = 4
+CSET component_name = bmg_24_vx5_9fbc240f5763bb94
+GENERATE
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex5
+SET devicefamily = virtex5
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Block_Memory_Generator Virtex5 Xilinx,_Inc. 2.4
+# 10.1.03i
+CSET algorithm = Minimum_Area
+CSET assume_synchronous_clk = false
+CSET byte_size = 9
+CSET coe_file = bmg_24_vx5_e8ed5e8ae23b2f64.coe
+CSET collision_warnings = ALL
+CSET disable_collision_warnings = false
+CSET enable_a = Use_ENA_Pin
+CSET enable_b = Always_Enabled
+CSET load_init_file = TRUE
+CSET memory_type = Single_Port_RAM
+CSET operating_mode_a = READ_FIRST
+CSET operating_mode_b = WRITE_FIRST
+CSET output_reset_value_a = 0
+CSET output_reset_value_b = 0
+CSET primitive = 8kx2
+CSET read_width_a = 14
+CSET read_width_b = 14
+CSET register_output_of_memory_core = false
+CSET register_output_of_memory_primitives = false
+CSET remaining_memory_locations = 0
+CSET use_byte_write_enable = false
+CSET use_regcea_pin = false
+CSET use_regceb_pin = false
+CSET use_ssra_pin = FALSE
+CSET use_ssrb_pin = FALSE
+CSET write_depth_a = 128
+CSET write_width_a = 14
+CSET write_width_b = 14
+CSET component_name = bmg_24_vx5_e8ed5e8ae23b2f64
+GENERATE
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex5
+SET devicefamily = virtex5
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Multiplier Virtex5 Xilinx,_Inc. 10.1
+# 10.1.03i
+CSET ccmimp = Distributed_Memory
+CSET clockenable = true
+CSET constvalue = 129
+CSET internaluser = 0
+CSET multiplier_construction = Use_Mults
+CSET multtype = Parallel_Multiplier
+CSET optgoal = Speed
+CSET outputwidthhigh = 19
+CSET outputwidthlow = 0
+CSET pipestages = 3
+CSET portatype = Signed
+CSET portawidth = 10
+CSET portbtype = Signed
+CSET portbwidth = 10
+CSET roundpoint = 0
+CSET sclrcepriority = CE_Overrides_SCLR
+CSET syncclear = true
+CSET use_custom_output_width = false
+CSET userounding = false
+CSET zerodetect = false
+CSET component_name = multiplier_virtex5_10_1_0222debb9055fdfb
+GENERATE
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex5
+SET devicefamily = virtex5
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Multiplier Virtex5 Xilinx,_Inc. 10.1
+# 10.1.03i
+CSET ccmimp = Distributed_Memory
+CSET clockenable = true
+CSET constvalue = 129
+CSET internaluser = 0
+CSET multiplier_construction = Use_Mults
+CSET multtype = Parallel_Multiplier
+CSET optgoal = Speed
+CSET outputwidthhigh = 15
+CSET outputwidthlow = 0
+CSET pipestages = 3
+CSET portatype = Signed
+CSET portawidth = 7
+CSET portbtype = Signed
+CSET portbwidth = 9
+CSET roundpoint = 0
+CSET sclrcepriority = CE_Overrides_SCLR
+CSET syncclear = true
+CSET use_custom_output_width = false
+CSET userounding = false
+CSET zerodetect = false
+CSET component_name = multiplier_virtex5_10_1_1900b0ff8c195f36
+GENERATE
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex5
+SET devicefamily = virtex5
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Multiplier Virtex5 Xilinx,_Inc. 10.1
+# 10.1.03i
+CSET ccmimp = Distributed_Memory
+CSET clockenable = true
+CSET constvalue = 129
+CSET internaluser = 0
+CSET multiplier_construction = Use_Mults
+CSET multtype = Parallel_Multiplier
+CSET optgoal = Speed
+CSET outputwidthhigh = 29
+CSET outputwidthlow = 0
+CSET pipestages = 4
+CSET portatype = Signed
+CSET portawidth = 15
+CSET portbtype = Signed
+CSET portbwidth = 15
+CSET roundpoint = 0
+CSET sclrcepriority = CE_Overrides_SCLR
+CSET syncclear = true
+CSET use_custom_output_width = false
+CSET userounding = false
+CSET zerodetect = false
+CSET component_name = multiplier_virtex5_10_1_1d18c2bc7f1da736
+GENERATE
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex5
+SET devicefamily = virtex5
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Multiplier Virtex5 Xilinx,_Inc. 10.1
+# 10.1.03i
+CSET ccmimp = Distributed_Memory
+CSET clockenable = true
+CSET constvalue = 129
+CSET internaluser = 0
+CSET multiplier_construction = Use_Mults
+CSET multtype = Parallel_Multiplier
+CSET optgoal = Speed
+CSET outputwidthhigh = 17
+CSET outputwidthlow = 0
+CSET pipestages = 3
+CSET portatype = Signed
+CSET portawidth = 9
+CSET portbtype = Signed
+CSET portbwidth = 9
+CSET roundpoint = 0
+CSET sclrcepriority = CE_Overrides_SCLR
+CSET syncclear = true
+CSET use_custom_output_width = false
+CSET userounding = false
+CSET zerodetect = false
+CSET component_name = multiplier_virtex5_10_1_541e977e441ad0e7
+GENERATE
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex5
+SET devicefamily = virtex5
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Multiplier Virtex5 Xilinx,_Inc. 10.1
+# 10.1.03i
+CSET ccmimp = Distributed_Memory
+CSET clockenable = true
+CSET constvalue = 129
+CSET internaluser = 0
+CSET multiplier_construction = Use_Mults
+CSET multtype = Parallel_Multiplier
+CSET optgoal = Speed
+CSET outputwidthhigh = 17
+CSET outputwidthlow = 0
+CSET pipestages = 3
+CSET portatype = Signed
+CSET portawidth = 8
+CSET portbtype = Signed
+CSET portbwidth = 10
+CSET roundpoint = 0
+CSET sclrcepriority = CE_Overrides_SCLR
+CSET syncclear = true
+CSET use_custom_output_width = false
+CSET userounding = false
+CSET zerodetect = false
+CSET component_name = multiplier_virtex5_10_1_8241330e8139a185
+GENERATE
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex5
+SET devicefamily = virtex5
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Multiplier Virtex5 Xilinx,_Inc. 10.1
+# 10.1.03i
+CSET ccmimp = Distributed_Memory
+CSET clockenable = true
+CSET constvalue = 129
+CSET internaluser = 0
+CSET multiplier_construction = Use_Mults
+CSET multtype = Parallel_Multiplier
+CSET optgoal = Speed
+CSET outputwidthhigh = 12
+CSET outputwidthlow = 0
+CSET pipestages = 3
+CSET portatype = Signed
+CSET portawidth = 4
+CSET portbtype = Signed
+CSET portbwidth = 9
+CSET roundpoint = 0
+CSET sclrcepriority = CE_Overrides_SCLR
+CSET syncclear = true
+CSET use_custom_output_width = false
+CSET userounding = false
+CSET zerodetect = false
+CSET component_name = multiplier_virtex5_10_1_db7cd8a2c586bcee
+GENERATE

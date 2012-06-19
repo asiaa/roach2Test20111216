@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/__xps
+END
+vpgen.opt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/__xps/vpgen.opt
+END
+libgen.opt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/__xps/libgen.opt
+END
+bitinit.opt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/__xps/bitinit.opt
+END
+simgen.opt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/__xps/simgen.opt
+END
+sw_compiler.opt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/__xps/sw_compiler.opt
+END
+platgen.opt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/__xps/platgen.opt
+END
+xpsxflow.opt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/__xps/xpsxflow.opt
+END

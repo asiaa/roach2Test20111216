@@ -1,0 +1,5 @@
+vhdl proc_sys_reset_v1_00_a "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\proc_sys_reset_v1_00_a\hdl\vhdl\upcnt_n.vhd"
+vhdl proc_sys_reset_v1_00_a "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\proc_sys_reset_v1_00_a\hdl\vhdl\lpf.vhd"
+vhdl proc_sys_reset_v1_00_a "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\proc_sys_reset_v1_00_a\hdl\vhdl\sequence.vhd"
+vhdl proc_sys_reset_v1_00_a "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\proc_sys_reset_v1_00_a\hdl\vhdl\proc_sys_reset.vhd"
+vhdl work "D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB_base\hdl\reset_block_wrapper.vhd"

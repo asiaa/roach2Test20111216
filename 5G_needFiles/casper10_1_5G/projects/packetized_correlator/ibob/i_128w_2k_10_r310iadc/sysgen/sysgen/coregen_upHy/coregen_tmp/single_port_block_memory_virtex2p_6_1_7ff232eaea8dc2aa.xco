@@ -1,0 +1,61 @@
+##############################################################
+#
+# Xilinx Core Generator version K.39
+# Date: Wed Jan 06 06:58:37 2010
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = False
+SET asysymbol = False
+SET busformat = BusFormatParenNotRipped
+SET createndf = True
+SET designentry = VHDL
+SET device = xc2vp2
+SET devicefamily = virtex2p
+SET flowvendor = Other
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = Edif
+SET package = fg256
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -7
+SET verilogsim = True
+SET vhdlsim = True
+# END Project Options
+# BEGIN Select
+SELECT Single_Port_Block_Memory family Xilinx,_Inc. 6.1
+# END Select
+# BEGIN Parameters
+CSET active_clock_edge=Rising_Edge_Triggered
+CSET additional_output_pipe_stages=1
+CSET coefficient_file=single_port_block_memory_virtex2p_6_1_7ff232eaea8dc2aa.coe
+CSET component_name=single_port_block_memory_virtex2p_6_1_7ff232eaea8dc2aa
+CSET depth=32
+CSET enable_pin=TRUE
+CSET enable_pin_polarity=Active_High
+CSET global_init_value=0
+CSET handshaking_pins=FALSE
+CSET has_limit_data_pitch=FALSE
+CSET init_value=0
+CSET initialization_pin_polarity=Active_High
+CSET limit_data_pitch=18
+CSET load_init_file=TRUE
+CSET port_configuration=Read_And_Write
+CSET primitive_selection=Optimize_For_Area
+CSET register_inputs=FALSE
+CSET width=36
+CSET write_enable_polarity=Active_High
+CSET write_mode=Read_Before_Write
+# END Parameters
+GENERATE
+# CRC: 9dea12f3
+

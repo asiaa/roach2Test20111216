@@ -1,0 +1,8 @@
+# Output products list for <adc_serdes_async_fifo>
+adc_serdes_async_fifo.ngc
+adc_serdes_async_fifo.v
+adc_serdes_async_fifo.veo
+adc_serdes_async_fifo.xco
+adc_serdes_async_fifo_fifo_generator_v4_4_xst_1.ngc_xst.xrpt
+adc_serdes_async_fifo_flist.txt
+adc_serdes_async_fifo_xmdf.tcl

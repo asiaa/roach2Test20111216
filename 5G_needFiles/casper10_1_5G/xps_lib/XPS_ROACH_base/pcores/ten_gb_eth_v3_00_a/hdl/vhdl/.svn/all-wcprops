@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl
+END
+ten_gig_eth_mac_UCB.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/1289/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gig_eth_mac_UCB.vhd
+END
+retimer.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1224/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/retimer.vhd
+END
+ten_gig_eth_mac_UCB_softcrc.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/1289/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gig_eth_mac_UCB_softcrc.vhd
+END
+ten_gb_eth.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/hdl/vhdl/ten_gb_eth.vhd
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_framebuffer_v2_00_a/hdl/vhdl
+END
+framebuffer.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_framebuffer_v2_00_a/hdl/vhdl/framebuffer.vhd
+END
+opb_framebuffer.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_framebuffer_v2_00_a/hdl/vhdl/opb_framebuffer.vhd
+END
+pixel_ram_128.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_framebuffer_v2_00_a/hdl/vhdl/pixel_ram_128.vhd
+END
+user_logic.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_framebuffer_v2_00_a/hdl/vhdl/user_logic.vhd
+END
+pixel_ram_256.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_framebuffer_v2_00_a/hdl/vhdl/pixel_ram_256.vhd
+END

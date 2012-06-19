@@ -1,0 +1,13 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc5vsx95tff1136-1
+-top infrastructure_inst_wrapper
+-ifmt MIXED
+-ifn infrastructure_inst_wrapper_xst.prj
+-ofn ../implementation/infrastructure_inst_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation/infrastructure_inst_wrapper}
+-vlgincdir {"D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxReferenceDesigns\pcores\" }

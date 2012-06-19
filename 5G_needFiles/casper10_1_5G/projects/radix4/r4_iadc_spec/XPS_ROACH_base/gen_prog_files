@@ -1,0 +1,5 @@
+#!/bin/bash
+cp implementation/system.bit ../bit_files/r4_iadc_spec_2010_Oct_01_0917.bit
+./mkbof -o implementation/system.bof -s core_info.tab -t 3 implementation/system.bin
+chmod +x implementation/system.bof
+cp implementation/system.bof ../bit_files/r4_iadc_spec_2010_Oct_01_0917.bof

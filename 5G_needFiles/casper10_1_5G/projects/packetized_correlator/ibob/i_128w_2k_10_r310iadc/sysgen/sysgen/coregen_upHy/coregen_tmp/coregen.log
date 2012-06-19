@@ -1,0 +1,7 @@
+WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Finished Regenerating.
+Successfully generated binary_counter_virtex2p_7_0_7a138cef7a7cb135.

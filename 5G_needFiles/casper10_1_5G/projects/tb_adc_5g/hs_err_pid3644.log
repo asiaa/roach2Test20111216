@@ -1,0 +1,15 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (4A4E490E4350500346), pid=3644, tid=1040
+#
+# Java VM: Java HotSpot(TM) Client VM (1.6.0-b105 mixed mode)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0183bc00):  JavaThread "main" [_thread_in_vm, id=1040]
+
+Stack: [0x004f0000,0x00cf0000)

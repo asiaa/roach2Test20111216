@@ -1,0 +1,42 @@
+// File: D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB_base\implementation\system.bmm
+
+ADDRESS_MAP ppc405_1 PPC405 100
+	ADDRESS_SPACE plb_bram_if_cntlr_1_bram_combined COMBINED [0xffff0000:0xffffffff]
+		ADDRESS_RANGE RAMB16
+		BUS_BLOCK
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_0 [63:62] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_1 [61:60] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_2 [59:58] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_3 [57:56] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_4 [55:54] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_5 [53:52] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_6 [51:50] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_7 [49:48] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_8 [47:46] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_9 [45:44] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_10 [43:42] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_11 [41:40] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_12 [39:38] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_13 [37:36] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_14 [35:34] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_15 [33:32] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_16 [31:30] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_17 [29:28] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_18 [27:26] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_19 [25:24] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_20 [23:22] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_21 [21:20] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_22 [19:18] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_23 [17:16] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_24 [15:14] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_25 [13:12] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_26 [11:10] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_27 [9:8] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_28 [7:6] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_29 [5:4] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_30 [3:2] ;
+			plb_bram_if_cntlr_1_bram/plb_bram_if_cntlr_1_bram/ramb16_s2_s2_31 [1:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

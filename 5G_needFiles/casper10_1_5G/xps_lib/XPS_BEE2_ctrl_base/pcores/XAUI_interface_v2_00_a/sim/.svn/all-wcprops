@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v2_00_a/sim
+END
+xaui_bench.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v2_00_a/sim/xaui_bench.vhd
+END
+start_sim.do
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v2_00_a/sim/start_sim.do
+END

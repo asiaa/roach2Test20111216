@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2245/trunk/mlib_devel_10_1/xps_library/@xps_gpio
+END
+drc.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1545/trunk/mlib_devel_10_1/xps_library/@xps_gpio/drc.m
+END
+xps_gpio.m
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/2245/trunk/mlib_devel_10_1/xps_library/@xps_gpio/xps_gpio.m
+END
+set.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/@xps_gpio/set.m
+END
+get.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/@xps_gpio/get.m
+END

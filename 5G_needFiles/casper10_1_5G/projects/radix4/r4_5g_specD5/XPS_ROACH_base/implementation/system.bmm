@@ -1,0 +1,39 @@
+// File: D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\implementation\system.bmm
+
+ADDRESS_MAP epb_opb_bridge_inst  100
+	ADDRESS_SPACE r4_5g_specd5_snap_adc_bram_ramblk_combined COMBINED [0x01001000:0x01001fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			r4_5g_specd5_snap_adc_bram_ramblk/r4_5g_specd5_snap_adc_bram_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE r4_5g_specd5_snap_vacc0_bram_ramblk_combined COMBINED [0x01003000:0x01003fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			r4_5g_specd5_snap_vacc0_bram_ramblk/r4_5g_specd5_snap_vacc0_bram_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE r4_5g_specd5_snap_vacc1_bram_ramblk_combined COMBINED [0x01005000:0x01005fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			r4_5g_specd5_snap_vacc1_bram_ramblk/r4_5g_specd5_snap_vacc1_bram_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE r4_5g_specd5_snap_vacc2_bram_ramblk_combined COMBINED [0x01007000:0x01007fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			r4_5g_specd5_snap_vacc2_bram_ramblk/r4_5g_specd5_snap_vacc2_bram_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE r4_5g_specd5_snap_vacc3_bram_ramblk_combined COMBINED [0x01009000:0x01009fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			r4_5g_specd5_snap_vacc3_bram_ramblk/r4_5g_specd5_snap_vacc3_bram_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

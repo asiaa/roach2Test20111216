@@ -1,0 +1,58 @@
+// File: D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\implementation\system_stub.bmm
+
+ADDRESS_MAP epb_opb_bridge_inst  100
+	ADDRESS_SPACE r4_5g_specv5_snap_adc_bram_lsb_ramblk_combined COMBINED [0x01008000:0x01017fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/r4_5g_specv5_snap_adc_bram_lsb_ramblk/r4_5g_specv5_snap_adc_bram_lsb_ramblk/ramb36_0 [31:28] ;
+			system_i/r4_5g_specv5_snap_adc_bram_lsb_ramblk/r4_5g_specv5_snap_adc_bram_lsb_ramblk/ramb36_1 [27:24] ;
+			system_i/r4_5g_specv5_snap_adc_bram_lsb_ramblk/r4_5g_specv5_snap_adc_bram_lsb_ramblk/ramb36_2 [23:20] ;
+			system_i/r4_5g_specv5_snap_adc_bram_lsb_ramblk/r4_5g_specv5_snap_adc_bram_lsb_ramblk/ramb36_3 [19:16] ;
+			system_i/r4_5g_specv5_snap_adc_bram_lsb_ramblk/r4_5g_specv5_snap_adc_bram_lsb_ramblk/ramb36_4 [15:12] ;
+			system_i/r4_5g_specv5_snap_adc_bram_lsb_ramblk/r4_5g_specv5_snap_adc_bram_lsb_ramblk/ramb36_5 [11:8] ;
+			system_i/r4_5g_specv5_snap_adc_bram_lsb_ramblk/r4_5g_specv5_snap_adc_bram_lsb_ramblk/ramb36_6 [7:4] ;
+			system_i/r4_5g_specv5_snap_adc_bram_lsb_ramblk/r4_5g_specv5_snap_adc_bram_lsb_ramblk/ramb36_7 [3:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/r4_5g_specv5_snap_adc_bram_msb_ramblk/r4_5g_specv5_snap_adc_bram_msb_ramblk/ramb36_0 [31:28] ;
+			system_i/r4_5g_specv5_snap_adc_bram_msb_ramblk/r4_5g_specv5_snap_adc_bram_msb_ramblk/ramb36_1 [27:24] ;
+			system_i/r4_5g_specv5_snap_adc_bram_msb_ramblk/r4_5g_specv5_snap_adc_bram_msb_ramblk/ramb36_2 [23:20] ;
+			system_i/r4_5g_specv5_snap_adc_bram_msb_ramblk/r4_5g_specv5_snap_adc_bram_msb_ramblk/ramb36_3 [19:16] ;
+			system_i/r4_5g_specv5_snap_adc_bram_msb_ramblk/r4_5g_specv5_snap_adc_bram_msb_ramblk/ramb36_4 [15:12] ;
+			system_i/r4_5g_specv5_snap_adc_bram_msb_ramblk/r4_5g_specv5_snap_adc_bram_msb_ramblk/ramb36_5 [11:8] ;
+			system_i/r4_5g_specv5_snap_adc_bram_msb_ramblk/r4_5g_specv5_snap_adc_bram_msb_ramblk/ramb36_6 [7:4] ;
+			system_i/r4_5g_specv5_snap_adc_bram_msb_ramblk/r4_5g_specv5_snap_adc_bram_msb_ramblk/ramb36_7 [3:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE r4_5g_specv5_snap_vacc0_bram_ramblk_combined COMBINED [0x01019000:0x01019fff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/r4_5g_specv5_snap_vacc0_bram_ramblk/r4_5g_specv5_snap_vacc0_bram_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE r4_5g_specv5_snap_vacc1_bram_ramblk_combined COMBINED [0x0101b000:0x0101bfff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/r4_5g_specv5_snap_vacc1_bram_ramblk/r4_5g_specv5_snap_vacc1_bram_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE r4_5g_specv5_snap_vacc2_bram_ramblk_combined COMBINED [0x0101d000:0x0101dfff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/r4_5g_specv5_snap_vacc2_bram_ramblk/r4_5g_specv5_snap_vacc2_bram_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE r4_5g_specv5_snap_vacc3_bram_ramblk_combined COMBINED [0x0101f000:0x0101ffff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/r4_5g_specv5_snap_vacc3_bram_ramblk/r4_5g_specv5_snap_vacc3_bram_ramblk/ramb36_0 [31:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

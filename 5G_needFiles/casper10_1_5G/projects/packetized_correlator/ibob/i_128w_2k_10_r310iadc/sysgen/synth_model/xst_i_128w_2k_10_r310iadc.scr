@@ -1,0 +1,1 @@
+run -ifn xst_i_128w_2k_10_r310iadc.prj -ifmt mixed -ofn i_128w_2k_10_r310iadc_cw.ngc -ofmt NGC -p xc2vp50-7ff1152 -ent i_128w_2k_10_r310iadc_cw -keep_hierarchy NO -iobuf NO -bus_delimiter () -top i_128w_2k_10_r310iadc_cw -hierarchy_separator / -report_timing_constraint_problems warning -register_balancing no -iob Auto

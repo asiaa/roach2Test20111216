@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2019/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/netlist
+END
+tx_packet_ctrl_fifo.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/netlist/tx_packet_ctrl_fifo.ngc
+END
+tx_fifo_ext.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/2019/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/netlist/tx_fifo_ext.ngc
+END
+tx_cpu_size_fifo.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/netlist/tx_cpu_size_fifo.ngc
+END
+cpu_buffer.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1857/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/netlist/cpu_buffer.ngc
+END
+rx_packet_fifo_bram.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/netlist/rx_packet_fifo_bram.ngc
+END
+arp_cache.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/netlist/arp_cache.ngc
+END
+tx_cpu_fifo.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/netlist/tx_cpu_fifo.ngc
+END
+tx_packet_fifo.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/netlist/tx_packet_fifo.ngc
+END
+rx_packet_fifo_dist.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1857/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/netlist/rx_packet_fifo_dist.ngc
+END
+rx_packet_ctrl_fifo.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/netlist/rx_packet_ctrl_fifo.ngc
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/hdl/vhdl
+END
+plb_attach.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/hdl/vhdl/plb_attach.vhd
+END
+ten_gig_eth_mac_UCB.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/hdl/vhdl/ten_gig_eth_mac_UCB.vhd
+END
+transceiver.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/hdl/vhdl/transceiver.vhd
+END
+retimer.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/hdl/vhdl/retimer.vhd
+END
+ten_gb_eth.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/hdl/vhdl/ten_gb_eth.vhd
+END

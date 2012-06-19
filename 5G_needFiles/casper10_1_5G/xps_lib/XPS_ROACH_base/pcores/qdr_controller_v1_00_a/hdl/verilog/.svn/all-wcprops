@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2158/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog
+END
+qdrc_top.v
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1726/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_top.v
+END
+qdrc_rd.v
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1320/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_rd.v
+END
+qdrc_phy_bit_align.v
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/1726/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_align.v
+END
+qdrc_wr.v
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1306/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_wr.v
+END
+qdrc_phy_burst_align.v
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/1723/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_burst_align.v
+END
+qdrc_phy_bit_train.v
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/1306/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_train.v
+END
+qdrc_phy_bit_correct.v
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/1726/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_bit_correct.v
+END
+qdrc_phy_sm.v
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/1320/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy_sm.v
+END
+qdr_controller.v
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/1306/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdr_controller.v
+END
+qdrc_infrastructure.v
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/2158/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_infrastructure.v
+END
+qdrc_phy.v
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1726/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/qdr_controller_v1_00_a/hdl/verilog/qdrc_phy.v
+END

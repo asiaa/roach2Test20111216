@@ -1,0 +1,12 @@
+Release 10.1.03 - Xilinx CORE Generator K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\sysgen\s
+ysgen\coregen_upHy\coregen_tmp/coregen.log
+WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Finished Regenerating.
+Successfully generated binary_counter_virtex2p_7_0_7a138cef7a7cb135.

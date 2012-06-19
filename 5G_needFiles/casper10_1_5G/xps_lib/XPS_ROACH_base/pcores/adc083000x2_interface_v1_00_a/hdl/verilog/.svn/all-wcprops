@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/2548/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/hdl/verilog
+END
+adc083000_board_phy_demux.v
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2370/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/hdl/verilog/adc083000_board_phy_demux.v
+END
+async_fifo_64by16.v
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/2380/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/hdl/verilog/async_fifo_64by16.v
+END
+adc083000x2_interface.v
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/2548/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/hdl/verilog/adc083000x2_interface.v
+END
+clock_sample.v
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/2258/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/hdl/verilog/clock_sample.v
+END
+clock_sync_fsm.v
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/2258/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/hdl/verilog/clock_sync_fsm.v
+END
+adc083000_demux_interface.v
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2308/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/hdl/verilog/adc083000_demux_interface.v
+END
+adc083000_board_phy.v
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/2370/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/hdl/verilog/adc083000_board_phy.v
+END
+adc_reset.v
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/2258/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/hdl/verilog/adc_reset.v
+END

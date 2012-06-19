@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/fifo
+END
+xgmac_fifo_pack.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/fifo/xgmac_fifo_pack.vhd
+END
+fifo_ram.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/fifo/fifo_ram.vhd
+END
+xgmac_fifo.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/fifo/xgmac_fifo.vhd
+END
+rx_fifo.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/fifo/rx_fifo.vhd
+END
+tx_fifo.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/fifo/tx_fifo.vhd
+END

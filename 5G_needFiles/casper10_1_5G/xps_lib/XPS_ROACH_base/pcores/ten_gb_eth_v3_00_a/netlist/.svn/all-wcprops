@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1618/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/netlist
+END
+packet_buffer.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1224/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/netlist/packet_buffer.ngc
+END
+arp_cache.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1224/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/netlist/arp_cache.ngc
+END
+address_fifo.edn
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1618/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/netlist/address_fifo.edn
+END
+packet_buffer_cpu.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/1224/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/netlist/packet_buffer_cpu.ngc
+END
+address_fifo.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1618/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/ten_gb_eth_v3_00_a/netlist/address_fifo.ngc
+END

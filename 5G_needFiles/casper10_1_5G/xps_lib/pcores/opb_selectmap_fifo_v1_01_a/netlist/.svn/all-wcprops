@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_fifo_v1_01_a/netlist
+END
+async_fifo_8_8_128_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_fifo_v1_01_a/netlist/async_fifo_8_8_128_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+async_fifo_8_8_128.edn
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_fifo_v1_01_a/netlist/async_fifo_8_8_128.edn
+END
+async_fifo_8_8_128_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_fifo_v1_01_a/netlist/async_fifo_8_8_128_fifo_generator_v2_2_xst_1.ngc
+END

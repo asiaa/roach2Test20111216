@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/1726/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/opb_qdr_sniffer_v1_00_a/hdl/verilog
+END
+opb_qdr_sniffer.v
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/1726/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/opb_qdr_sniffer_v1_00_a/hdl/verilog/opb_qdr_sniffer.v
+END
+async_qdr_interface.v
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/1726/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/opb_qdr_sniffer_v1_00_a/hdl/verilog/async_qdr_interface.v
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_01_a/bfmsim/data
+END
+system.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_01_a/bfmsim/data/system.ucf
+END
+bfm_system.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_01_a/bfmsim/data/bfm_system.ucf
+END

@@ -1,0 +1,4 @@
+vhdl adc_interface_v1_01_a "D:\casper10_1\projects\radix4\r4_iadc_spec\XPS_ROACH_base\pcores\adc_interface_v1_01_a\hdl\vhdl\adc_fifo.vhd"
+vhdl adc_interface_v1_01_a "D:\casper10_1\projects\radix4\r4_iadc_spec\XPS_ROACH_base\pcores\adc_interface_v1_01_a\hdl\vhdl\ddr_input.vhd"
+vhdl adc_interface_v1_01_a "D:\casper10_1\projects\radix4\r4_iadc_spec\XPS_ROACH_base\pcores\adc_interface_v1_01_a\hdl\vhdl\adc_interface.vhd"
+vhdl work "D:\casper10_1\projects\radix4\r4_iadc_spec\XPS_ROACH_base\hdl\r4_iadc_spec_adc_wrapper.vhd"

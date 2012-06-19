@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/simulation/timing
+END
+wave_ncsim.sv
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/simulation/timing/wave_ncsim.sv
+END
+simulate_ncsim.sh
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/simulation/timing/simulate_ncsim.sh
+END
+wave_mti.do
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/simulation/timing/wave_mti.do
+END
+simulate_mti.do
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/simulation/timing/simulate_mti.do
+END

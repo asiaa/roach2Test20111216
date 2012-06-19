@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/sram_sim
+END
+CY7C1370DV25.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/sram_sim/CY7C1370DV25.vhd
+END
+sram_interface.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/sram_sim/sram_interface.vhd
+END
+sram_sim.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/sram_sim/sram_sim.vhd
+END
+package_utility.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/sram_sim/package_utility.vhd
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/work/retimer
+END
+retimer_arch.asm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/work/retimer/retimer_arch.asm
+END
+_primary.dat
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/work/retimer/_primary.dat
+END
+retimer_arch.dat
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/sim/work/retimer/retimer_arch.dat
+END

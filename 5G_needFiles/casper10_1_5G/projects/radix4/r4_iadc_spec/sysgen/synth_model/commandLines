@@ -1,0 +1,2 @@
+C:/Xilinx/10.1/DSP_Tools/common/bin/../../sysgen/bin/saferun.exe -- c:/xilinx/10.1/ise/bin/nt/xst.exe -ifn xst_r4_iadc_spec.scr -ofn r4_iadc_spec.results
+C:/Xilinx/10.1/DSP_Tools/common/bin/../../sysgen/bin/saferun.exe -- c:/xilinx/10.1/ise/bin/nt/ngcbuild.exe -p xc5vsx95t-1ff1136 r4_iadc_spec_cw r4_iadc_spec_cw_complete.ngc

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2036/trunk/projects/packetized_correlator/corr-0.3.1/scripts-debug/bak
+END
+snap_xeng_out.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-0.3.1/scripts-debug/bak/snap_xeng_out.py
+END
+dram_test_rx.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-0.3.1/scripts-debug/bak/dram_test_rx.py
+END
+snap_xaui_spectrum_construct.py
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-0.3.1/scripts-debug/bak/snap_xaui_spectrum_construct.py
+END
+snap_xaui_mux.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-0.3.1/scripts-debug/bak/snap_xaui_mux.py
+END
+dram_tvg_init.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-0.3.1/scripts-debug/bak/dram_tvg_init.py
+END

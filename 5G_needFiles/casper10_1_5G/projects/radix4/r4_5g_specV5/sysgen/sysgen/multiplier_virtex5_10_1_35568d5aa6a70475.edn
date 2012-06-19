@@ -1,0 +1,417 @@
+(edif test (edifVersion 2 0 0) (edifLevel 0) (keywordMap (keywordLevel 0))
+(status (written (timeStamp 2010 9 1 14 53 6)
+   (author "Xilinx, Inc.")
+   (program "Xilinx CORE Generator" (version "Xilinx CORE Generator 10.1.03; Cores Update # 3"))))
+   (comment "                                                                                
+      This file is owned and controlled by Xilinx and must be used              
+      solely for design, simulation, implementation and creation of             
+      design files limited to Xilinx devices or technologies. Use               
+      with non-Xilinx devices or technologies is expressly prohibited           
+      and immediately terminates your license.                                  
+                                                                                
+      XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION 'AS IS'             
+      SOLELY FOR USE IN DEVELOPING PROGRAMS AND SOLUTIONS FOR                   
+      XILINX DEVICES.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION           
+      AS ONE POSSIBLE IMPLEMENTATION OF THIS FEATURE, APPLICATION               
+      OR STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS                 
+      IMPLEMENTATION IS FREE FROM ANY CLAIMS OF INFRINGEMENT,                   
+      AND YOU ARE RESPONSIBLE FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE          
+      FOR YOUR IMPLEMENTATION.  XILINX EXPRESSLY DISCLAIMS ANY                  
+      WARRANTY WHATSOEVER WITH RESPECT TO THE ADEQUACY OF THE                   
+      IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OR            
+      REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE FROM CLAIMS OF           
+      INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS           
+      FOR A PARTICULAR PURPOSE.                                                 
+                                                                                
+      Xilinx products are not intended for use in life support                  
+      appliances, devices, or systems. Use in such applications are             
+      expressly prohibited.                                                     
+                                                                                
+      (c) Copyright 1995-2007 Xilinx, Inc.                                      
+      All rights reserved.                                                      
+                                                                                
+   ")
+   (comment "Core parameters: ")
+       (comment "c_a_width = 14 ")
+       (comment "c_b_type = 0 ")
+       (comment "c_ce_overrides_sclr = 1 ")
+       (comment "c_has_sclr = 1 ")
+       (comment "c_round_pt = 0 ")
+       (comment "c_model_type = 0 ")
+       (comment "c_out_high = 23 ")
+       (comment "c_verbosity = 0 ")
+       (comment "c_mult_type = 1 ")
+       (comment "c_ccm_imp = 0 ")
+       (comment "c_latency = 3 ")
+       (comment "c_has_ce = 1 ")
+       (comment "InstanceName = multiplier_virtex5_10_1_35568d5aa6a70475 ")
+       (comment "c_has_zero_detect = 0 ")
+       (comment "c_round_output = 0 ")
+       (comment "c_optimize_goal = 1 ")
+       (comment "c_xdevicefamily = virtex5 ")
+       (comment "c_a_type = 0 ")
+       (comment "c_out_low = 0 ")
+       (comment "c_b_width = 10 ")
+       (comment "c_b_value = 10000001 ")
+   (external xilinxun (edifLevel 0)
+      (technology (numberDefinition))
+       (cell VCC (cellType GENERIC)
+           (view view_1 (viewType NETLIST)
+               (interface
+                   (port P (direction OUTPUT))
+               )
+           )
+       )
+       (cell GND (cellType GENERIC)
+           (view view_1 (viewType NETLIST)
+               (interface
+                   (port G (direction OUTPUT))
+               )
+           )
+       )
+   )
+   (external multiplier_virtex5_10_1_35568d5aa6a70475_mult_gen_v10_1_xst_1_lib (edifLevel 0)
+       (technology (numberDefinition))
+       (cell multiplier_virtex5_10_1_35568d5aa6a70475_mult_gen_v10_1_xst_1 (cellType GENERIC)
+           (view view_1 (viewType NETLIST)
+               (interface
+                   (port clk (direction INPUT))
+                   (port ( array ( rename a "a(13:0)") 14 ) (direction INPUT))
+                   (port ( array ( rename b "b(9:0)") 10 ) (direction INPUT))
+                   (port ce (direction INPUT))
+                   (port sclr (direction INPUT))
+                   (port ( array ( rename zero_detect "zero_detect(1:0)") 2 ) (direction OUTPUT))
+                   (port ( array ( rename p "p(23:0)") 24 ) (direction OUTPUT))
+                   (port ( array ( rename pcasc "pcasc(47:0)") 48 ) (direction OUTPUT))
+               )
+           )
+       )
+   )
+(library test_lib (edifLevel 0) (technology (numberDefinition (scale 1 (E 1 -12) (unit Time))))
+(cell multiplier_virtex5_10_1_35568d5aa6a70475
+ (cellType GENERIC) (view view_1 (viewType NETLIST)
+  (interface
+   (port ( rename clk "clk") (direction INPUT))
+   (port ( array ( rename a "a(13:0)") 14 ) (direction INPUT))
+   (port ( array ( rename b "b(9:0)") 10 ) (direction INPUT))
+   (port ( rename ce "ce") (direction INPUT))
+   (port ( rename sclr "sclr") (direction INPUT))
+   (port ( array ( rename p "p(23:0)") 24 ) (direction OUTPUT))
+   )
+  (contents
+   (instance VCC (viewRef view_1 (cellRef VCC  (libraryRef xilinxun))))
+   (instance GND (viewRef view_1 (cellRef GND  (libraryRef xilinxun))))
+   (instance BU2
+      (viewRef view_1 (cellRef multiplier_virtex5_10_1_35568d5aa6a70475_mult_gen_v10_1_xst_1 (libraryRef multiplier_virtex5_10_1_35568d5aa6a70475_mult_gen_v10_1_xst_1_lib)))
+   )
+   (net (rename N2 "clk")
+    (joined
+      (portRef clk)
+      (portRef clk (instanceRef BU2))
+    )
+   )
+   (net (rename N3 "a(13)")
+    (joined
+      (portRef (member a 0))
+      (portRef (member a 0) (instanceRef BU2))
+    )
+   )
+   (net (rename N4 "a(12)")
+    (joined
+      (portRef (member a 1))
+      (portRef (member a 1) (instanceRef BU2))
+    )
+   )
+   (net (rename N5 "a(11)")
+    (joined
+      (portRef (member a 2))
+      (portRef (member a 2) (instanceRef BU2))
+    )
+   )
+   (net (rename N6 "a(10)")
+    (joined
+      (portRef (member a 3))
+      (portRef (member a 3) (instanceRef BU2))
+    )
+   )
+   (net (rename N7 "a(9)")
+    (joined
+      (portRef (member a 4))
+      (portRef (member a 4) (instanceRef BU2))
+    )
+   )
+   (net (rename N8 "a(8)")
+    (joined
+      (portRef (member a 5))
+      (portRef (member a 5) (instanceRef BU2))
+    )
+   )
+   (net (rename N9 "a(7)")
+    (joined
+      (portRef (member a 6))
+      (portRef (member a 6) (instanceRef BU2))
+    )
+   )
+   (net (rename N10 "a(6)")
+    (joined
+      (portRef (member a 7))
+      (portRef (member a 7) (instanceRef BU2))
+    )
+   )
+   (net (rename N11 "a(5)")
+    (joined
+      (portRef (member a 8))
+      (portRef (member a 8) (instanceRef BU2))
+    )
+   )
+   (net (rename N12 "a(4)")
+    (joined
+      (portRef (member a 9))
+      (portRef (member a 9) (instanceRef BU2))
+    )
+   )
+   (net (rename N13 "a(3)")
+    (joined
+      (portRef (member a 10))
+      (portRef (member a 10) (instanceRef BU2))
+    )
+   )
+   (net (rename N14 "a(2)")
+    (joined
+      (portRef (member a 11))
+      (portRef (member a 11) (instanceRef BU2))
+    )
+   )
+   (net (rename N15 "a(1)")
+    (joined
+      (portRef (member a 12))
+      (portRef (member a 12) (instanceRef BU2))
+    )
+   )
+   (net (rename N16 "a(0)")
+    (joined
+      (portRef (member a 13))
+      (portRef (member a 13) (instanceRef BU2))
+    )
+   )
+   (net (rename N17 "b(9)")
+    (joined
+      (portRef (member b 0))
+      (portRef (member b 0) (instanceRef BU2))
+    )
+   )
+   (net (rename N18 "b(8)")
+    (joined
+      (portRef (member b 1))
+      (portRef (member b 1) (instanceRef BU2))
+    )
+   )
+   (net (rename N19 "b(7)")
+    (joined
+      (portRef (member b 2))
+      (portRef (member b 2) (instanceRef BU2))
+    )
+   )
+   (net (rename N20 "b(6)")
+    (joined
+      (portRef (member b 3))
+      (portRef (member b 3) (instanceRef BU2))
+    )
+   )
+   (net (rename N21 "b(5)")
+    (joined
+      (portRef (member b 4))
+      (portRef (member b 4) (instanceRef BU2))
+    )
+   )
+   (net (rename N22 "b(4)")
+    (joined
+      (portRef (member b 5))
+      (portRef (member b 5) (instanceRef BU2))
+    )
+   )
+   (net (rename N23 "b(3)")
+    (joined
+      (portRef (member b 6))
+      (portRef (member b 6) (instanceRef BU2))
+    )
+   )
+   (net (rename N24 "b(2)")
+    (joined
+      (portRef (member b 7))
+      (portRef (member b 7) (instanceRef BU2))
+    )
+   )
+   (net (rename N25 "b(1)")
+    (joined
+      (portRef (member b 8))
+      (portRef (member b 8) (instanceRef BU2))
+    )
+   )
+   (net (rename N26 "b(0)")
+    (joined
+      (portRef (member b 9))
+      (portRef (member b 9) (instanceRef BU2))
+    )
+   )
+   (net (rename N27 "ce")
+    (joined
+      (portRef ce)
+      (portRef ce (instanceRef BU2))
+    )
+   )
+   (net (rename N28 "sclr")
+    (joined
+      (portRef sclr)
+      (portRef sclr (instanceRef BU2))
+    )
+   )
+   (net (rename N31 "p(23)")
+    (joined
+      (portRef (member p 0))
+      (portRef (member p 0) (instanceRef BU2))
+    )
+   )
+   (net (rename N32 "p(22)")
+    (joined
+      (portRef (member p 1))
+      (portRef (member p 1) (instanceRef BU2))
+    )
+   )
+   (net (rename N33 "p(21)")
+    (joined
+      (portRef (member p 2))
+      (portRef (member p 2) (instanceRef BU2))
+    )
+   )
+   (net (rename N34 "p(20)")
+    (joined
+      (portRef (member p 3))
+      (portRef (member p 3) (instanceRef BU2))
+    )
+   )
+   (net (rename N35 "p(19)")
+    (joined
+      (portRef (member p 4))
+      (portRef (member p 4) (instanceRef BU2))
+    )
+   )
+   (net (rename N36 "p(18)")
+    (joined
+      (portRef (member p 5))
+      (portRef (member p 5) (instanceRef BU2))
+    )
+   )
+   (net (rename N37 "p(17)")
+    (joined
+      (portRef (member p 6))
+      (portRef (member p 6) (instanceRef BU2))
+    )
+   )
+   (net (rename N38 "p(16)")
+    (joined
+      (portRef (member p 7))
+      (portRef (member p 7) (instanceRef BU2))
+    )
+   )
+   (net (rename N39 "p(15)")
+    (joined
+      (portRef (member p 8))
+      (portRef (member p 8) (instanceRef BU2))
+    )
+   )
+   (net (rename N40 "p(14)")
+    (joined
+      (portRef (member p 9))
+      (portRef (member p 9) (instanceRef BU2))
+    )
+   )
+   (net (rename N41 "p(13)")
+    (joined
+      (portRef (member p 10))
+      (portRef (member p 10) (instanceRef BU2))
+    )
+   )
+   (net (rename N42 "p(12)")
+    (joined
+      (portRef (member p 11))
+      (portRef (member p 11) (instanceRef BU2))
+    )
+   )
+   (net (rename N43 "p(11)")
+    (joined
+      (portRef (member p 12))
+      (portRef (member p 12) (instanceRef BU2))
+    )
+   )
+   (net (rename N44 "p(10)")
+    (joined
+      (portRef (member p 13))
+      (portRef (member p 13) (instanceRef BU2))
+    )
+   )
+   (net (rename N45 "p(9)")
+    (joined
+      (portRef (member p 14))
+      (portRef (member p 14) (instanceRef BU2))
+    )
+   )
+   (net (rename N46 "p(8)")
+    (joined
+      (portRef (member p 15))
+      (portRef (member p 15) (instanceRef BU2))
+    )
+   )
+   (net (rename N47 "p(7)")
+    (joined
+      (portRef (member p 16))
+      (portRef (member p 16) (instanceRef BU2))
+    )
+   )
+   (net (rename N48 "p(6)")
+    (joined
+      (portRef (member p 17))
+      (portRef (member p 17) (instanceRef BU2))
+    )
+   )
+   (net (rename N49 "p(5)")
+    (joined
+      (portRef (member p 18))
+      (portRef (member p 18) (instanceRef BU2))
+    )
+   )
+   (net (rename N50 "p(4)")
+    (joined
+      (portRef (member p 19))
+      (portRef (member p 19) (instanceRef BU2))
+    )
+   )
+   (net (rename N51 "p(3)")
+    (joined
+      (portRef (member p 20))
+      (portRef (member p 20) (instanceRef BU2))
+    )
+   )
+   (net (rename N52 "p(2)")
+    (joined
+      (portRef (member p 21))
+      (portRef (member p 21) (instanceRef BU2))
+    )
+   )
+   (net (rename N53 "p(1)")
+    (joined
+      (portRef (member p 22))
+      (portRef (member p 22) (instanceRef BU2))
+    )
+   )
+   (net (rename N54 "p(0)")
+    (joined
+      (portRef (member p 23))
+      (portRef (member p 23) (instanceRef BU2))
+    )
+   )
+))))
+(design multiplier_virtex5_10_1_35568d5aa6a70475 (cellRef multiplier_virtex5_10_1_35568d5aa6a70475 (libraryRef test_lib))
+  (property X_CORE_INFO (string "mult_gen_v10_1, Xilinx CORE Generator 10.1.03_ip3"))
+  (property PART (string "xc5vlx20t-ff323-2") (owner "Xilinx"))
+))

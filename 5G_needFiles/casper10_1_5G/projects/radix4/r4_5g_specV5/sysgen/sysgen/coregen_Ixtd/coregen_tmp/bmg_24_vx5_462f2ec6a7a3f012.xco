@@ -1,0 +1,70 @@
+##############################################################
+#
+# Xilinx Core Generator version K.39
+# Date: Wed Sep 01 06:42:30 2010
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = False
+SET asysymbol = False
+SET busformat = BusFormatParenNotRipped
+SET createndf = True
+SET designentry = VHDL
+SET device = xc5vlx20t
+SET devicefamily = virtex5
+SET flowvendor = Other
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = ngc
+SET package = ff323
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -2
+SET verilogsim = True
+SET vhdlsim = True
+# END Project Options
+# BEGIN Select
+SELECT Block_Memory_Generator family Xilinx,_Inc. 2.4
+# END Select
+# BEGIN Parameters
+CSET algorithm=Minimum_Area
+CSET assume_synchronous_clk=false
+CSET byte_size=9
+CSET coe_file=bmg_24_vx5_462f2ec6a7a3f012.coe
+CSET collision_warnings=ALL
+CSET component_name=bmg_24_vx5_462f2ec6a7a3f012
+CSET disable_collision_warnings=false
+CSET enable_a=Use_ENA_Pin
+CSET enable_b=Always_Enabled
+CSET load_init_file=TRUE
+CSET memory_type=Single_Port_ROM
+CSET operating_mode_a=WRITE_FIRST
+CSET operating_mode_b=WRITE_FIRST
+CSET output_reset_value_a=0
+CSET output_reset_value_b=0
+CSET primitive=8kx2
+CSET read_width_a=18
+CSET read_width_b=18
+CSET register_output_of_memory_core=false
+CSET register_output_of_memory_primitives=false
+CSET remaining_memory_locations=0
+CSET use_byte_write_enable=false
+CSET use_regcea_pin=false
+CSET use_regceb_pin=false
+CSET use_ssra_pin=FALSE
+CSET use_ssrb_pin=FALSE
+CSET write_depth_a=256
+CSET write_width_a=18
+CSET write_width_b=18
+# END Parameters
+GENERATE
+# CRC: 2029e39c
+

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/mem_tester_sim/ddr2_controller_v1_00_a/sim/ddr_dq_iob
+END
+arc_ddr_dq_iob.dat
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/mem_tester_sim/ddr2_controller_v1_00_a/sim/ddr_dq_iob/arc_ddr_dq_iob.dat
+END
+_primary.dat
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/mem_tester_sim/ddr2_controller_v1_00_a/sim/ddr_dq_iob/_primary.dat
+END
+arc_ddr_dq_iob.asm
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_00_b/mem_tester_sim/ddr2_controller_v1_00_a/sim/ddr_dq_iob/arc_ddr_dq_iob.asm
+END

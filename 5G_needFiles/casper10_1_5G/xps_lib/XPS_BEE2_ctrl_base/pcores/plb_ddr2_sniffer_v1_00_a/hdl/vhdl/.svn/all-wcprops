@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_sniffer_v1_00_a/hdl/vhdl
+END
+plb_ddr2_sniffer.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_sniffer_v1_00_a/hdl/vhdl/plb_ddr2_sniffer.vhd
+END
+user_logic.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_sniffer_v1_00_a/hdl/vhdl/user_logic.vhd
+END

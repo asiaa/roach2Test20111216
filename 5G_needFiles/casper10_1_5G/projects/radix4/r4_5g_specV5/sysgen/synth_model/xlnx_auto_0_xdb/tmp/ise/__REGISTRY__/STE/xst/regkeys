@@ -1,0 +1,6 @@
+CommandLine
+c:\xilinx\10.1\ise\bin\nt\unwrapped\xst.exe -ifn xst_r4_5g_specv5.scr -ofn r4_5g_specv5.results -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

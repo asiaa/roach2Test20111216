@@ -1,0 +1,41 @@
+Release 10.1.03 ngcbuild K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+xc2vp50ff1152-7 -intstyle silent -sd .. i_128w_2k_10_r310iadc_adc1_wrapper.ngc
+../i_128w_2k_10_r310iadc_adc1_wrapper.ngc
+
+Reading NGO file
+"D:/casper10_1/projects/packetized_correlator/ibob/i_128w_2k_10_r310iadc/XPS_iBO
+B_base/implementation/i_128w_2k_10_r310iadc_adc1_wrapper/i_128w_2k_10_r310iadc_a
+dc1_wrapper.ngc" ...
+Executing edif2ngd -noa "adc_fifo.edn" "adc_fifo.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "adc_fifo.ngo"...
+Loading design module
+"D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBO
+B_base\implementation\i_128w_2k_10_r310iadc_adc1_wrapper\adc_fifo.ngo"...
+Loading design module
+"D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBO
+B_base\implementation\i_128w_2k_10_r310iadc_adc1_wrapper/adc_fifo_fifo_generator
+_v2_2_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 73536 kilobytes
+
+Writing NGC file "../i_128w_2k_10_r310iadc_adc1_wrapper.ngc" ...
+
+Writing NGCBUILD log file "../i_128w_2k_10_r310iadc_adc1_wrapper.blc"...

@@ -1,0 +1,85 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 10.1.3.1386            C:/Xilinx/10.1/DSP_Tools/common/bin/../../sysgen
+AccelDSP 10.1.3.1386                    C:/Xilinx/10.1/DSP_Tools/AccelDSP
+Matlab 7.5.0.342 (R2007b)               C:/Program Files/MATLAB/R2007b
+ISE 10.1.03i                            C:/Xilinx/10.1/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Desgin Rule Check Failed
+    Blocks: 'spi_rw/rd_data/spi_rw_rd_data_user_data_out', et al.
+Error 0002: Desgin Rule Check Failed
+    Blocks: 'spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in', et al.
+Error 0003: Desgin Rule Check Failed
+    Blocks: 'spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in', et al.
+Error 0004: Desgin Rule Check Failed
+    Blocks: 'spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in', et al.
+Error 0005: Desgin Rule Check Failed
+    Blocks: 'spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in', et al.
+Error 0006: Undriven input port
+     Block: 'spi_rw/spi_cs_pr/convert'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'spi_rw/rd_data/spi_rw_rd_data_user_data_out'
+  'spi_rw/Gateway In'
+
+Details:
+Gateway In named "spi_rw/rd_data/spi_rw_rd_data_user_data_out" is
+connected to Gateway In named "spi_rw/Gateway In"
+--------------------------------------------------------------------------------
+
+Error 0002:
+
+Reported by:
+  'spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in'
+  'spi_rw/spi_reset/spi_rw_spi_reset_gateway'
+
+Details:
+Gateway Out named "spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in"
+is connected to Gateway Out named "spi_rw/spi_reset/spi_rw_spi_reset_gateway"
+--------------------------------------------------------------------------------
+
+Error 0003:
+
+Reported by:
+  'spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in'
+  'spi_rw/adc0_clk/spi_rw_adc0_clk_gateway'
+
+Details:
+Gateway Out named "spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in"
+is connected to Gateway Out named "spi_rw/adc0_clk/spi_rw_adc0_clk_gateway"
+--------------------------------------------------------------------------------
+
+Error 0004:
+
+Reported by:
+  'spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in'
+  'spi_rw/adc0_modepin/spi_rw_adc0_modepin_gateway'
+
+Details:
+Gateway Out named "spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in"
+is connected to Gateway Out named "spi_rw/adc0_modepin/spi_rw_adc0_modepin_gateway"
+--------------------------------------------------------------------------------
+
+Error 0005:
+
+Reported by:
+  'spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in'
+  'spi_rw/spi_data/spi_rw_spi_data_gateway'
+
+Details:
+Gateway Out named "spi_rw/spi_cs_pr/spi_rw_spi_cs_pr_user_data_in"
+is connected to Gateway Out named "spi_rw/spi_data/spi_rw_spi_data_gateway"
+--------------------------------------------------------------------------------
+
+Error 0006:
+
+Reported by:
+  'spi_rw/spi_cs_pr/convert'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------

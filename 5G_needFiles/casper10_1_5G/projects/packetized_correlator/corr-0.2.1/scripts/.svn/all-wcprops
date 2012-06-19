@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/2036/trunk/projects/packetized_correlator/corr-0.2.1/scripts
+END
+init_corr.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1872/trunk/projects/packetized_correlator/corr-0.2.1/scripts/init_corr.py
+END
+start_tx.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1872/trunk/projects/packetized_correlator/corr-0.2.1/scripts/start_tx.py
+END
+cn_rx.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1872/trunk/projects/packetized_correlator/corr-0.2.1/scripts/cn_rx.py
+END
+conf_eq.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1872/trunk/projects/packetized_correlator/corr-0.2.1/scripts/conf_eq.py
+END
+arm_sync.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/1872/trunk/projects/packetized_correlator/corr-0.2.1/scripts/arm_sync.py
+END
+cn_tx.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/1872/trunk/projects/packetized_correlator/corr-0.2.1/scripts/cn_tx.py
+END
+adc_amplitudes.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1872/trunk/projects/packetized_correlator/corr-0.2.1/scripts/adc_amplitudes.py
+END
+stop_tx.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1872/trunk/projects/packetized_correlator/corr-0.2.1/scripts/stop_tx.py
+END
+plot_auto.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1872/trunk/projects/packetized_correlator/corr-0.2.1/scripts/plot_auto.py
+END

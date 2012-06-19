@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/template
+END
+index.template
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/template/index.template
+END
+html.sty
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/template/html.sty
+END
+main_file.tex
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/template/main_file.tex
+END
+block.template
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/template/block.template
+END
+block_template.tex
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/template/block_template.tex
+END

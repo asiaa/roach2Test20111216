@@ -1,0 +1,56 @@
+
+bitinit version Xilinx EDK 10.1.03 Build EDK_K_SP3.6
+Copyright (c) Xilinx Inc. 2002.
+
+Parsing MHS File system.mhs...
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\opb_clockcontroller_v1_00_a\data\opb_clockcontroller_v2_1_0.m
+   pd line 22  is deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\opb_adccontroller_v1_00_a\data\opb_adccontroller_v2_1_0.mpd
+   line 22  is deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\diffclk_buf_v1_00_a\data\diffclk_buf_v2_1_0.mpd line 15  is
+   deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\XAUI_interface_v1_00_a\data\XAUI_interface_v2_1_0.mpd line 23
+    is deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\adc_interface_v1_00_a\data\adc_interface_v2_1_0.mpd line 22 
+   is deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+WARNING:MDT - Option "CORE_STATE" in
+   D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_i
+   BOB_base\pcores\sram_interface_v1_00_a\data\sram_interface_v2_1_0.mpd line 15
+    is deprecated. Please use Option ARCH_SUPPORT_MAP instead. 
+
+Overriding IP level properties ...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor ppc405_1
+  (0b0000010000-0b0000010011) ppc405_1	
+  (0b0000100000-0b0000100011) ppc405_1	
+  (0xd0ffdd00-0xd0ffddff) opb_clockcontroller_0	plb->plb2opb_bridge_0->opb0
+  (0xd0ffde00-0xd0ffdeff) opb_adccontroller_0	plb->plb2opb_bridge_0->opb0
+  (0xd0ffdf00-0xd0ffdfff) RS232_UART_1	plb->plb2opb_bridge_0->opb0
+  (0xffff0000-0xffffffff) plb_bram_if_cntlr_1	plb
+Address Map for Processor ppc405_0
+  (0b0000010000-0b0000010011) ppc405_0	
+  (0b0000100000-0b0000100011) ppc405_0	
+
+Initializing Memory...
+Checking ELFs associated with PPC405 instance ppc405_1 for overlap...
+
+
+Analyzing file Software/executable.elf...
+Running Data2Mem with the following command:
+data2mem -bm "implementation/system_bd" -bt "implementation/system.bit"  -bd
+"Software/executable.elf" tag ppc405_1  -o b implementation/download.bit 
+Memory Initialization completed successfully.
+

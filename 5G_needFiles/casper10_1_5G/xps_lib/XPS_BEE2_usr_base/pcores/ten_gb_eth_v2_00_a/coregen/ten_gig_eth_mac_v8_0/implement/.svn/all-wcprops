@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/implement
+END
+implement.bat
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/implement/implement.bat
+END
+implement.sh
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/implement/implement.sh
+END
+xst.scr
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/implement/xst.scr
+END
+xst.prj
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/implement/xst.prj
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/drivers/xps_xsg
+END
+devices.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/drivers/xps_xsg/devices.c
+END
+devices.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/drivers/xps_xsg/devices.h
+END
+memory.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/drivers/xps_xsg/memory.c
+END
+memory.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/drivers/xps_xsg/memory.h
+END

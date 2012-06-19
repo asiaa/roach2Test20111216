@@ -1,0 +1,167 @@
+(edif test (edifVersion 2 0 0) (edifLevel 0) (keywordMap (keywordLevel 0))
+(status (written (timeStamp 2009 8 19 9 29 31)
+   (author "Xilinx, Inc.")
+   (program "Xilinx CORE Generator" (version "Xilinx CORE Generator 10.1.03; Cores Update # 3"))))
+   (comment "                                                                                
+      This file is owned and controlled by Xilinx and must be used              
+      solely for design, simulation, implementation and creation of             
+      design files limited to Xilinx devices or technologies. Use               
+      with non-Xilinx devices or technologies is expressly prohibited           
+      and immediately terminates your license.                                  
+                                                                                
+      XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION 'AS IS'             
+      SOLELY FOR USE IN DEVELOPING PROGRAMS AND SOLUTIONS FOR                   
+      XILINX DEVICES.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION           
+      AS ONE POSSIBLE IMPLEMENTATION OF THIS FEATURE, APPLICATION               
+      OR STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS                 
+      IMPLEMENTATION IS FREE FROM ANY CLAIMS OF INFRINGEMENT,                   
+      AND YOU ARE RESPONSIBLE FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE          
+      FOR YOUR IMPLEMENTATION.  XILINX EXPRESSLY DISCLAIMS ANY                  
+      WARRANTY WHATSOEVER WITH RESPECT TO THE ADEQUACY OF THE                   
+      IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OR            
+      REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE FROM CLAIMS OF           
+      INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS           
+      FOR A PARTICULAR PURPOSE.                                                 
+                                                                                
+      Xilinx products are not intended for use in life support                  
+      appliances, devices, or systems. Use in such applications are             
+      expressly prohibited.                                                     
+                                                                                
+      (c) Copyright 1995-2007 Xilinx, Inc.                                      
+      All rights reserved.                                                      
+                                                                                
+   ")
+   (comment "Core parameters: ")
+       (comment "c_count_mode = 0 ")
+       (comment "c_load_low = 0 ")
+       (comment "c_count_to = 1 ")
+       (comment "c_implementation = 0 ")
+       (comment "c_has_sclr = 0 ")
+       (comment "c_ce_overrides_sync = 0 ")
+       (comment "c_restrict_count = 0 ")
+       (comment "c_width = 6 ")
+       (comment "c_verbosity = 0 ")
+       (comment "c_has_load = 0 ")
+       (comment "c_latency = 1 ")
+       (comment "c_has_thresh0 = 0 ")
+       (comment "c_ainit_val = 0 ")
+       (comment "c_has_ce = 1 ")
+       (comment "c_sclr_overrides_sset = 1 ")
+       (comment "InstanceName = binary_counter_virtex5_10_0_fe346e03af2452eb ")
+       (comment "c_fb_latency = 0 ")
+       (comment "c_sinit_val = 0 ")
+       (comment "c_has_sset = 0 ")
+       (comment "c_has_sinit = 1 ")
+       (comment "c_count_by = 1 ")
+       (comment "c_xdevicefamily = virtex5 ")
+       (comment "c_thresh0_value = 1 ")
+   (external xilinxun (edifLevel 0)
+      (technology (numberDefinition))
+       (cell VCC (cellType GENERIC)
+           (view view_1 (viewType NETLIST)
+               (interface
+                   (port P (direction OUTPUT))
+               )
+           )
+       )
+       (cell GND (cellType GENERIC)
+           (view view_1 (viewType NETLIST)
+               (interface
+                   (port G (direction OUTPUT))
+               )
+           )
+       )
+   )
+   (external binary_counter_virtex5_10_0_fe346e03af2452eb_c_counter_binary_v10_0_xst_1_lib (edifLevel 0)
+       (technology (numberDefinition))
+       (cell binary_counter_virtex5_10_0_fe346e03af2452eb_c_counter_binary_v10_0_xst_1 (cellType GENERIC)
+           (view view_1 (viewType NETLIST)
+               (interface
+                   (port clk (direction INPUT))
+                   (port ce (direction INPUT))
+                   (port sclr (direction INPUT))
+                   (port sset (direction INPUT))
+                   (port sinit (direction INPUT))
+                   (port up (direction INPUT))
+                   (port load (direction INPUT))
+                   (port ( array ( rename l "l(5:0)") 6 ) (direction INPUT))
+                   (port thresh0 (direction OUTPUT))
+                   (port ( array ( rename q "q(5:0)") 6 ) (direction OUTPUT))
+               )
+           )
+       )
+   )
+(library test_lib (edifLevel 0) (technology (numberDefinition (scale 1 (E 1 -12) (unit Time))))
+(cell binary_counter_virtex5_10_0_fe346e03af2452eb
+ (cellType GENERIC) (view view_1 (viewType NETLIST)
+  (interface
+   (port ( rename clk "clk") (direction INPUT))
+   (port ( rename ce "ce") (direction INPUT))
+   (port ( rename sinit "sinit") (direction INPUT))
+   (port ( array ( rename q "q(5:0)") 6 ) (direction OUTPUT))
+   )
+  (contents
+   (instance VCC (viewRef view_1 (cellRef VCC  (libraryRef xilinxun))))
+   (instance GND (viewRef view_1 (cellRef GND  (libraryRef xilinxun))))
+   (instance BU2
+      (viewRef view_1 (cellRef binary_counter_virtex5_10_0_fe346e03af2452eb_c_counter_binary_v10_0_xst_1 (libraryRef binary_counter_virtex5_10_0_fe346e03af2452eb_c_counter_binary_v10_0_xst_1_lib)))
+   )
+   (net (rename N2 "clk")
+    (joined
+      (portRef clk)
+      (portRef clk (instanceRef BU2))
+    )
+   )
+   (net (rename N3 "ce")
+    (joined
+      (portRef ce)
+      (portRef ce (instanceRef BU2))
+    )
+   )
+   (net (rename N6 "sinit")
+    (joined
+      (portRef sinit)
+      (portRef sinit (instanceRef BU2))
+    )
+   )
+   (net (rename N16 "q(5)")
+    (joined
+      (portRef (member q 0))
+      (portRef (member q 0) (instanceRef BU2))
+    )
+   )
+   (net (rename N17 "q(4)")
+    (joined
+      (portRef (member q 1))
+      (portRef (member q 1) (instanceRef BU2))
+    )
+   )
+   (net (rename N18 "q(3)")
+    (joined
+      (portRef (member q 2))
+      (portRef (member q 2) (instanceRef BU2))
+    )
+   )
+   (net (rename N19 "q(2)")
+    (joined
+      (portRef (member q 3))
+      (portRef (member q 3) (instanceRef BU2))
+    )
+   )
+   (net (rename N20 "q(1)")
+    (joined
+      (portRef (member q 4))
+      (portRef (member q 4) (instanceRef BU2))
+    )
+   )
+   (net (rename N21 "q(0)")
+    (joined
+      (portRef (member q 5))
+      (portRef (member q 5) (instanceRef BU2))
+    )
+   )
+))))
+(design binary_counter_virtex5_10_0_fe346e03af2452eb (cellRef binary_counter_virtex5_10_0_fe346e03af2452eb (libraryRef test_lib))
+  (property X_CORE_INFO (string "c_counter_binary_v10_0, Xilinx CORE Generator 10.1.03_ip3"))
+  (property PART (string "xc5vlx20t-ff323-2") (owner "Xilinx"))
+))

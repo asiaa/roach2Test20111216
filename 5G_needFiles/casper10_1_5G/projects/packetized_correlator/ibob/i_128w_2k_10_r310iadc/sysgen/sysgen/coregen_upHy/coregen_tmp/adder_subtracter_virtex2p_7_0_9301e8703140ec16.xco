@@ -1,0 +1,65 @@
+##############################################################
+#
+# Xilinx Core Generator version K.39
+# Date: Wed Aug 19 05:40:37 2009
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = False
+SET asysymbol = False
+SET busformat = BusFormatParenNotRipped
+SET createndf = True
+SET designentry = VHDL
+SET device = xc2vp2
+SET devicefamily = virtex2p
+SET flowvendor = Other
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = Edif
+SET package = fg256
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -7
+SET verilogsim = True
+SET vhdlsim = True
+# END Project Options
+# BEGIN Select
+SELECT Adder_Subtracter family Xilinx,_Inc. 7.0
+# END Select
+# BEGIN Parameters
+CSET async_init_value=0
+CSET asynchronous_settings=none
+CSET bypass=false
+CSET bypass_sense=active_high
+CSET carry_borrow_input=false
+CSET carry_borrow_output=false
+CSET ce_override_for_bypass=true
+CSET ce_overrides=sync_controls_override_ce
+CSET clock_enable=true
+CSET component_name=adder_subtracter_virtex2p_7_0_9301e8703140ec16
+CSET create_rpm=true
+CSET latency=1
+CSET operation=add
+CSET output_options=registered
+CSET output_width=17
+CSET overflow_output=false
+CSET port_a_sign=signed
+CSET port_a_width=17
+CSET port_b_constant=false
+CSET port_b_constant_value=0
+CSET port_b_sign=signed
+CSET port_b_width=17
+CSET set_clear_priority=clear_overrides_set
+CSET sync_init_value=0
+# END Parameters
+GENERATE
+# CRC: 44d8baf5
+

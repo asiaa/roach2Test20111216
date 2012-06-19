@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/2380/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/netlist
+END
+async_fifo_64by16.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/2370/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/netlist/async_fifo_64by16.ngc
+END
+async_fifo_64by16.veo
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/2380/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/netlist/async_fifo_64by16.veo
+END
+async_fifo_64by16.xco
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/2380/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc083000x2_interface_v1_00_a/netlist/async_fifo_64by16.xco
+END

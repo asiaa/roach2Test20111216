@@ -1,0 +1,428 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+trce -e 3 -xml system.twx system.ncd system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc2vp50,ff1152,-7 (PRODUCTION 1.94 2008-07-25)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+WARNING:Timing:3223 - Timing constraint PATH "TS_RST2_path" TIG; ignored during 
+   timing analysis.
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more 
+   information see the TSI report.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET 
+"opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_toggle_R"         
+MAXDELAY = 0.35 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   0.336ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_toggle_R"         
+MAXDELAY = 0.35 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   0.336ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_sync" MAXDELAY       
+  = 0.559 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   0.323ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_clk_buf" PERIOD      
+   = 5 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_clk_buf" PERIOD      
+   = 5 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_clk_buf" PERIOD      
+   = 5 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_clk_dcm" derived 
+from  NET "i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_clk_buf" 
+PERIOD         = 5 ns HIGH 50%;  duty cycle corrected to 5 nS  HIGH 2.500 nS  
+
+ 290335 paths analyzed, 40200 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   4.992ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_clk90_dcm" derived 
+from  NET "i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_clk_buf" 
+PERIOD         = 5 ns HIGH 50%;  duty cycle corrected to 5 nS  HIGH 2.500 nS  
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_clk_buf"         
+MAXDELAY = 0.452 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   0.452ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_clk_dcm"         
+MAXDELAY = 0.853 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   0.853ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_clk90_dcm"         
+MAXDELAY = 0.853 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   0.853ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_sync" MAXDELAY       
+  = 0.559 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   0.323ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_clk_buf" PERIOD      
+   = 5 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_clk_buf" PERIOD      
+   = 5 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_clk_buf" PERIOD      
+   = 5 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_clk_dcm" derived 
+from  NET "i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_clk_buf" 
+PERIOD         = 5 ns HIGH 50%;  duty cycle corrected to 5 nS  HIGH 2.500 nS  
+
+ 1038 paths analyzed, 962 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   4.400ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_clk90_dcm" derived 
+from  NET "i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_clk_buf" 
+PERIOD         = 5 ns HIGH 50%;  duty cycle corrected to 5 nS  HIGH 2.500 nS  
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_clk_buf"         
+MAXDELAY = 0.452 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   0.452ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_clk_dcm"         
+MAXDELAY = 0.854 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   0.854ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_clk90_dcm"         
+MAXDELAY = 0.854 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   0.854ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_2889b613 = PERIOD TIMEGRP "clk_2889b613" 5 ns HIGH 
+50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_dcm_clk_s = PERIOD TIMEGRP "dcm_clk_s" 9.4 ns HIGH 50%;
+
+ 5 paths analyzed, 4 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   2.794ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_RST1_path" TIG;
+
+ 3 paths analyzed, 3 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_RST2_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_RST3_path" TIG;
+
+ 3 paths analyzed, 3 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_bref_clk_bottom = PERIOD TIMEGRP "bref_clk_bottom" 156.25 
+MHz HIGH 50%;
+
+ 23049 paths analyzed, 2126 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   6.347ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_dcm_0_dcm_0_CLK0_BUF = PERIOD TIMEGRP 
+"dcm_0_dcm_0_CLK0_BUF" TS_dcm_clk_s         HIGH 50%;
+
+ 30920 paths analyzed, 4569 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   9.084ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for i_128w_2k_10_r310iadc_adc0/i_128w_2k_10_r310iadc_adc0/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|i_128w_2k_10_r310iadc_adc0/i_12|      5.000ns|          N/A|      4.992ns|            0|            0|            0|       290335|
+|8w_2k_10_r310iadc_adc0/adc_clk_|             |             |             |             |             |             |             |
+|buf                            |             |             |             |             |             |             |             |
+| i_128w_2k_10_r310iadc_adc0/i_1|      5.000ns|      4.992ns|          N/A|            0|            0|       290335|            0|
+| 28w_2k_10_r310iadc_adc0/adc_cl|             |             |             |             |             |             |             |
+| k_dcm                         |             |             |             |             |             |             |             |
+| i_128w_2k_10_r310iadc_adc0/i_1|      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| 28w_2k_10_r310iadc_adc0/adc_cl|             |             |             |             |             |             |             |
+| k90_dcm                       |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for i_128w_2k_10_r310iadc_adc1/i_128w_2k_10_r310iadc_adc1/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|i_128w_2k_10_r310iadc_adc1/i_12|      5.000ns|          N/A|      4.400ns|            0|            0|            0|         1038|
+|8w_2k_10_r310iadc_adc1/adc_clk_|             |             |             |             |             |             |             |
+|buf                            |             |             |             |             |             |             |             |
+| i_128w_2k_10_r310iadc_adc1/i_1|      5.000ns|      4.400ns|          N/A|            0|            0|         1038|            0|
+| 28w_2k_10_r310iadc_adc1/adc_cl|             |             |             |             |             |             |             |
+| k_dcm                         |             |             |             |             |             |             |             |
+| i_128w_2k_10_r310iadc_adc1/i_1|      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| 28w_2k_10_r310iadc_adc1/adc_cl|             |             |             |             |             |             |             |
+| k90_dcm                       |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_dcm_clk_s
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_dcm_clk_s                   |      9.400ns|      2.794ns|      9.084ns|            0|            0|            5|        30920|
+| TS_dcm_0_dcm_0_CLK0_BUF       |      9.400ns|      9.084ns|          N/A|            0|            0|        30920|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock adc0clk_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    4.992|    0.924|         |         |
+adc0clk_p      |    4.992|    0.924|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc0clk_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    4.992|    0.924|         |         |
+adc0clk_p      |    4.992|    0.924|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc1clk_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc1clk_n      |    4.366|    1.364|         |         |
+adc1clk_p      |    4.366|    1.364|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc1clk_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc1clk_n      |    4.366|    1.364|         |         |
+adc1clk_p      |    4.366|    1.364|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bref_clk_bottom_n
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+bref_clk_bottom_n|    6.347|         |         |         |
+bref_clk_bottom_p|    6.347|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bref_clk_bottom_p
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+bref_clk_bottom_n|    6.347|         |         |         |
+bref_clk_bottom_p|    6.347|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sysclk_m
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sysclk_m       |    9.084|    1.545|    1.142|         |
+sysclk_p       |    9.084|    1.545|    1.142|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sysclk_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sysclk_m       |    9.084|    1.545|    1.142|         |
+sysclk_p       |    9.084|    1.545|    1.142|         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 345353 paths, 10 nets, and 111904 connections
+
+Design statistics:
+   Minimum period:   9.084ns   (Maximum frequency: 110.084MHz)
+   Maximum net delay:   0.854ns
+
+
+Analysis completed Tue Jul 20 12:15:55 2010 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 786 MB
+
+
+

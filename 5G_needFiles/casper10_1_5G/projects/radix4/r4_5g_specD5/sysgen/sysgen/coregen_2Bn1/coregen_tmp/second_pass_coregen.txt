@@ -1,0 +1,561 @@
+Release 10.1.03 - Xilinx CORE Generator K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+D:\casper10_1\projects\radix4\r4_5g_specD5\sysgen\sysgen\coregen_2Bn1\coregen_tm
+p/coregen.log
+WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:99 - The Implementation File Type <Edif> is not valid for this core.
+   Overriding with File Type <ngc>.
+Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating NGC file.
+
+Command Line: c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -intstyle ise -dd
+.\tmp\_cg .\tmp\_cg\bmg_24_vx5_685a21f0e7f36bff.edn
+.\tmp\_cg\bmg_24_vx5_685a21f0e7f36bff_unobf.ngc
+
+Executing edif2ngd -noa "tmp\_cg\bmg_24_vx5_685a21f0e7f36bff.edn"
+"tmp\_cg\bmg_24_vx5_685a21f0e7f36bff.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/bmg_24_vx5_685a21f0e7f36bff.ngo"...
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_5g_specD5/sysgen/sysgen/coregen_2Bn1/coregen_t
+mp/tmp/_cg/bmg_24_vx5_685a21f0e7f36bff.ngo" ...
+Loading design module
+"./tmp/_cg/bmg_24_vx5_685a21f0e7f36bff_blk_mem_gen_v2_4_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/bmg_24_vx5_685a21f0e7f36bff_unobf.ngc" ...
+
+Writing NGCBUILD log file "./tmp/_cg/bmg_24_vx5_685a21f0e7f36bff_unobf.blc"...
+
+NGCBUILD done.
+Finished Regenerating.
+Successfully generated bmg_24_vx5_685a21f0e7f36bff.
+WARNING:sim:99 - The Implementation File Type <Edif> is not valid for this core.
+   Overriding with File Type <ngc>.
+Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating NGC file.
+
+Command Line: c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -intstyle ise -dd
+.\tmp\_cg .\tmp\_cg\bmg_24_vx5_6fb941694e0a834d.edn
+.\tmp\_cg\bmg_24_vx5_6fb941694e0a834d_unobf.ngc
+
+Executing edif2ngd -noa "tmp\_cg\bmg_24_vx5_6fb941694e0a834d.edn"
+"tmp\_cg\bmg_24_vx5_6fb941694e0a834d.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/bmg_24_vx5_6fb941694e0a834d.ngo"...
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_5g_specD5/sysgen/sysgen/coregen_2Bn1/coregen_t
+mp/tmp/_cg/bmg_24_vx5_6fb941694e0a834d.ngo" ...
+Loading design module
+"./tmp/_cg/bmg_24_vx5_6fb941694e0a834d_blk_mem_gen_v2_4_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/bmg_24_vx5_6fb941694e0a834d_unobf.ngc" ...
+
+Writing NGCBUILD log file "./tmp/_cg/bmg_24_vx5_6fb941694e0a834d_unobf.blc"...
+
+NGCBUILD done.
+Finished Regenerating.
+Successfully generated bmg_24_vx5_6fb941694e0a834d.
+WARNING:sim:99 - The Implementation File Type <Edif> is not valid for this core.
+   Overriding with File Type <ngc>.
+Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating NGC file.
+
+Command Line: c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -intstyle ise -dd
+.\tmp\_cg .\tmp\_cg\bmg_24_vx5_8710d0c563708d0d.edn
+.\tmp\_cg\bmg_24_vx5_8710d0c563708d0d_unobf.ngc
+
+Executing edif2ngd -noa "tmp\_cg\bmg_24_vx5_8710d0c563708d0d.edn"
+"tmp\_cg\bmg_24_vx5_8710d0c563708d0d.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/bmg_24_vx5_8710d0c563708d0d.ngo"...
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_5g_specD5/sysgen/sysgen/coregen_2Bn1/coregen_t
+mp/tmp/_cg/bmg_24_vx5_8710d0c563708d0d.ngo" ...
+Loading design module
+"./tmp/_cg/bmg_24_vx5_8710d0c563708d0d_blk_mem_gen_v2_4_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/bmg_24_vx5_8710d0c563708d0d_unobf.ngc" ...
+
+Writing NGCBUILD log file "./tmp/_cg/bmg_24_vx5_8710d0c563708d0d_unobf.blc"...
+
+NGCBUILD done.
+Finished Regenerating.
+Successfully generated bmg_24_vx5_8710d0c563708d0d.
+WARNING:sim:99 - The Implementation File Type <Edif> is not valid for this core.
+   Overriding with File Type <ngc>.
+Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating NGC file.
+
+Command Line: c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -intstyle ise -dd
+.\tmp\_cg .\tmp\_cg\bmg_24_vx5_9fbc240f5763bb94.edn
+.\tmp\_cg\bmg_24_vx5_9fbc240f5763bb94_unobf.ngc
+
+Executing edif2ngd -noa "tmp\_cg\bmg_24_vx5_9fbc240f5763bb94.edn"
+"tmp\_cg\bmg_24_vx5_9fbc240f5763bb94.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/bmg_24_vx5_9fbc240f5763bb94.ngo"...
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_5g_specD5/sysgen/sysgen/coregen_2Bn1/coregen_t
+mp/tmp/_cg/bmg_24_vx5_9fbc240f5763bb94.ngo" ...
+Loading design module
+"./tmp/_cg/bmg_24_vx5_9fbc240f5763bb94_blk_mem_gen_v2_4_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/bmg_24_vx5_9fbc240f5763bb94_unobf.ngc" ...
+
+Writing NGCBUILD log file "./tmp/_cg/bmg_24_vx5_9fbc240f5763bb94_unobf.blc"...
+
+NGCBUILD done.
+Finished Regenerating.
+Successfully generated bmg_24_vx5_9fbc240f5763bb94.
+WARNING:sim:99 - The Implementation File Type <Edif> is not valid for this core.
+   Overriding with File Type <ngc>.
+Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating NGC file.
+
+Command Line: c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -intstyle ise -dd
+.\tmp\_cg .\tmp\_cg\bmg_24_vx5_e8ed5e8ae23b2f64.edn
+.\tmp\_cg\bmg_24_vx5_e8ed5e8ae23b2f64_unobf.ngc
+
+Executing edif2ngd -noa "tmp\_cg\bmg_24_vx5_e8ed5e8ae23b2f64.edn"
+"tmp\_cg\bmg_24_vx5_e8ed5e8ae23b2f64.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/bmg_24_vx5_e8ed5e8ae23b2f64.ngo"...
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_5g_specD5/sysgen/sysgen/coregen_2Bn1/coregen_t
+mp/tmp/_cg/bmg_24_vx5_e8ed5e8ae23b2f64.ngo" ...
+Loading design module
+"./tmp/_cg/bmg_24_vx5_e8ed5e8ae23b2f64_blk_mem_gen_v2_4_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/bmg_24_vx5_e8ed5e8ae23b2f64_unobf.ngc" ...
+
+Writing NGCBUILD log file "./tmp/_cg/bmg_24_vx5_e8ed5e8ae23b2f64_unobf.blc"...
+
+NGCBUILD done.
+Finished Regenerating.
+Successfully generated bmg_24_vx5_e8ed5e8ae23b2f64.
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+
+Command Line: c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -intstyle ise -dd
+.\tmp\_cg .\tmp\_cg\multiplier_virtex5_10_1_0222debb9055fdfb.edn
+.\tmp\_cg\multiplier_virtex5_10_1_0222debb9055fdfb_unobf.ngc
+
+Executing edif2ngd -noa "tmp\_cg\multiplier_virtex5_10_1_0222debb9055fdfb.edn"
+"tmp\_cg\multiplier_virtex5_10_1_0222debb9055fdfb.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/multiplier_virtex5_10_1_0222debb9055fdfb.ngo"...
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_5g_specD5/sysgen/sysgen/coregen_2Bn1/coregen_t
+mp/tmp/_cg/multiplier_virtex5_10_1_0222debb9055fdfb.ngo" ...
+Loading design module
+"./tmp/_cg/multiplier_virtex5_10_1_0222debb9055fdfb_mult_gen_v10_1_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/multiplier_virtex5_10_1_0222debb9055fdfb_unobf.ngc"
+...
+
+Writing NGCBUILD log file
+"./tmp/_cg/multiplier_virtex5_10_1_0222debb9055fdfb_unobf.blc"...
+
+NGCBUILD done.
+Generating Verilog structural model.
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+INFO:NetListWriters - Setup Simulation - To perform a setup simulation, specify
+   values in the Maximum (MAX) field with the following command line modifier: 
+   -SDFMAX
+INFO:NetListWriters - Hold Simulation - To perform the most accurate hold
+   simulation, specify values in the Minimum (MIN) field with the following
+   command line modifier:  -SDFMIN
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches
+   to the simulator, see your Simulator tool documentation.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_0222debb9055fdfb.
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+
+Command Line: c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -intstyle ise -dd
+.\tmp\_cg .\tmp\_cg\multiplier_virtex5_10_1_1900b0ff8c195f36.edn
+.\tmp\_cg\multiplier_virtex5_10_1_1900b0ff8c195f36_unobf.ngc
+
+Executing edif2ngd -noa "tmp\_cg\multiplier_virtex5_10_1_1900b0ff8c195f36.edn"
+"tmp\_cg\multiplier_virtex5_10_1_1900b0ff8c195f36.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/multiplier_virtex5_10_1_1900b0ff8c195f36.ngo"...
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_5g_specD5/sysgen/sysgen/coregen_2Bn1/coregen_t
+mp/tmp/_cg/multiplier_virtex5_10_1_1900b0ff8c195f36.ngo" ...
+Loading design module
+"./tmp/_cg/multiplier_virtex5_10_1_1900b0ff8c195f36_mult_gen_v10_1_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/multiplier_virtex5_10_1_1900b0ff8c195f36_unobf.ngc"
+...
+
+Writing NGCBUILD log file
+"./tmp/_cg/multiplier_virtex5_10_1_1900b0ff8c195f36_unobf.blc"...
+
+NGCBUILD done.
+Generating Verilog structural model.
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+INFO:NetListWriters - Setup Simulation - To perform a setup simulation, specify
+   values in the Maximum (MAX) field with the following command line modifier: 
+   -SDFMAX
+INFO:NetListWriters - Hold Simulation - To perform the most accurate hold
+   simulation, specify values in the Minimum (MIN) field with the following
+   command line modifier:  -SDFMIN
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches
+   to the simulator, see your Simulator tool documentation.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_1900b0ff8c195f36.
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+
+Command Line: c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -intstyle ise -dd
+.\tmp\_cg .\tmp\_cg\multiplier_virtex5_10_1_1d18c2bc7f1da736.edn
+.\tmp\_cg\multiplier_virtex5_10_1_1d18c2bc7f1da736_unobf.ngc
+
+Executing edif2ngd -noa "tmp\_cg\multiplier_virtex5_10_1_1d18c2bc7f1da736.edn"
+"tmp\_cg\multiplier_virtex5_10_1_1d18c2bc7f1da736.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/multiplier_virtex5_10_1_1d18c2bc7f1da736.ngo"...
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_5g_specD5/sysgen/sysgen/coregen_2Bn1/coregen_t
+mp/tmp/_cg/multiplier_virtex5_10_1_1d18c2bc7f1da736.ngo" ...
+Loading design module
+"./tmp/_cg/multiplier_virtex5_10_1_1d18c2bc7f1da736_mult_gen_v10_1_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/multiplier_virtex5_10_1_1d18c2bc7f1da736_unobf.ngc"
+...
+
+Writing NGCBUILD log file
+"./tmp/_cg/multiplier_virtex5_10_1_1d18c2bc7f1da736_unobf.blc"...
+
+NGCBUILD done.
+Generating Verilog structural model.
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+INFO:NetListWriters - Setup Simulation - To perform a setup simulation, specify
+   values in the Maximum (MAX) field with the following command line modifier: 
+   -SDFMAX
+INFO:NetListWriters - Hold Simulation - To perform the most accurate hold
+   simulation, specify values in the Minimum (MIN) field with the following
+   command line modifier:  -SDFMIN
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches
+   to the simulator, see your Simulator tool documentation.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_1d18c2bc7f1da736.
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+
+Command Line: c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -intstyle ise -dd
+.\tmp\_cg .\tmp\_cg\multiplier_virtex5_10_1_541e977e441ad0e7.edn
+.\tmp\_cg\multiplier_virtex5_10_1_541e977e441ad0e7_unobf.ngc
+
+Executing edif2ngd -noa "tmp\_cg\multiplier_virtex5_10_1_541e977e441ad0e7.edn"
+"tmp\_cg\multiplier_virtex5_10_1_541e977e441ad0e7.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/multiplier_virtex5_10_1_541e977e441ad0e7.ngo"...
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_5g_specD5/sysgen/sysgen/coregen_2Bn1/coregen_t
+mp/tmp/_cg/multiplier_virtex5_10_1_541e977e441ad0e7.ngo" ...
+Loading design module
+"./tmp/_cg/multiplier_virtex5_10_1_541e977e441ad0e7_mult_gen_v10_1_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/multiplier_virtex5_10_1_541e977e441ad0e7_unobf.ngc"
+...
+
+Writing NGCBUILD log file
+"./tmp/_cg/multiplier_virtex5_10_1_541e977e441ad0e7_unobf.blc"...
+
+NGCBUILD done.
+Generating Verilog structural model.
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+INFO:NetListWriters - Setup Simulation - To perform a setup simulation, specify
+   values in the Maximum (MAX) field with the following command line modifier: 
+   -SDFMAX
+INFO:NetListWriters - Hold Simulation - To perform the most accurate hold
+   simulation, specify values in the Minimum (MIN) field with the following
+   command line modifier:  -SDFMIN
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches
+   to the simulator, see your Simulator tool documentation.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_541e977e441ad0e7.
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+
+Command Line: c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -intstyle ise -dd
+.\tmp\_cg .\tmp\_cg\multiplier_virtex5_10_1_8241330e8139a185.edn
+.\tmp\_cg\multiplier_virtex5_10_1_8241330e8139a185_unobf.ngc
+
+Executing edif2ngd -noa "tmp\_cg\multiplier_virtex5_10_1_8241330e8139a185.edn"
+"tmp\_cg\multiplier_virtex5_10_1_8241330e8139a185.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/multiplier_virtex5_10_1_8241330e8139a185.ngo"...
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_5g_specD5/sysgen/sysgen/coregen_2Bn1/coregen_t
+mp/tmp/_cg/multiplier_virtex5_10_1_8241330e8139a185.ngo" ...
+Loading design module
+"./tmp/_cg/multiplier_virtex5_10_1_8241330e8139a185_mult_gen_v10_1_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/multiplier_virtex5_10_1_8241330e8139a185_unobf.ngc"
+...
+
+Writing NGCBUILD log file
+"./tmp/_cg/multiplier_virtex5_10_1_8241330e8139a185_unobf.blc"...
+
+NGCBUILD done.
+Generating Verilog structural model.
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+INFO:NetListWriters - Setup Simulation - To perform a setup simulation, specify
+   values in the Maximum (MAX) field with the following command line modifier: 
+   -SDFMAX
+INFO:NetListWriters - Hold Simulation - To perform the most accurate hold
+   simulation, specify values in the Minimum (MIN) field with the following
+   command line modifier:  -SDFMIN
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches
+   to the simulator, see your Simulator tool documentation.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_8241330e8139a185.
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Regenerating IP...
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+
+Command Line: c:\xilinx\10.1\ise\bin\nt\unwrapped\ngcbuild.exe -intstyle ise -dd
+.\tmp\_cg .\tmp\_cg\multiplier_virtex5_10_1_db7cd8a2c586bcee.edn
+.\tmp\_cg\multiplier_virtex5_10_1_db7cd8a2c586bcee_unobf.ngc
+
+Executing edif2ngd -noa "tmp\_cg\multiplier_virtex5_10_1_db7cd8a2c586bcee.edn"
+"tmp\_cg\multiplier_virtex5_10_1_db7cd8a2c586bcee.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "tmp/_cg/multiplier_virtex5_10_1_db7cd8a2c586bcee.ngo"...
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_5g_specD5/sysgen/sysgen/coregen_2Bn1/coregen_t
+mp/tmp/_cg/multiplier_virtex5_10_1_db7cd8a2c586bcee.ngo" ...
+Loading design module
+"./tmp/_cg/multiplier_virtex5_10_1_db7cd8a2c586bcee_mult_gen_v10_1_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "./tmp/_cg/multiplier_virtex5_10_1_db7cd8a2c586bcee_unobf.ngc"
+...
+
+Writing NGCBUILD log file
+"./tmp/_cg/multiplier_virtex5_10_1_db7cd8a2c586bcee_unobf.blc"...
+
+NGCBUILD done.
+Generating Verilog structural model.
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+INFO:NetListWriters - Setup Simulation - To perform a setup simulation, specify
+   values in the Maximum (MAX) field with the following command line modifier: 
+   -SDFMAX
+INFO:NetListWriters - Hold Simulation - To perform the most accurate hold
+   simulation, specify values in the Minimum (MIN) field with the following
+   command line modifier:  -SDFMIN
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches
+   to the simulator, see your Simulator tool documentation.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_db7cd8a2c586bcee.

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_async_ddr2_v1_00_a/hdl/vhdl
+END
+plb_async_ddr2.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_async_ddr2_v1_00_a/hdl/vhdl/plb_async_ddr2.vhd
+END
+user_logic.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_async_ddr2_v1_00_a/hdl/vhdl/user_logic.vhd
+END

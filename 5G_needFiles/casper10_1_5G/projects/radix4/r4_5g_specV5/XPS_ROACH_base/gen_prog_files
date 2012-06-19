@@ -1,0 +1,5 @@
+#!/bin/bash
+cp implementation/system.bit ../bit_files/r4_5g_specV5_2010_Sep_01_1640.bit
+./mkbof -o implementation/system.bof -s core_info.tab -t 3 implementation/system.bin
+chmod +x implementation/system.bof
+cp implementation/system.bof ../bit_files/r4_5g_specV5_2010_Sep_01_1640.bof

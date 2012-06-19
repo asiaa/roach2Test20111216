@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/2373/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc_generic_subblocks_v1_00_a/hdl/verilog
+END
+diff_qdr_reg.v
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/2370/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc_generic_subblocks_v1_00_a/hdl/verilog/diff_qdr_reg.v
+END
+diff_ddr_reg.v
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/2258/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc_generic_subblocks_v1_00_a/hdl/verilog/diff_ddr_reg.v
+END
+diff_to_se.v
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/2370/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc_generic_subblocks_v1_00_a/hdl/verilog/diff_to_se.v
+END
+qdr_capture.v
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/2370/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc_generic_subblocks_v1_00_a/hdl/verilog/qdr_capture.v
+END
+recapture.v
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/2373/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc_generic_subblocks_v1_00_a/hdl/verilog/recapture.v
+END

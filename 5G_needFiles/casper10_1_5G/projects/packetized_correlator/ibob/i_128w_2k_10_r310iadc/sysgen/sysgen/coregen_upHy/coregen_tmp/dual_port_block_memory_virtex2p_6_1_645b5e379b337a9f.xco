@@ -1,0 +1,67 @@
+##############################################################
+#
+# Xilinx Core Generator version K.39
+# Date: Wed Jun 09 03:58:25 2010
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = False
+SET asysymbol = False
+SET busformat = BusFormatParenNotRipped
+SET createndf = True
+SET designentry = VHDL
+SET device = xc2vp2
+SET devicefamily = virtex2p
+SET flowvendor = Other
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = Edif
+SET package = fg256
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -7
+SET verilogsim = True
+SET vhdlsim = True
+# END Project Options
+# BEGIN Select
+SELECT Dual_Port_Block_Memory family Xilinx,_Inc. 6.1
+# END Select
+# BEGIN Parameters
+CSET coefficient_file=dual_port_block_memory_virtex2p_6_1_645b5e379b337a9f.coe
+CSET component_name=dual_port_block_memory_virtex2p_6_1_645b5e379b337a9f
+CSET configuration_port_a=Read_And_Write
+CSET configuration_port_b=Read_And_Write
+CSET depth_a=64
+CSET depth_b=64
+CSET global_init_value=0
+CSET limit_data_pitch=18
+CSET load_init_file=TRUE
+CSET port_a_additional_output_pipe_stages=0
+CSET port_a_enable_pin=TRUE
+CSET port_a_handshaking_pins=FALSE
+CSET port_a_init_pin=FALSE
+CSET port_a_init_value=0
+CSET port_a_register_inputs=FALSE
+CSET port_b_additional_output_pipe_stages=0
+CSET port_b_enable_pin=TRUE
+CSET port_b_handshaking_pins=FALSE
+CSET port_b_init_pin=FALSE
+CSET port_b_init_value=0
+CSET port_b_register_inputs=FALSE
+CSET primitive_selection=Optimize_For_Area
+CSET width_a=18
+CSET width_b=18
+CSET write_mode_port_a=Read_After_Write
+CSET write_mode_port_b=Read_After_Write
+# END Parameters
+GENERATE
+# CRC: b77a5f6e
+

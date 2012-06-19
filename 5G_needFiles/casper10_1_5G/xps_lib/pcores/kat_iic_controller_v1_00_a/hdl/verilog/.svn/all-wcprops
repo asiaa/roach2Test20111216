@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2351/trunk/mlib_devel_10_1/xps_lib/pcores/kat_iic_controller_v1_00_a/hdl/verilog
+END
+rx_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2351/trunk/mlib_devel_10_1/xps_lib/pcores/kat_iic_controller_v1_00_a/hdl/verilog/rx_fifo.v
+END
+op_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2351/trunk/mlib_devel_10_1/xps_lib/pcores/kat_iic_controller_v1_00_a/hdl/verilog/op_fifo.v
+END
+miic_ops.v
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2351/trunk/mlib_devel_10_1/xps_lib/pcores/kat_iic_controller_v1_00_a/hdl/verilog/miic_ops.v
+END
+kat_iic_controller.v
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/2351/trunk/mlib_devel_10_1/xps_lib/pcores/kat_iic_controller_v1_00_a/hdl/verilog/kat_iic_controller.v
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/multiport_ddr2_v2_00_a/hdl/verilog
+END
+multiport_ddr2.v.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/multiport_ddr2_v2_00_a/hdl/verilog/multiport_ddr2.v.tcl
+END
+fifo_sync.v
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/multiport_ddr2_v2_00_a/hdl/verilog/fifo_sync.v
+END
+arbiter.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/multiport_ddr2_v2_00_a/hdl/verilog/arbiter.v
+END
+multiport_ddr2.v
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/multiport_ddr2_v2_00_a/hdl/verilog/multiport_ddr2.v
+END

@@ -1,0 +1,512 @@
+Release 10.1.03 par K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+CASPER::  Fri Oct 01 09:37:51 2010
+
+par -xe n -w -ol high system_map.ncd system.ncd system.pcf 
+
+
+Constraints file: system.pcf.
+Loading device for application Rf_Device from file '5vsx95t.nph' in environment c:\Xilinx\10.1\ISE.
+   "system" is an NCD, version 3.2, device xc5vsx95t, package ff1136, speed -1
+WARNING:ConstraintSystem:65 - Constraint <NET "r4_iadc_spec_adc/r4_iadc_spec_adc/adc_clk_buf" PERIOD = 6.6667 ns HIGH   
+        50%;> [system.pcf(37046)] overrides constraint <NET "r4_iadc_spec_adc/r4_iadc_spec_adc/adc_clk_buf" PERIOD =
+   6.6667 ns HIGH         50%;> [system.pcf(37044)].
+
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more information see the TSI report.
+
+Device speed data version:  "PRODUCTION 1.62 2008-08-19".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           3 out of 32      9%
+   Number of DCM_ADVs                        2 out of 12     16%
+   Number of DSP48Es                       100 out of 640    15%
+   Number of ILOGICs                        63 out of 800     7%
+   Number of External IOBs                  92 out of 640    14%
+      Number of LOCed IOBs                  92 out of 92    100%
+
+   Number of External IOBMs                  1 out of 320     1%
+      Number of LOCed IOBMs                  1 out of 1     100%
+
+   Number of External IOBSs                  1 out of 320     1%
+      Number of LOCed IOBSs                  1 out of 1     100%
+
+   Number of OLOGICs                        20 out of 800     2%
+   Number of RAMB18X2s                      49 out of 244    20%
+   Number of RAMB36_EXPs                     9 out of 244     3%
+   Number of Slice Registers             14442 out of 58880  24%
+      Number used as Flip Flops          14442
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                  12138 out of 58880  20%
+   Number of Slice LUT-Flip Flop pairs   16032 out of 58880  27%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 46 secs 
+Finished initial Timing Analysis.  REAL time: 47 secs 
+
+WARNING:Par:288 - The signal infrastructure_inst/dly_clk has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal sys_reset has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<0> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<1> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<2> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<3> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<4> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<5> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<6> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<7> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<8> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<9> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<10> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<11> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<12> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<13> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<14> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<15> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<16> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<17> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<18> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<19> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<20> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<21> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<22> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<23> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<24> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<25> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<26> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<27> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<28> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<29> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<30> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_adc_bram_ramblk/r4_iadc_spec_snap_adc_bram_ramblk/BRAM_Din_A<31> has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<0> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<1> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<2> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<3> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<4> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<5> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<6> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<7> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<8> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<9> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<10> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<11> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<12> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<13> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<14> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<15> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<16> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<17> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<18> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<19> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<20> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<21> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<22> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<23> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<24> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<25> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<26> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<27> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<28> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<29> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<30> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc0_bram_ramblk/r4_iadc_spec_snap_vacc0_bram_ramblk/BRAM_Din_A<31> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<0> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<1> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<2> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<3> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<4> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<5> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<6> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<7> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<8> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<9> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<10> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<11> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<12> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<13> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<14> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<15> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<16> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<17> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<18> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<19> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<20> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<21> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<22> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<23> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<24> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<25> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<26> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<27> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<28> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<29> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<30> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc1_bram_ramblk/r4_iadc_spec_snap_vacc1_bram_ramblk/BRAM_Din_A<31> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<0> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<1> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<2> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<3> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<4> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<5> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<6> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<7> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<8> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<9> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<10> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<11> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<12> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<13> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<14> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<15> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<16> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<17> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<18> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<19> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<20> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<21> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<22> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<23> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<24> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<25> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<26> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<27> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<28> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<29> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<30> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc2_bram_ramblk/r4_iadc_spec_snap_vacc2_bram_ramblk/BRAM_Din_A<31> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<0> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<1> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<2> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<3> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<4> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<5> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<6> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<7> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<8> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<9> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<10> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<11> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<12> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<13> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<14> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<15> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<16> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<17> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<18> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<19> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<20> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<21> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<22> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<23> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<24> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<25> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<26> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<27> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<28> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<29> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<30> has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal r4_iadc_spec_snap_vacc3_bram_ramblk/r4_iadc_spec_snap_vacc3_bram_ramblk/BRAM_Din_A<31> has
+   no load.  PAR will not attempt to route this signal.
+Starting Router
+
+Phase 1: 83114 unrouted;       REAL time: 1 mins 3 secs 
+
+Phase 2: 46854 unrouted;       REAL time: 1 mins 12 secs 
+
+Phase 3: 13694 unrouted;       REAL time: 1 mins 35 secs 
+
+Phase 4: 13694 unrouted; (0)      REAL time: 1 mins 43 secs 
+
+Phase 5: 13694 unrouted; (0)      REAL time: 1 mins 43 secs 
+
+Phase 6: 13694 unrouted; (0)      REAL time: 1 mins 43 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 2 mins 29 secs 
+
+Updating file: system.ncd with current fully routed design.
+
+Phase 8: 0 unrouted; (0)      REAL time: 2 mins 35 secs 
+
+Phase 9: 0 unrouted; (0)      REAL time: 2 mins 35 secs 
+
+Phase 10: 0 unrouted; (0)      REAL time: 3 mins 1 secs 
+
+Total REAL time to Router completion: 3 mins 3 secs 
+Total CPU time to Router completion: 2 mins 50 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|            adc0_clk |BUFGCTRL_X0Y17| No   | 4597 |  0.905     |  2.438      |
++---------------------+--------------+------+------+------------+-------------+
+|          adc0_psclk |BUFGCTRL_X0Y12| No   | 1054 |  0.763     |  2.299      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0
+
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no
+   requested value.
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88  | SETUP   |     0.029ns|    11.334ns|       0|           0
+  MHz HIGH 50%                              | HOLD    |     0.309ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "r4_iadc_spec_adc | SETUP   |     0.436ns|     6.230ns|       0|           0
+  /r4_iadc_spec_adc/adc_clk_dcm" derived fr | HOLD    |     0.165ns|            |       0|           0
+  om  NET "r4_iadc_spec_adc/r4_iadc_spec_ad |         |            |            |        |            
+  c/adc_clk_buf" PERIOD = 6.6667 ns HIGH    |         |            |            |        |            
+        50%                                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET "epb_cs_n_IBUF" MAXDELAY = 4 ns       | MAXDELAY|     2.364ns|     1.636ns|       0|           0
+------------------------------------------------------------------------------------------------------
+  NET "r4_iadc_spec_adc/r4_iadc_spec_adc/ad | N/A     |         N/A|         N/A|     N/A|         N/A
+  c_clk_buf" PERIOD = 6.6667 ns HIGH        |         |            |            |        |            
+    50%                                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET "r4_iadc_spec_adc/r4_iadc_spec_adc/ad | N/A     |         N/A|         N/A|     N/A|         N/A
+  c_clk_buf" PERIOD = 6.6667 ns HIGH        |         |            |            |        |            
+    50%                                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_clk_4dc2d861 = PERIOD TIMEGRP "clk_4dc | N/A     |         N/A|         N/A|     N/A|         N/A
+  2d861" 6.6667 ns HIGH 50%                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for r4_iadc_spec_adc/r4_iadc_spec_adc/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|r4_iadc_spec_adc/r4_iadc_spec_a|      6.667ns|          N/A|      6.230ns|            0|            0|            0|       154685|
+|dc/adc_clk_buf                 |             |             |             |             |             |             |             |
+| r4_iadc_spec_adc/r4_iadc_spec_|      6.667ns|      6.230ns|          N/A|            0|            0|       154685|            0|
+| adc/adc_clk_dcm               |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 162 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 3 mins 13 secs 
+Total CPU time to PAR completion: 2 mins 59 secs 
+
+Peak Memory Usage:  704 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 165
+Number of info messages: 2
+
+Writing design to file system.ncd
+
+
+
+PAR done!

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/implement
+END
+implement.bat
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/implement/implement.bat
+END
+implement.sh
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/implement/implement.sh
+END
+xst.scr
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/implement/xst.scr
+END
+xst.prj
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/implement/xst.prj
+END

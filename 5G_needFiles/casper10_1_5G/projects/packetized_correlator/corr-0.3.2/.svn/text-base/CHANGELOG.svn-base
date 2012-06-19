@@ -1,0 +1,13 @@
+0.3.2 : Last Updated 02.13.09
+----------------------------------------------------------------------
+-Added conf dir with example config files
+-Added web_adc.py.cgi, a web interface to the ADC power readouts
+-Updated web_plotdb.py.cgi to add auto2 plotting mode to plot each auto correlation on a separate plot with control over scaling range
+-Updated cn_rx.py to write blank integrations if too many or too few packets are received
+-Updated conf_eq.py to have a verbose mode in writing equalizations, and a read mode to read out the current equalization settings
+-Optimized cn_tx.py
+
+0.3.1: Last Updated 01.30.09
+----------------------------------------------------------------------
+Stable Release
+

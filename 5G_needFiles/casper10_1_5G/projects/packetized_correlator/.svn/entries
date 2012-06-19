@@ -1,0 +1,61 @@
+10
+
+dir
+2553
+http://casper.berkeley.edu/svn/trunk/projects/packetized_correlator
+http://casper.berkeley.edu/svn
+
+
+
+2009-08-05T13:42:04.839187Z
+2213
+jmanley
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+incomplete
+577e11ce-4b3a-42a0-b907-5d4e03b181e5
+
+corr-0.2.1
+dir
+
+corr-0.3.0
+dir
+
+corr-0.3.1
+dir
+
+corr-0.4.0
+dir
+
+corr-0.2.3
+dir
+
+corr-0.3.2
+dir
+
+test_10gbe_mux_pack
+dir
+
+corr-confdev
+dir
+
+ibob
+dir
+
+test_matlab_blocks
+dir
+
+bee2
+dir
+

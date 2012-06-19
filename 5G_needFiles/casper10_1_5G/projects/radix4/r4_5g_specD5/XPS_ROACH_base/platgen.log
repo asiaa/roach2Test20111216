@@ -1,0 +1,491 @@
+Release 10.1.03 - platgen EDK_K_SP3.6 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc5vsx95tff1136-1 -lang vhdl system.mhs 
+
+Parse system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor epb_opb_bridge_inst
+  (0000000000-0x0000ffff) sys_block_inst	opb0
+  (0x00020000-0x0002ffff) opb_adc5g_dmux_controller_0	opb0
+  (0x01000000-0x010000ff) r4_5g_specD5_acc_cnt	opb0
+  (0x01000100-0x010001ff) r4_5g_specD5_acc_len	opb0
+  (0x01000200-0x010002ff) r4_5g_specD5_cnt_rst	opb0
+  (0x01000300-0x010003ff) r4_5g_specD5_snap_adc_addr	opb0
+  (0x01001000-0x01001fff) r4_5g_specD5_snap_adc_bram	opb0
+  (0x01002000-0x010020ff) r4_5g_specD5_snap_adc_ctrl	opb0
+  (0x01002100-0x010021ff) r4_5g_specD5_snap_vacc0_addr	opb0
+  (0x01003000-0x01003fff) r4_5g_specD5_snap_vacc0_bram	opb0
+  (0x01004000-0x010040ff) r4_5g_specD5_snap_vacc0_ctrl	opb0
+  (0x01004100-0x010041ff) r4_5g_specD5_snap_vacc1_addr	opb0
+  (0x01005000-0x01005fff) r4_5g_specD5_snap_vacc1_bram	opb0
+  (0x01006000-0x010060ff) r4_5g_specD5_snap_vacc1_ctrl	opb0
+  (0x01006100-0x010061ff) r4_5g_specD5_snap_vacc2_addr	opb0
+  (0x01007000-0x01007fff) r4_5g_specD5_snap_vacc2_bram	opb0
+  (0x01008000-0x010080ff) r4_5g_specD5_snap_vacc2_ctrl	opb0
+  (0x01008100-0x010081ff) r4_5g_specD5_snap_vacc3_addr	opb0
+  (0x01009000-0x01009fff) r4_5g_specD5_snap_vacc3_bram	opb0
+  (0x0100a000-0x0100a0ff) r4_5g_specD5_snap_vacc3_ctrl	opb0
+  (0x0100a100-0x0100a1ff) r4_5g_specD5_sync_cnt	opb0
+
+Check platform address map ...
+
+Computing clock values...
+INFO:MDT - Frequency for Top-Level Input Clock 'sys_clk_n' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+INFO:MDT - Frequency for Top-Level Input Clock 'sys_clk_p' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+INFO:MDT - Frequency for Top-Level Input Clock 'dly_clk_n' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+INFO:MDT - Frequency for Top-Level Input Clock 'dly_clk_p' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+INFO:MDT - Frequency for Top-Level Input Clock 'aux0_clk_n' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+INFO:MDT - Frequency for Top-Level Input Clock 'aux0_clk_p' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+INFO:MDT - Frequency for Top-Level Input Clock 'aux1_clk_n' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+INFO:MDT - Frequency for Top-Level Input Clock 'aux1_clk_p' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   r4_5g_specD5_snap_adc_bram_ramif:bram_clk. Clock DRCs will not be performed
+   on this core and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   r4_5g_specD5_snap_vacc0_bram_ramif:bram_clk. Clock DRCs will not be performed
+   on this core and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   r4_5g_specD5_snap_vacc1_bram_ramif:bram_clk. Clock DRCs will not be performed
+   on this core and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   r4_5g_specD5_snap_vacc2_bram_ramif:bram_clk. Clock DRCs will not be performed
+   on this core and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   r4_5g_specD5_snap_vacc3_bram_ramif:bram_clk. Clock DRCs will not be performed
+   on this core and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:MDT - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+
+Overriding system level properties ...
+INFO:MDT - IPNAME:opb0 INSTANCE:opb_v20 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v2
+   0_v2_1_0.mpd line 38 - tool is overriding PARAMETER C_NUM_MASTERS value to 1
+INFO:MDT - IPNAME:opb0 INSTANCE:opb_v20 -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\opb_v20_v1_10_c\data\opb_v2
+   0_v2_1_0.mpd line 39 - tool is overriding PARAMETER C_NUM_SLAVES value to 21
+INFO:MDT - IPNAME:r4_5g_specD5_snap_adc_bram_ramblk INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 36 - tool is overriding PARAMETER C_MEMSIZE value to
+   0x1000
+INFO:MDT - IPNAME:r4_5g_specD5_snap_vacc0_bram_ramblk INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 36 - tool is overriding PARAMETER C_MEMSIZE value to
+   0x1000
+INFO:MDT - IPNAME:r4_5g_specD5_snap_vacc1_bram_ramblk INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 36 - tool is overriding PARAMETER C_MEMSIZE value to
+   0x1000
+INFO:MDT - IPNAME:r4_5g_specD5_snap_vacc2_bram_ramblk INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 36 - tool is overriding PARAMETER C_MEMSIZE value to
+   0x1000
+INFO:MDT - IPNAME:r4_5g_specD5_snap_vacc3_bram_ramblk INSTANCE:bram_block -
+   C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bra
+   m_block_v2_1_0.mpd line 36 - tool is overriding PARAMETER C_MEMSIZE value to
+   0x1000
+
+Running system level Update ...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Check platform configuration ...
+IPNAME:opb_v20 INSTANCE:opb0 -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 108 -
+1 master(s) : 21 slave(s)
+
+Check port drivers...
+WARNING:MDT - PORT:sys_clk CONNECTOR:sys_clk -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 70
+   - floating connection!
+WARNING:MDT - PORT:sys_clk90 CONNECTOR:sys_clk90 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 71
+   - floating connection!
+WARNING:MDT - PORT:sys_clk180 CONNECTOR:sys_clk180 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 72
+   - floating connection!
+WARNING:MDT - PORT:sys_clk270 CONNECTOR:sys_clk270 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 73
+   - floating connection!
+WARNING:MDT - PORT:sys_clk_lock CONNECTOR:sys_clk_lock -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 74
+   - floating connection!
+WARNING:MDT - PORT:sys_clk2x CONNECTOR:sys_clk2x -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 75
+   - floating connection!
+WARNING:MDT - PORT:sys_clk2x90 CONNECTOR:sys_clk2x90 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 76
+   - floating connection!
+WARNING:MDT - PORT:sys_clk2x180 CONNECTOR:sys_clk2x180 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 77
+   - floating connection!
+WARNING:MDT - PORT:sys_clk2x270 CONNECTOR:sys_clk2x270 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 78
+   - floating connection!
+WARNING:MDT - PORT:dly_clk CONNECTOR:dly_clk -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 79
+   - floating connection!
+WARNING:MDT - PORT:aux0_clk CONNECTOR:aux0_clk -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 80
+   - floating connection!
+WARNING:MDT - PORT:aux0_clk90 CONNECTOR:aux0_clk90 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 81
+   - floating connection!
+WARNING:MDT - PORT:aux0_clk180 CONNECTOR:aux0_clk180 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 82
+   - floating connection!
+WARNING:MDT - PORT:aux0_clk270 CONNECTOR:aux0_clk270 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 83
+   - floating connection!
+WARNING:MDT - PORT:aux1_clk CONNECTOR:aux1_clk -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 84
+   - floating connection!
+WARNING:MDT - PORT:aux1_clk90 CONNECTOR:aux1_clk90 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 85
+   - floating connection!
+WARNING:MDT - PORT:aux1_clk180 CONNECTOR:aux1_clk180 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 86
+   - floating connection!
+WARNING:MDT - PORT:aux1_clk270 CONNECTOR:aux1_clk270 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 87
+   - floating connection!
+WARNING:MDT - PORT:aux0_clk2x CONNECTOR:aux0_clk2x -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 88
+   - floating connection!
+WARNING:MDT - PORT:aux0_clk2x90 CONNECTOR:aux0_clk2x90 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 89
+   - floating connection!
+WARNING:MDT - PORT:aux0_clk2x180 CONNECTOR:aux0_clk2x180 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 90
+   - floating connection!
+WARNING:MDT - PORT:aux0_clk2x270 CONNECTOR:aux0_clk2x270 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 91
+   - floating connection!
+WARNING:MDT - PORT:idelay_rdy CONNECTOR:idelay_rdy -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 94
+   - floating connection!
+WARNING:MDT - PORT:soft_reset CONNECTOR:soft_reset -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 176
+   - floating connection!
+WARNING:MDT - PORT:ctrl_clk180_out CONNECTOR:adc0_clk180 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 365
+   - floating connection!
+WARNING:MDT - PORT:ctrl_clk270_out CONNECTOR:adc0_clk270 -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 366
+   - floating connection!
+WARNING:MDT - PORT:ctrl_dcm_locked CONNECTOR:adc0_dcm_locked -
+   D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 367
+   - floating connection!
+
+Performing Clock DRCs...
+
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+IPNAME:r4_5g_specD5 INSTANCE:r4_5g_specd5_xsg_core_config -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 225 -
+Copying (BBD-specified) netlist files.
+IPNAME:adc_5g_dmux_interface INSTANCE:r4_5g_specd5_adc_5g_dmux -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 322 -
+Copying (BBD-specified) netlist files.
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:r4_5g_specD5_snap_adc_bram_ramblk -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 457 -
+elaborating IP
+IPNAME:bram_block INSTANCE:r4_5g_specD5_snap_vacc0_bram_ramblk -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 512 -
+elaborating IP
+IPNAME:bram_block INSTANCE:r4_5g_specD5_snap_vacc1_bram_ramblk -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 567 -
+elaborating IP
+IPNAME:bram_block INSTANCE:r4_5g_specD5_snap_vacc2_bram_ramblk -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 622 -
+elaborating IP
+IPNAME:bram_block INSTANCE:r4_5g_specD5_snap_vacc3_bram_ramblk -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 677 -
+elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+INFO:MDT - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized.
+INSTANCE:infrastructure_inst -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 58 -
+Running XST synthesis
+INSTANCE:reset_block_inst -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 97 -
+Running XST synthesis
+INSTANCE:opb0 -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 108 -
+Running XST synthesis
+INSTANCE:epb_opb_bridge_inst -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 117 -
+Running XST synthesis
+INSTANCE:epb_infrastructure_inst -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 136 -
+Running XST synthesis
+INSTANCE:sys_block_inst -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 161 -
+Running XST synthesis
+INSTANCE:opb_adc5g_dmux_controller_0 -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 188 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_xsg_core_config -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 225 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_acc_cnt -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 298 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_acc_len -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 310 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_adc_5g_dmux -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 322 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_cnt_rst -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 391 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_led0_sync -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 403 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_led1_new_acc -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 418 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_adc_addr -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 433 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_adc_bram_ramif -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 445 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_adc_bram_ramblk -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 457 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_adc_bram -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 464 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_adc_ctrl -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 476 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc0_addr -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 488 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc0_bram_ramif -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 500 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc0_bram_ramblk -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 512 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc0_bram -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 519 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc0_ctrl -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 531 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc1_addr -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 543 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc1_bram_ramif -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 555 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc1_bram_ramblk -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 567 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc1_bram -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 574 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc1_ctrl -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 586 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc2_addr -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 598 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc2_bram_ramif -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 610 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc2_bram_ramblk -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 622 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc2_bram -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 629 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc2_ctrl -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 641 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc3_addr -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 653 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc3_bram_ramif -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 665 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc3_bram_ramblk -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 677 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc3_bram -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 684 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_snap_vacc3_ctrl -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 696 -
+Running XST synthesis
+INSTANCE:r4_5g_specd5_sync_cnt -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 708 -
+Running XST synthesis
+
+Running NGCBUILD ...
+IPNAME:r4_5g_specd5_xsg_core_config_wrapper
+INSTANCE:r4_5g_specd5_xsg_core_config -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 225 -
+Running NGCBUILD
+IPNAME:r4_5g_specd5_adc_5g_dmux_wrapper INSTANCE:r4_5g_specd5_adc_5g_dmux -
+D:\casper10_1\projects\radix4\r4_5g_specD5\XPS_ROACH_base\system.mhs line 322 -
+Running NGCBUILD
+
+Rebuilding cache ...
+
+Total run time: 517.00 seconds

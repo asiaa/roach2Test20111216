@@ -1,0 +1,491 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/601/trunk/newfft_library
+END
+pfb_coefs.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/527/trunk/newfft_library/pfb_coefs.m
+END
+r2_dit_stage_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/513/trunk/newfft_library/r2_dit_stage_init.m
+END
+fir_coef_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/527/trunk/newfft_library/fir_coef_init.m
+END
+twiddle_1_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/511/trunk/newfft_library/twiddle_1_init.m
+END
+r2_twiddle_2_dit_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/511/trunk/newfft_library/r2_twiddle_2_dit_init.m
+END
+reinit_block.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/511/trunk/newfft_library/reinit_block.m
+END
+r2_dit_fft_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/525/trunk/newfft_library/r2_dit_fft_init.m
+END
+test_newfft.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/519/trunk/newfft_library/test_newfft.mdl
+END
+r4_butterfly_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/513/trunk/newfft_library/r4_butterfly_init.m
+END
+test_commutator.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/519/trunk/newfft_library/test_commutator.mdl
+END
+is_library_block.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/519/trunk/newfft_library/is_library_block.m
+END
+find_by_name.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/527/trunk/newfft_library/find_by_name.m
+END
+slblocks.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/520/trunk/newfft_library/slblocks.m
+END
+test_delay.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/519/trunk/newfft_library/test_delay.mdl
+END
+cmpy3_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/512/trunk/newfft_library/cmpy3_init.m
+END
+biplex_commutator_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/511/trunk/newfft_library/biplex_commutator_init.m
+END
+test_ffts.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/519/trunk/newfft_library/test_ffts.mdl
+END
+quadplex_bitrev_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/511/trunk/newfft_library/quadplex_bitrev_init.m
+END
+test_firs.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/527/trunk/newfft_library/test_firs.mdl
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/526/trunk/newfft_library/.cvsignore
+END
+test_new_est.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/519/trunk/newfft_library/test_new_est.mdl
+END
+fir_quantize_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/527/trunk/newfft_library/fir_quantize_init.m
+END
+same_state.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/511/trunk/newfft_library/same_state.m
+END
+backpopulate_mask.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/519/trunk/newfft_library/backpopulate_mask.m
+END
+munge_block.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/519/trunk/newfft_library/munge_block.m
+END
+test_junk.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/519/trunk/newfft_library/test_junk.mdl
+END
+test_xil_est.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/511/trunk/newfft_library/test_xil_est.mdl
+END
+coef_gen_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/527/trunk/newfft_library/coef_gen_init.m
+END
+test_triggered_counter.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/601/trunk/newfft_library/test_triggered_counter.mdl
+END
+bit_reverse_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/525/trunk/newfft_library/bit_reverse_init.m
+END
+twiddle_n_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/513/trunk/newfft_library/twiddle_n_init.m
+END
+update_block.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/511/trunk/newfft_library/update_block.m
+END
+test_convert.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/598/trunk/newfft_library/test_convert.mdl
+END
+r2_twiddle_2_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/511/trunk/newfft_library/r2_twiddle_2_init.m
+END
+test_old_est.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/511/trunk/newfft_library/test_old_est.mdl
+END
+test_edge_detect.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/601/trunk/newfft_library/test_edge_detect.mdl
+END
+fir_core_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/527/trunk/newfft_library/fir_core_init.m
+END
+test_r2_butterfly_j.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/511/trunk/newfft_library/test_r2_butterfly_j.mdl
+END
+mult_add_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/527/trunk/newfft_library/mult_add_init.m
+END
+test_delay_bram.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/511/trunk/newfft_library/test_delay_bram.mdl
+END
+delete_contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/525/trunk/newfft_library/delete_contents.m
+END
+twiddles.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/511/trunk/newfft_library/twiddles.m
+END
+biplex_bitrev_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/511/trunk/newfft_library/biplex_bitrev_init.m
+END
+twiddle_gen.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/511/trunk/newfft_library/twiddle_gen.m
+END
+test_newfft_2.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/519/trunk/newfft_library/test_newfft_2.mdl
+END
+complex_convert_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/561/trunk/newfft_library/complex_convert_init.m
+END
+test_newfft_4.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/519/trunk/newfft_library/test_newfft_4.mdl
+END
+r4_dit_stage_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/513/trunk/newfft_library/r4_dit_stage_init.m
+END
+bitrev.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/511/trunk/newfft_library/bitrev.m
+END
+test_r4_junk.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/511/trunk/newfft_library/test_r4_junk.mdl
+END
+save_state.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/511/trunk/newfft_library/save_state.m
+END
+test_newfft_8.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/519/trunk/newfft_library/test_newfft_8.mdl
+END
+test_qr4_est.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/519/trunk/newfft_library/test_qr4_est.mdl
+END
+test_newfft_fun2.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/519/trunk/newfft_library/test_newfft_fun2.mdl
+END
+maskless_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/527/trunk/newfft_library/maskless_init.m
+END
+r2_butterfly_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/513/trunk/newfft_library/r2_butterfly_init.m
+END
+r4_dit_fft_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/525/trunk/newfft_library/r4_dit_fft_init.m
+END
+fir_tap_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/527/trunk/newfft_library/fir_tap_init.m
+END
+twiddle_gen_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/511/trunk/newfft_library/twiddle_gen_init.m
+END
+cmpy3.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/511/trunk/newfft_library/cmpy3.mdl
+END
+test_r2_dat_stage.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/511/trunk/newfft_library/test_r2_dat_stage.mdl
+END
+test_qr4_fft.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/519/trunk/newfft_library/test_qr4_fft.mdl
+END
+test_armed_trigger.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/589/trunk/newfft_library/test_armed_trigger.mdl
+END
+newfft_library.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/601/trunk/newfft_library/newfft_library.mdl
+END
+calc_errs.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/511/trunk/newfft_library/calc_errs.m
+END
+ri_to_c_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/511/trunk/newfft_library/ri_to_c_init.m
+END
+c_to_ri_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/511/trunk/newfft_library/c_to_ri_init.m
+END
+delay_slr_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/511/trunk/newfft_library/delay_slr_init.m
+END
+const_gen_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/527/trunk/newfft_library/const_gen_init.m
+END
+convert_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/601/trunk/newfft_library/convert_init.m
+END
+fir_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/529/trunk/newfft_library/fir_init.m
+END
+breakout_box_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/511/trunk/newfft_library/breakout_box_init.m
+END
+complex_delay_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/511/trunk/newfft_library/complex_delay_init.m
+END
+bitrevm.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/511/trunk/newfft_library/bitrevm.m
+END
+test_dummy.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/519/trunk/newfft_library/test_dummy.mdl
+END
+test_biplex_bitrev.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/519/trunk/newfft_library/test_biplex_bitrev.mdl
+END
+cmpy4_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/511/trunk/newfft_library/cmpy4_init.m
+END
+edge_detect_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/601/trunk/newfft_library/edge_detect_init.m
+END
+quadplex_commutator_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/511/trunk/newfft_library/quadplex_commutator_init.m
+END
+test_newfft_fun.mdl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/519/trunk/newfft_library/test_newfft_fun.mdl
+END
+delay_bram_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/511/trunk/newfft_library/delay_bram_init.m
+END

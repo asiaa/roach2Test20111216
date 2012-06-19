@@ -1,0 +1,553 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_xst.prj"
+Verilog Include Directory          : {"D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxReferenceDesigns\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc5vsx95tff1136-1
+Output File Name                   : "../implementation/system.ngc"
+
+---- Source Options
+Top Module Name                    : system
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/casper10_1/projects/radix4/r4_5g_specV5/XPS_ROACH_base/hdl/system.vhd" in Library work.
+Entity <system> compiled.
+Entity <system> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <system> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <system> in library <work> (Architecture <STRUCTURE>).
+Entity <system> analyzed. Unit <system> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <system>.
+    Related source file is "D:/casper10_1/projects/radix4/r4_5g_specV5/XPS_ROACH_base/hdl/system.vhd".
+Unit <system> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/infrastructure_inst_wrapper.ngc>.
+Reading core <../implementation/reset_block_inst_wrapper.ngc>.
+Reading core <../implementation/opb0_wrapper.ngc>.
+Reading core <../implementation/epb_opb_bridge_inst_wrapper.ngc>.
+Reading core <../implementation/epb_infrastructure_inst_wrapper.ngc>.
+Reading core <../implementation/sys_block_inst_wrapper.ngc>.
+Reading core <../implementation/opb_adc5gcontroller_0_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_xsg_core_config_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_acc_cnt_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_acc_len_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_adc_5g_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_cnt_rst_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_led0_sync_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_led1_new_acc_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_adc_addr_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_adc_bram_lsb_ramif_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_adc_bram_lsb_ramblk_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_adc_bram_lsb_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_adc_bram_msb_ramif_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_adc_bram_msb_ramblk_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_adc_bram_msb_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_adc_ctrl_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc0_addr_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc0_bram_ramif_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc0_bram_ramblk_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc0_bram_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc0_ctrl_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc1_addr_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc1_bram_ramif_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc1_bram_ramblk_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc1_bram_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc1_ctrl_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc2_addr_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc2_bram_ramif_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc2_bram_ramblk_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc2_bram_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc2_ctrl_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc3_addr_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc3_bram_ramif_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc3_bram_ramblk_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc3_bram_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_snap_vacc3_ctrl_wrapper.ngc>.
+Reading core <../implementation/r4_5g_specv5_sync_cnt_wrapper.ngc>.
+Loading core <infrastructure_inst_wrapper> for timing and area information for instance <infrastructure_inst>.
+Loading core <reset_block_inst_wrapper> for timing and area information for instance <reset_block_inst>.
+Loading core <opb0_wrapper> for timing and area information for instance <opb0>.
+Loading core <epb_opb_bridge_inst_wrapper> for timing and area information for instance <epb_opb_bridge_inst>.
+Loading core <epb_infrastructure_inst_wrapper> for timing and area information for instance <epb_infrastructure_inst>.
+Loading core <sys_block_inst_wrapper> for timing and area information for instance <sys_block_inst>.
+Loading core <opb_adc5gcontroller_0_wrapper> for timing and area information for instance <opb_adc5gcontroller_0>.
+Loading core <r4_5g_specv5_xsg_core_config_wrapper> for timing and area information for instance <r4_5g_specV5_XSG_core_config>.
+Loading core <r4_5g_specv5_acc_cnt_wrapper> for timing and area information for instance <r4_5g_specV5_acc_cnt>.
+Loading core <r4_5g_specv5_acc_len_wrapper> for timing and area information for instance <r4_5g_specV5_acc_len>.
+Loading core <r4_5g_specv5_adc_5g_wrapper> for timing and area information for instance <r4_5g_specV5_adc_5g>.
+Loading core <r4_5g_specv5_cnt_rst_wrapper> for timing and area information for instance <r4_5g_specV5_cnt_rst>.
+Loading core <r4_5g_specv5_led0_sync_wrapper> for timing and area information for instance <r4_5g_specV5_led0_sync>.
+Loading core <r4_5g_specv5_led1_new_acc_wrapper> for timing and area information for instance <r4_5g_specV5_led1_new_acc>.
+Loading core <r4_5g_specv5_snap_adc_addr_wrapper> for timing and area information for instance <r4_5g_specV5_snap_adc_addr>.
+Loading core <r4_5g_specv5_snap_adc_bram_lsb_ramif_wrapper> for timing and area information for instance <r4_5g_specV5_snap_adc_bram_lsb_ramif>.
+Loading core <r4_5g_specv5_snap_adc_bram_lsb_ramblk_wrapper> for timing and area information for instance <r4_5g_specv5_snap_adc_bram_lsb_ramblk>.
+Loading core <r4_5g_specv5_snap_adc_bram_lsb_wrapper> for timing and area information for instance <r4_5g_specV5_snap_adc_bram_lsb>.
+Loading core <r4_5g_specv5_snap_adc_bram_msb_ramif_wrapper> for timing and area information for instance <r4_5g_specV5_snap_adc_bram_msb_ramif>.
+Loading core <r4_5g_specv5_snap_adc_bram_msb_ramblk_wrapper> for timing and area information for instance <r4_5g_specv5_snap_adc_bram_msb_ramblk>.
+Loading core <r4_5g_specv5_snap_adc_bram_msb_wrapper> for timing and area information for instance <r4_5g_specV5_snap_adc_bram_msb>.
+Loading core <r4_5g_specv5_snap_adc_ctrl_wrapper> for timing and area information for instance <r4_5g_specV5_snap_adc_ctrl>.
+Loading core <r4_5g_specv5_snap_vacc0_addr_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc0_addr>.
+Loading core <r4_5g_specv5_snap_vacc0_bram_ramif_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc0_bram_ramif>.
+Loading core <r4_5g_specv5_snap_vacc0_bram_ramblk_wrapper> for timing and area information for instance <r4_5g_specv5_snap_vacc0_bram_ramblk>.
+Loading core <r4_5g_specv5_snap_vacc0_bram_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc0_bram>.
+Loading core <r4_5g_specv5_snap_vacc0_ctrl_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc0_ctrl>.
+Loading core <r4_5g_specv5_snap_vacc1_addr_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc1_addr>.
+Loading core <r4_5g_specv5_snap_vacc1_bram_ramif_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc1_bram_ramif>.
+Loading core <r4_5g_specv5_snap_vacc1_bram_ramblk_wrapper> for timing and area information for instance <r4_5g_specv5_snap_vacc1_bram_ramblk>.
+Loading core <r4_5g_specv5_snap_vacc1_bram_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc1_bram>.
+Loading core <r4_5g_specv5_snap_vacc1_ctrl_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc1_ctrl>.
+Loading core <r4_5g_specv5_snap_vacc2_addr_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc2_addr>.
+Loading core <r4_5g_specv5_snap_vacc2_bram_ramif_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc2_bram_ramif>.
+Loading core <r4_5g_specv5_snap_vacc2_bram_ramblk_wrapper> for timing and area information for instance <r4_5g_specv5_snap_vacc2_bram_ramblk>.
+Loading core <r4_5g_specv5_snap_vacc2_bram_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc2_bram>.
+Loading core <r4_5g_specv5_snap_vacc2_ctrl_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc2_ctrl>.
+Loading core <r4_5g_specv5_snap_vacc3_addr_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc3_addr>.
+Loading core <r4_5g_specv5_snap_vacc3_bram_ramif_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc3_bram_ramif>.
+Loading core <r4_5g_specv5_snap_vacc3_bram_ramblk_wrapper> for timing and area information for instance <r4_5g_specv5_snap_vacc3_bram_ramblk>.
+Loading core <r4_5g_specv5_snap_vacc3_bram_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc3_bram>.
+Loading core <r4_5g_specv5_snap_vacc3_ctrl_wrapper> for timing and area information for instance <r4_5g_specV5_snap_vacc3_ctrl>.
+Loading core <r4_5g_specv5_sync_cnt_wrapper> for timing and area information for instance <r4_5g_specV5_sync_cnt>.
+Loading device for application Rf_Device from file '5vsx95t.nph' in environment c:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/vacc0_ff1ce515bb/pulse_ext_0ff64cdd38/posedge_6aceed40b5/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/vacc2_e508517ffc/pulse_ext_0ff64cdd38/posedge_6aceed40b5/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_5g_specv5_x0/delay26/op_mem_20_24_2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_1_b409832013/fir_coef_8b710ddd57/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 5 FFs/Latches : <r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_1_b409832013/fir_coef_8b710ddd57/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_1_b409832013/fir_coef_8b710ddd57/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_1_b409832013/fir_coef_8b710ddd57/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_5g_specv5_x0/fir_4_9067c135e4/fir_tap_1_b54d787092/fir_coef_fa8d0a6424/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_5g_specv5_x0/delay10/op_mem_20_24_0> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/vacc1_cb7b32fb54/pulse_ext_0ff64cdd38/posedge_6aceed40b5/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following FF/Latch : <r4_5g_specv5_x0/vacc3_acfd8cbee2/pulse_ext_0ff64cdd38/posedge_6aceed40b5/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/pulse_ext2_dbf0e456b3/posedge_aed9b95747/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following FF/Latch : <r4_5g_specv5_x0/delay24/op_mem_20_24_1> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/wr_rst_reg_1> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/rd_rst_reg_2> in Unit <BU2> is equivalent to the following 2 FFs/Latches : <U0/grf.rf/rstblk/rd_rst_reg_1> <U0/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/vacc0_ff1ce515bb/pulse_ext_0ff64cdd38/posedge_6aceed40b5/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/vacc2_e508517ffc/pulse_ext_0ff64cdd38/posedge_6aceed40b5/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_5g_specv5_x0/delay26/op_mem_20_24_2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy2_723418a7ae/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy2_d3cec8edee/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy1_26dbc807fe/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_1_b409832013/fir_coef_8b710ddd57/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 5 FFs/Latches : <r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_1_b409832013/fir_coef_8b710ddd57/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_1_b409832013/fir_coef_8b710ddd57/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_1_b409832013/fir_coef_8b710ddd57/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_5g_specv5_x0/fir_4_9067c135e4/fir_tap_1_b54d787092/fir_coef_fa8d0a6424/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_5g_specv5_x0/delay10/op_mem_20_24_0> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy3_a245edc9f1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy1_f1024babbe/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy3_937c7924be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/vacc1_cb7b32fb54/pulse_ext_0ff64cdd38/posedge_6aceed40b5/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following FF/Latch : <r4_5g_specv5_x0/vacc3_acfd8cbee2/pulse_ext_0ff64cdd38/posedge_6aceed40b5/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_4_fc2110268b/r4_twiddle_f1f6e73f6c/cmpy2_0fb3561415/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy1_c4e84ca371/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_5_cf41b9127c/r4_twiddle_a297e404cd/cmpy3_050c2401b1/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_1_d77345f031/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_2_505f1fa065/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy3_c59e6f184c/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_5_319448d4dd/fir_quantize_159d90c3b8/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_3_2e339e97dd/r4_twiddle_3751d89af1/cmpy1_807c125e96/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/pulse_ext2_dbf0e456b3/posedge_aed9b95747/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following FF/Latch : <r4_5g_specv5_x0/delay24/op_mem_20_24_1> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_5g_specv5_x0/r4_dit_fft_bb20d3c530/r4_dit_stage_2_1a9931e6f1/r4_twiddle_509aef3b56/cmpy2_ec95a7d9de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_5g_specV5_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_5g_specv5_x0/fir_6_e2e7505615/fir_quantize_159d90c3b8/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/wr_rst_reg_1> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/rd_rst_reg_2> in Unit <BU2> is equivalent to the following 2 FFs/Latches : <U0/grf.rf/rstblk/rd_rst_reg_1> <U0/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 137
+
+Cell Usage :
+# BELS                             : 20723
+#      GND                         : 386
+#      INV                         : 262
+#      LUT1                        : 1687
+#      LUT2                        : 3897
+#      LUT3                        : 1763
+#      LUT4                        : 511
+#      LUT5                        : 578
+#      LUT6                        : 1365
+#      MUXCY                       : 4933
+#      MUXF7                       : 4
+#      VCC                         : 325
+#      XORCY                       : 5012
+# FlipFlops/Latches                : 15873
+#      FD                          : 1814
+#      FD_1                        : 17
+#      FDC                         : 49
+#      FDCE                        : 161
+#      FDE                         : 11403
+#      FDP                         : 9
+#      FDPE                        : 5
+#      FDR                         : 241
+#      FDRE                        : 1889
+#      FDRS                        : 6
+#      FDRSE                       : 2
+#      FDS                         : 32
+#      FDSE                        : 211
+#      IDDR_2CLK                   : 33
+#      LDC                         : 1
+# RAMS                             : 146
+#      RAM64M                      : 23
+#      RAM64X1D                    : 1
+#      RAMB18                      : 98
+#      RAMB36_EXP                  : 24
+# Shift Registers                  : 2486
+#      SRL16                       : 1
+#      SRL16E                      : 1858
+#      SRLC16E                     : 627
+# Clock Buffers                    : 20
+#      BUFG                        : 20
+# IO Buffers                       : 98
+#      IBUF                        : 34
+#      IBUFDS                      : 36
+#      IBUFG                       : 1
+#      IBUFGDS                     : 3
+#      IOBUF                       : 17
+#      OBUF                        : 7
+# DCM_ADVs                         : 7
+#      DCM_ADV                     : 7
+# DSPs                             : 100
+#      DSP48E                      : 100
+# Others                           : 2
+#      IDELAYCTRL                  : 1
+#      TIMESPEC                    : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:           15822  out of  58880    26%  
+ Number of Slice LUTs:                12643  out of  58880    21%  
+    Number used as Logic:             10063  out of  58880    17%  
+    Number used as Memory:             2580  out of  24320    10%  
+       Number used as RAM:               94
+       Number used as SRL:             2486
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  18182
+   Number with an unused Flip Flop:    2360  out of  18182    12%  
+   Number with an unused LUT:          5539  out of  18182    30%  
+   Number of fully used LUT-FF pairs: 10283  out of  18182    56%  
+   Number of unique control sets:       388
+
+IO Utilization: 
+ Number of IOs:                         137
+ Number of bonded IOBs:                  41  out of    640     6%  
+    IOB Flip Flops/Latches:              51
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               73  out of    244    29%  
+    Number using Block RAM only:         73
+ Number of BUFG/BUFGCTRLs:               20  out of     32    62%  
+ Number of DCM_ADVs:                      7  out of     12    58%  
+ Number of DSP48Es:                     100  out of    640    15%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                                                                  | Clock buffer(FF name)                                                                                                                                                                                                                                                   | Load  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+epb_clk_in                                                                                                                                                                                    | infrastructure_inst/dcm_epb_inst:CLK0                                                                                                                                                                                                                                   | 2308  |
+adc0clk_p                                                                                                                                                                                     | r4_5g_specV5_adc_5g/dcm_inst_1:CLK0                                                                                                                                                                                                                                     | 15990 |
+N0                                                                                                                                                                                            | NONE(opb_adc5gcontroller_0/opb_adc5gcontroller_0/USER_LOGIC_I/FD_ADC1_ADC0)                                                                                                                                                                                             | 3     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_1_b409832013/fir_core_9dfb5ea5d5/tap_delay_8b0b4ca2e5/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_1_b409832013/fir_core_9dfb5ea5d5/tap_delay_8b0b4ca2e5/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_1_b409832013/fir_coef_8b710ddd57/c_gen_a4fea711a5/mem/comp0.core_instance0/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_1_b409832013/fir_coef_8b710ddd57/c_gen_a4fea711a5/mem/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_2_de2966bf5b/fir_core_3b628b72bc/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_2_de2966bf5b/fir_core_3b628b72bc/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_2_de2966bf5b/fir_coef_8033da333b/c_gen_148c3edefd/mem/comp1.core_instance1/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_2_de2966bf5b/fir_coef_8033da333b/c_gen_148c3edefd/mem/comp1.core_instance1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_3_1db532ecda/fir_core_57f2bc8a56/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_3_1db532ecda/fir_core_57f2bc8a56/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_3_1db532ecda/fir_coef_5e5fcf201a/c_gen_6b8ad9a4f8/mem/comp2.core_instance2/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_3_1db532ecda/fir_coef_5e5fcf201a/c_gen_6b8ad9a4f8/mem/comp2.core_instance2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_4_7c430193f8/fir_core_e6a7632a34/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_4_7c430193f8/fir_core_e6a7632a34/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_4_7c430193f8/fir_coef_cd9df4bc76/c_gen_bfed56ba73/mem/comp3.core_instance3/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_4_7c430193f8/fir_coef_cd9df4bc76/c_gen_bfed56ba73/mem/comp3.core_instance3/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_5_32d697476e/fir_core_64a4b01cfe/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_5_32d697476e/fir_core_64a4b01cfe/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_5_32d697476e/fir_coef_74e36d4821/c_gen_33087564cb/mem/comp4.core_instance4/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_5_32d697476e/fir_coef_74e36d4821/c_gen_33087564cb/mem/comp4.core_instance4/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_6_8984997cb1/fir_coef_6398eb6f71/c_gen_6a3e648c8e/mem/comp5.core_instance5/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_1_d77345f031/fir_tap_6_8984997cb1/fir_coef_6398eb6f71/c_gen_6a3e648c8e/mem/comp5.core_instance5/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_1_b409832013/fir_core_9dfb5ea5d5/tap_delay_8b0b4ca2e5/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_1_b409832013/fir_core_9dfb5ea5d5/tap_delay_8b0b4ca2e5/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_1_b409832013/fir_coef_8b710ddd57/c_gen_a4fea711a5/mem/comp0.core_instance0/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_1_b409832013/fir_coef_8b710ddd57/c_gen_a4fea711a5/mem/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_2_de2966bf5b/fir_core_3b628b72bc/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_2_de2966bf5b/fir_core_3b628b72bc/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_2_de2966bf5b/fir_coef_8033da333b/c_gen_148c3edefd/mem/comp1.core_instance1/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_2_de2966bf5b/fir_coef_8033da333b/c_gen_148c3edefd/mem/comp1.core_instance1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_3_1db532ecda/fir_core_57f2bc8a56/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_3_1db532ecda/fir_core_57f2bc8a56/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_3_1db532ecda/fir_coef_5e5fcf201a/c_gen_6b8ad9a4f8/mem/comp2.core_instance2/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_3_1db532ecda/fir_coef_5e5fcf201a/c_gen_6b8ad9a4f8/mem/comp2.core_instance2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_4_7c430193f8/fir_core_e6a7632a34/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_4_7c430193f8/fir_core_e6a7632a34/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_4_7c430193f8/fir_coef_cd9df4bc76/c_gen_bfed56ba73/mem/comp3.core_instance3/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_4_7c430193f8/fir_coef_cd9df4bc76/c_gen_bfed56ba73/mem/comp3.core_instance3/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_5_32d697476e/fir_core_64a4b01cfe/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_5_32d697476e/fir_core_64a4b01cfe/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_5_32d697476e/fir_coef_74e36d4821/c_gen_33087564cb/mem/comp4.core_instance4/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_5_32d697476e/fir_coef_74e36d4821/c_gen_33087564cb/mem/comp4.core_instance4/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_6_8984997cb1/fir_coef_6398eb6f71/c_gen_6a3e648c8e/mem/comp5.core_instance5/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_2_505f1fa065/fir_tap_6_8984997cb1/fir_coef_6398eb6f71/c_gen_6a3e648c8e/mem/comp5.core_instance5/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_1_b409832013/fir_core_9dfb5ea5d5/tap_delay_8b0b4ca2e5/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_1_b409832013/fir_core_9dfb5ea5d5/tap_delay_8b0b4ca2e5/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_1_b409832013/fir_coef_8b710ddd57/c_gen_a4fea711a5/mem/comp0.core_instance0/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_1_b409832013/fir_coef_8b710ddd57/c_gen_a4fea711a5/mem/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_2_de2966bf5b/fir_core_3b628b72bc/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_2_de2966bf5b/fir_core_3b628b72bc/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_2_de2966bf5b/fir_coef_8033da333b/c_gen_148c3edefd/mem/comp1.core_instance1/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_2_de2966bf5b/fir_coef_8033da333b/c_gen_148c3edefd/mem/comp1.core_instance1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_3_1db532ecda/fir_core_57f2bc8a56/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_3_1db532ecda/fir_core_57f2bc8a56/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_3_1db532ecda/fir_coef_5e5fcf201a/c_gen_6b8ad9a4f8/mem/comp2.core_instance2/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_3_1db532ecda/fir_coef_5e5fcf201a/c_gen_6b8ad9a4f8/mem/comp2.core_instance2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_4_7c430193f8/fir_core_e6a7632a34/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_4_7c430193f8/fir_core_e6a7632a34/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_4_7c430193f8/fir_coef_cd9df4bc76/c_gen_bfed56ba73/mem/comp3.core_instance3/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_4_7c430193f8/fir_coef_cd9df4bc76/c_gen_bfed56ba73/mem/comp3.core_instance3/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_5_32d697476e/fir_core_64a4b01cfe/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_5_32d697476e/fir_core_64a4b01cfe/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_5_32d697476e/fir_coef_74e36d4821/c_gen_33087564cb/mem/comp4.core_instance4/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_5_32d697476e/fir_coef_74e36d4821/c_gen_33087564cb/mem/comp4.core_instance4/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_6_8984997cb1/fir_coef_6398eb6f71/c_gen_6a3e648c8e/mem/comp5.core_instance5/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_5_319448d4dd/fir_tap_6_8984997cb1/fir_coef_6398eb6f71/c_gen_6a3e648c8e/mem/comp5.core_instance5/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_1_b409832013/fir_core_9dfb5ea5d5/tap_delay_8b0b4ca2e5/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_1_b409832013/fir_core_9dfb5ea5d5/tap_delay_8b0b4ca2e5/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_1_b409832013/fir_coef_8b710ddd57/c_gen_a4fea711a5/mem/comp0.core_instance0/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_1_b409832013/fir_coef_8b710ddd57/c_gen_a4fea711a5/mem/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_2_de2966bf5b/fir_core_3b628b72bc/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_2_de2966bf5b/fir_core_3b628b72bc/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_2_de2966bf5b/fir_coef_8033da333b/c_gen_148c3edefd/mem/comp1.core_instance1/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_2_de2966bf5b/fir_coef_8033da333b/c_gen_148c3edefd/mem/comp1.core_instance1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_3_1db532ecda/fir_core_57f2bc8a56/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_3_1db532ecda/fir_core_57f2bc8a56/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_3_1db532ecda/fir_coef_5e5fcf201a/c_gen_6b8ad9a4f8/mem/comp2.core_instance2/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_3_1db532ecda/fir_coef_5e5fcf201a/c_gen_6b8ad9a4f8/mem/comp2.core_instance2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_4_7c430193f8/fir_core_e6a7632a34/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_4_7c430193f8/fir_core_e6a7632a34/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_4_7c430193f8/fir_coef_cd9df4bc76/c_gen_bfed56ba73/mem/comp3.core_instance3/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_4_7c430193f8/fir_coef_cd9df4bc76/c_gen_bfed56ba73/mem/comp3.core_instance3/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_5_32d697476e/fir_core_64a4b01cfe/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_5_32d697476e/fir_core_64a4b01cfe/tap_delay_9ce863f294/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_5_32d697476e/fir_coef_74e36d4821/c_gen_33087564cb/mem/comp4.core_instance4/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_5_32d697476e/fir_coef_74e36d4821/c_gen_33087564cb/mem/comp4.core_instance4/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_6_8984997cb1/fir_coef_6398eb6f71/c_gen_6a3e648c8e/mem/comp5.core_instance5/BU2/dbiterr     | NONE(r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/fir_6_e2e7505615/fir_tap_6_8984997cb1/fir_coef_6398eb6f71/c_gen_6a3e648c8e/mem/comp5.core_instance5/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/empty                                                                                                                         | NONE(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/fifo_wr_latch/q)                                                                                                                                                                                                           | 1     |
+adc0clk_p                                                                                                                                                                                     | r4_5g_specV5_adc_5g/dcm_inst_1:CLK2X                                                                                                                                                                                                                                    | 143   |
+adc0clk_p                                                                                                                                                                                     | r4_5g_specV5_adc_5g/dcm_inst_1:CLK180                                                                                                                                                                                                                                   | 1     |
+adc0clk_p                                                                                                                                                                                     | r4_5g_specV5_adc_5g/dcm_inst_1:CLK90                                                                                                                                                                                                                                    | 1     |
+adc0clk_p                                                                                                                                                                                     | r4_5g_specV5_adc_5g/dcm_inst_1:CLK270                                                                                                                                                                                                                                   | 1     |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                 | Buffer(FF name)                                                                                            | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+-------+
+r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg<0>(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg_0:Q)| NONE(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/mem/gdm.dm/dout_i_3)        | 70    |
+N0(XST_GND:G)                                                                                                                                                                                  | NONE(reset_block_inst/reset_block_inst/delay_counter_3)                                                    | 65    |
+r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg<1>(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_0)      | 24    |
+r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_reg<0>(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_asreg_2)| 24    |
+r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_reg<1>(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.wr/wpntr/count_5)       | 20    |
+r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg<2>(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.rd/rpntr/count_5)       | 14    |
+r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_comb(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg_0)        | 3     |
+opb_adc5gcontroller_0/adc0_dcm_reset(opb_adc5gcontroller_0/opb_adc5gcontroller_0/adc_config_mux_0/conf_state_FSM_Out21:O)                                                                      | NONE(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_asreg)        | 2     |
+r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_comb(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_reg_1)        | 2     |
+r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/full(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i:Q)                  | NONE(r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/fifo_wr_latch/q)                                              | 1     |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 22.545ns (Maximum Frequency: 44.356MHz)
+   Minimum input arrival time before clock: 1.738ns
+   Maximum output required time after clock: 4.273ns
+   Maximum combinational path delay: 4.765ns
+
+=========================================================================
+Timing constraint: TS_clk_f8c60ad6 = PERIOD TIMEGRP "clk_f8c60ad6" 6.666 nS HIGH 3.333 nS
+  Clock period: 3.870ns (frequency: 258.378MHz)
+  Total number of paths / destination ports: 113640 / 17451
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  2.796ns
+  Source:               r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/cntr/count_reg_20_23_0 (FF)
+  Destination:          r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/cntr/count_reg_20_23_31 (FF)
+  Data Path Delay:      3.870ns (Levels of Logic = 18)
+  Source Clock:         adc0clk_p rising +64 at 1.185ns
+  Destination Clock:    adc0clk_p rising +64 at 7.851ns
+
+  Data Path: r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/cntr/count_reg_20_23_0 (FF) to r4_5g_specV5_XSG_core_config/r4_5g_specV5_XSG_core_config/r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/cntr/count_reg_20_23_31 (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.471   0.800  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/cntr/count_reg_20_23_0 (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/cntr/count_reg_20_23(0))
+     LUT4:I0->O            1   0.094   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_lut(0) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_lut(0))
+     MUXCY:S->O            1   0.372   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(0) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(0))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(1) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(1))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(2) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(2))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(3) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(3))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(4) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(4))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(5) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(5))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(6) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(6))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(7) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(7))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(8) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(8))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(9) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(9))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(10) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(10))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(11) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(11))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(12) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(12))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(13) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(13))
+     MUXCY:CI->O           1   0.026   0.000  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(14) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(14))
+     MUXCY:CI->O          32   0.148   0.607  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5/Mcompar_result_22_3_rel(0)_cy(15) (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/relational5_op_net_x0)
+     LUT3:I2->O            3   0.094   0.347  r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/logical/fully_2_1_bit1 (r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/cntr/count_reg_20_23_and0000)
+     FDRE:R                    0.573          r4_5g_specv5_x0/acc_cntrl_1d98c79a3b/cntr/count_reg_20_23_31
+    ----------------------------------------
+    Total                      3.870ns (2.116ns logic, 1.754ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 198.00 secs
+Total CPU time to Xst completion: 198.19 secs
+ 
+--> 
+
+Total memory usage is 498664 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :   81 (   0 filtered)
+

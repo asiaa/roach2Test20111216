@@ -1,0 +1,6 @@
+CommandLine
+ngdbuild -p xc2vp50ff1152-7 -nt timestamp -bm system.bmm D:/casper10_1/projects/packetized_correlator/ibob/i_128w_2k_10_r310iadc/XPS_iBOB_base/implementation/system.ngc -uc system.ucf system.ngd
+s
+FormatString
+ngdbuild [-p <partname>] {-sd <source_dir>} {-l <library>} [-ur <rules_file[.urf]>] [-dd <output_dir>] [-r] [-a] [-u] [-nt timestamp|on|off] [-uc <ucf_file[.ucf]>] [-aul] [-bm <bmm_file[.bmm]>] [-i] [-modular initial|module|assemble] [-intstyle ise|xflow|silent] [-quiet] [-verbose] [-active <active_module_name>] [-pimpath <pimpath>] {-use_pim <pim_module_name>} [-insert_keep_hierarchy] [--forcengd] {--n <ngl_file>} {--sl <library>} [--global_opt] [--script <tcl_file>] [--incremental] [--csttrans] <design_name> [<ngd_file[.ngd]>]
+s

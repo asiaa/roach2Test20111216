@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/plb_ddr2_v2_00_a/bfmsim/__xps
+END
+vpgen.opt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/plb_ddr2_v2_00_a/bfmsim/__xps/vpgen.opt
+END
+libgen.opt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/plb_ddr2_v2_00_a/bfmsim/__xps/libgen.opt
+END
+bitinit.opt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/plb_ddr2_v2_00_a/bfmsim/__xps/bitinit.opt
+END
+simgen.opt
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/plb_ddr2_v2_00_a/bfmsim/__xps/simgen.opt
+END
+platgen.opt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/plb_ddr2_v2_00_a/bfmsim/__xps/platgen.opt
+END
+xpsxflow.opt
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/plb_ddr2_v2_00_a/bfmsim/__xps/xpsxflow.opt
+END

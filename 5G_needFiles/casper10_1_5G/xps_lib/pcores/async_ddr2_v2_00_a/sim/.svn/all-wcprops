@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/async_ddr2_v2_00_a/sim
+END
+wave.do
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/async_ddr2_v2_00_a/sim/wave.do
+END
+start_sim.do
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/async_ddr2_v2_00_a/sim/start_sim.do
+END
+sim_bench.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/async_ddr2_v2_00_a/sim/sim_bench.vhd
+END
+load_async_ddr2.do
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/async_ddr2_v2_00_a/sim/load_async_ddr2.do
+END

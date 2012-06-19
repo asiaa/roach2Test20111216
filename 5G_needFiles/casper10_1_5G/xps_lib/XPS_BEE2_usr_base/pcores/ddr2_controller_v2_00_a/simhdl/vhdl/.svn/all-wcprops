@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl
+END
+controller_iobs.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/controller_iobs.vhd
+END
+r_w_dly.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/r_w_dly.vhd
+END
+infrastructure_iobs_72bit.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/infrastructure_iobs_72bit.vhd
+END
+iobs_72bit.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/iobs_72bit.vhd
+END
+ddr2_transfer_done.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/ddr2_transfer_done.vhd
+END
+ddr2_dqs_div.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/ddr2_dqs_div.vhd
+END
+unisim.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/unisim.vhd
+END
+dqs_delay.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/dqs_delay.vhd
+END
+data_read_72bit_rl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/data_read_72bit_rl.vhd
+END
+data_path_iobs_72bit.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/data_path_iobs_72bit.vhd
+END
+ddr_dqs_iob.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/ddr_dqs_iob.vhd
+END
+RAM_8D.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/RAM_8D.vhd
+END
+data_read_controller_72bit_rl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/data_read_controller_72bit_rl.vhd
+END
+data_path_rst.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/data_path_rst.vhd
+END
+ddr2_dqbit.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/ddr2_dqbit.vhd
+END
+infrastructure.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/infrastructure.vhd
+END
+parameter.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/parameter.vhd
+END
+ddr2_dm_72bit.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/ddr2_dm_72bit.vhd
+END
+controller.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/controller.vhd
+END
+ddr_dq_iob.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/ddr_dq_iob.vhd
+END
+data_path_72bit_rl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/data_path_72bit_rl.vhd
+END
+data_write_72bit.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/data_write_72bit.vhd
+END
+ddr2_controller.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/948/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_usr_base/pcores/ddr2_controller_v2_00_a/simhdl/vhdl/ddr2_controller.vhd
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ddr2_infrastructure_v2_00_a/simhdl/vhdl
+END
+cal_ctl.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ddr2_infrastructure_v2_00_a/simhdl/vhdl/cal_ctl.vhd
+END
+cal_top.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ddr2_infrastructure_v2_00_a/simhdl/vhdl/cal_top.vhd
+END
+cal_div2.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ddr2_infrastructure_v2_00_a/simhdl/vhdl/cal_div2.vhd
+END
+unisim.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ddr2_infrastructure_v2_00_a/simhdl/vhdl/unisim.vhd
+END
+dqs_delay.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ddr2_infrastructure_v2_00_a/simhdl/vhdl/dqs_delay.vhd
+END
+cal_div2f.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ddr2_infrastructure_v2_00_a/simhdl/vhdl/cal_div2f.vhd
+END
+ddr2_infrastructure.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ddr2_infrastructure_v2_00_a/simhdl/vhdl/ddr2_infrastructure.vhd
+END
+cal_reg.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ddr2_infrastructure_v2_00_a/simhdl/vhdl/cal_reg.vhd
+END
+clk_dcm.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ddr2_infrastructure_v2_00_a/simhdl/vhdl/clk_dcm.vhd
+END
+dcmx3y0_2vp70_sim.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ddr2_infrastructure_v2_00_a/simhdl/vhdl/dcmx3y0_2vp70_sim.vhd
+END

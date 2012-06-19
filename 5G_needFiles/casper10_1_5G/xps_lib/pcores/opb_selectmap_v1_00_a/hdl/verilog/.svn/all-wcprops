@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_00_a/hdl/verilog
+END
+user_logic.v
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_00_a/hdl/verilog/user_logic.v
+END
+user_selectmap.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_00_a/hdl/verilog/user_selectmap.v
+END
+user_fifo_test.v
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_00_a/hdl/verilog/user_fifo_test.v
+END
+user_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_00_a/hdl/verilog/user_fifo.v
+END
+fifo_async_32x128.v
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_selectmap_v1_00_a/hdl/verilog/fifo_async_32x128.v
+END

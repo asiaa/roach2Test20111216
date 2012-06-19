@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2317/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog
+END
+tx_state.v
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1619/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/tx_state.v
+END
+sync_state.v
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/1619/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/sync_state.v
+END
+fix_term.v
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1619/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/fix_term.v
+END
+xaui_kat.vh
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1619/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/xaui_kat.vh
+END
+pcs_rx.v
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1619/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/pcs_rx.v
+END
+pcs_tx.v
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/1619/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/pcs_tx.v
+END
+pcs_sync.v
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1619/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/pcs_sync.v
+END
+deskew_state.v
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/2317/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/deskew_state.v
+END
+xaui_v7_2.v
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/1224/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/xaui_v7_2.v
+END
+xaui_kat.v
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1749/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/xaui_kat.v
+END
+xaui_phy.v
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/2285/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/xaui_phy.v
+END
+pcs_deskew.v
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/2317/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_phy_v1_00_a/hdl/verilog/pcs_deskew.v
+END

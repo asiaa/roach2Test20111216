@@ -1,0 +1,13 @@
+K 13
+svn:externals
+V 67
+gavrt_library http://casper.berkeley.edu/svn/trunk/caltech/lib10.1
+
+K 10
+svn:ignore
+V 36
+MatXSG101.bat
+startsg.bat
+startup.m
+
+END

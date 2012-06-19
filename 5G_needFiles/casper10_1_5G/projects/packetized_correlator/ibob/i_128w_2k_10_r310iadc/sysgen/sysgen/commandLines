@@ -1,0 +1,1 @@
+C:/Xilinx/10.1/DSP_Tools/sysgen/bin/saferun.exe -a D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\sysgen\sysgen\i_128w_2k_10_r310iadc_cw_import.log -- c:/xilinx/10.1/ise/bin/nt/xtclsh.exe i_128w_2k_10_r310iadc_cw_import.tcl

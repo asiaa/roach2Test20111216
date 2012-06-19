@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator K.39
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\bit_files\//iADC310_20100720 -u 0 D:/casper10_1/projects/packetized_correlator/ibob/i_128w_2k_10_r310iadc/bit_files/i_128w_2k_10_r310iadc_2010_Jul_20_1122_cclktemp.bit -x xcf32p 
+
+PROM D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\bit_files\//iADC310_20100720.prm map: Tue Jul 20 17:30:19 2010
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          4096K
+PROM start    0000:0000
+PROM end      003f:ffff
+PROM checksum 1e824a03
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0024:47c3     Jul 20 17:29:55 2010 D:/casper10_1/projects/packetized_correlator/ibob/i_128w_2k_10_r310iadc/bit_files/i_128w_2k_10_r310iadc_2010_Jul_20_1122_cclktemp.bit

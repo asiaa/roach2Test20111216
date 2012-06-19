@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/hdl/verilog/tb
+END
+cmd_gen_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/hdl/verilog/tb/cmd_gen_tb.v
+END
+byte_enable_gen_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/hdl/verilog/tb/byte_enable_gen_tb.v
+END
+gen_dec_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/hdl/verilog/tb/gen_dec_tb.v
+END

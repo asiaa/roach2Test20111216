@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist
+END
+address_fifo_rx.edn
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist/address_fifo_rx.edn
+END
+address_fifo_rx_fifo_generator_v3_1_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist/address_fifo_rx_fifo_generator_v3_1_xst_1.ngc
+END
+packet_buffer.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist/packet_buffer.ngc
+END
+address_fifo_tx.edn
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist/address_fifo_tx.edn
+END
+address_fifo_tx_fifo_generator_v3_1_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist/address_fifo_tx_fifo_generator_v3_1_xst_1.ngc
+END
+xaui_v6_2.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist/xaui_v6_2.ngc
+END
+arp_cache.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist/arp_cache.ngc
+END
+address_fifo.edn
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist/address_fifo.edn
+END
+address_fifo_fifo_generator_v3_1_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist/address_fifo_fifo_generator_v3_1_xst_1.ngc
+END
+packet_buffer_cpu.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist/packet_buffer_cpu.ngc
+END
+ten_gig_eth_mac_v8_0.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/netlist/ten_gig_eth_mac_v8_0.ngc
+END

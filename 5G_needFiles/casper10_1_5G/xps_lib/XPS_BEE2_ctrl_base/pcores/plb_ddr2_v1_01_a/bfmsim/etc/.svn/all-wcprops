@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_01_a/bfmsim/etc
+END
+bitgen.ut
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_01_a/bfmsim/etc/bitgen.ut
+END
+fast_runtime.opt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_01_a/bfmsim/etc/fast_runtime.opt
+END
+bitgen_spartan3.ut
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_01_a/bfmsim/etc/bitgen_spartan3.ut
+END

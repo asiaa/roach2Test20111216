@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/mem_tester_sim/temp/sim
+END
+modelsim.ini
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/mem_tester_sim/temp/sim/modelsim.ini
+END
+transcript
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/mem_tester_sim/temp/sim/transcript
+END
+load_ddr2.do
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/mem_tester_sim/temp/sim/load_ddr2.do
+END
+load_ddr2.foo
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/mem_tester_sim/temp/sim/load_ddr2.foo
+END

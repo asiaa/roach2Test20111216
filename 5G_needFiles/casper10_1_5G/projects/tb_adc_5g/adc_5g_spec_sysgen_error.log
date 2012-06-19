@@ -1,0 +1,724 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 10.1.3.1386            C:/Xilinx/10.1/DSP_Tools/common/bin/../../sysgen
+AccelDSP 10.1.3.1386                    C:/Xilinx/10.1/DSP_Tools/AccelDSP
+Matlab 7.5.0.342 (R2007b)               C:/Program Files/MATLAB/R2007b
+ISE 10.1.03i                            C:/Xilinx/10.1/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Undriven input port
+     Block: 'adc_5g_spec/scale1/c_to_ri/slice_im'
+Error 0002: Undriven input port
+     Block: 'adc_5g_spec/scale1/c_to_ri/slice_re'
+Error 0003: Undriven input port
+     Block: 'adc_5g_spec/scale2/c_to_ri/slice_im'
+Error 0004: Undriven input port
+     Block: 'adc_5g_spec/scale2/c_to_ri/slice_re'
+Error 0005: Undriven input port
+     Block: 'adc_5g_spec/coeff_delay'
+Error 0006: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_1/Counter'
+Error 0007: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_1/Delay'
+Error 0008: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_1/Slice'
+Error 0009: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_10/Slice'
+Error 0010: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_2/Slice'
+Error 0011: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_3/Slice'
+Error 0012: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_4/Slice'
+Error 0013: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_5/Slice'
+Error 0014: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_6/Slice'
+Error 0015: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_7/Slice'
+Error 0016: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_8/Slice'
+Error 0017: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_9/Slice'
+Error 0018: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/ri_to_c/Reinterpret'
+Error 0019: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/ri_to_c/Reinterpret1'
+Error 0020: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/ri_to_c1/Reinterpret'
+Error 0021: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/ri_to_c1/Reinterpret1'
+Error 0022: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_direct/butterfly1_0/twiddle/Delay2'
+Error 0023: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_direct/butterfly1_0/twiddle/coeff_gen/Counter'
+Error 0024: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_direct/butterfly1_1/twiddle/Delay2'
+Error 0025: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_direct/butterfly1_1/twiddle/coeff_gen/Counter'
+Error 0026: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_direct/node0_0'
+Error 0027: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_direct/node0_1'
+Error 0028: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_direct/node0_2'
+Error 0029: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_direct/node0_3'
+Error 0030: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_direct/slice0'
+Error 0031: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_direct/slice1'
+Error 0032: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_unscrambler/square_transposer/Delayf1'
+Error 0033: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_unscrambler/square_transposer/Delayf2'
+Error 0034: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_unscrambler/square_transposer/barrel_switcher/Delay_sync'
+Error 0035: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/fft_unscrambler/square_transposer/counter'
+Error 0036: Undriven input port
+     Block: 'adc_5g_spec/fft_wideband_real1/slice'
+Error 0037: Undriven input port
+     Block: 'adc_5g_spec/log_arm_pps'
+Error 0038: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in1_first_tap/pfb_coeff_gen/Counter'
+Error 0039: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in1_first_tap/pfb_coeff_gen/Delay'
+Error 0040: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in1_first_tap/pfb_coeff_gen/Delay1'
+Error 0041: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in1_last_tap/Concat'
+Error 0042: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in1_last_tap/Delay'
+Error 0043: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in1_last_tap/Reinterpret'
+Error 0044: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in1_last_tap/Reinterpret1'
+Error 0045: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in2_first_tap/pfb_coeff_gen/Counter'
+Error 0046: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in2_first_tap/pfb_coeff_gen/Delay'
+Error 0047: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in2_first_tap/pfb_coeff_gen/Delay1'
+Error 0048: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in2_last_tap/Concat'
+Error 0049: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in2_last_tap/Delay'
+Error 0050: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in2_last_tap/Reinterpret'
+Error 0051: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in2_last_tap/Reinterpret1'
+Error 0052: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in3_first_tap/pfb_coeff_gen/Counter'
+Error 0053: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in3_first_tap/pfb_coeff_gen/Delay'
+Error 0054: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in3_first_tap/pfb_coeff_gen/Delay1'
+Error 0055: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in3_last_tap/Concat'
+Error 0056: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in3_last_tap/Delay'
+Error 0057: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in3_last_tap/Reinterpret'
+Error 0058: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in3_last_tap/Reinterpret1'
+Error 0059: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in4_first_tap/pfb_coeff_gen/Counter'
+Error 0060: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in4_first_tap/pfb_coeff_gen/Delay'
+Error 0061: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in4_first_tap/pfb_coeff_gen/Delay1'
+Error 0062: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in4_last_tap/Concat'
+Error 0063: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in4_last_tap/Delay'
+Error 0064: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in4_last_tap/Reinterpret'
+Error 0065: Undriven input port
+     Block: 'adc_5g_spec/pfb_fir_real1/pol1_in4_last_tap/Reinterpret1'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'adc_5g_spec/scale1/c_to_ri/slice_im'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0002:
+
+Reported by:
+  'adc_5g_spec/scale1/c_to_ri/slice_re'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0003:
+
+Reported by:
+  'adc_5g_spec/scale2/c_to_ri/slice_im'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0004:
+
+Reported by:
+  'adc_5g_spec/scale2/c_to_ri/slice_re'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0005:
+
+Reported by:
+  'adc_5g_spec/coeff_delay'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0006:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_1/Counter'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0007:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_1/Delay'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0008:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_1/Slice'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0009:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_10/Slice'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0010:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_2/Slice'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0011:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_3/Slice'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0012:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_4/Slice'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0013:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_5/Slice'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0014:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_6/Slice'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0015:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_7/Slice'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0016:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_8/Slice'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0017:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/biplex_core/fft_stage_9/Slice'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0018:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/ri_to_c/Reinterpret'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0019:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/ri_to_c/Reinterpret1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0020:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/ri_to_c1/Reinterpret'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0021:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_biplex_real_4x0/ri_to_c1/Reinterpret1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0022:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_direct/butterfly1_0/twiddle/Delay2'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0023:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_direct/butterfly1_0/twiddle/coeff_gen/Counter'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0024:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_direct/butterfly1_1/twiddle/Delay2'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0025:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_direct/butterfly1_1/twiddle/coeff_gen/Counter'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0026:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_direct/node0_0'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0027:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_direct/node0_1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0028:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_direct/node0_2'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0029:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_direct/node0_3'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0030:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_direct/slice0'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0031:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_direct/slice1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0032:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_unscrambler/square_transposer/Delayf1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0033:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_unscrambler/square_transposer/Delayf2'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0034:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_unscrambler/square_transposer/barrel_switcher/Delay_sync'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0035:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/fft_unscrambler/square_transposer/counter'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0036:
+
+Reported by:
+  'adc_5g_spec/fft_wideband_real1/slice'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0037:
+
+Reported by:
+  'adc_5g_spec/log_arm_pps'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0038:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in1_first_tap/pfb_coeff_gen/Counter'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0039:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in1_first_tap/pfb_coeff_gen/Delay'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0040:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in1_first_tap/pfb_coeff_gen/Delay1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0041:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in1_last_tap/Concat'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0042:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in1_last_tap/Delay'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0043:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in1_last_tap/Reinterpret'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0044:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in1_last_tap/Reinterpret1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0045:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in2_first_tap/pfb_coeff_gen/Counter'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0046:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in2_first_tap/pfb_coeff_gen/Delay'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0047:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in2_first_tap/pfb_coeff_gen/Delay1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0048:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in2_last_tap/Concat'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0049:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in2_last_tap/Delay'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0050:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in2_last_tap/Reinterpret'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0051:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in2_last_tap/Reinterpret1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0052:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in3_first_tap/pfb_coeff_gen/Counter'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0053:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in3_first_tap/pfb_coeff_gen/Delay'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0054:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in3_first_tap/pfb_coeff_gen/Delay1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0055:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in3_last_tap/Concat'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0056:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in3_last_tap/Delay'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0057:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in3_last_tap/Reinterpret'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0058:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in3_last_tap/Reinterpret1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0059:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in4_first_tap/pfb_coeff_gen/Counter'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0060:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in4_first_tap/pfb_coeff_gen/Delay'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0061:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in4_first_tap/pfb_coeff_gen/Delay1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0062:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in4_last_tap/Concat'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0063:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in4_last_tap/Delay'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0064:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in4_last_tap/Reinterpret'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0065:
+
+Reported by:
+  'adc_5g_spec/pfb_fir_real1/pol1_in4_last_tap/Reinterpret1'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------

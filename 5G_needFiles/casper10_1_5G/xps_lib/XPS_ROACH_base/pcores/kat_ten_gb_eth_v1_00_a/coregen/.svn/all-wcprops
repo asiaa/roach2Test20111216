@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2019/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen
+END
+rx_packet_ctrl_fifo.xco
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen/rx_packet_ctrl_fifo.xco
+END
+tx_packet_ctrl_fifo.xco
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen/tx_packet_ctrl_fifo.xco
+END
+kat_ten_gb_eth.cgp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/1857/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen/kat_ten_gb_eth.cgp
+END
+tx_fifo_ext.xco
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/2019/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen/tx_fifo_ext.xco
+END
+tx_cpu_size_fifo.xco
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen/tx_cpu_size_fifo.xco
+END
+cpu_buffer.xco
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1857/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen/cpu_buffer.xco
+END
+rx_packet_fifo_bram.xco
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen/rx_packet_fifo_bram.xco
+END
+arp_cache.xco
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1857/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen/arp_cache.xco
+END
+tx_cpu_fifo.xco
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen/tx_cpu_fifo.xco
+END
+tx_packet_fifo.xco
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/1841/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen/tx_packet_fifo.xco
+END
+rx_packet_fifo_dist.xco
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/1857/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/kat_ten_gb_eth_v1_00_a/coregen/rx_packet_fifo_dist.xco
+END

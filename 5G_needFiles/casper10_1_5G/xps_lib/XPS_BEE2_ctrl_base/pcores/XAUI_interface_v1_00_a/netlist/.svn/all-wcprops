@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist
+END
+xaui_if.edf
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/xaui_if.edf
+END
+rx_fifo_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/rx_fifo_fifo_generator_v2_2_xst_1.ngc
+END
+tx_fifo_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/tx_fifo_fifo_generator_v2_2_xst_1.ngc
+END
+rx_fifo_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/rx_fifo_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+tx_fifo_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/tx_fifo_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+xaui_if.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/xaui_if.ngc
+END
+rx_fifo_2x_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/rx_fifo_2x_fifo_generator_v2_2_xst_1.ngc
+END
+tx_fifo_2x_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/tx_fifo_2x_fifo_generator_v2_2_xst_1.ngc
+END
+rx_fifo_2x_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/rx_fifo_2x_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+tx_fifo_2x_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/tx_fifo_2x_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+rx_fifo.edn
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/rx_fifo.edn
+END
+ngc2edif.log
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/ngc2edif.log
+END
+tx_fifo.edn
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/tx_fifo.edn
+END
+rx_fifo_2x.edn
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/rx_fifo_2x.edn
+END
+tx_fifo_2x.edn
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/XAUI_interface_v1_00_a/netlist/tx_fifo_2x.edn
+END

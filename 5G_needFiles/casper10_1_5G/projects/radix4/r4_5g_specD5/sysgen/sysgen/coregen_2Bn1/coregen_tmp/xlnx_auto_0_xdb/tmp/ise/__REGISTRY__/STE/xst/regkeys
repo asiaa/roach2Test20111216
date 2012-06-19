@@ -1,0 +1,6 @@
+CommandLine
+c:\xilinx\10.1\ise\bin\nt\unwrapped\xst.exe -ifn .\tmp\_cg\_bbx\multiplier_virtex5_10_1_db7cd8a2c586bcee_mult_gen_v10_1_xst_1.scr -ofn .\tmp\_cg\_bbx\multiplier_virtex5_10_1_db7cd8a2c586bcee_mult_gen_v10_1_xst_1_xst.log -intstyle silent -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

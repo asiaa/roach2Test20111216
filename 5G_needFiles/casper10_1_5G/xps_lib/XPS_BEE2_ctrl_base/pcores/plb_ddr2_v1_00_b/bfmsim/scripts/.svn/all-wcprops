@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/bfmsim/scripts
+END
+load_mods.do
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/bfmsim/scripts/load_mods.do
+END
+runno.do
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/bfmsim/scripts/runno.do
+END
+sample.bfl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/bfmsim/scripts/sample.bfl
+END
+wave.do
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/bfmsim/scripts/wave.do
+END
+sample.bfl.full
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/bfmsim/scripts/sample.bfl.full
+END
+run.do
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/bfmsim/scripts/run.do
+END
+run_full.do
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/bfmsim/scripts/run_full.do
+END
+xilbfc.log
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/bfmsim/scripts/xilbfc.log
+END
+auto.do
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/bfmsim/scripts/auto.do
+END
+auto.bfl
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/bfmsim/scripts/auto.bfl
+END

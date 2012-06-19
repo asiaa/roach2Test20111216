@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/2532/trunk/projects/packetized_correlator/corr-0.4.0/scripts
+END
+corr_tvg_sel.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2532/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_tvg_sel.py
+END
+corr_init.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2532/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_init.py
+END
+corr_print_bl_order.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2082/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_print_bl_order.py
+END
+corr_read_missing.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2532/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_read_missing.py
+END
+corr_rst_errors.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2103/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_rst_errors.py
+END
+corr_snap_xaui_plot_spectrum.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2377/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_snap_xaui_plot_spectrum.py
+END
+corr_deprog_all.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2103/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_deprog_all.py
+END
+corr_snap_rx.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2532/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_snap_rx.py
+END
+corr_10gbe_core_details.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2497/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_10gbe_core_details.py
+END
+corr_arm_feng.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2103/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_arm_feng.py
+END
+corr_snap_xeng.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2532/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_snap_xeng.py
+END
+corr_snap_descramble.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2497/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_snap_descramble.py
+END
+corr_rst_gbe.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2082/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_rst_gbe.py
+END
+corr_prog_fpgas.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2103/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_prog_fpgas.py
+END
+corr_snap_xaui.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2497/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_snap_xaui.py
+END
+corr_snap_10gbe_rx.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2416/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_snap_10gbe_rx.py
+END
+corr_eq_init.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2377/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_eq_init.py
+END
+corr_snap_10gbe_tx.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2416/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_snap_10gbe_tx.py
+END
+corr_xeng_clocks.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2103/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_xeng_clocks.py
+END
+corr_adc_ampl.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2377/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_adc_ampl.py
+END
+corr_toggle_10gbe_exchange.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/2103/trunk/projects/packetized_correlator/corr-0.4.0/scripts/corr_toggle_10gbe_exchange.py
+END

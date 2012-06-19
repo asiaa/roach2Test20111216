@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2036/trunk/projects/packetized_correlator/corr-0.2.3/build/lib/corr
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/lib/corr/LICENSE.txt
+END
+borph.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/lib/corr/borph.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/lib/corr/__init__.py
+END
+c2m.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1853/trunk/projects/packetized_correlator/corr-0.2.3/build/lib/corr/c2m.py
+END
+sim_cn_data.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/lib/corr/sim_cn_data.py
+END
+plotdb.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/lib/corr/plotdb.py
+END
+cn_conf.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1853/trunk/projects/packetized_correlator/corr-0.2.3/build/lib/corr/cn_conf.py
+END
+udp_client.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/lib/corr/udp_client.py
+END
+packet.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1010/trunk/projects/packetized_correlator/corr-0.2.3/build/lib/corr/packet.py
+END

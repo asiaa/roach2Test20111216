@@ -1,0 +1,22 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 10.1.3.1386            C:/Xilinx/10.1/DSP_Tools/common/bin/../../sysgen
+AccelDSP 10.1.3.1386                    C:/Xilinx/10.1/DSP_Tools/AccelDSP
+Matlab 7.5.0.342 (R2007b)               C:/Program Files/MATLAB/R2007b
+ISE 10.1.03i                            C:/Xilinx/10.1/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: SWITCH expression must be a scalar or string constant.
+     Block: 'tb_adc_5g_spi/MCode'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'tb_adc_5g_spi/MCode'
+
+Details:
+SWITCH expression must be a scalar or string constant.
+Error occurred during "Simulation Update Outputs".
+
+--------------------------------------------------------------------------------

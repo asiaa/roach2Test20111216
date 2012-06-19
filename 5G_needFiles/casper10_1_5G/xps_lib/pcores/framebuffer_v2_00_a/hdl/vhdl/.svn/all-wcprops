@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/framebuffer_v2_00_a/hdl/vhdl
+END
+framebuffer.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/framebuffer_v2_00_a/hdl/vhdl/framebuffer.vhd
+END
+pixel_ram_128.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/framebuffer_v2_00_a/hdl/vhdl/pixel_ram_128.vhd
+END
+pixel_ram_256.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/framebuffer_v2_00_a/hdl/vhdl/pixel_ram_256.vhd
+END

@@ -1,0 +1,172 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+trce -e 200 -xml system.twx system.ncd system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc5vsx95t,ff1136,-1 (PRODUCTION 1.62 2008-08-19, STEPPING level 0)
+Report level:             error report, limited to 200 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+WARNING:Timing:3325 - Timing Constraint 
+   "NET 
+   "r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_clk_buf" PERIOD = 6.6667 ns
+    
+          HIGH 50%;"
+    fails the maximum period check for input clock 
+   "r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_clk_buf" to DCM_ADV block 
+   "r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/dcm_inst_1" because the period 
+   constraint value (6666 ps) exceeds the maximum internal period limit of 4168 
+   ps.   Please reduce the period of the constraint to remove this timing 
+   failure.
+WARNING:Timing:3326 - Timing Constraint 
+   "NET 
+   "r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_clk_buf" PERIOD = 6.6667 ns
+    
+          HIGH 50%;"
+    fails the maximum period check for output clock 
+   "r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_clk_dcm" from DCM_ADV block 
+   "r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/dcm_inst_1" because the period 
+   constraint value (13332 ps) exceeds the maximum internal period limit of 
+   8334 ps.   Please reduce the period of the constraint to remove this timing 
+   failure.
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more 
+   information see the TSI report.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "epb_cs_n_IBUF" MAXDELAY = 4 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   1.636ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_clk_buf" 
+PERIOD = 6.6667 ns         HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_clk_buf" 
+PERIOD = 6.6667 ns         HIGH 50%;
+
+ 885 paths analyzed, 837 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   5.592ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_clk_dcm" derived from  NET 
+"r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_clk_buf" PERIOD = 6.6667 ns        
+ HIGH 50%;  multiplied by 2.00 and duty cycle corrected to 13.333 nS  HIGH 
+6.666 nS  
+
+ 154942 paths analyzed, 48882 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   9.931ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_f8c60ad6 = PERIOD TIMEGRP "clk_f8c60ad6" 6.6667 ns 
+HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88 MHz HIGH 50%;
+
+ 135971 paths analyzed, 8486 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  11.241ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|r4_5g_specV5_adc_5g/r4_5g_specV|      6.667ns|      5.592ns|      4.966ns|            0|            0|          885|       154942|
+|5_adc_5g/adc_clk_buf           |             |             |             |             |             |             |             |
+| r4_5g_specV5_adc_5g/r4_5g_spec|     13.333ns|      9.931ns|          N/A|            0|            0|       154942|            0|
+| V5_adc_5g/adc_clk_dcm         |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock adc0clk_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    9.332|         |         |         |
+adc0clk_p      |    9.332|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc0clk_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    9.332|         |         |         |
+adc0clk_p      |    9.332|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock epb_clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+epb_clk_in     |   11.241|         |    2.267|         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 291798 paths, 1 nets, and 53969 connections
+
+Design statistics:
+   Minimum period:  11.241ns   (Maximum frequency:  88.960MHz)
+   Maximum net delay:   1.636ns
+
+
+Analysis completed Wed Sep 01 17:08:31 2010 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 629 MB
+
+
+

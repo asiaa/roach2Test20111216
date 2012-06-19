@@ -1,0 +1,5 @@
+NEWPROJECT ./
+SETPROJECT ./
+SET XilinxFamily = Virtex2P
+SET overwritefiles = True
+END

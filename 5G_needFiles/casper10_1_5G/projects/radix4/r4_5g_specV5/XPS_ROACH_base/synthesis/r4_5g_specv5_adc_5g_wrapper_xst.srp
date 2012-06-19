@@ -1,0 +1,767 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "r4_5g_specv5_adc_5g_wrapper_xst.prj"
+Verilog Include Directory          : {"D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\" "C:\Xilinx\10.1\EDK\hw\XilinxReferenceDesigns\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc5vsx95tff1136-1
+Output File Name                   : "../implementation/r4_5g_specv5_adc_5g_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : r4_5g_specv5_adc_5g_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/r4_5g_specv5_adc_5g_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\pcores\adc_5g_interface_v1_00_a/hdl/verilog/adc_async_fifo.v" in library adc_5g_interface_v1_00_a
+Compiling verilog file "D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\pcores\adc_5g_interface_v1_00_a/hdl/verilog/adc_5g_interface.v" in library adc_5g_interface_v1_00_a
+Module <adc_async_fifo> compiled
+Module <adc_5g_interface> compiled
+Module <latch> compiled
+Compiling verilog file "D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\pcores\/../hdl/r4_5g_specv5_adc_5g_wrapper.v" in library work
+Module <r4_5g_specv5_adc_5g_wrapper> compiled
+No errors in compilation
+Analysis of file <"r4_5g_specv5_adc_5g_wrapper_xst.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <r4_5g_specv5_adc_5g_wrapper> in library <work>.
+
+Analyzing hierarchy for module <adc_5g_interface> in library <adc_5g_interface_v1_00_a> with parameters.
+	EXTRA_REG = "00000000000000000000000000000001"
+
+Analyzing hierarchy for module <latch> in library <adc_5g_interface_v1_00_a>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <r4_5g_specv5_adc_5g_wrapper>.
+Module <r4_5g_specv5_adc_5g_wrapper> is correct for synthesis.
+ 
+Analyzing module <adc_5g_interface> in library <adc_5g_interface_v1_00_a>.
+	EXTRA_REG = 32'sb00000000000000000000000000000001
+Module <adc_5g_interface> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_sync> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  FALSE" for instance <ibufds_sync> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_sync> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_sync> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibufds_sync> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_overrange> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  FALSE" for instance <ibufds_overrange> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_overrange> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_overrange> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibufds_overrange> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_overrange> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_overrange> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_overrange> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_overrange> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  FALSE" for instance <ibufds> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ibufds> in unit <adc_5g_interface>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  TRUE" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "CLKIN_PERIOD =  2.0000000000000000" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  VARIABLE_CENTER" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  HIGH" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  HIGH" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "PHASE_SHIFT =  64" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "STARTUP_WAIT =  0" for instance <dcm_inst_1> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[31]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[31]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[31]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[31]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[31]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[30]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[30]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[30]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[30]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[30]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[29]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[29]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[29]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[29]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[29]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[28]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[28]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[28]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[28]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[28]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[27]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[27]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[27]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[27]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[27]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[26]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[26]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[26]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[26]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[26]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[25]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[25]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[25]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[25]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[25]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[24]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[24]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[24]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[24]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[24]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[23]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[23]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[23]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[23]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[23]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[22]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[22]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[22]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[22]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[22]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[21]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[21]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[21]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[21]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[21]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[20]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[20]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[20]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[20]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[20]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[19]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[19]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[19]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[19]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[19]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[18]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[18]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[18]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[18]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[18]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[17]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[17]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[17]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[17]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[17]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[16]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[16]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[16]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[16]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[16]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[15]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[15]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[15]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[15]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[15]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[14]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[14]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[14]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[14]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[14]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[13]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[13]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[13]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[13]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[13]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[12]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[12]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[12]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[12]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[12]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[11]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[11]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[11]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[11]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[11]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[10]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[10]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[10]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[10]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[10]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[9]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[9]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[9]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[9]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[9]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[8]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[8]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[8]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[8]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[8]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[7]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[7]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[7]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[7]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[7]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[6]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[6]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[6]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[6]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[6]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[5]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[5]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[5]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[5]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[5]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[4]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[4]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[4]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[4]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[4]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[3]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[3]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[3]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[3]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[3]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[2]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[2]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[2]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[2]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[2]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[1]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[1]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[1]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[1]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[1]> in unit <adc_5g_interface>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <ibufds_adc_data[0]> in unit <adc_5g_interface>.
+    Set user-defined property "DIFF_TERM =  TRUE" for instance <ibufds_adc_data[0]> in unit <adc_5g_interface>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <ibufds_adc_data[0]> in unit <adc_5g_interface>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <ibufds_adc_data[0]> in unit <adc_5g_interface>.
+    Set user-defined property "IOSTANDARD =  LVDS_25" for instance <ibufds_adc_data[0]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[31]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[31]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[31]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[31]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[30]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[30]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[30]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[30]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[29]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[29]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[29]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[29]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[28]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[28]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[28]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[28]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[27]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[27]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[27]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[27]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[26]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[26]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[26]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[26]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[25]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[25]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[25]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[25]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[24]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[24]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[24]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[24]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[23]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[23]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[23]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[23]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[22]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[22]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[22]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[22]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[21]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[21]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[21]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[21]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[20]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[20]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[20]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[20]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[19]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[19]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[19]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[19]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[18]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[18]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[18]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[18]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[17]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[17]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[17]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[17]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[16]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[16]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[16]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[16]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[15]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[15]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[15]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[15]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[14]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[14]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[14]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[14]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[13]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[13]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[13]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[13]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[12]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[12]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[12]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[12]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[11]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[11]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[11]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[11]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[10]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[10]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[10]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[10]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[9]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[9]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[9]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[9]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[8]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[8]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[8]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[8]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[7]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[7]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[7]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[7]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[6]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[6]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[6]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[6]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[5]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[5]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[5]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[5]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[4]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[4]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[4]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[4]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[3]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[3]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[3]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[3]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[2]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[2]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[2]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[2]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[1]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[1]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[1]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[1]> in unit <adc_5g_interface>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <iddr_data[0]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q1 =  0" for instance <iddr_data[0]> in unit <adc_5g_interface>.
+    Set user-defined property "INIT_Q2 =  0" for instance <iddr_data[0]> in unit <adc_5g_interface>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <iddr_data[0]> in unit <adc_5g_interface>.
+Analyzing module <latch> in library <adc_5g_interface_v1_00_a>.
+WARNING:Xst:905 - "D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\pcores\adc_5g_interface_v1_00_a/hdl/verilog/adc_5g_interface.v" line 452: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <d>
+Module <latch> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <latch>.
+    Related source file is "D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\pcores\adc_5g_interface_v1_00_a/hdl/verilog/adc_5g_interface.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <latch> synthesized.
+
+
+Synthesizing Unit <adc_5g_interface>.
+    Related source file is "D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\pcores\adc_5g_interface_v1_00_a/hdl/verilog/adc_5g_interface.v".
+WARNING:Xst:646 - Signal <adc_clkdv_dcm> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <adc_sync0>.
+    Found 1-bit register for signal <adc_sync180>.
+    Found 1-bit register for signal <adc_sync270>.
+    Found 1-bit register for signal <adc_sync90>.
+    Found 1-bit register for signal <fifo_rd_en>.
+    Found 70-bit register for signal <with_extra_reg.extra_reg>.
+    Summary:
+	inferred  75 D-type flip-flop(s).
+Unit <adc_5g_interface> synthesized.
+
+
+Synthesizing Unit <r4_5g_specv5_adc_5g_wrapper>.
+    Related source file is "D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\pcores\/../hdl/r4_5g_specv5_adc_5g_wrapper.v".
+Unit <r4_5g_specv5_adc_5g_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 6
+ 1-bit register                                        : 5
+ 70-bit register                                       : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/r4_5g_specv5_adc_5g_wrapper/adc_async_fifo.ngc>.
+Loading core <adc_async_fifo> for timing and area information for instance <adc_async_fifo_inst>.
+Loading device for application Rf_Device from file '5vsx95t.nph' in environment C:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 75
+ Flip-Flops                                            : 75
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1902 - Value VARIABLE_CENTER for attribute CLKOUT_PHASE_SHIFT of instance dcm_inst_1 in unit adc_5g_interface is not supported
+INFO:Xst:1901 - Instance iddr_overrange in unit adc_5g_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance dcm_inst_1 in unit adc_5g_interface of type DCM has been replaced by DCM_ADV
+
+Optimizing unit <r4_5g_specv5_adc_5g_wrapper> ...
+
+Optimizing unit <adc_5g_interface> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/wr_rst_reg_1> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/rd_rst_reg_2> in Unit <BU2> is equivalent to the following 2 FFs/Latches : <U0/grf.rf/rstblk/rd_rst_reg_1> <U0/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/wr_rst_reg_1> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/rstblk/wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/rstblk/rd_rst_reg_2> in Unit <BU2> is equivalent to the following 2 FFs/Latches : <U0/grf.rf/rstblk/rd_rst_reg_1> <U0/grf.rf/rstblk/rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/gras.rsts/ram_empty_i> 
+INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwas.wsts/ram_full_fb_i> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 75
+ Flip-Flops                                            : 75
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/r4_5g_specv5_adc_5g_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 153
+
+Cell Usage :
+# BELS                             : 51
+#      GND                         : 2
+#      INV                         : 4
+#      LUT2                        : 18
+#      LUT3                        : 4
+#      LUT4                        : 4
+#      LUT5                        : 4
+#      LUT6                        : 14
+#      VCC                         : 1
+# FlipFlops/Latches                : 272
+#      FD                          : 78
+#      FDC                         : 48
+#      FDCE                        : 97
+#      FDP                         : 9
+#      FDPE                        : 5
+#      FDR                         : 1
+#      IDDR_2CLK                   : 33
+#      LDC                         : 1
+# RAMS                             : 24
+#      RAM64M                      : 23
+#      RAM64X1D                    : 1
+# Clock Buffers                    : 6
+#      BUFG                        : 6
+# IO Buffers                       : 35
+#      IBUFDS                      : 35
+# DCM_ADVs                         : 1
+#      DCM_ADV                     : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             272  out of  58880     0%  
+ Number of Slice LUTs:                  142  out of  58880     0%  
+    Number used as Logic:                48  out of  58880     0%  
+    Number used as Memory:               94  out of  24320     0%  
+       Number used as RAM:               94
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    381
+   Number with an unused Flip Flop:     109  out of    381    28%  
+   Number with an unused LUT:           239  out of    381    62%  
+   Number of fully used LUT-FF pairs:    33  out of    381     8%  
+   Number of unique control sets:        20
+
+IO Utilization: 
+ Number of IOs:                         153
+ Number of bonded IOBs:                  70  out of    640    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                6  out of     32    18%  
+ Number of DCM_ADVs:                      1  out of     12     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------+-----------------------------------------------------------------------------------+-------+
+Clock Signal                                     | Clock buffer(FF name)                                                             | Load  |
+-------------------------------------------------+-----------------------------------------------------------------------------------+-------+
+r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/empty| NONE(r4_5g_specV5_adc_5g/fifo_wr_latch/q)                                         | 1     |
+adc_clk_p                                        | r4_5g_specV5_adc_5g/dcm_inst_1:CLK2X                                              | 143   |
+adc_clk_p                                        | r4_5g_specV5_adc_5g/dcm_inst_1:CLK180                                             | 1     |
+adc_clk_p                                        | r4_5g_specV5_adc_5g/dcm_inst_1:CLK90                                              | 1     |
+adc_clk_p                                        | r4_5g_specV5_adc_5g/dcm_inst_1:CLK270                                             | 1     |
+adc_clk_p                                        | r4_5g_specV5_adc_5g/dcm_inst_1:CLK0                                               | 2     |
+ctrl_clk_in                                      | NONE(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_asreg_d2)| 114   |
+-------------------------------------------------+-----------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                         | Buffer(FF name)                                                                            | Load  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-------+
+r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg<0>(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg_0:Q)| NONE(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/mem/gdm.dm/dout_i_68)           | 70    |
+r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg<1>(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gcx.clkx/rd_pntr_gc_4)          | 24    |
+r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_reg<0>(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gcx.clkx/rd_pntr_bin_4)         | 24    |
+r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_reg<1>(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.wr/wpntr/count_3)           | 20    |
+r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg<2>(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i)| 14    |
+r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_comb(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/rd_rst_reg_0)            | 3     |
+dcm_reset                                                                                                                                              | NONE                                                                                       | 2     |
+r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_comb(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/rstblk/wr_rst_reg_0)            | 2     |
+r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/full(r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i:Q)                  | NONE(r4_5g_specV5_adc_5g/fifo_wr_latch/q)                                                  | 1     |
+-------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 5.044ns (Maximum Frequency: 198.255MHz)
+   Minimum input arrival time before clock: 1.170ns
+   Maximum output required time after clock: 0.471ns
+   Maximum combinational path delay: 1.154ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adc_clk_p'
+  Clock period: 5.044ns (frequency: 198.255MHz)
+  Total number of paths / destination ports: 384 / 301
+-------------------------------------------------------------------------
+Delay:               2.522ns (Levels of Logic = 2)
+  Source:            r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1_0 (FF)
+  Destination:       r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i (FF)
+  Source Clock:      adc_clk_p rising 2.0X +64
+  Destination Clock: adc_clk_p rising 2.0X +64
+
+  Data Path: r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.wr/wpntr/count_d1_0 to r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             2   0.471   1.074  U0/grf.rf/gl0.wr/wpntr/count_d1_0 (U0/grf.rf/gl0.wr/wpntr/count_d1<0>)
+     LUT6:I0->O            1   0.094   0.789  U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i_or0000175 (U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i_or0000175)
+     LUT6:I2->O            2   0.094   0.000  U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i_or0000242 (U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i_or0000)
+     FDP:D                    -0.018          U0/grf.rf/gl0.wr/gwas.wsts/ram_full_i
+    ----------------------------------------
+    Total                      2.522ns (0.659ns logic, 1.863ns route)
+                                       (26.1% logic, 73.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ctrl_clk_in'
+  Clock period: 2.522ns (frequency: 396.511MHz)
+  Total number of paths / destination ports: 206 / 118
+-------------------------------------------------------------------------
+Delay:               2.522ns (Levels of Logic = 2)
+  Source:            r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gcx.clkx/wr_pntr_bin_0 (FF)
+  Destination:       r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i (FF)
+  Source Clock:      ctrl_clk_in rising
+  Destination Clock: ctrl_clk_in rising
+
+  Data Path: r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gcx.clkx/wr_pntr_bin_0 to r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.471   1.074  U0/grf.rf/gcx.clkx/wr_pntr_bin_0 (U0/grf.rf/gcx.clkx/wr_pntr_bin<0>)
+     LUT6:I0->O            1   0.094   0.789  U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i_or000049 (U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i_or000049)
+     LUT6:I2->O            2   0.094   0.000  U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i_or0000242 (U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i_or0000)
+     FDP:D                    -0.018          U0/grf.rf/gl0.rd/gras.rsts/ram_empty_fb_i
+    ----------------------------------------
+    Total                      2.522ns (0.659ns logic, 1.863ns route)
+                                       (26.1% logic, 73.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adc_clk_p'
+  Total number of paths / destination ports: 75 / 71
+-------------------------------------------------------------------------
+Offset:              1.170ns (Levels of Logic = 1)
+  Source:            adc_sync_p (PAD)
+  Destination:       r4_5g_specV5_adc_5g/adc_sync180 (FF)
+  Destination Clock: adc_clk_p rising +244
+
+  Data Path: adc_sync_p to r4_5g_specV5_adc_5g/adc_sync180
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFDS:I->O           4   0.818   0.352  r4_5g_specV5_adc_5g/ibufds_sync (r4_5g_specV5_adc_5g/adc_sync_ibufds)
+     FD:D                     -0.018          r4_5g_specV5_adc_5g/adc_sync180
+    ----------------------------------------
+    Total                      1.170ns (0.818ns logic, 0.352ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ctrl_clk_in'
+  Total number of paths / destination ports: 71 / 71
+-------------------------------------------------------------------------
+Offset:              0.471ns (Levels of Logic = 1)
+  Source:            r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/mem/gdm.dm/dout_i_66 (FF)
+  Destination:       user_sync0 (PAD)
+  Source Clock:      ctrl_clk_in rising
+
+  Data Path: r4_5g_specV5_adc_5g/adc_async_fifo_inst/BU2/U0/grf.rf/mem/gdm.dm/dout_i_66 to user_sync0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             0   0.471   0.000  U0/grf.rf/mem/gdm.dm/dout_i_66 (dout(66))
+     end scope: 'BU2'
+     end scope: 'r4_5g_specV5_adc_5g/adc_async_fifo_inst'
+    ----------------------------------------
+    Total                      0.471ns (0.471ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 66 / 33
+-------------------------------------------------------------------------
+Delay:               1.154ns (Levels of Logic = 1)
+  Source:            adc_overrange_p (PAD)
+  Destination:       r4_5g_specV5_adc_5g/iddr_overrange:D (PAD)
+
+  Data Path: adc_overrange_p to r4_5g_specV5_adc_5g/iddr_overrange:D
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFDS:I->O           1   0.818   0.336  r4_5g_specV5_adc_5g/ibufds_overrange (r4_5g_specV5_adc_5g/adc_overrange_ibufds)
+    IDDR_2CLK:D                0.000          r4_5g_specV5_adc_5g/iddr_overrange
+    ----------------------------------------
+    Total                      1.154ns (0.818ns logic, 0.336ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.48 secs
+ 
+--> 
+
+Total memory usage is 342504 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

@@ -1,0 +1,609 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "r4_iadc_spec_adc_wrapper_xst.prj"
+
+---- Target Parameters
+Target Device                      : xc5vsx95tff1136-1
+Output File Name                   : "../implementation/r4_iadc_spec_adc_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : r4_iadc_spec_adc_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/r4_iadc_spec_adc_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/ddr_input.vhd" in Library adc_interface_v1_01_a.
+Entity <ddr_input> compiled.
+Entity <ddr_input> (Architecture <structural>) compiled.
+Compiling vhdl file "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_fifo.vhd" in Library adc_interface_v1_01_a.
+Entity <adc_fifo> compiled.
+Entity <adc_fifo> (Architecture <adc_fifo_a>) compiled.
+Compiling vhdl file "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" in Library adc_interface_v1_01_a.
+Entity <adc_interface> compiled.
+Entity <adc_interface> (Architecture <IMP>) compiled.
+Compiling vhdl file "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/hdl/r4_iadc_spec_adc_wrapper.vhd" in Library work.
+Entity <r4_iadc_spec_adc_wrapper> compiled.
+Entity <r4_iadc_spec_adc_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <r4_iadc_spec_adc_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <adc_interface> in library <adc_interface_v1_01_a> (architecture <IMP>).
+
+Analyzing hierarchy for entity <ddr_input> in library <adc_interface_v1_01_a> (architecture <structural>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <r4_iadc_spec_adc_wrapper> in library <work> (Architecture <STRUCTURE>).
+Entity <r4_iadc_spec_adc_wrapper> analyzed. Unit <r4_iadc_spec_adc_wrapper> generated.
+
+Analyzing Entity <adc_interface> in library <adc_interface_v1_01_a> (Architecture <IMP>).
+    Set user-defined property "KEEP =  true" for signal <adc_sync_ddr>.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 342: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 348: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 355: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 361: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 342: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 348: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 355: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 361: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 342: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 348: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 355: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 361: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 342: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 348: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 355: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 361: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 342: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 348: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 355: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 361: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 342: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 348: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 355: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 361: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 342: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 348: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 355: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 361: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 342: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 348: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 355: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 361: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 369: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:752 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 375: Unconnected input port 'rst' of component 'ddr_input' is tied to default value.
+WARNING:Xst:753 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 432: Unconnected output port 'full' of component 'adc_fifo'.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 432: Instantiating black box module <adc_fifo>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 451: Instantiating black box module <OBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 462: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 469: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 471: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 480: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 487: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 494: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 501: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 480: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 487: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 494: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 501: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 480: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 487: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 494: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 501: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 480: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 487: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 494: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 501: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 480: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 487: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 494: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 501: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 480: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 487: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 494: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 501: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 480: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 487: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 494: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 501: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 480: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 487: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 494: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 501: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 512: Instantiating black box module <IBUFDS>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 515: Instantiating black box module <BUFG>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 517: Instantiating black box module <BUFG>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 519: Instantiating black box module <BUFG>.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 521: Instantiating black box module <BUFG>.
+WARNING:Xst:753 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 533: Unconnected output port 'CLKDV' of component 'DCM'.
+WARNING:Xst:753 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 533: Unconnected output port 'CLK2X' of component 'DCM'.
+WARNING:Xst:753 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 533: Unconnected output port 'CLK2X180' of component 'DCM'.
+WARNING:Xst:753 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 533: Unconnected output port 'CLKFX' of component 'DCM'.
+WARNING:Xst:753 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 533: Unconnected output port 'CLKFX180' of component 'DCM'.
+WARNING:Xst:753 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 533: Unconnected output port 'STATUS' of component 'DCM'.
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd" line 533: Instantiating black box module <DCM>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLKIN_PERIOD =  3.9062500000000000" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  VARIABLE_POSITIVE" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  HIGH" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  HIGH" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "PHASE_SHIFT =  64" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <CLKSHIFT_DCM> in unit <adc_interface>.
+Entity <adc_interface> analyzed. Unit <adc_interface> generated.
+
+Analyzing Entity <ddr_input> in library <adc_interface_v1_01_a> (Architecture <structural>).
+WARNING:Xst:2211 - "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/ddr_input.vhd" line 50: Instantiating black box module <IDDR>.
+    Set user-defined property "DDR_CLK_EDGE =  SAME_EDGE_PIPELINED" for instance <IDDR_inst> in unit <ddr_input>.
+    Set user-defined property "INIT_Q1 =  0" for instance <IDDR_inst> in unit <ddr_input>.
+    Set user-defined property "INIT_Q2 =  0" for instance <IDDR_inst> in unit <ddr_input>.
+    Set user-defined property "SRTYPE =  SYNC" for instance <IDDR_inst> in unit <ddr_input>.
+Entity <ddr_input> analyzed. Unit <ddr_input> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ddr_input>.
+    Related source file is "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/ddr_input.vhd".
+Unit <ddr_input> synthesized.
+
+
+Synthesizing Unit <adc_interface>.
+    Related source file is "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd".
+    Found 32-bit register for signal <adc_datai_recapture>.
+    Found 32-bit register for signal <adc_dataq_recapture>.
+    Found 2-bit register for signal <adc_outofrangei_recapture>.
+    Found 2-bit register for signal <adc_outofrangeq_recapture>.
+    Found 4-bit register for signal <adc_sync_capture>.
+    Found 4-bit register for signal <adc_sync_ddr>.
+    Found 4-bit register for signal <adc_sync_recapture>.
+    Found 1-bit register for signal <fifo_rd_en>.
+    Summary:
+	inferred  81 D-type flip-flop(s).
+Unit <adc_interface> synthesized.
+
+
+Synthesizing Unit <r4_iadc_spec_adc_wrapper>.
+    Related source file is "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/hdl/r4_iadc_spec_adc_wrapper.vhd".
+Unit <r4_iadc_spec_adc_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 14
+ 1-bit register                                        : 9
+ 2-bit register                                        : 2
+ 32-bit register                                       : 2
+ 4-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Executing edif2ngd -noa "D:\casper10_1\projects\radix4\r4_iadc_spec\XPS_ROACH_base\implementation\r4_iadc_spec_adc_wrapper\adc_fifo.edn" "D:\casper10_1\projects\radix4\r4_iadc_spec\XPS_ROACH_base\implementation\adc_fifo.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to
+"D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/implementation/adc_fi
+fo.ngo"...
+Reading core <../implementation/r4_iadc_spec_adc_wrapper/adc_fifo_fifo_generator_v2_2_xst_1.ngc>.
+Reading Secure Unit <U0/fgas>.
+Loading core <adc_fifo_fifo_generator_v2_2_xst_1> for timing and area information for instance <BU2>.
+Loading core <adc_fifo> for timing and area information for instance <ADC_ASYNC_FIFO>.
+Loading device for application Rf_Device from file '5vsx95t.nph' in environment C:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1902 - Value VARIABLE_POSITIVE for attribute CLKOUT_PHASE_SHIFT of instance CLKSHIFT_DCM in unit adc_interface is not supported
+INFO:Xst:1901 - Instance CLKSHIFT_DCM in unit adc_interface of type DCM has been replaced by DCM_ADV
+INFO:Xst:1901 - Instance adc_oorq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance adc_oori_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[0].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[0].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[0].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[0].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[1].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[1].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[1].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[1].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[2].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[2].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[2].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[2].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[3].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[3].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[3].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[3].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[4].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[4].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[4].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[4].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[5].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[5].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[5].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[5].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[6].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[6].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[6].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[6].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[7].adc_dataoddq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[7].adc_dataevenq_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[7].adc_dataoddi_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+INFO:Xst:1901 - Instance ADC_DATA_DDR[7].adc_dataeveni_ddr/IDDR_inst in unit adc_interface of type IDDR has been replaced by IDDR_2CLK
+
+Optimizing unit <r4_iadc_spec_adc_wrapper> ...
+
+Optimizing unit <adc_interface> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_8> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_1> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_8> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_3> in Unit <U0/fgas> is equivalent to the following 6 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 5 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_13> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 11 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3> in Unit <U0/fgas> is equivalent to the following 4 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_12> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_8> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_1> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_8> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_3> in Unit <U0/fgas> is equivalent to the following 6 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 5 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_13> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 11 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3> in Unit <U0/fgas> is equivalent to the following 4 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_12> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> 
+
+Final Macro Processing ...
+
+Processing Unit <r4_iadc_spec_adc_wrapper> :
+	Found 2-bit shift register for signal <r4_iadc_spec_adc/adc_sync_recapture_3>.
+	Found 2-bit shift register for signal <r4_iadc_spec_adc/adc_sync_recapture_2>.
+Unit <r4_iadc_spec_adc_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 77
+ Flip-Flops                                            : 77
+# Shift Registers                                      : 2
+ 2-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/r4_iadc_spec_adc_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 159
+
+Cell Usage :
+# BELS                             : 87
+#      GND                         : 3
+#      INV                         : 2
+#      LUT1                        : 5
+#      LUT2                        : 37
+#      LUT2_L                      : 6
+#      LUT3                        : 7
+#      LUT4                        : 15
+#      LUT4_D                      : 3
+#      LUT4_L                      : 8
+#      VCC                         : 1
+# FlipFlops/Latches                : 339
+#      FD                          : 74
+#      FD_1                        : 2
+#      FDC                         : 32
+#      FDCE                        : 186
+#      FDE                         : 2
+#      FDP                         : 4
+#      FDPE                        : 5
+#      IDDR_2CLK                   : 34
+# RAMS                             : 72
+#      RAM32X1D                    : 72
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 37
+#      IBUFDS                      : 36
+#      OBUFDS                      : 1
+# DCM_ADVs                         : 1
+#      DCM_ADV                     : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             339  out of  58880     0%  
+ Number of Slice LUTs:                  229  out of  58880     0%  
+    Number used as Logic:                83  out of  58880     0%  
+    Number used as Memory:              146  out of  24320     0%  
+       Number used as RAM:              144
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    527
+   Number with an unused Flip Flop:     188  out of    527    35%  
+   Number with an unused LUT:           298  out of    527    56%  
+   Number of fully used LUT-FF pairs:    41  out of    527     7%  
+   Number of unique control sets:        25
+
+IO Utilization: 
+ Number of IOs:                         159
+ Number of bonded IOBs:                  75  out of    640    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
+ Number of DCM_ADVs:                      1  out of     12     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)              | Load  |
+-----------------------------------+------------------------------------+-------+
+adc_clk_p                          | r4_iadc_spec_adc/CLKSHIFT_DCM:CLK0 | 189   |
+adc_clk_p                          | r4_iadc_spec_adc/CLKSHIFT_DCM:CLK90| 4     |
+ctrl_clk_in                        | NONE(r4_iadc_spec_adc/fifo_rd_en)  | 186   |
+-----------------------------------+------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                   | Buffer(FF name)                                                                                           | Load  |
+---------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-------+
+r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/rd_rst_int<3>(r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/rd_rst_fb:Q)   | NONE(r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/memblk/distinst/DOB_56)                                  | 183   |
+r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/wr_rst_int<3>(r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/wr_rst_int_1:Q)| NONE(r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/cntblk/gen_wr_cntr_plus2/bin_cnt_top/bld_bin_cnt/count_3)| 39    |
+dcm_reset                                                                                                                        | NONE                                                                                                      | 5     |
+---------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.363ns (Maximum Frequency: 423.191MHz)
+   Minimum input arrival time before clock: 1.170ns
+   Maximum output required time after clock: 0.471ns
+   Maximum combinational path delay: 2.452ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adc_clk_p'
+  Clock period: 2.363ns (frequency: 423.191MHz)
+  Total number of paths / destination ports: 647 / 571
+-------------------------------------------------------------------------
+Delay:               2.363ns (Levels of Logic = 3)
+  Source:            r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/clkmod/rdx/PNTR_B_1 (FF)
+  Destination:       r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/thrmod/flogic/RAM_FULL_i (FF)
+  Source Clock:      adc_clk_p rising +64
+  Destination Clock: adc_clk_p rising +64
+
+  Data Path: r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/clkmod/rdx/PNTR_B_1 to r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/thrmod/flogic/RAM_FULL_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.471   0.794  flblk/clkmod/rdx/PNTR_B_1 (debug_rd_pntr_w<1>)
+     LUT4:I0->O            1   0.094   0.576  flblk/thrmod/flogic/comp1/dout_i26 (CHOICE39)
+     LUT4_L:I2->LO         1   0.094   0.240  flblk/thrmod/flogic/comp1/dout_i78 (flblk/thrmod/flogic/comp_full1)
+     LUT4_L:I2->LO         1   0.094   0.000  flblk/thrmod/flogic/FULL_NONREG_i1 (flblk/thrmod/flogic/FULL_NONREG)
+     FDP:D                    -0.018          flblk/thrmod/flogic/RAM_FULL_i
+    ----------------------------------------
+    Total                      2.363ns (0.753ns logic, 1.610ns route)
+                                       (31.9% logic, 68.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ctrl_clk_in'
+  Clock period: 2.363ns (frequency: 423.191MHz)
+  Total number of paths / destination ports: 1003 / 347
+-------------------------------------------------------------------------
+Delay:               2.363ns (Levels of Logic = 3)
+  Source:            r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/clkmod/wrx/PNTR_B_0 (FF)
+  Destination:       r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/thrmod/elogic/RAM_EMPTY_i (FF)
+  Source Clock:      ctrl_clk_in rising
+  Destination Clock: ctrl_clk_in rising
+
+  Data Path: r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/clkmod/wrx/PNTR_B_0 to r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/flblk/thrmod/elogic/RAM_EMPTY_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.471   0.794  flblk/clkmod/wrx/PNTR_B_0 (debug_wr_pntr_r<0>)
+     LUT4:I0->O            1   0.094   0.576  flblk/thrmod/elogic/c1/dout_i26 (CHOICE68)
+     LUT4_L:I2->LO         1   0.094   0.240  flblk/thrmod/elogic/c1/dout_i78 (flblk/thrmod/elogic/comp1out)
+     LUT4_L:I2->LO         1   0.094   0.000  flblk/thrmod/elogic/EMPTY_NONREG_i1 (flblk/thrmod/elogic/EMPTY_NONREG)
+     FDP:D                    -0.018          flblk/thrmod/elogic/RAM_EMPTY_i
+    ----------------------------------------
+    Total                      2.363ns (0.753ns logic, 1.610ns route)
+                                       (31.9% logic, 68.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adc_clk_p'
+  Total number of paths / destination ports: 76 / 72
+-------------------------------------------------------------------------
+Offset:              1.170ns (Levels of Logic = 1)
+  Source:            adc_sync_p (PAD)
+  Destination:       r4_iadc_spec_adc/adc_sync_ddr_3 (FF)
+  Destination Clock: adc_clk_p rising +64
+
+  Data Path: adc_sync_p to r4_iadc_spec_adc/adc_sync_ddr_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFDS:I->O           4   0.818   0.352  r4_iadc_spec_adc/IBUFDS_SYNC (r4_iadc_spec_adc/adc_sync)
+     FD:D                     -0.018          r4_iadc_spec_adc/adc_sync_ddr_3
+    ----------------------------------------
+    Total                      1.170ns (0.818ns logic, 0.352ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ctrl_clk_in'
+  Total number of paths / destination ports: 73 / 73
+-------------------------------------------------------------------------
+Offset:              0.471ns (Levels of Logic = 2)
+  Source:            r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/memblk/distinst/DOB_7 (FF)
+  Destination:       user_outofrangei0 (PAD)
+  Source Clock:      ctrl_clk_in rising
+
+  Data Path: r4_iadc_spec_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/memblk/distinst/DOB_7 to user_outofrangei0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             0   0.471   0.000  memblk/distinst/DOB_7 (DOUT<7>)
+     end scope: 'U0/fgas'
+     end scope: 'BU2'
+     end scope: 'r4_iadc_spec_adc/ADC_ASYNC_FIFO'
+    ----------------------------------------
+    Total                      0.471ns (0.471ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 70 / 36
+-------------------------------------------------------------------------
+Delay:               2.452ns (Levels of Logic = 1)
+  Source:            ctrl_reset (PAD)
+  Destination:       adc_ddrb_n (PAD)
+
+  Data Path: ctrl_reset to adc_ddrb_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     OBUFDS:I->O               2.452          r4_iadc_spec_adc/OBUFDS_ADC_DDRB (adc_ddrb_p)
+    ----------------------------------------
+    Total                      2.452ns (2.452ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.92 secs
+ 
+--> 
+
+Total memory usage is 348136 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   86 (   0 filtered)
+Number of infos    :   62 (   0 filtered)
+

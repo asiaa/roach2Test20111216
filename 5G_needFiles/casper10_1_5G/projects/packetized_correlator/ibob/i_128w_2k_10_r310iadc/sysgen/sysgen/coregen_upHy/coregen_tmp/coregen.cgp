@@ -1,0 +1,20 @@
+# Date: Tue Jul 20 03:11:01 2010
+SET addpads = False
+SET asysymbol = False
+SET busformat = BusFormatParenNotRipped
+SET createndf = True
+SET designentry = VHDL
+SET device = xc2vp2
+SET devicefamily = virtex2p
+SET flowvendor = Other
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = Edif
+SET package = fg256
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -7
+SET verilogsim = True
+SET vhdlsim = True
+SET workingdirectory = .\tmp
+

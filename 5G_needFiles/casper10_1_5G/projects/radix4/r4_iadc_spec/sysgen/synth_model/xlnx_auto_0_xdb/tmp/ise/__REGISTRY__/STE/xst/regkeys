@@ -1,0 +1,6 @@
+CommandLine
+c:\xilinx\10.1\ise\bin\nt\unwrapped\xst.exe -ifn xst_r4_iadc_spec.scr -ofn r4_iadc_spec.results -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

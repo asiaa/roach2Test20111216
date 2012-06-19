@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/dram_sim
+END
+ddr2_sim.v
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/dram_sim/ddr2_sim.v
+END
+ddr2_parameters.vh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/dram_sim/ddr2_parameters.vh
+END
+xilinx_sim_src.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/dram_sim/xilinx_sim_src.vhd
+END
+dram_sim.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/dram_sim/dram_sim.vhd
+END
+async_ddr2.v
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/dram_sim/async_ddr2.v
+END
+ddr2_controller.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/780/trunk/mlib_devel_10_1/xps_library/hdlsimfiles/dram_sim/ddr2_controller.vhd
+END

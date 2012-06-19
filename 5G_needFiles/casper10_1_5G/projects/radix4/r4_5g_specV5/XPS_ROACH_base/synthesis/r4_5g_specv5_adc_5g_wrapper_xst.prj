@@ -1,0 +1,3 @@
+verilog adc_5g_interface_v1_00_a D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\pcores\adc_5g_interface_v1_00_a/hdl/verilog/adc_async_fifo.v
+verilog adc_5g_interface_v1_00_a D:\casper10_1\projects\radix4\r4_5g_specV5\XPS_ROACH_base\pcores\adc_5g_interface_v1_00_a/hdl/verilog/adc_5g_interface.v
+verilog work ../hdl/r4_5g_specv5_adc_5g_wrapper.v

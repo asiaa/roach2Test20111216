@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_01_a/hdl/verilog
+END
+user_logic.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_01_a/hdl/verilog/user_logic.v
+END
+dword_reg.v
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_01_a/hdl/verilog/dword_reg.v
+END
+byte_reg.v
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_01_a/hdl/verilog/byte_reg.v
+END
+cmd_addr_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_01_a/hdl/verilog/cmd_addr_fifo.v
+END
+rd_data_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_01_a/hdl/verilog/rd_data_fifo.v
+END
+wr_be_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_01_a/hdl/verilog/wr_be_fifo.v
+END
+wr_data_fifo.v
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v1_01_a/hdl/verilog/wr_data_fifo.v
+END

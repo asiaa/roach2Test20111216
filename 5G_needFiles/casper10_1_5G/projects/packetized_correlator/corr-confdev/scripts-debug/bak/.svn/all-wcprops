@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2036/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/bak
+END
+snap_10gbe_mux.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/bak/snap_10gbe_mux.py
+END
+snap_xeng_out.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/bak/snap_xeng_out.py
+END
+dram_test_rx.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/bak/dram_test_rx.py
+END
+snap_xaui_spectrum_construct.py
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/bak/snap_xaui_spectrum_construct.py
+END
+snap_xaui_mux.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/bak/snap_xaui_mux.py
+END
+snap_xout.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/bak/snap_xout.py
+END
+rst_gbe.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/bak/rst_gbe.py
+END
+dram_tvg_init.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/bak/dram_tvg_init.py
+END
+snap_x1_plot.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/bak/snap_x1_plot.py
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/example_design
+END
+xaui_v6_2_top.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/example_design/xaui_v6_2_top.ucf
+END
+xaui_v6_2_top.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/example_design/xaui_v6_2_top.vhd
+END
+transceiver.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/example_design/transceiver.vhd
+END

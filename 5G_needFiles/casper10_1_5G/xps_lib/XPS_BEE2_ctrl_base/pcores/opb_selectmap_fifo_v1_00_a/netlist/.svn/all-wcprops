@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/opb_selectmap_fifo_v1_00_a/netlist
+END
+fifo_async_32x128_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/opb_selectmap_fifo_v1_00_a/netlist/fifo_async_32x128_fifo_generator_v2_2_xst_1_blkmemdp_v6_2_xst.edn
+END
+fifo_async_32x128.edn
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/opb_selectmap_fifo_v1_00_a/netlist/fifo_async_32x128.edn
+END
+fifo_async_32x128_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/opb_selectmap_fifo_v1_00_a/netlist/fifo_async_32x128_fifo_generator_v2_2_xst_1.ngc
+END

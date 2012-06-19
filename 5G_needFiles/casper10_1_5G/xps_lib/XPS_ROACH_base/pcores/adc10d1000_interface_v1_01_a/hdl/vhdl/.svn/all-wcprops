@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/2487/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc10d1000_interface_v1_01_a/hdl/vhdl
+END
+adc_interface.vhd.bak
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/2487/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc10d1000_interface_v1_01_a/hdl/vhdl/adc_interface.vhd.bak
+END
+adc_interface.vhd.newish
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/2487/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc10d1000_interface_v1_01_a/hdl/vhdl/adc_interface.vhd.newish
+END
+fifo_generator_v4_4.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/2487/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc10d1000_interface_v1_01_a/hdl/vhdl/fifo_generator_v4_4.vhd
+END
+adc_fifo.vhd.bak
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/2487/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc10d1000_interface_v1_01_a/hdl/vhdl/adc_fifo.vhd.bak
+END
+adc_fifo.vhd.old
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/2487/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc10d1000_interface_v1_01_a/hdl/vhdl/adc_fifo.vhd.old
+END
+adc_interface.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/2487/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc10d1000_interface_v1_01_a/hdl/vhdl/adc_interface.vhd
+END
+ddr_input.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/2487/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc10d1000_interface_v1_01_a/hdl/vhdl/ddr_input.vhd
+END
+adc_fifo.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/2487/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc10d1000_interface_v1_01_a/hdl/vhdl/adc_fifo.vhd
+END

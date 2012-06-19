@@ -1,0 +1,62 @@
+##############################################################
+#
+# Xilinx Core Generator version K.39
+# Date: Wed Sep 01 06:51:30 2010
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = False
+SET asysymbol = False
+SET busformat = BusFormatParenNotRipped
+SET createndf = True
+SET designentry = VHDL
+SET device = xc5vlx20t
+SET devicefamily = virtex5
+SET flowvendor = Other
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = Edif
+SET package = ff323
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -2
+SET verilogsim = True
+SET vhdlsim = True
+# END Project Options
+# BEGIN Select
+SELECT Distributed_Memory_Generator family Xilinx,_Inc. 3.3
+# END Select
+# BEGIN Parameters
+CSET ce_overrides=sync_controls_overrides_ce
+CSET coefficient_file=dmg_33_vx5_47bf930170fd8e60.coe
+CSET common_output_ce=false
+CSET common_output_clk=false
+CSET component_name=dmg_33_vx5_47bf930170fd8e60
+CSET data_width=18
+CSET default_data=0
+CSET default_data_radix=16
+CSET depth=16
+CSET dual_port_address=non_registered
+CSET dual_port_output_clock_enable=false
+CSET input_clock_enable=false
+CSET input_options=non_registered
+CSET memory_type=rom
+CSET output_options=registered
+CSET qualify_we_with_i_ce=false
+CSET reset_qdpo=false
+CSET reset_qspo=false
+CSET single_port_output_clock_enable=true
+CSET sync_reset_qdpo=false
+CSET sync_reset_qspo=false
+# END Parameters
+GENERATE
+# CRC: 909196af
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1790/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/netlist
+END
+rd_fifo_bram.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/netlist/rd_fifo_bram.ngc
+END
+rd_fifo_dist.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/netlist/rd_fifo_dist.ngc
+END
+transaction_fifo_dist.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/netlist/transaction_fifo_dist.ngc
+END
+data_fifo_dist.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/netlist/data_fifo_dist.ngc
+END

@@ -1,0 +1,6 @@
+CommandLine
+ngc2edif_from_xst -nolog -w .\tmp\_cg\multiplier_virtex5_10_1_db7cd8a2c586bcee_mult_gen_v10_1_xst_1.ngc .\tmp\_cg\multiplier_virtex5_10_1_db7cd8a2c586bcee_mult_gen_v10_1_xst_1.ndf
+s
+FormatString
+ngc2edif [--mdp2sp][--nolog] [-bd angle|paren|square|asis] [-intstyle ise|xflow|silent] [-log <log_file>] [-secure] [--quiet] [-w] <infile> [<outfile>]
+s

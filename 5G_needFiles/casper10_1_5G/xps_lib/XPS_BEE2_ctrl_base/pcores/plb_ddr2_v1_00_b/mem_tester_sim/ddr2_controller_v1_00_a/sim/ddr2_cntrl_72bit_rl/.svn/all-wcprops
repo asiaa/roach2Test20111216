@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/mem_tester_sim/ddr2_controller_v1_00_a/sim/ddr2_cntrl_72bit_rl
+END
+arc_ddr2_cntrl_72bit_rl.asm
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/mem_tester_sim/ddr2_controller_v1_00_a/sim/ddr2_cntrl_72bit_rl/arc_ddr2_cntrl_72bit_rl.asm
+END
+_primary.dat
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/mem_tester_sim/ddr2_controller_v1_00_a/sim/ddr2_cntrl_72bit_rl/_primary.dat
+END
+arc_ddr2_cntrl_72bit_rl.dat
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/mem_tester_sim/ddr2_controller_v1_00_a/sim/ddr2_cntrl_72bit_rl/arc_ddr2_cntrl_72bit_rl.dat
+END

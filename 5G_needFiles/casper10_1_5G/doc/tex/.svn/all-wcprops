@@ -1,0 +1,359 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex
+END
+sp_delay_slr.tex
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_delay_slr.tex
+END
+sp_c_to_ri.tex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_c_to_ri.tex
+END
+sp_ri_to_c.tex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_ri_to_c.tex
+END
+sp_dram_vacc.tex
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_dram_vacc.tex
+END
+sp_barrel_switcher.tex
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_barrel_switcher.tex
+END
+sp_square_transposer.tex
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_square_transposer.tex
+END
+sys_adc.tex
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sys_adc.tex
+END
+sp_delay_bram_en_plus.tex
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_delay_bram_en_plus.tex
+END
+sp_mixer.tex
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_mixer.tex
+END
+sp_cmult_4bit_em_.tex
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_cmult_4bit_em_.tex
+END
+sp_cmult_4bit_br.tex
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_cmult_4bit_br.tex
+END
+sp_sync_delay.tex
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_sync_delay.tex
+END
+sys_software_register.tex
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sys_software_register.tex
+END
+sys_xsg_core_config.tex
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sys_xsg_core_config.tex
+END
+sp_dec_fir.tex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_dec_fir.tex
+END
+sp_power.tex
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_power.tex
+END
+sys_snap.tex
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sys_snap.tex
+END
+sp_fir_dbl_col.tex
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_fir_dbl_col.tex
+END
+sp_negedge.tex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_negedge.tex
+END
+sys_sram.tex
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sys_sram.tex
+END
+sp_dram_vacc_tvg.tex
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_dram_vacc_tvg.tex
+END
+com_ten_GbE.tex
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/com_ten_GbE.tex
+END
+com_xaui.tex
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/com_xaui.tex
+END
+sp_reorder.tex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_reorder.tex
+END
+sp_freeze_cntr.tex
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_freeze_cntr.tex
+END
+sp_rcmult.tex
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_rcmult.tex
+END
+sp_pulse_ext.tex
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_pulse_ext.tex
+END
+sp_bit_reverse.tex
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_bit_reverse.tex
+END
+sp_dds.tex
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_dds.tex
+END
+sp_partial_delay.tex
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_partial_delay.tex
+END
+sp_pfb_fir_real.tex
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_pfb_fir_real.tex
+END
+sp_fir_col.tex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_fir_col.tex
+END
+sp_lo_osc.tex
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_lo_osc.tex
+END
+sp_fft_wideband_real.tex
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_fft_wideband_real.tex
+END
+sp_fft.tex
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_fft.tex
+END
+sys_dram.tex
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sys_dram.tex
+END
+sp_lo_const.tex
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_lo_const.tex
+END
+sp_sync_delay_prog.tex
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_sync_delay_prog.tex
+END
+sp_xeng_tvg.tex
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_xeng_tvg.tex
+END
+sys_dac.tex
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sys_dac.tex
+END
+sp_fir_tap.tex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_fir_tap.tex
+END
+sp_delay_complex.tex
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_delay_complex.tex
+END
+sp_delay_bram_prog.tex
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_delay_bram_prog.tex
+END
+sp_posedge.tex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_posedge.tex
+END
+sp_cmult_4bit_em.tex
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_cmult_4bit_em.tex
+END
+sp_cmult_4bit_br_.tex
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_cmult_4bit_br_.tex
+END
+sp_complex_addsub.tex
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_complex_addsub.tex
+END
+sp_fft_biplex_real_2x.tex
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_fft_biplex_real_2x.tex
+END
+sp_adder_tree.tex
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_adder_tree.tex
+END
+sp_delay_bram.tex
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_delay_bram.tex
+END
+sp_fft_biplex_real_4x.tex
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_fft_biplex_real_4x.tex
+END
+sp_cmult_4bit_sl_.tex
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_cmult_4bit_sl_.tex
+END
+sp_edge.tex
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_edge.tex
+END
+sp_cmult_4bit_sl.tex
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_cmult_4bit_sl.tex
+END
+sp_pfb_fir.tex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_pfb_fir.tex
+END
+sys_snap64.tex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sys_snap64.tex
+END
+sp_win_x_engine.tex
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_win_x_engine.tex
+END
+sp_stopwatch.tex
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_stopwatch.tex
+END
+sp_sync_delay_en.tex
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/680/trunk/mlib_devel_10_1/doc/tex/sp_sync_delay_en.tex
+END

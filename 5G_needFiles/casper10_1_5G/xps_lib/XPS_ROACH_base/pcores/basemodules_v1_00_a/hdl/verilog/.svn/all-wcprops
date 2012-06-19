@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2258/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/basemodules_v1_00_a/hdl/verilog
+END
+IORegister.v
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/2258/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/basemodules_v1_00_a/hdl/verilog/IORegister.v
+END
+Counter.v
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/2258/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/basemodules_v1_00_a/hdl/verilog/Counter.v
+END
+ShiftRegister.v
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/2258/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/basemodules_v1_00_a/hdl/verilog/ShiftRegister.v
+END
+Register.v
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/2258/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/basemodules_v1_00_a/hdl/verilog/Register.v
+END
+IOShiftRegister.v
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/2258/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/basemodules_v1_00_a/hdl/verilog/IOShiftRegister.v
+END

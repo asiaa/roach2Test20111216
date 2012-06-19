@@ -1,0 +1,4186 @@
+Model {
+  Name			  "bitsel_split_convert"
+  Version		  6.2
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.29"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "user"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  on
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  on
+  Created		  "Thu Jun 08 14:30:49 2006"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "mdexter"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Sep 26 23:03:51 2006"
+  ModelVersionFormat	  "1.%<AutoIncrement:29>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.1.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.1.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.1.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    5
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "InitFltsAndDblsToZero"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.1.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  ParameterPooling	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.1.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterPrecisionLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.1.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.1.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.1.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Array {
+		Type			"Cell"
+		Dimension		9
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.1.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      PrefixModelToSubsysFcnNames on
+	      CustomSymbolStr	      "$R$N$M"
+	      MangleLength	      1
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Array {
+		Type			"Cell"
+		Dimension		12
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.1.0"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      SimulationMode	      "normal"
+      CurrentDlgPage	      "Solver"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+      SampleTime	      "inf"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      PulseType		      "Sample based"
+      TimeSource	      "Use simulation time"
+      Amplitude		      "1"
+      Period		      "2"
+      PulseWidth	      "1"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Inport
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "bitsel_split_convert"
+    Location		    [336, 210, 1494, 1042]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      " System Generator"
+      Tag		      "genX"
+      Ports		      []
+      Position		      [43, 148, 96, 201]
+      ShowName		      off
+      AttributesFormatString  "System\\nGenerator"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      SourceBlock	      "xbsIndex_r3/ System Generator"
+      SourceType	      "Xilinx System Generator"
+      ShowPortLabels	      on
+      xilinxfamily	      "Virtex2P"
+      part		      "xc2vp40"
+      speed		      "-6"
+      package		      "ff1152"
+      synthesis_tool	      "XST"
+      directory		      "./bitsel_core"
+      testbench		      off
+      simulink_period	      "1"
+      sysclk_period	      "100"
+      incr_netlist	      off
+      trim_vbits	      "Everywhere in SubSystem"
+      dbl_ovrd		      "According to Block Masks"
+      core_generation	      "According to Block Masks"
+      run_coregen	      off
+      deprecated_control      off
+      eval_field	      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [35, 288, 50, 302]
+      ShowName		      off
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      Position		      [35, 443, 50, 457]
+      ShowName		      off
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      Position		      [35, 48, 50, 62]
+      ShowName		      off
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Delay"
+      Ports		      [1, 1]
+      Position		      [395, 427, 440, 473]
+      SourceBlock	      "xbsIndex_r3/Delay"
+      SourceType	      "Xilinx Delay Block"
+      latency		      "8"
+      reg_retiming	      off
+      explicit_period	      off
+      period		      "1"
+      en		      off
+      accept_only_valid	      off
+      init_zero		      on
+      dbl_ovrd		      off
+      show_param	      off
+      xl_area		      "[1 1 0 1 0 0 0]"
+      xl_use_area	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Delay1"
+      Ports		      [1, 1]
+      Position		      [395, 352, 440, 398]
+      SourceBlock	      "xbsIndex_r3/Delay"
+      SourceType	      "Xilinx Delay Block"
+      latency		      "4"
+      reg_retiming	      off
+      explicit_period	      off
+      period		      "1"
+      en		      off
+      accept_only_valid	      off
+      init_zero		      on
+      dbl_ovrd		      off
+      show_param	      off
+      xl_area		      "[4 8 0 8 0 0 0]"
+      xl_use_area	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Delay2"
+      Ports		      [1, 1]
+      Position		      [430, 32, 475, 78]
+      SourceBlock	      "xbsIndex_r3/Delay"
+      SourceType	      "Xilinx Delay Block"
+      latency		      "7"
+      reg_retiming	      off
+      explicit_period	      off
+      period		      "1"
+      en		      off
+      accept_only_valid	      off
+      init_zero		      on
+      dbl_ovrd		      off
+      show_param	      off
+      xl_area		      "[1 2 0 2 0 0 0]"
+      xl_use_area	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Delay3"
+      Ports		      [1, 1]
+      Position		      [295, 122, 335, 148]
+      SourceBlock	      "xbsIndex_r3/Delay"
+      SourceType	      "Xilinx Delay Block"
+      latency		      "3"
+      reg_retiming	      off
+      explicit_period	      off
+      period		      "1"
+      en		      off
+      accept_only_valid	      off
+      init_zero		      on
+      dbl_ovrd		      off
+      show_param	      off
+      xl_area		      "[1 1 0 1 0 0 0]"
+      xl_use_area	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Mux"
+      Ports		      [3, 1]
+      Position		      [360, 95, 390, 335]
+      FontSize		      10
+      SourceBlock	      "xbsIndex_r3/Mux"
+      SourceType	      "Xilinx Multiplexer Block"
+      inputs		      "2"
+      precision		      "Full"
+      arith_type	      "Signed  (2's comp)"
+      n_bits		      "8"
+      bin_pt		      "2"
+      quantization	      "Truncate"
+      overflow		      "Wrap"
+      latency		      "1"
+      explicit_period	      off
+      period		      "1"
+      en		      off
+      dbl_ovrd		      off
+      show_param	      on
+      mux_type		      off
+      use_rpm		      on
+      gen_core		      off
+      xl_area		      "[8 16 0 16 0 0 0]"
+      xl_use_area	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Mux1"
+      Ports		      [5, 1]
+      Position		      [585, 16, 635, 414]
+      FontSize		      10
+      SourceBlock	      "xbsIndex_r3/Mux"
+      SourceType	      "Xilinx Multiplexer Block"
+      inputs		      "4"
+      precision		      "Full"
+      arith_type	      "Signed  (2's comp)"
+      n_bits		      "8"
+      bin_pt		      "2"
+      quantization	      "Truncate"
+      overflow		      "Wrap"
+      latency		      "1"
+      explicit_period	      off
+      period		      "1"
+      en		      off
+      dbl_ovrd		      off
+      show_param	      on
+      mux_type		      off
+      use_rpm		      on
+      gen_core		      off
+      xl_area		      "[8 8 0 16 0 0 0]"
+      xl_use_area	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Resource Estimator"
+      Tag		      "resEstTag"
+      Ports		      []
+      Position		      [113, 148, 166, 201]
+      ShowName		      off
+      AttributesFormatString  "Resource\\nEstimator"
+      FontName		      "Arial"
+      SourceBlock	      "xbsIndex_r3/Resource Estimator"
+      SourceType	      "Xilinx Resource Estimator Block"
+      ShowPortLabels	      on
+      xl_estimator_area	      "[161 100 0 306 52 0 0]"
+      xl_use_estimator_area   off
+      simulink_period	      "1"
+      mrp_directory	      "./bitsel_core"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Slice"
+      Ports		      [1, 1]
+      Position		      [225, 121, 270, 149]
+      SourceBlock	      "xbsIndex_r3/Slice"
+      SourceType	      "Xilinx Slice Block"
+      mode		      "Lower Bit Location + Width"
+      nbits		      "1"
+      bit1		      "0"
+      base1		      "MSB of Input"
+      bit0		      "2"
+      base0		      "LSB of Input"
+      boolean_output	      off
+      explicit_period	      off
+      period		      "1"
+      dbl_ovrd		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Slice1"
+      Ports		      [1, 1]
+      Position		      [225, 41, 270, 69]
+      SourceBlock	      "xbsIndex_r3/Slice"
+      SourceType	      "Xilinx Slice Block"
+      mode		      "Lower Bit Location + Width"
+      nbits		      "2"
+      bit1		      "0"
+      base1		      "MSB of Input"
+      bit0		      "0"
+      base0		      "LSB of Input"
+      boolean_output	      off
+      explicit_period	      off
+      period		      "1"
+      dbl_ovrd		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator"
+      Position		      [835, 210, 845, 220]
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator1"
+      Position		      [835, 445, 845, 455]
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "din"
+      Ports		      [1, 1]
+      Position		      [90, 284, 145, 306]
+      SourceBlock	      "xbsIndex_r3/Gateway In"
+      SourceType	      "Xilinx Gateway In"
+      arith_type	      "Unsigned"
+      n_bits		      "38"
+      bin_pt		      "0"
+      quantization	      "Truncate"
+      overflow		      "Wrap"
+      period		      "1"
+      timing_constraint	      "None"
+      locs_specified	      off
+      LOCs		      "{}"
+      needs_fixed_name	      off
+      dbl_ovrd		      off
+      show_param	      off
+      xl_area		      "[0 0 0 0 38 0 0]"
+      xl_use_area	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "dout"
+      Ports		      [1, 1]
+      Position		      [750, 204, 805, 226]
+      SourceBlock	      "xbsIndex_r3/Gateway Out"
+      SourceType	      "Xilinx Gateway Out"
+      output_type	      "Double"
+      nbits		      "8"
+      bin_pt		      "6"
+      arith_type	      "Boolean"
+      quantization	      "Truncate"
+      overflow		      "Wrap"
+      hdl_port		      on
+      timing_constraint	      "None"
+      locs_specified	      off
+      LOCs		      "{}"
+      needs_fixed_name	      off
+      show_param	      off
+      xl_area		      "[0 0 0 0 8 0 0]"
+      xl_use_area	      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "hi4"
+      Ports		      [1, 1]
+      Position		      [470, 285, 515, 305]
+      AttributesFormatString  "8_4 ==> 4_0\nround even, wrap\nlatency = 3"
+      UserDataPersistent      on
+      UserData		      "DataTag1"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskType		      "Complex Convert (cast)"
+      MaskDescription	      "Convert real and imaginary components of a comp"
+"lex input to the specified bit width and precision."
+      MaskHelp		      "<pre>\nDescription::\n\nOutputs (complex) conve"
+"rted version of the (complex) input.\n\nMask Parameters::\n\nBit Width In (n_"
+"bits_in): Specifies the width of the real/imaginary input components.\nAssume"
+"d equal for both components.\n\nBinary Point In (bin_pt_in): Specifies the bi"
+"nary point location in the real/imag input components.\nAssumed equal for bot"
+"h components.\n\nBit Width Out (n_bits_out): Specifies the width of the real/"
+"imaginary output components.\nAssumed equal for both components.\n\nBinary Po"
+"int Out (bin_pt_out): Specifies the binary point location in the real/imag ou"
+"tput components.\nAssumed equal for both components.\n\nQuantization (quantiz"
+"ation): Specifies quantization handling.\n\nOverflow (overflow): Specifies ov"
+"erflow handling.\n\nLatency (latency): Specifies the latency of the underlyin"
+"g convert blocks, which is the overall\nlatency of this block as well.\n</pre"
+">"
+      MaskPromptString	      "Bit Width In|Binary Point In|Bit Width Out|Bina"
+"ry Point Out|Quantization|Overflow|Latency"
+      MaskStyleString	      "edit,edit,edit,edit,popup(Truncate|Round  (unbi"
+"ased: +/- Inf)|Round  (unbiased: Even Values)),popup(Wrap|Saturate|Error),edi"
+"t"
+      MaskTunableValueString  "on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,"
+      MaskVariables	      "n_bits_in=@1;bin_pt_in=@2;n_bits_out=@3;bin_pt_"
+"out=@4;quantization=@5;overflow=@6;latency=@7;"
+      MaskInitialization      "complex_convert_init(gcb, ...\n    n_bits_in,bi"
+"n_pt_in, ...\n    n_bits_out,bin_pt_out, ...\n    quantization,overflow,laten"
+"cy);"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "8|4|4|0|Round  (unbiased: Even Values)|Wrap|3"
+      MaskTabNameString	      ",,,,,,"
+      System {
+	Name			"hi4"
+	Location		[824, 498, 1376, 706]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in"
+	  Position		  [20, 63, 50, 77]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "c_to_ri"
+	  Ports			  [1, 2]
+	  Position		  [95, 49, 135, 91]
+	  AttributesFormatString  "8_4 r/i"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag2"
+	  FontSize		  10
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Complex to Real-Imag"
+	  MaskDescription	  "Outputs real and imaginary components of a "
+"complex input."
+	  MaskHelp		  "<pre>\nDescription::\n\nOutputs real and im"
+"aginary components of a complex input.\nUseful for simplifying interconnects."
+"\nSee also: Real-Imag to Complex (ri_to_c)\n\nMask Parameters::\n\nBit Width "
+"(n_bits): Specifies the width of the real/imaginary components.\nAssumed equa"
+"l for both components.\n\nBinary Point (bin_pt): Specifies the binary point l"
+"ocation in the real/imaginary components.\nAssumed equal for both components."
+"\n</pre>"
+	  MaskPromptString	  "Bit Width|Binary Point"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVarAliasString	  ","
+	  MaskVariables		  "n_bits=@1;bin_pt=@2;"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "8|4"
+	  MaskTabNameString	  ","
+	  System {
+	    Name		    "c_to_ri"
+	    Location		    [567, 176, 837, 310]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "c"
+	      Position		      [20, 63, 50, 77]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [150, 79, 190, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "4"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [150, 29, 190, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "4"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 81, 125, 109]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Lower Bit Location + Width"
+	      nbits		      "8"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 31, 125, 59]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Upper Bit Location + Width"
+	      nbits		      "8"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "re"
+	      Position		      [215, 38, 245, 52]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "im"
+	      Position		      [215, 88, 245, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "slice_re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "slice_im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      DstBlock		      "re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      DstBlock		      "im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "c"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		Points			[0, -25]
+		DstBlock		"slice_re"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 25]
+		DstBlock		"slice_im"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_im"
+	  Ports			  [1, 1]
+	  Position		  [190, 72, 235, 88]
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "4"
+	  bin_pt		  "0"
+	  quantization		  "Round  (unbiased: Even Values)"
+	  overflow		  "Wrap"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[6 4 0 10 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_re"
+	  Ports			  [1, 1]
+	  Position		  [190, 52, 235, 68]
+	  NamePlacement		  "alternate"
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "4"
+	  bin_pt		  "0"
+	  quantization		  "Round  (unbiased: Even Values)"
+	  overflow		  "Wrap"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[6 4 0 10 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ri_to_c"
+	  Ports			  [2, 1]
+	  Position		  [285, 49, 325, 91]
+	  UserDataPersistent	  on
+	  UserData		  "DataTag3"
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Real-Imag to Complex"
+	  MaskDescription	  "Concatenates real and imaginary inputs into"
+" a complex output."
+	  MaskHelp		  "<pre>\nDescription::\n\nConcatenates a real"
+" and imaginary input into a complex output.\nUseful for simplifying interconn"
+"ects.\nSee also: Complex to Real-Imag (c_to_ri)\n\nMask Parameters::\n\n(N/A)"
+"\n</pre>"
+	  MaskInitialization	  "ri_to_c_init(gcb);"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "ri_to_c"
+	    Location		    [512, 151, 787, 285]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "re"
+	      Position		      [25, 38, 55, 52]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "im"
+	      Position		      [25, 88, 55, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "concat"
+	      Ports		      [2, 1]
+	      Position		      [145, 40, 195, 95]
+	      SourceBlock	      "xbsIndex_r3/Concat"
+	      SourceType	      "Xilinx Bus Concatenator"
+	      num_inputs	      "2"
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 79, 120, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 29, 120, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "c"
+	      Position		      [220, 63, 250, 77]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      Points		      [0, 10]
+	      DstBlock		      "concat"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      Points		      [0, -15]
+	      DstBlock		      "concat"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "concat"
+	      SrcPort		      1
+	      DstBlock		      "c"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out"
+	  Position		  [375, 63, 405, 77]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  1
+	  DstBlock		  "convert_re"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "convert_re"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ri_to_c"
+	  SrcPort		  1
+	  DstBlock		  "out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in"
+	  SrcPort		  1
+	  DstBlock		  "c_to_ri"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  2
+	  DstBlock		  "convert_im"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "convert_im"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "hi8"
+      Ports		      [1, 1]
+      Position		      [235, 285, 280, 305]
+      AttributesFormatString  "19_11 ==> 8_0\nround even, wrap\nlatency = 3"
+      UserDataPersistent      on
+      UserData		      "DataTag4"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskType		      "Complex Convert (cast)"
+      MaskDescription	      "Convert real and imaginary components of a comp"
+"lex input to the specified bit width and precision."
+      MaskHelp		      "<pre>\nDescription::\n\nOutputs (complex) conve"
+"rted version of the (complex) input.\n\nMask Parameters::\n\nBit Width In (n_"
+"bits_in): Specifies the width of the real/imaginary input components.\nAssume"
+"d equal for both components.\n\nBinary Point In (bin_pt_in): Specifies the bi"
+"nary point location in the real/imag input components.\nAssumed equal for bot"
+"h components.\n\nBit Width Out (n_bits_out): Specifies the width of the real/"
+"imaginary output components.\nAssumed equal for both components.\n\nBinary Po"
+"int Out (bin_pt_out): Specifies the binary point location in the real/imag ou"
+"tput components.\nAssumed equal for both components.\n\nQuantization (quantiz"
+"ation): Specifies quantization handling.\n\nOverflow (overflow): Specifies ov"
+"erflow handling.\n\nLatency (latency): Specifies the latency of the underlyin"
+"g convert blocks, which is the overall\nlatency of this block as well.\n</pre"
+">"
+      MaskPromptString	      "Bit Width In|Binary Point In|Bit Width Out|Bina"
+"ry Point Out|Quantization|Overflow|Latency"
+      MaskStyleString	      "edit,edit,edit,edit,popup(Truncate|Round  (unbi"
+"ased: +/- Inf)|Round  (unbiased: Even Values)),popup(Wrap|Saturate|Error),edi"
+"t"
+      MaskTunableValueString  "on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,"
+      MaskVariables	      "n_bits_in=@1;bin_pt_in=@2;n_bits_out=@3;bin_pt_"
+"out=@4;quantization=@5;overflow=@6;latency=@7;"
+      MaskInitialization      "complex_convert_init(gcb, ...\n    n_bits_in,bi"
+"n_pt_in, ...\n    n_bits_out,bin_pt_out, ...\n    quantization,overflow,laten"
+"cy);"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "19|11|8|0|Round  (unbiased: Even Values)|Wrap|3"
+      MaskTabNameString	      ",,,,,,"
+      System {
+	Name			"hi8"
+	Location		[824, 498, 1376, 706]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in"
+	  Position		  [20, 63, 50, 77]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "c_to_ri"
+	  Ports			  [1, 2]
+	  Position		  [95, 49, 135, 91]
+	  AttributesFormatString  "19_11 r/i"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag5"
+	  FontSize		  10
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Complex to Real-Imag"
+	  MaskDescription	  "Outputs real and imaginary components of a "
+"complex input."
+	  MaskHelp		  "<pre>\nDescription::\n\nOutputs real and im"
+"aginary components of a complex input.\nUseful for simplifying interconnects."
+"\nSee also: Real-Imag to Complex (ri_to_c)\n\nMask Parameters::\n\nBit Width "
+"(n_bits): Specifies the width of the real/imaginary components.\nAssumed equa"
+"l for both components.\n\nBinary Point (bin_pt): Specifies the binary point l"
+"ocation in the real/imaginary components.\nAssumed equal for both components."
+"\n</pre>"
+	  MaskPromptString	  "Bit Width|Binary Point"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVarAliasString	  ","
+	  MaskVariables		  "n_bits=@1;bin_pt=@2;"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "19|11"
+	  MaskTabNameString	  ","
+	  System {
+	    Name		    "c_to_ri"
+	    Location		    [567, 176, 837, 310]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "c"
+	      Position		      [20, 63, 50, 77]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [150, 79, 190, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "11"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [150, 29, 190, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "11"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 81, 125, 109]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Lower Bit Location + Width"
+	      nbits		      "19"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 31, 125, 59]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Upper Bit Location + Width"
+	      nbits		      "19"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "re"
+	      Position		      [215, 38, 245, 52]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "im"
+	      Position		      [215, 88, 245, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "slice_re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "slice_im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      DstBlock		      "re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      DstBlock		      "im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "c"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		Points			[0, -25]
+		DstBlock		"slice_re"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 25]
+		DstBlock		"slice_im"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_im"
+	  Ports			  [1, 1]
+	  Position		  [190, 72, 235, 88]
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "8"
+	  bin_pt		  "0"
+	  quantization		  "Round  (unbiased: Even Values)"
+	  overflow		  "Wrap"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[12 8 0 20 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_re"
+	  Ports			  [1, 1]
+	  Position		  [190, 52, 235, 68]
+	  NamePlacement		  "alternate"
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "8"
+	  bin_pt		  "0"
+	  quantization		  "Round  (unbiased: Even Values)"
+	  overflow		  "Wrap"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[12 8 0 20 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ri_to_c"
+	  Ports			  [2, 1]
+	  Position		  [285, 49, 325, 91]
+	  UserDataPersistent	  on
+	  UserData		  "DataTag6"
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Real-Imag to Complex"
+	  MaskDescription	  "Concatenates real and imaginary inputs into"
+" a complex output."
+	  MaskHelp		  "<pre>\nDescription::\n\nConcatenates a real"
+" and imaginary input into a complex output.\nUseful for simplifying interconn"
+"ects.\nSee also: Complex to Real-Imag (c_to_ri)\n\nMask Parameters::\n\n(N/A)"
+"\n</pre>"
+	  MaskInitialization	  "ri_to_c_init(gcb);"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "ri_to_c"
+	    Location		    [512, 151, 787, 285]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "re"
+	      Position		      [25, 38, 55, 52]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "im"
+	      Position		      [25, 88, 55, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "concat"
+	      Ports		      [2, 1]
+	      Position		      [145, 40, 195, 95]
+	      SourceBlock	      "xbsIndex_r3/Concat"
+	      SourceType	      "Xilinx Bus Concatenator"
+	      num_inputs	      "2"
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 79, 120, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 29, 120, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "c"
+	      Position		      [220, 63, 250, 77]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      Points		      [0, 10]
+	      DstBlock		      "concat"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      Points		      [0, -15]
+	      DstBlock		      "concat"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "concat"
+	      SrcPort		      1
+	      DstBlock		      "c"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out"
+	  Position		  [375, 63, 405, 77]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  1
+	  DstBlock		  "convert_re"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "convert_re"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ri_to_c"
+	  SrcPort		  1
+	  DstBlock		  "out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in"
+	  SrcPort		  1
+	  DstBlock		  "c_to_ri"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  2
+	  DstBlock		  "convert_im"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "convert_im"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "lo4"
+      Ports		      [1, 1]
+      Position		      [470, 125, 515, 145]
+      AttributesFormatString  "8_0 ==> 4_0\ntruncate, saturate\nlatency = 3"
+      UserDataPersistent      on
+      UserData		      "DataTag7"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskType		      "Complex Convert (cast)"
+      MaskDescription	      "Convert real and imaginary components of a comp"
+"lex input to the specified bit width and precision."
+      MaskHelp		      "<pre>\nDescription::\n\nOutputs (complex) conve"
+"rted version of the (complex) input.\n\nMask Parameters::\n\nBit Width In (n_"
+"bits_in): Specifies the width of the real/imaginary input components.\nAssume"
+"d equal for both components.\n\nBinary Point In (bin_pt_in): Specifies the bi"
+"nary point location in the real/imag input components.\nAssumed equal for bot"
+"h components.\n\nBit Width Out (n_bits_out): Specifies the width of the real/"
+"imaginary output components.\nAssumed equal for both components.\n\nBinary Po"
+"int Out (bin_pt_out): Specifies the binary point location in the real/imag ou"
+"tput components.\nAssumed equal for both components.\n\nQuantization (quantiz"
+"ation): Specifies quantization handling.\n\nOverflow (overflow): Specifies ov"
+"erflow handling.\n\nLatency (latency): Specifies the latency of the underlyin"
+"g convert blocks, which is the overall\nlatency of this block as well.\n</pre"
+">"
+      MaskPromptString	      "Bit Width In|Binary Point In|Bit Width Out|Bina"
+"ry Point Out|Quantization|Overflow|Latency"
+      MaskStyleString	      "edit,edit,edit,edit,popup(Truncate|Round  (unbi"
+"ased: +/- Inf)|Round  (unbiased: Even Values)),popup(Wrap|Saturate|Error),edi"
+"t"
+      MaskTunableValueString  "on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,"
+      MaskVariables	      "n_bits_in=@1;bin_pt_in=@2;n_bits_out=@3;bin_pt_"
+"out=@4;quantization=@5;overflow=@6;latency=@7;"
+      MaskInitialization      "complex_convert_init(gcb, ...\n    n_bits_in,bi"
+"n_pt_in, ...\n    n_bits_out,bin_pt_out, ...\n    quantization,overflow,laten"
+"cy);"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "8|0|4|0|Truncate|Saturate|3"
+      MaskTabNameString	      ",,,,,,"
+      System {
+	Name			"lo4"
+	Location		[824, 498, 1376, 706]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in"
+	  Position		  [20, 63, 50, 77]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "c_to_ri"
+	  Ports			  [1, 2]
+	  Position		  [95, 49, 135, 91]
+	  AttributesFormatString  "8_0 r/i"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag8"
+	  FontSize		  10
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Complex to Real-Imag"
+	  MaskDescription	  "Outputs real and imaginary components of a "
+"complex input."
+	  MaskHelp		  "<pre>\nDescription::\n\nOutputs real and im"
+"aginary components of a complex input.\nUseful for simplifying interconnects."
+"\nSee also: Real-Imag to Complex (ri_to_c)\n\nMask Parameters::\n\nBit Width "
+"(n_bits): Specifies the width of the real/imaginary components.\nAssumed equa"
+"l for both components.\n\nBinary Point (bin_pt): Specifies the binary point l"
+"ocation in the real/imaginary components.\nAssumed equal for both components."
+"\n</pre>"
+	  MaskPromptString	  "Bit Width|Binary Point"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVarAliasString	  ","
+	  MaskVariables		  "n_bits=@1;bin_pt=@2;"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "8|0"
+	  MaskTabNameString	  ","
+	  System {
+	    Name		    "c_to_ri"
+	    Location		    [567, 176, 837, 310]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "c"
+	      Position		      [20, 63, 50, 77]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [150, 79, 190, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [150, 29, 190, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 81, 125, 109]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Lower Bit Location + Width"
+	      nbits		      "8"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 31, 125, 59]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Upper Bit Location + Width"
+	      nbits		      "8"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "re"
+	      Position		      [215, 38, 245, 52]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "im"
+	      Position		      [215, 88, 245, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "slice_re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "slice_im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      DstBlock		      "re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      DstBlock		      "im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "c"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		Points			[0, -25]
+		DstBlock		"slice_re"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 25]
+		DstBlock		"slice_im"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_im"
+	  Ports			  [1, 1]
+	  Position		  [190, 72, 235, 88]
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "4"
+	  bin_pt		  "0"
+	  quantization		  "Truncate"
+	  overflow		  "Saturate"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[5 4 0 9 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_re"
+	  Ports			  [1, 1]
+	  Position		  [190, 52, 235, 68]
+	  NamePlacement		  "alternate"
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "4"
+	  bin_pt		  "0"
+	  quantization		  "Truncate"
+	  overflow		  "Saturate"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[5 4 0 9 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ri_to_c"
+	  Ports			  [2, 1]
+	  Position		  [285, 49, 325, 91]
+	  UserDataPersistent	  on
+	  UserData		  "DataTag9"
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Real-Imag to Complex"
+	  MaskDescription	  "Concatenates real and imaginary inputs into"
+" a complex output."
+	  MaskHelp		  "<pre>\nDescription::\n\nConcatenates a real"
+" and imaginary input into a complex output.\nUseful for simplifying interconn"
+"ects.\nSee also: Complex to Real-Imag (c_to_ri)\n\nMask Parameters::\n\n(N/A)"
+"\n</pre>"
+	  MaskInitialization	  "ri_to_c_init(gcb);"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "ri_to_c"
+	    Location		    [512, 151, 787, 285]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "re"
+	      Position		      [25, 38, 55, 52]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "im"
+	      Position		      [25, 88, 55, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "concat"
+	      Ports		      [2, 1]
+	      Position		      [145, 40, 195, 95]
+	      SourceBlock	      "xbsIndex_r3/Concat"
+	      SourceType	      "Xilinx Bus Concatenator"
+	      num_inputs	      "2"
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 79, 120, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 29, 120, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "c"
+	      Position		      [220, 63, 250, 77]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      Points		      [0, 10]
+	      DstBlock		      "concat"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      Points		      [0, -15]
+	      DstBlock		      "concat"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "concat"
+	      SrcPort		      1
+	      DstBlock		      "c"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out"
+	  Position		  [375, 63, 405, 77]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  1
+	  DstBlock		  "convert_re"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "convert_re"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ri_to_c"
+	  SrcPort		  1
+	  DstBlock		  "out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in"
+	  SrcPort		  1
+	  DstBlock		  "c_to_ri"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  2
+	  DstBlock		  "convert_im"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "convert_im"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "lo8"
+      Ports		      [1, 1]
+      Position		      [235, 205, 280, 225]
+      AttributesFormatString  "19_3 ==> 8_0\nround even, saturate\nlatency = 3"
+      UserDataPersistent      on
+      UserData		      "DataTag10"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskType		      "Complex Convert (cast)"
+      MaskDescription	      "Convert real and imaginary components of a comp"
+"lex input to the specified bit width and precision."
+      MaskHelp		      "<pre>\nDescription::\n\nOutputs (complex) conve"
+"rted version of the (complex) input.\n\nMask Parameters::\n\nBit Width In (n_"
+"bits_in): Specifies the width of the real/imaginary input components.\nAssume"
+"d equal for both components.\n\nBinary Point In (bin_pt_in): Specifies the bi"
+"nary point location in the real/imag input components.\nAssumed equal for bot"
+"h components.\n\nBit Width Out (n_bits_out): Specifies the width of the real/"
+"imaginary output components.\nAssumed equal for both components.\n\nBinary Po"
+"int Out (bin_pt_out): Specifies the binary point location in the real/imag ou"
+"tput components.\nAssumed equal for both components.\n\nQuantization (quantiz"
+"ation): Specifies quantization handling.\n\nOverflow (overflow): Specifies ov"
+"erflow handling.\n\nLatency (latency): Specifies the latency of the underlyin"
+"g convert blocks, which is the overall\nlatency of this block as well.\n</pre"
+">"
+      MaskPromptString	      "Bit Width In|Binary Point In|Bit Width Out|Bina"
+"ry Point Out|Quantization|Overflow|Latency"
+      MaskStyleString	      "edit,edit,edit,edit,popup(Truncate|Round  (unbi"
+"ased: +/- Inf)|Round  (unbiased: Even Values)),popup(Wrap|Saturate|Error),edi"
+"t"
+      MaskTunableValueString  "on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,"
+      MaskVariables	      "n_bits_in=@1;bin_pt_in=@2;n_bits_out=@3;bin_pt_"
+"out=@4;quantization=@5;overflow=@6;latency=@7;"
+      MaskInitialization      "complex_convert_init(gcb, ...\n    n_bits_in,bi"
+"n_pt_in, ...\n    n_bits_out,bin_pt_out, ...\n    quantization,overflow,laten"
+"cy);"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "19|3|8|0|Round  (unbiased: Even Values)|Saturat"
+"e|3"
+      MaskTabNameString	      ",,,,,,"
+      System {
+	Name			"lo8"
+	Location		[824, 498, 1376, 706]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in"
+	  Position		  [20, 63, 50, 77]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "c_to_ri"
+	  Ports			  [1, 2]
+	  Position		  [95, 49, 135, 91]
+	  AttributesFormatString  "19_3 r/i"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag11"
+	  FontSize		  10
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Complex to Real-Imag"
+	  MaskDescription	  "Outputs real and imaginary components of a "
+"complex input."
+	  MaskHelp		  "<pre>\nDescription::\n\nOutputs real and im"
+"aginary components of a complex input.\nUseful for simplifying interconnects."
+"\nSee also: Real-Imag to Complex (ri_to_c)\n\nMask Parameters::\n\nBit Width "
+"(n_bits): Specifies the width of the real/imaginary components.\nAssumed equa"
+"l for both components.\n\nBinary Point (bin_pt): Specifies the binary point l"
+"ocation in the real/imaginary components.\nAssumed equal for both components."
+"\n</pre>"
+	  MaskPromptString	  "Bit Width|Binary Point"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVarAliasString	  ","
+	  MaskVariables		  "n_bits=@1;bin_pt=@2;"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "19|3"
+	  MaskTabNameString	  ","
+	  System {
+	    Name		    "c_to_ri"
+	    Location		    [567, 176, 837, 310]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "c"
+	      Position		      [20, 63, 50, 77]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [150, 79, 190, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "3"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [150, 29, 190, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "3"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 81, 125, 109]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Lower Bit Location + Width"
+	      nbits		      "19"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 31, 125, 59]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Upper Bit Location + Width"
+	      nbits		      "19"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "re"
+	      Position		      [215, 38, 245, 52]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "im"
+	      Position		      [215, 88, 245, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "slice_re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "slice_im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      DstBlock		      "re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      DstBlock		      "im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "c"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		Points			[0, -25]
+		DstBlock		"slice_re"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 25]
+		DstBlock		"slice_im"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_im"
+	  Ports			  [1, 1]
+	  Position		  [190, 72, 235, 88]
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "8"
+	  bin_pt		  "0"
+	  quantization		  "Round  (unbiased: Even Values)"
+	  overflow		  "Saturate"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[22 8 0 44 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_re"
+	  Ports			  [1, 1]
+	  Position		  [190, 52, 235, 68]
+	  NamePlacement		  "alternate"
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "8"
+	  bin_pt		  "0"
+	  quantization		  "Round  (unbiased: Even Values)"
+	  overflow		  "Saturate"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[22 8 0 44 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ri_to_c"
+	  Ports			  [2, 1]
+	  Position		  [285, 49, 325, 91]
+	  UserDataPersistent	  on
+	  UserData		  "DataTag12"
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Real-Imag to Complex"
+	  MaskDescription	  "Concatenates real and imaginary inputs into"
+" a complex output."
+	  MaskHelp		  "<pre>\nDescription::\n\nConcatenates a real"
+" and imaginary input into a complex output.\nUseful for simplifying interconn"
+"ects.\nSee also: Complex to Real-Imag (c_to_ri)\n\nMask Parameters::\n\n(N/A)"
+"\n</pre>"
+	  MaskInitialization	  "ri_to_c_init(gcb);"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "ri_to_c"
+	    Location		    [512, 151, 787, 285]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "re"
+	      Position		      [25, 38, 55, 52]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "im"
+	      Position		      [25, 88, 55, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "concat"
+	      Ports		      [2, 1]
+	      Position		      [145, 40, 195, 95]
+	      SourceBlock	      "xbsIndex_r3/Concat"
+	      SourceType	      "Xilinx Bus Concatenator"
+	      num_inputs	      "2"
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 79, 120, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 29, 120, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "c"
+	      Position		      [220, 63, 250, 77]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "concat"
+	      SrcPort		      1
+	      DstBlock		      "c"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      Points		      [0, -15]
+	      DstBlock		      "concat"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      Points		      [0, 10]
+	      DstBlock		      "concat"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out"
+	  Position		  [375, 63, 405, 77]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "convert_im"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  2
+	  DstBlock		  "convert_im"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in"
+	  SrcPort		  1
+	  DstBlock		  "c_to_ri"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ri_to_c"
+	  SrcPort		  1
+	  DstBlock		  "out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "convert_re"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  1
+	  DstBlock		  "convert_re"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "mid4"
+      Ports		      [1, 1]
+      Position		      [470, 205, 515, 225]
+      AttributesFormatString  "8_2 ==> 4_0\nround even, saturate\nlatency = 3"
+      UserDataPersistent      on
+      UserData		      "DataTag13"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskType		      "Complex Convert (cast)"
+      MaskDescription	      "Convert real and imaginary components of a comp"
+"lex input to the specified bit width and precision."
+      MaskHelp		      "<pre>\nDescription::\n\nOutputs (complex) conve"
+"rted version of the (complex) input.\n\nMask Parameters::\n\nBit Width In (n_"
+"bits_in): Specifies the width of the real/imaginary input components.\nAssume"
+"d equal for both components.\n\nBinary Point In (bin_pt_in): Specifies the bi"
+"nary point location in the real/imag input components.\nAssumed equal for bot"
+"h components.\n\nBit Width Out (n_bits_out): Specifies the width of the real/"
+"imaginary output components.\nAssumed equal for both components.\n\nBinary Po"
+"int Out (bin_pt_out): Specifies the binary point location in the real/imag ou"
+"tput components.\nAssumed equal for both components.\n\nQuantization (quantiz"
+"ation): Specifies quantization handling.\n\nOverflow (overflow): Specifies ov"
+"erflow handling.\n\nLatency (latency): Specifies the latency of the underlyin"
+"g convert blocks, which is the overall\nlatency of this block as well.\n</pre"
+">"
+      MaskPromptString	      "Bit Width In|Binary Point In|Bit Width Out|Bina"
+"ry Point Out|Quantization|Overflow|Latency"
+      MaskStyleString	      "edit,edit,edit,edit,popup(Truncate|Round  (unbi"
+"ased: +/- Inf)|Round  (unbiased: Even Values)),popup(Wrap|Saturate|Error),edi"
+"t"
+      MaskTunableValueString  "on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,"
+      MaskVariables	      "n_bits_in=@1;bin_pt_in=@2;n_bits_out=@3;bin_pt_"
+"out=@4;quantization=@5;overflow=@6;latency=@7;"
+      MaskInitialization      "complex_convert_init(gcb, ...\n    n_bits_in,bi"
+"n_pt_in, ...\n    n_bits_out,bin_pt_out, ...\n    quantization,overflow,laten"
+"cy);"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "8|2|4|0|Round  (unbiased: Even Values)|Saturate"
+"|3"
+      MaskTabNameString	      ",,,,,,"
+      System {
+	Name			"mid4"
+	Location		[824, 498, 1376, 706]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in"
+	  Position		  [20, 63, 50, 77]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "c_to_ri"
+	  Ports			  [1, 2]
+	  Position		  [95, 49, 135, 91]
+	  AttributesFormatString  "8_2 r/i"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag14"
+	  FontSize		  10
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Complex to Real-Imag"
+	  MaskDescription	  "Outputs real and imaginary components of a "
+"complex input."
+	  MaskHelp		  "<pre>\nDescription::\n\nOutputs real and im"
+"aginary components of a complex input.\nUseful for simplifying interconnects."
+"\nSee also: Real-Imag to Complex (ri_to_c)\n\nMask Parameters::\n\nBit Width "
+"(n_bits): Specifies the width of the real/imaginary components.\nAssumed equa"
+"l for both components.\n\nBinary Point (bin_pt): Specifies the binary point l"
+"ocation in the real/imaginary components.\nAssumed equal for both components."
+"\n</pre>"
+	  MaskPromptString	  "Bit Width|Binary Point"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVarAliasString	  ","
+	  MaskVariables		  "n_bits=@1;bin_pt=@2;"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "8|2"
+	  MaskTabNameString	  ","
+	  System {
+	    Name		    "c_to_ri"
+	    Location		    [567, 176, 837, 310]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "c"
+	      Position		      [20, 63, 50, 77]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [150, 79, 190, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "2"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [150, 29, 190, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "2"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 81, 125, 109]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Lower Bit Location + Width"
+	      nbits		      "8"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 31, 125, 59]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Upper Bit Location + Width"
+	      nbits		      "8"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "re"
+	      Position		      [215, 38, 245, 52]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "im"
+	      Position		      [215, 88, 245, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "slice_re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "slice_im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      DstBlock		      "re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      DstBlock		      "im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "c"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		Points			[0, -25]
+		DstBlock		"slice_re"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 25]
+		DstBlock		"slice_im"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_im"
+	  Ports			  [1, 1]
+	  Position		  [190, 72, 235, 88]
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "4"
+	  bin_pt		  "0"
+	  quantization		  "Round  (unbiased: Even Values)"
+	  overflow		  "Saturate"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[10 4 0 20 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_re"
+	  Ports			  [1, 1]
+	  Position		  [190, 52, 235, 68]
+	  NamePlacement		  "alternate"
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "4"
+	  bin_pt		  "0"
+	  quantization		  "Round  (unbiased: Even Values)"
+	  overflow		  "Saturate"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[10 4 0 20 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ri_to_c"
+	  Ports			  [2, 1]
+	  Position		  [285, 49, 325, 91]
+	  UserDataPersistent	  on
+	  UserData		  "DataTag15"
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Real-Imag to Complex"
+	  MaskDescription	  "Concatenates real and imaginary inputs into"
+" a complex output."
+	  MaskHelp		  "<pre>\nDescription::\n\nConcatenates a real"
+" and imaginary input into a complex output.\nUseful for simplifying interconn"
+"ects.\nSee also: Complex to Real-Imag (c_to_ri)\n\nMask Parameters::\n\n(N/A)"
+"\n</pre>"
+	  MaskInitialization	  "ri_to_c_init(gcb);"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "ri_to_c"
+	    Location		    [512, 151, 787, 285]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "re"
+	      Position		      [25, 38, 55, 52]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "im"
+	      Position		      [25, 88, 55, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "concat"
+	      Ports		      [2, 1]
+	      Position		      [145, 40, 195, 95]
+	      SourceBlock	      "xbsIndex_r3/Concat"
+	      SourceType	      "Xilinx Bus Concatenator"
+	      num_inputs	      "2"
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 79, 120, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 29, 120, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "c"
+	      Position		      [220, 63, 250, 77]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "concat"
+	      SrcPort		      1
+	      DstBlock		      "c"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      Points		      [0, -15]
+	      DstBlock		      "concat"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      Points		      [0, 10]
+	      DstBlock		      "concat"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out"
+	  Position		  [375, 63, 405, 77]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "convert_im"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  2
+	  DstBlock		  "convert_im"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in"
+	  SrcPort		  1
+	  DstBlock		  "c_to_ri"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ri_to_c"
+	  SrcPort		  1
+	  DstBlock		  "out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "convert_re"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  1
+	  DstBlock		  "convert_re"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "midmid4"
+      Ports		      [1, 1]
+      Position		      [235, 365, 280, 385]
+      AttributesFormatString  "19_9 ==> 4_0\nround even, saturate\nlatency = 3"
+      UserDataPersistent      on
+      UserData		      "DataTag16"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskType		      "Complex Convert (cast)"
+      MaskDescription	      "Convert real and imaginary components of a comp"
+"lex input to the specified bit width and precision."
+      MaskHelp		      "<pre>\nDescription::\n\nOutputs (complex) conve"
+"rted version of the (complex) input.\n\nMask Parameters::\n\nBit Width In (n_"
+"bits_in): Specifies the width of the real/imaginary input components.\nAssume"
+"d equal for both components.\n\nBinary Point In (bin_pt_in): Specifies the bi"
+"nary point location in the real/imag input components.\nAssumed equal for bot"
+"h components.\n\nBit Width Out (n_bits_out): Specifies the width of the real/"
+"imaginary output components.\nAssumed equal for both components.\n\nBinary Po"
+"int Out (bin_pt_out): Specifies the binary point location in the real/imag ou"
+"tput components.\nAssumed equal for both components.\n\nQuantization (quantiz"
+"ation): Specifies quantization handling.\n\nOverflow (overflow): Specifies ov"
+"erflow handling.\n\nLatency (latency): Specifies the latency of the underlyin"
+"g convert blocks, which is the overall\nlatency of this block as well.\n</pre"
+">"
+      MaskPromptString	      "Bit Width In|Binary Point In|Bit Width Out|Bina"
+"ry Point Out|Quantization|Overflow|Latency"
+      MaskStyleString	      "edit,edit,edit,edit,popup(Truncate|Round  (unbi"
+"ased: +/- Inf)|Round  (unbiased: Even Values)),popup(Wrap|Saturate|Error),edi"
+"t"
+      MaskTunableValueString  "on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,"
+      MaskVariables	      "n_bits_in=@1;bin_pt_in=@2;n_bits_out=@3;bin_pt_"
+"out=@4;quantization=@5;overflow=@6;latency=@7;"
+      MaskInitialization      "complex_convert_init(gcb, ...\n    n_bits_in,bi"
+"n_pt_in, ...\n    n_bits_out,bin_pt_out, ...\n    quantization,overflow,laten"
+"cy);"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "19|9|4|0|Round  (unbiased: Even Values)|Saturat"
+"e|3"
+      MaskTabNameString	      ",,,,,,"
+      System {
+	Name			"midmid4"
+	Location		[824, 498, 1376, 706]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in"
+	  Position		  [20, 63, 50, 77]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "c_to_ri"
+	  Ports			  [1, 2]
+	  Position		  [95, 49, 135, 91]
+	  AttributesFormatString  "19_9 r/i"
+	  UserDataPersistent	  on
+	  UserData		  "DataTag17"
+	  FontSize		  10
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Complex to Real-Imag"
+	  MaskDescription	  "Outputs real and imaginary components of a "
+"complex input."
+	  MaskHelp		  "<pre>\nDescription::\n\nOutputs real and im"
+"aginary components of a complex input.\nUseful for simplifying interconnects."
+"\nSee also: Real-Imag to Complex (ri_to_c)\n\nMask Parameters::\n\nBit Width "
+"(n_bits): Specifies the width of the real/imaginary components.\nAssumed equa"
+"l for both components.\n\nBinary Point (bin_pt): Specifies the binary point l"
+"ocation in the real/imaginary components.\nAssumed equal for both components."
+"\n</pre>"
+	  MaskPromptString	  "Bit Width|Binary Point"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVarAliasString	  ","
+	  MaskVariables		  "n_bits=@1;bin_pt=@2;"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "19|9"
+	  MaskTabNameString	  ","
+	  System {
+	    Name		    "c_to_ri"
+	    Location		    [567, 176, 837, 310]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "c"
+	      Position		      [20, 63, 50, 77]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [150, 79, 190, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "9"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [150, 29, 190, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Signed  (2's comp)"
+	      force_bin_pt	      on
+	      bin_pt		      "9"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 81, 125, 109]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Lower Bit Location + Width"
+	      nbits		      "19"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "slice_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 31, 125, 59]
+	      SourceBlock	      "xbsIndex_r3/Slice"
+	      SourceType	      "Xilinx Slice Block"
+	      mode		      "Upper Bit Location + Width"
+	      nbits		      "19"
+	      bit1		      "0"
+	      base1		      "MSB of Input"
+	      bit0		      "0"
+	      base0		      "LSB of Input"
+	      boolean_output	      off
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "re"
+	      Position		      [215, 38, 245, 52]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "im"
+	      Position		      [215, 88, 245, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "slice_re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "slice_im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      DstBlock		      "re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      DstBlock		      "im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "c"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      Branch {
+		Points			[0, -25]
+		DstBlock		"slice_re"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 25]
+		DstBlock		"slice_im"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_im"
+	  Ports			  [1, 1]
+	  Position		  [190, 72, 235, 88]
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "4"
+	  bin_pt		  "0"
+	  quantization		  "Round  (unbiased: Even Values)"
+	  overflow		  "Saturate"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[14 4 0 28 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "convert_re"
+	  Ports			  [1, 1]
+	  Position		  [190, 52, 235, 68]
+	  NamePlacement		  "alternate"
+	  SourceBlock		  "xbsIndex_r3/Convert"
+	  SourceType		  "Xilinx Converter Block"
+	  arith_type		  "Signed  (2's comp)"
+	  n_bits		  "4"
+	  bin_pt		  "0"
+	  quantization		  "Round  (unbiased: Even Values)"
+	  overflow		  "Saturate"
+	  latency		  "3"
+	  explicit_period	  off
+	  period		  "1"
+	  dbl_ovrd		  off
+	  show_param		  on
+	  inserted_by_tool	  off
+	  pipeline		  on
+	  xl_area		  "[14 4 0 28 0 0 0]"
+	  xl_use_area		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ri_to_c"
+	  Ports			  [2, 1]
+	  Position		  [285, 49, 325, 91]
+	  UserDataPersistent	  on
+	  UserData		  "DataTag18"
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  MaskType		  "Real-Imag to Complex"
+	  MaskDescription	  "Concatenates real and imaginary inputs into"
+" a complex output."
+	  MaskHelp		  "<pre>\nDescription::\n\nConcatenates a real"
+" and imaginary input into a complex output.\nUseful for simplifying interconn"
+"ects.\nSee also: Complex to Real-Imag (c_to_ri)\n\nMask Parameters::\n\n(N/A)"
+"\n</pre>"
+	  MaskInitialization	  "ri_to_c_init(gcb);"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "ri_to_c"
+	    Location		    [512, 151, 787, 285]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "re"
+	      Position		      [25, 38, 55, 52]
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "im"
+	      Position		      [25, 88, 55, 102]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "concat"
+	      Ports		      [2, 1]
+	      Position		      [145, 40, 195, 95]
+	      SourceBlock	      "xbsIndex_r3/Concat"
+	      SourceType	      "Xilinx Bus Concatenator"
+	      num_inputs	      "2"
+	      explicit_period	      off
+	      period		      "1"
+	      dbl_ovrd		      off
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_im"
+	      Ports		      [1, 1]
+	      Position		      [80, 79, 120, 111]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "force_re"
+	      Ports		      [1, 1]
+	      Position		      [80, 29, 120, 61]
+	      SourceBlock	      "xbsIndex_r3/Reinterpret"
+	      SourceType	      "Xilinx Type Reinterpreting Block"
+	      force_arith_type	      on
+	      arith_type	      "Unsigned"
+	      force_bin_pt	      on
+	      bin_pt		      "0"
+	      force_valid	      on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "c"
+	      Position		      [220, 63, 250, 77]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "im"
+	      SrcPort		      1
+	      DstBlock		      "force_im"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "concat"
+	      SrcPort		      1
+	      DstBlock		      "c"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "re"
+	      SrcPort		      1
+	      DstBlock		      "force_re"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "force_im"
+	      SrcPort		      1
+	      Points		      [0, -15]
+	      DstBlock		      "concat"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "force_re"
+	      SrcPort		      1
+	      Points		      [0, 10]
+	      DstBlock		      "concat"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out"
+	  Position		  [375, 63, 405, 77]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "convert_im"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  2
+	  DstBlock		  "convert_im"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in"
+	  SrcPort		  1
+	  DstBlock		  "c_to_ri"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ri_to_c"
+	  SrcPort		  1
+	  DstBlock		  "out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "convert_re"
+	  SrcPort		  1
+	  DstBlock		  "ri_to_c"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "c_to_ri"
+	  SrcPort		  1
+	  DstBlock		  "convert_re"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "sel"
+      Ports		      [1, 1]
+      Position		      [90, 44, 145, 66]
+      SourceBlock	      "xbsIndex_r3/Gateway In"
+      SourceType	      "Xilinx Gateway In"
+      arith_type	      "Unsigned"
+      n_bits		      "4"
+      bin_pt		      "0"
+      quantization	      "Truncate"
+      overflow		      "Wrap"
+      period		      "1"
+      timing_constraint	      "None"
+      locs_specified	      off
+      LOCs		      "{}"
+      needs_fixed_name	      off
+      dbl_ovrd		      off
+      show_param	      off
+      xl_area		      "[0 0 0 0 4 0 0]"
+      xl_use_area	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "sync_in"
+      Ports		      [1, 1]
+      Position		      [90, 439, 145, 461]
+      SourceBlock	      "xbsIndex_r3/Gateway In"
+      SourceType	      "Xilinx Gateway In"
+      arith_type	      "Boolean"
+      n_bits		      "36"
+      bin_pt		      "0"
+      quantization	      "Truncate"
+      overflow		      "Wrap"
+      period		      "1"
+      timing_constraint	      "None"
+      locs_specified	      off
+      LOCs		      "{}"
+      needs_fixed_name	      off
+      dbl_ovrd		      off
+      show_param	      off
+      xl_area		      "[0 0 0 0 1 0 0]"
+      xl_use_area	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "sync_out"
+      Ports		      [1, 1]
+      Position		      [750, 439, 805, 461]
+      SourceBlock	      "xbsIndex_r3/Gateway Out"
+      SourceType	      "Xilinx Gateway Out"
+      output_type	      "Double"
+      nbits		      "8"
+      bin_pt		      "6"
+      arith_type	      "Boolean"
+      quantization	      "Truncate"
+      overflow		      "Wrap"
+      hdl_port		      on
+      timing_constraint	      "None"
+      locs_specified	      off
+      LOCs		      "{}"
+      needs_fixed_name	      off
+      show_param	      off
+      xl_area		      "[0 0 0 0 1 0 0]"
+      xl_use_area	      off
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [0, 0]
+      DstBlock		      "din"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      DstBlock		      "sel"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "dout"
+      SrcPort		      1
+      DstBlock		      "Terminator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "sync_in"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "sync_out"
+      SrcPort		      1
+      DstBlock		      "Terminator1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "sync_in"
+      SrcPort		      1
+      Points		      [230, 0]
+      DstBlock		      "Delay"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Delay"
+      SrcPort		      1
+      DstBlock		      "sync_out"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "din"
+      SrcPort		      1
+      Points		      [0, 0; 50, 0]
+      Branch {
+	DstBlock		"hi8"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -80]
+	DstBlock		"lo8"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 80]
+	DstBlock		"midmid4"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "lo8"
+      SrcPort		      1
+      Points		      [60, 0]
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "hi8"
+      SrcPort		      1
+      Points		      [60, 0]
+      DstBlock		      "Mux"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Slice"
+      SrcPort		      1
+      Points		      [5, 0]
+      DstBlock		      "Delay3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "sel"
+      SrcPort		      1
+      Points		      [0, 0; 35, 0]
+      Branch {
+	Points			[0, 80]
+	DstBlock		"Slice"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Slice1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      Points		      [45, 0]
+      Branch {
+	Points			[0, -80]
+	DstBlock		"lo4"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 0]
+	Branch {
+	  DstBlock		  "mid4"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 80]
+	  DstBlock		  "hi4"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "lo4"
+      SrcPort		      1
+      Points		      [50, 0]
+      DstBlock		      "Mux1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "mid4"
+      SrcPort		      1
+      Points		      [50, 0]
+      DstBlock		      "Mux1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "hi4"
+      SrcPort		      1
+      Points		      [50, 0]
+      DstBlock		      "Mux1"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "midmid4"
+      SrcPort		      1
+      Points		      [95, 0]
+      DstBlock		      "Delay1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Delay1"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Slice1"
+      SrcPort		      1
+      Points		      [140, 0]
+      DstBlock		      "Delay2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Delay2"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Delay3"
+      SrcPort		      1
+      Points		      [0, 0]
+      DstBlock		      "Mux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "dout"
+      DstPort		      1
+    }
+  }
+}
+MatData {
+  NumRecords		  19
+  DataRecord {
+    Tag			    DataTag18
+    Data		    "  %)30     .    <     8    (     0         %    "
+"\"     $    !     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    ')I7W1O7V-?:6YI=      "
+  }
+  DataRecord {
+    Tag			    DataTag17
+    Data		    "  %)30     .    \\     8    (     0         %    "
+"\"     $    #     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    &-?=&]?<FE?:6YI=      .    .     8    (    !@      "
+"   %    \"     $    !     0         )    \"            #- #@   #@    &    \" "
+"    8         !0    @    !     0    $         \"0    @            B0 "
+  }
+  DataRecord {
+    Tag			    DataTag16
+    Data		    "  %)30     .    . (   8    (     0         %    "
+"\"     $    (     0         .    2     8    (    !          %    \"     $    "
+"4     0         0    %    &-O;7!L97A?8V]N=F5R=%]I;FET      X    X    !@    @ "
+"   &          4    (     0    $    !          D    (            ,T .    .    "
+" 8    (    !@         %    \"     $    !     0         )    \"            \")"
+" #@   #@    &    \"     8         !0    @    !     0    $         \"0    @   "
+"         00 X    X    !@    @    &          4    (     0    $    !          D"
+"    (               .    .     8    (    !@         %    \"     $    !     0 "
+"        )    \"             A #@   #@    &    \"     8         !0    @    !  "
+"   0    $         \"0    @             0 X    X    !@    @    &          4   "
+" (     0    $    !          D    (            \"$ "
+  }
+  DataRecord {
+    Tag			    DataTag15
+    Data		    "  %)30     .    <     8    (     0         %    "
+"\"     $    !     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    ')I7W1O7V-?:6YI=      "
+  }
+  DataRecord {
+    Tag			    DataTag14
+    Data		    "  %)30     .    \\     8    (     0         %    "
+"\"     $    #     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    &-?=&]?<FE?:6YI=      .    .     8    (    !@      "
+"   %    \"     $    !     0         )    \"            \"! #@   #@    &    \""
+"     8         !0    @    !     0    $         \"0    @             0 "
+  }
+  DataRecord {
+    Tag			    DataTag13
+    Data		    "  %)30     .    . (   8    (     0         %    "
+"\"     $    (     0         .    2     8    (    !          %    \"     $    "
+"4     0         0    %    &-O;7!L97A?8V]N=F5R=%]I;FET      X    X    !@    @ "
+"   &          4    (     0    $    !          D    (            ($ .    .    "
+" 8    (    !@         %    \"     $    !     0         )    \"             ! "
+"#@   #@    &    \"     8         !0    @    !     0    $         \"0    @    "
+"        00 X    X    !@    @    &          4    (     0    $    !          D "
+"   (               .    .     8    (    !@         %    \"     $    !     0  "
+"       )    \"             A #@   #@    &    \"     8         !0    @    !   "
+"  0    $         \"0    @             0 X    X    !@    @    &          4    "
+"(     0    $    !          D    (            \"$ "
+  }
+  DataRecord {
+    Tag			    DataTag12
+    Data		    "  %)30     .    <     8    (     0         %    "
+"\"     $    !     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    ')I7W1O7V-?:6YI=      "
+  }
+  DataRecord {
+    Tag			    DataTag11
+    Data		    "  %)30     .    \\     8    (     0         %    "
+"\"     $    #     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    &-?=&]?<FE?:6YI=      .    .     8    (    !@      "
+"   %    \"     $    !     0         )    \"            #- #@   #@    &    \" "
+"    8         !0    @    !     0    $         \"0    @            (0 "
+  }
+  DataRecord {
+    Tag			    DataTag10
+    Data		    "  %)30     .    . (   8    (     0         %    "
+"\"     $    (     0         .    2     8    (    !          %    \"     $    "
+"4     0         0    %    &-O;7!L97A?8V]N=F5R=%]I;FET      X    X    !@    @ "
+"   &          4    (     0    $    !          D    (            ,T .    .    "
+" 8    (    !@         %    \"     $    !     0         )    \"             A "
+"#@   #@    &    \"     8         !0    @    !     0    $         \"0    @    "
+"        @0 X    X    !@    @    &          4    (     0    $    !          D "
+"   (               .    .     8    (    !@         %    \"     $    !     0  "
+"       )    \"             A #@   #@    &    \"     8         !0    @    !   "
+"  0    $         \"0    @             0 X    X    !@    @    &          4    "
+"(     0    $    !          D    (            \"$ "
+  }
+  DataRecord {
+    Tag			    DataTag9
+    Data		    "  %)30     .    <     8    (     0         %    "
+"\"     $    !     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    ')I7W1O7V-?:6YI=      "
+  }
+  DataRecord {
+    Tag			    DataTag8
+    Data		    "  %)30     .    \\     8    (     0         %    "
+"\"     $    #     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    &-?=&]?<FE?:6YI=      .    .     8    (    !@      "
+"   %    \"     $    !     0         )    \"            \"! #@   #@    &    \""
+"     8         !0    @    !     0    $         \"0    @               "
+  }
+  DataRecord {
+    Tag			    DataTag7
+    Data		    "  %)30     .    . (   8    (     0         %    "
+"\"     $    (     0         .    2     8    (    !          %    \"     $    "
+"4     0         0    %    &-O;7!L97A?8V]N=F5R=%]I;FET      X    X    !@    @ "
+"   &          4    (     0    $    !          D    (            ($ .    .    "
+" 8    (    !@         %    \"     $    !     0         )    \"               "
+"#@   #@    &    \"     8         !0    @    !     0    $         \"0    @    "
+"        00 X    X    !@    @    &          4    (     0    $    !          D "
+"   (               .    .     8    (    !@         %    \"     $    !     0  "
+"       )    \"            / _#@   #@    &    \"     8         !0    @    !   "
+"  0    $         \"0    @             0 X    X    !@    @    &          4    "
+"(     0    $    !          D    (            \"$ "
+  }
+  DataRecord {
+    Tag			    DataTag6
+    Data		    "  %)30     .    <     8    (     0         %    "
+"\"     $    !     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    ')I7W1O7V-?:6YI=      "
+  }
+  DataRecord {
+    Tag			    DataTag5
+    Data		    "  %)30     .    \\     8    (     0         %    "
+"\"     $    #     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    &-?=&]?<FE?:6YI=      .    .     8    (    !@      "
+"   %    \"     $    !     0         )    \"            #- #@   #@    &    \" "
+"    8         !0    @    !     0    $         \"0    @            F0 "
+  }
+  DataRecord {
+    Tag			    DataTag4
+    Data		    "  %)30     .    . (   8    (     0         %    "
+"\"     $    (     0         .    2     8    (    !          %    \"     $    "
+"4     0         0    %    &-O;7!L97A?8V]N=F5R=%]I;FET      X    X    !@    @ "
+"   &          4    (     0    $    !          D    (            ,T .    .    "
+" 8    (    !@         %    \"     $    !     0         )    \"            \"9"
+" #@   #@    &    \"     8         !0    @    !     0    $         \"0    @   "
+"         @0 X    X    !@    @    &          4    (     0    $    !          D"
+"    (               .    .     8    (    !@         %    \"     $    !     0 "
+"        )    \"             A #@   #@    &    \"     8         !0    @    !  "
+"   0    $         \"0    @           #P/PX    X    !@    @    &          4   "
+" (     0    $    !          D    (            \"$ "
+  }
+  DataRecord {
+    Tag			    DataTag3
+    Data		    "  %)30     .    <     8    (     0         %    "
+"\"     $    !     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    ')I7W1O7V-?:6YI=      "
+  }
+  DataRecord {
+    Tag			    DataTag2
+    Data		    "  %)30     .    \\     8    (     0         %    "
+"\"     $    #     0         .    0     8    (    !          %    \"     $    "
+",     0         0    #    &-?=&]?<FE?:6YI=      .    .     8    (    !@      "
+"   %    \"     $    !     0         )    \"            \"! #@   #@    &    \""
+"     8         !0    @    !     0    $         \"0    @            00 "
+  }
+  DataRecord {
+    Tag			    DataTag1
+    Data		    "  %)30     .    . (   8    (     0         %    "
+"\"     $    (     0         .    2     8    (    !          %    \"     $    "
+"4     0         0    %    &-O;7!L97A?8V]N=F5R=%]I;FET      X    X    !@    @ "
+"   &          4    (     0    $    !          D    (            ($ .    .    "
+" 8    (    !@         %    \"     $    !     0         )    \"            !! "
+"#@   #@    &    \"     8         !0    @    !     0    $         \"0    @    "
+"        00 X    X    !@    @    &          4    (     0    $    !          D "
+"   (               .    .     8    (    !@         %    \"     $    !     0  "
+"       )    \"             A #@   #@    &    \"     8         !0    @    !   "
+"  0    $         \"0    @           #P/PX    X    !@    @    &          4    "
+"(     0    $    !          D    (            \"$ "
+  }
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    >!X   8    (     @         %    "
+"\"     $    !     0         %  0 !@    $    ,    <V%V960 =V]R:P        X    0"
+"#P  !@    @    \"          4    (     0    $    !          4 !  ,     0   !@ "
+"  !S:&%R960       !C;VUP:6QA=&EO;@ .    \" 0   8    (     @         %    \"  "
+"   $    !     0         %  0 $P    $   \"%    8V]M<&EL871I;VX          &-O;7!"
+"I;&%T:6]N7VQU=     !S:6UU;&EN:U]P97)I;V0     :6YC<E]N971L:7-T         '1R:6U?"
+"=F)I=',           !D8FQ?;W9R9               9&5P<F5C871E9%]C;VYT<F]L      X  "
+"  X    !@    @    $          4    (     0    <    !         !     '    =&%R9V"
+"5T,@ .    N $   8    (     @         %    \"     $    !     0         %  0 !P"
+"    $    .    :V5Y<P   '9A;'5E<P    X   \"X    !@    @    !          4    (  "
+"   0    (    !          X   !     !@    @    $          4    (     0    L    "
+"!         !     +    2$1,($YE=&QI<W0       X   !     !@    @    $          4 "
+"   (     0    L    !         !     +    3D=#($YE=&QI<W0       X   \"H    !@  "
+"  @    !          4    (     0    (    !          X    X    !@    @    $     "
+"     4    (     0    <    !         !     '    =&%R9V5T,0 .    .     8    (  "
+"  !          %    \"     $    '     0         0    !P   '1A<F=E=#( #@   #    "
+" &    \"     0         !0    @    !     0    $         $  ! #$    .    ,     "
+"8    (    !          %    \"     $    #     0         0  , ;V9F  X   !(    !@"
+"    @    $          4    (     0   !<    !         !     7    179E<GEW:&5R92!"
+"I;B!3=6)3>7-T96T #@   $@    &    \"     0         !0    @    !    &     $    "
+"     $    !@   !!8V-O<F1I;F<@=&\\@0FQO8VL@36%S:W,.    ,     8    (    !      "
+"    %    \"     $    #     0         0  , ;V9F  X   \"H\"@  !@    @    \"    "
+"      4    (     0    $    !          4 !  (     0   !    !T87)G970Q '1A<F=E="
+"#( #@   $@$   &    \"     (         !0    @    !     0    $         !0 $ !,  "
+"  !    ]P   'AI;&EN>&9A;6EL>0        !P87)T                    <W!E960       "
+"           '!A8VMA9V4               !S>6YT:&5S:7-?=&]O;       9&ER96-T;W)Y   "
+"          '1E<W1B96YC:             !S>7-C;&M?<&5R:6]D        8V]R95]G96YE<F%T"
+":6]N     ')U;E]C;W)E9V5N          !E=F%L7V9I96QD            8VQO8VM?;&]C     "
+"        '-Y;G1H97-I<U]L86YG=6%G90  #@   #@    &    \"     0         !0    @  "
+"  !    !P    $         $     <   !6:7)T97@R  X    X    !@    @    $          "
+"4    (     0    @    !         !     (    >&,R=C$P,# .    ,     8    (    !  "
+"        %    \"     $    \"     0         0  ( +30   X    X    !@    @    $  "
+"        4    (     0    4    !         !     %    8F<U-S4    .    ,     8    "
+"(    !          %    \"     $    #     0         0  , 6%-4  X   !     !@    @"
+"    $          4    (     0    D    !         !     )    +B]N971L:7-T        "
+"  X    P    !@    @    $          4    (     0    ,    !         !   P!O9F8 #"
+"@   #     &    \"     0         !0    @    !     P    $         $  # #$P,  . "
+"   2     8    (    !          %    \"     $    8     0         0    &    $%C8"
+"V]R9&EN9R!T;R!\";&]C:R!-87-K<PX    P    !@    @    $          4    (     0   "
+" ,    !         !   P!O9F8 #@   #     &    \"     0         !0    @    !     "
+"0    $         $  ! #     .    ,     8    (    !          %    \"            "
+"    0         0          X    P    !@    @    $          4    (     0    0   "
+" !         !  ! !62$1,#@    @&   &    \"     (         !0    @    !     0    "
+"$         !0 $ !,    !    , $  'AI;&EN>&9A;6EL>0        !P87)T               "
+"     <W!E960                  '!A8VMA9V4               !S>6YT:&5S:7-?=&]O;   "
+"    9&ER96-T;W)Y             '1E<W1B96YC:             !S>7-C;&M?<&5R:6]D     "
+"   8V]R95]G96YE<F%T:6]N     ')U;E]C;W)E9V5N          !E=F%L7V9I96QD          "
+"  8VQO8VM?;&]C             '-Y;G1H97-I<U]L86YG=6%G90!P;W-T9V5N97)A=&EO;E]F8VX"
+" <V5T=&EN9W-?9F-N         &YG8U]C;VYF:6<            .    .     8    (    !   "
+"       %    \"     $    (     0         0    \"    %9I<G1E>#)0#@   #@    &   "
+" \"     0         !0    @    !    !P    $         $     <   !X8S)V<#0P  X    "
+"P    !@    @    $          4    (     0    (    !         !   @ M-@  #@   #@ "
+"   &    \"     0         !0    @    !    !@    $         $     8   !F9C$Q-3( "
+"  X    P    !@    @    $          4    (     0    ,    !         !   P!84U0 #"
+"@   $     &    \"     0         !0    @    !    #0    $         $     T    N+"
+"V)I='-E;%]C;W)E    #@   #     &    \"     0         !0    @    !     P    $  "
+"       $  # &]F9@ .    ,     8    (    !          %    \"     $    #     0   "
+"      0  , ,3 P  X   !(    !@    @    $          4    (     0   !@    !      "
+"   !     8    06-C;W)D:6YG('1O($)L;V-K($UA<VMS#@   #     &    \"     0       "
+"  !0    @    !     P    $         $  # &]F9@ .    ,     8    (    !          "
+"%    \"     $    !     0         0  $ ,     X    P    !@    @    $          4"
+"    (               !         !          #@   #     &    \"     0         !0 "
+"   @    !    !     $         $  $ %9(1$P.    2     8    (    !          %    "
+"\"     $    3     0         0    $P   'AL3D=#4&]S=$=E;F5R871I;VX       X   ! "
+"    !@    @    $          4    (     0    T    !         !     -    >&QN9V-S9"
+"71T:6YG<P    X   #H    !@    @    \"          4    (     0    $    !         "
+" 4 !  5     0   \"H   !I;F-L=61E7V-L;V-K=W)A<'!E<@!I;F-L=61E7V-F             "
+"          .    .     8    (    !@         %    \"     $    !     0         ) "
+"   \"               #@   #@    &    \"     8         !0    @    !     0    $ "
+"        \"0    @           #P/PX    0#P  !@    @    \"          4    (     0 "
+"   $    !          4 !  ,     0   !@   !S:&%R960       !C;VUP:6QA=&EO;@ .    "
+"\" 0   8    (     @         %    \"     $    !     0         %  0 $P    $   "
+"\"%    8V]M<&EL871I;VX          &-O;7!I;&%T:6]N7VQU=     !S:6UU;&EN:U]P97)I;V"
+"0     :6YC<E]N971L:7-T         '1R:6U?=F)I=',           !D8FQ?;W9R9          "
+"     9&5P<F5C871E9%]C;VYT<F]L      X    X    !@    @    $          4    (    "
+" 0    <    !         !     '    =&%R9V5T,@ .    N $   8    (     @         % "
+"   \"     $    !     0         %  0 !P    $    .    :V5Y<P   '9A;'5E<P    X  "
+" \"X    !@    @    !          4    (     0    (    !          X   !     !@   "
+" @    $          4    (     0    L    !         !     +    2$1,($YE=&QI<W0   "
+"    X   !     !@    @    $          4    (     0    L    !         !     +   "
+" 3D=#($YE=&QI<W0       X   \"H    !@    @    !          4    (     0    (    "
+"!          X    X    !@    @    $          4    (     0    <    !         !  "
+"   '    =&%R9V5T,0 .    .     8    (    !          %    \"     $    '     0  "
+"       0    !P   '1A<F=E=#( #@   #     &    \"     0         !0    @    !    "
+" 0    $         $  ! #$    .    ,     8    (    !          %    \"     $    #"
+"     0         0  , ;V9F  X   !(    !@    @    $          4    (     0   !<  "
+"  !         !     7    179E<GEW:&5R92!I;B!3=6)3>7-T96T #@   $@    &    \"    "
+" 0         !0    @    !    &     $         $    !@   !!8V-O<F1I;F<@=&\\@0FQO8"
+"VL@36%S:W,.    ,     8    (    !          %    \"     $    #     0         0 "
+" , ;V9F  X   \"H\"@  !@    @    \"          4    (     0    $    !          4"
+" !  (     0   !    !T87)G970Q '1A<F=E=#( #@   $@$   &    \"     (         !0 "
+"   @    !     0    $         !0 $ !,    !    ]P   'AI;&EN>&9A;6EL>0        !P"
+"87)T                    <W!E960                  '!A8VMA9V4               !S>"
+"6YT:&5S:7-?=&]O;       9&ER96-T;W)Y             '1E<W1B96YC:             !S>7"
+"-C;&M?<&5R:6]D        8V]R95]G96YE<F%T:6]N     ')U;E]C;W)E9V5N          !E=F%"
+"L7V9I96QD            8VQO8VM?;&]C             '-Y;G1H97-I<U]L86YG=6%G90  #@  "
+" #@    &    \"     0         !0    @    !    !P    $         $     <   !6:7)T"
+"97@R  X    X    !@    @    $          4    (     0    @    !         !     ( "
+"   >&,R=C$P,# .    ,     8    (    !          %    \"     $    \"     0      "
+"   0  ( +30   X    X    !@    @    $          4    (     0    4    !         "
+"!     %    8F<U-S4    .    ,     8    (    !          %    \"     $    #     "
+"0         0  , 6%-4  X   !     !@    @    $          4    (     0    D    !  "
+"       !     )    +B]N971L:7-T          X    P    !@    @    $          4    "
+"(     0    ,    !         !   P!O9F8 #@   #     &    \"     0         !0    @"
+"    !     P    $         $  # #$P,  .    2     8    (    !          %    \"  "
+"   $    8     0         0    &    $%C8V]R9&EN9R!T;R!\";&]C:R!-87-K<PX    P   "
+" !@    @    $          4    (     0    ,    !         !   P!O9F8 #@   #     &"
+"    \"     0         !0    @    !     0    $         $  ! #     .    ,     8 "
+"   (    !          %    \"                0         0          X    P    !@  "
+"  @    $          4    (     0    0    !         !  ! !62$1,#@    @&   &    "
+"\"     (         !0    @    !     0    $         !0 $ !,    !    , $  'AI;&EN"
+">&9A;6EL>0        !P87)T                    <W!E960                  '!A8VMA9"
+"V4               !S>6YT:&5S:7-?=&]O;       9&ER96-T;W)Y             '1E<W1B96"
+"YC:             !S>7-C;&M?<&5R:6]D        8V]R95]G96YE<F%T:6]N     ')U;E]C;W)"
+"E9V5N          !E=F%L7V9I96QD            8VQO8VM?;&]C             '-Y;G1H97-I"
+"<U]L86YG=6%G90!P;W-T9V5N97)A=&EO;E]F8VX <V5T=&EN9W-?9F-N         &YG8U]C;VYF:"
+"6<            .    .     8    (    !          %    \"     $    (     0       "
+"  0    \"    %9I<G1E>#)0#@   #@    &    \"     0         !0    @    !    !P  "
+"  $         $     <   !X8S)V<#0P  X    P    !@    @    $          4    (     "
+"0    (    !         !   @ M-@  #@   #@    &    \"     0         !0    @    ! "
+"   !@    $         $     8   !F9C$Q-3(   X    P    !@    @    $          4   "
+" (     0    ,    !         !   P!84U0 #@   $     &    \"     0         !0    "
+"@    !    #0    $         $     T    N+V)I='-E;%]C;W)E    #@   #     &    \" "
+"    0         !0    @    !     P    $         $  # &]F9@ .    ,     8    (   "
+" !          %    \"     $    #     0         0  , ,3 P  X   !(    !@    @    "
+"$          4    (     0   !@    !         !     8    06-C;W)D:6YG('1O($)L;V-K"
+"($UA<VMS#@   #     &    \"     0         !0    @    !     P    $         $  #"
+" &]F9@ .    ,     8    (    !          %    \"     $    !     0         0  $ "
+",     X    P    !@    @    $          4    (               !         !       "
+"   #@   #     &    \"     0         !0    @    !    !     $         $  $ %9(1"
+"$P.    2     8    (    !          %    \"     $    3     0         0    $P   "
+"'AL3D=#4&]S=$=E;F5R871I;VX       X   !     !@    @    $          4    (     0"
+"    T    !         !     -    >&QN9V-S971T:6YG<P    X   #H    !@    @    \"  "
+"        4    (     0    $    !          4 !  5     0   \"H   !I;F-L=61E7V-L;V"
+"-K=W)A<'!E<@!I;F-L=61E7V-F                       .    .     8    (    !@     "
+"    %    \"     $    !     0         )    \"               #@   #@    &    \""
+"     8         !0    @    !     0    $         \"0    @           #P/P"
+  }
+}

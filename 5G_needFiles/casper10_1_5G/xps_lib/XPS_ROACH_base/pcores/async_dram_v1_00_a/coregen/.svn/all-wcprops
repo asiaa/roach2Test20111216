@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/coregen
+END
+rd_fifo_bram.xco
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/coregen/rd_fifo_bram.xco
+END
+transaction_fifo_bram.xco
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/coregen/transaction_fifo_bram.xco
+END
+rd_fifo_dist.xco
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/coregen/rd_fifo_dist.xco
+END
+transaction_fifo_dist.xco
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/coregen/transaction_fifo_dist.xco
+END
+data_fifo_bram.xco
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/coregen/data_fifo_bram.xco
+END
+data_fifo_dist.xco
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/1764/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/coregen/data_fifo_dist.xco
+END
+fifos.cgp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/1598/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/async_dram_v1_00_a/coregen/fifos.cgp
+END

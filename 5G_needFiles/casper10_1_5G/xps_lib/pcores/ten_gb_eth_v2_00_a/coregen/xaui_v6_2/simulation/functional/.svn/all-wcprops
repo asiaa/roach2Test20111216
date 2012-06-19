@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/simulation/functional
+END
+wave_ncsim.sv
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/simulation/functional/wave_ncsim.sv
+END
+simulate_ncsim.sh
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/simulation/functional/simulate_ncsim.sh
+END
+wave_mti.do
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/simulation/functional/wave_mti.do
+END
+simulate_mti.do
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/ten_gb_eth_v2_00_a/coregen/xaui_v6_2/simulation/functional/simulate_mti.do
+END

@@ -1,0 +1,39 @@
+Release 10.1.03 ngcbuild K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+xc5vsx95tff1136-1 -intstyle silent -sd .. r4_iadc_spec_adc_wrapper.ngc
+../r4_iadc_spec_adc_wrapper.ngc
+
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/implementation/r4_iad
+c_spec_adc_wrapper/r4_iadc_spec_adc_wrapper.ngc" ...
+Executing edif2ngd -noa "adc_fifo.edn" "adc_fifo.ngo"
+Release 10.1.03 - edif2ngd K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+INFO:NgdBuild - Release 10.1.03 edif2ngd K.39 (nt)
+INFO:NgdBuild - Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Writing module to "adc_fifo.ngo"...
+Loading design module
+"D:\casper10_1\projects\radix4\r4_iadc_spec\XPS_ROACH_base\implementation\r4_iad
+c_spec_adc_wrapper\adc_fifo.ngo"...
+Loading design module
+"D:\casper10_1\projects\radix4\r4_iadc_spec\XPS_ROACH_base\implementation\r4_iad
+c_spec_adc_wrapper/adc_fifo_fifo_generator_v2_2_xst_1.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 78660 kilobytes
+
+Writing NGC file "../r4_iadc_spec_adc_wrapper.ngc" ...
+
+Writing NGCBUILD log file "../r4_iadc_spec_adc_wrapper.blc"...

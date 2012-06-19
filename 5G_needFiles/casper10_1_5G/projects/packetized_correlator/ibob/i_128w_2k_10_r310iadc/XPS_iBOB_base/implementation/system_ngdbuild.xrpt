@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="nt" product="ISE" version="10.1.03">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="NgdBuild" timeStamp="Tue Jul 20 11:41:28 2010">
+    <task stringID="NGDBUILD_REPORT">
+      <section stringID="NGDBUILD_DESIGN_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="831"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="2"/>
+      </section>
+      <section stringID="NGDBUILD_CORE_SUMMARY">
+        <item COUNT="1" stringID="NGDBUILD_CORE" value="proc_sys_reset_v1_00_a"/>
+        <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
+          <section stringID="NGDBUILD_CORE_INSTANCES">
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="i_128w_2k_10_r310iadc">
+              <item stringID="NGDBUILD_CORE_INFO" type="sysgen_core_10_1_3_1386" value="i_128w_2k_10_r310iadc"/>
+              <item modelsim_hdl_co_simulation_interface_block="2" stringID="NGDBUILD_CORE_PARAMETERS" total_blocks="8010" value="i_128w_2k_10_r310iadc" xilinx_accumulator_block="8" xilinx_adder_subtractor_block="210" xilinx_arithmetic_relational_operator_block="119" xilinx_binary_shift_operator_block="8" xilinx_bit_slice_extractor_block="787" xilinx_black_box_block="2" xilinx_bus_concatenator_block="157" xilinx_bus_multiplexer_block="209" xilinx_constant_block_block="345" xilinx_counter_block="159" xilinx_delay_block="313" xilinx_disregard_subsystem_for_generation_block="2" xilinx_dual_port_random_access_memory_block="4" xilinx_gateway_in_block="45" xilinx_gateway_out_block="51" xilinx_input_scaler_block="96" xilinx_inverter_block="418" xilinx_logical_block_block="404" xilinx_multiplier_block="110" xilinx_negate_block_block="2" xilinx_register_block="38" xilinx_simulation_multiplexer_block="4" xilinx_single_port_random_access_memory_block="50" xilinx_single_port_read_only_memory_block="59" xilinx_system_generator_block="1" xilinx_type_converter_block="244" xilinx_type_reinterpreter_block="468"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="multiplier_virtex2p_10_1_26e459ad9aa810bd">
+              <item stringID="NGDBUILD_CORE_INFO" type="mult_gen_v10_1" value="multiplier_virtex2p_10_1_26e459ad9aa810bd"/>
+              <item c_a_type="0" c_a_width="8" c_b_type="0" c_b_value="10000001" c_b_width="8" c_ccm_imp="0" c_ce_overrides_sclr="1" c_has_ce="1" c_has_sclr="1" c_has_zero_detect="0" c_latency="2" c_mult_type="1" c_optimize_goal="1" c_out_high="15" c_out_low="0" c_round_output="0" c_round_pt="0" component_name="multiplier_virtex2p_10_1_26e459ad9aa810bd" stringID="NGDBUILD_CORE_PARAMETERS" value="multiplier_virtex2p_10_1_26e459ad9aa810bd"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="multiplier_virtex2p_10_1_3ccc2842ec4e2cc9">
+              <item stringID="NGDBUILD_CORE_INFO" type="mult_gen_v10_1" value="multiplier_virtex2p_10_1_3ccc2842ec4e2cc9"/>
+              <item c_a_type="0" c_a_width="18" c_b_type="0" c_b_value="10000001" c_b_width="18" c_ccm_imp="0" c_ce_overrides_sclr="1" c_has_ce="1" c_has_sclr="1" c_has_zero_detect="0" c_latency="2" c_mult_type="1" c_optimize_goal="1" c_out_high="35" c_out_low="0" c_round_output="0" c_round_pt="0" component_name="multiplier_virtex2p_10_1_3ccc2842ec4e2cc9" stringID="NGDBUILD_CORE_PARAMETERS" value="multiplier_virtex2p_10_1_3ccc2842ec4e2cc9"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="multiplier_virtex2p_10_1_423ddb9f1e4b69b4">
+              <item stringID="NGDBUILD_CORE_INFO" type="mult_gen_v10_1" value="multiplier_virtex2p_10_1_423ddb9f1e4b69b4"/>
+              <item c_a_type="0" c_a_width="18" c_b_type="1" c_b_value="10000001" c_b_width="18" c_ccm_imp="0" c_ce_overrides_sclr="1" c_has_ce="1" c_has_sclr="1" c_has_zero_detect="0" c_latency="2" c_mult_type="1" c_optimize_goal="1" c_out_high="35" c_out_low="0" c_round_output="0" c_round_pt="0" component_name="multiplier_virtex2p_10_1_423ddb9f1e4b69b4" stringID="NGDBUILD_CORE_PARAMETERS" value="multiplier_virtex2p_10_1_423ddb9f1e4b69b4"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="multiplier_virtex2p_10_1_9f8f470cd40e41c7">
+              <item stringID="NGDBUILD_CORE_INFO" type="mult_gen_v10_1" value="multiplier_virtex2p_10_1_9f8f470cd40e41c7"/>
+              <item c_a_type="0" c_a_width="8" c_b_type="0" c_b_value="10000001" c_b_width="8" c_ccm_imp="0" c_ce_overrides_sclr="1" c_has_ce="1" c_has_sclr="1" c_has_zero_detect="0" c_latency="3" c_mult_type="1" c_optimize_goal="1" c_out_high="15" c_out_low="0" c_round_output="0" c_round_pt="0" component_name="multiplier_virtex2p_10_1_9f8f470cd40e41c7" stringID="NGDBUILD_CORE_PARAMETERS" value="multiplier_virtex2p_10_1_9f8f470cd40e41c7"/>
+            </scope>
+          </section>
+        </section>
+      </section>
+    </task>
+  </application>
+
+</document>

@@ -1,0 +1,1 @@
+ -p virtex5 -lang vhdl   -s mti -X D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/ -E D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/

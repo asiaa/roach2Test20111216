@@ -1,0 +1,37 @@
+
+SETPROJECT ./
+SET BusFormat = BusFormatParen
+SET XilinxFamily = Virtex2P
+SET devicefamily = virtex2p
+SET OutputOption = OutputProducts
+SET FlowVendor = Other
+SET FormalVerification = None
+SET OutputProducts = ImpNetlist VHDLSim VerilogSim
+SET SimElabOptions = CreateNdf
+SELECT Binary_Counter Virtex2P Xilinx,_Inc. 7.0
+# 10.1.03i
+CSET async_init_value = 0
+CSET asynchronous_settings = none
+CSET ce_override_for_load = false
+CSET ce_overrides = sync_controls_override_ce
+CSET clock_enable = TRUE
+CSET count_by_value = 1
+CSET count_style = count_by_constant
+CSET count_to_value = MAX
+CSET create_rpm = FALSE
+CSET load = FALSE
+CSET load_sense = active_high
+CSET operation = up
+CSET output_width = 27
+CSET restrict_count = FALSE
+CSET set_clear_priority = clear_overrides_set
+CSET sync_init_value = 0
+CSET synchronous_settings = init
+CSET threshold_0 = false
+CSET threshold_0_value = MAX
+CSET threshold_1 = false
+CSET threshold_1_value = MAX
+CSET threshold_early = true
+CSET threshold_options = registered
+CSET component_name = binary_counter_virtex2p_7_0_7a138cef7a7cb135
+GENERATE

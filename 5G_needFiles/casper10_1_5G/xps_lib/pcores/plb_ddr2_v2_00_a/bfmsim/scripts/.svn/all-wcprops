@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v2_00_a/bfmsim/scripts
+END
+sample.bfl.non-shared
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v2_00_a/bfmsim/scripts/sample.bfl.non-shared
+END
+sample.bfl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v2_00_a/bfmsim/scripts/sample.bfl
+END
+wave.do
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v2_00_a/bfmsim/scripts/wave.do
+END
+run.do
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v2_00_a/bfmsim/scripts/run.do
+END
+sample.bfl.shared
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/plb_ddr2_v2_00_a/bfmsim/scripts/sample.bfl.shared
+END

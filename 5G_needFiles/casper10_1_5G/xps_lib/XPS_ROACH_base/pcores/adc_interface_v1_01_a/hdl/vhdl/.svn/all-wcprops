@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2080/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl
+END
+adc_interface.vhd.newish
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/1224/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd.newish
+END
+adc_interface.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/2080/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd
+END
+ddr_input.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/1251/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/ddr_input.vhd
+END
+adc_fifo.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/1224/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_fifo.vhd
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2036/trunk/projects/packetized_correlator/corr-confdev/scripts-debug
+END
+deprog_all.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/deprog_all.py
+END
+snap_10gbe_rx.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/snap_10gbe_rx.py
+END
+arm_feng.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/arm_feng.py
+END
+snap_10gbe_rx_mux.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/snap_10gbe_rx_mux.py
+END
+rst_loopback.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/rst_loopback.py
+END
+snap_xaui_tx.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/snap_xaui_tx.py
+END
+print_bl_order.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/print_bl_order.py
+END
+read_missing.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/read_missing.py
+END
+rst_errors.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/rst_errors.py
+END
+tvg_descramble_init.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/tvg_descramble_init.py
+END
+snap_xaui.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-confdev/scripts-debug/snap_xaui.py
+END

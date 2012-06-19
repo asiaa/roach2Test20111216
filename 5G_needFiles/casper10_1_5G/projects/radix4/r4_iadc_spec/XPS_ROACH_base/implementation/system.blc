@@ -1,0 +1,26 @@
+Release 10.1.03 ngcbuild K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: c:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngcbuild.exe ./system.ngc
+../implementation/system.ngc
+
+Reading NGO file
+"d:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/synthesis/system.ngc"
+...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 79624 kilobytes
+
+Writing NGC file "../implementation/system.ngc" ...
+
+Writing NGCBUILD log file "../implementation/system.blc"...

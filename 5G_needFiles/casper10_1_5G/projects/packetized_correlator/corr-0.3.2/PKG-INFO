@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: corr
+Version: 0.3.2
+Summary: Allows control of CASPER packetised correlators
+Home-page: casper.berkeley.edu
+Author: Jason Manley, Griffin Foster
+Author-email: jason_manley at hotmail.com
+License: GPL
+Description: Allows control of CASPER packetised correlators. Version 0.3.2 onwards uses generic UDP framework. Designed for 10GbE output correlators. Requires AIPY-0.5.5. Recommended: AIPY-0.8.2 and higher, matplotlib 0.98.2, numpy 1.1.1
+Platform: UNKNOWN

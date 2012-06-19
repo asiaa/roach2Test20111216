@@ -1,0 +1,118 @@
+#############################################################################
+##
+## IP Name  : i_128w_2k_10_r310iadc
+## Desc     : Automatically generated IP core wrapping a
+##            Simulink Xilinx System Generator netlist.
+##            Please do not modify by hand, this file will be erased
+##
+#############################################################################
+
+BEGIN i_128w_2k_10_r310iadc
+
+###################
+# Generic Options #
+###################
+OPTION IPTYPE = IP
+OPTION STYLE  = BLACKBOX
+
+###################
+# Clock port      #
+###################
+PORT clk = "", DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+
+###################
+# Interfaces      #
+###################
+
+# i_128w_2k_10_r310iadc/XSG core config
+
+# i_128w_2k_10_r310iadc/XAUI0
+PORT i_128w_2k_10_r310iadc_XAUI0_rx_almost_full = "", DIR = in
+PORT i_128w_2k_10_r310iadc_XAUI0_rx_data = "", DIR = in, VEC = [63:0]
+PORT i_128w_2k_10_r310iadc_XAUI0_rx_empty = "", DIR = in
+PORT i_128w_2k_10_r310iadc_XAUI0_rx_linkdown = "", DIR = in
+PORT i_128w_2k_10_r310iadc_XAUI0_rx_outofband = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_XAUI0_rx_valid = "", DIR = in
+PORT i_128w_2k_10_r310iadc_XAUI0_tx_full = "", DIR = in
+PORT i_128w_2k_10_r310iadc_XAUI0_rx_get = "", DIR = out
+PORT i_128w_2k_10_r310iadc_XAUI0_rx_reset = "", DIR = out
+PORT i_128w_2k_10_r310iadc_XAUI0_tx_data = "", DIR = out, VEC = [63:0]
+PORT i_128w_2k_10_r310iadc_XAUI0_tx_outofband = "", DIR = out, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_XAUI0_tx_valid = "", DIR = out
+
+# i_128w_2k_10_r310iadc/adc0
+PORT i_128w_2k_10_r310iadc_adc0_user_data_valid = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc0_user_datai0 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc0_user_datai1 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc0_user_datai2 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc0_user_datai3 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc0_user_dataq0 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc0_user_dataq1 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc0_user_dataq2 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc0_user_dataq3 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc0_user_outofrangei0 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc0_user_outofrangei1 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc0_user_outofrangeq0 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc0_user_outofrangeq1 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc0_user_sync0 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc0_user_sync1 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc0_user_sync2 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc0_user_sync3 = "", DIR = in
+
+# i_128w_2k_10_r310iadc/adc1
+PORT i_128w_2k_10_r310iadc_adc1_user_data_valid = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc1_user_datai0 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc1_user_datai1 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc1_user_datai2 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc1_user_datai3 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc1_user_dataq0 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc1_user_dataq1 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc1_user_dataq2 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc1_user_dataq3 = "", DIR = in, VEC = [7:0]
+PORT i_128w_2k_10_r310iadc_adc1_user_outofrangei0 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc1_user_outofrangei1 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc1_user_outofrangeq0 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc1_user_outofrangeq1 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc1_user_sync0 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc1_user_sync1 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc1_user_sync2 = "", DIR = in
+PORT i_128w_2k_10_r310iadc_adc1_user_sync3 = "", DIR = in
+
+# i_128w_2k_10_r310iadc/dbuf_ct_sram_fft_2x/sram
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram_data_out = "", DIR = in, VEC = [35:0]
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram_data_valid = "", DIR = in
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram_address = "", DIR = out, VEC = [18:0]
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram_be = "", DIR = out, VEC = [3:0]
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram_data_in = "", DIR = out, VEC = [35:0]
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram_we = "", DIR = out
+
+# i_128w_2k_10_r310iadc/dbuf_ct_sram_fft_2x/sram1
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram1_data_out = "", DIR = in, VEC = [35:0]
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram1_data_valid = "", DIR = in
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram1_address = "", DIR = out, VEC = [18:0]
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram1_be = "", DIR = out, VEC = [3:0]
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram1_data_in = "", DIR = out, VEC = [35:0]
+PORT i_128w_2k_10_r310iadc_dbuf_ct_sram_fft_2x_sram1_we = "", DIR = out
+
+# i_128w_2k_10_r310iadc/gpio
+PORT i_128w_2k_10_r310iadc_gpio_gateway = "", DIR = out
+
+# i_128w_2k_10_r310iadc/led1_arm
+PORT i_128w_2k_10_r310iadc_led1_arm_gateway = "", DIR = out
+
+# i_128w_2k_10_r310iadc/led2_sync
+PORT i_128w_2k_10_r310iadc_led2_sync_gateway = "", DIR = out
+
+# i_128w_2k_10_r310iadc/led4_eq_clip
+PORT i_128w_2k_10_r310iadc_led4_eq_clip_gateway = "", DIR = out
+
+# i_128w_2k_10_r310iadc/led5_adc_clip
+PORT i_128w_2k_10_r310iadc_led5_adc_clip_gateway = "", DIR = out
+
+# i_128w_2k_10_r310iadc/led6_link_dn
+PORT i_128w_2k_10_r310iadc_led6_link_dn_gateway = "", DIR = out
+
+# i_128w_2k_10_r310iadc/led7_xaui_overlfow
+PORT i_128w_2k_10_r310iadc_led7_xaui_overlfow_gateway = "", DIR = out
+
+END

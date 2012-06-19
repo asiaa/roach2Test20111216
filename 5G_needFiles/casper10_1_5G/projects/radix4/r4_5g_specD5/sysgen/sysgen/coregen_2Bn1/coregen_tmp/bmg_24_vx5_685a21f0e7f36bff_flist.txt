@@ -1,0 +1,13 @@
+# Output products list for <bmg_24_vx5_685a21f0e7f36bff>
+bmg_24_vx5_685a21f0e7f36bff.mif
+bmg_24_vx5_685a21f0e7f36bff.ngc
+bmg_24_vx5_685a21f0e7f36bff.v
+bmg_24_vx5_685a21f0e7f36bff.veo
+bmg_24_vx5_685a21f0e7f36bff.vhd
+bmg_24_vx5_685a21f0e7f36bff.vho
+bmg_24_vx5_685a21f0e7f36bff.xco
+bmg_24_vx5_685a21f0e7f36bff_blk_mem_gen_v2_4_xst_1.ndf
+bmg_24_vx5_685a21f0e7f36bff_blk_mem_gen_v2_4_xst_1.ngc_xst.xrpt
+bmg_24_vx5_685a21f0e7f36bff_blk_mem_gen_v2_4_xst_1_vhdl.prj
+bmg_24_vx5_685a21f0e7f36bff_flist.txt
+bmg_24_vx5_685a21f0e7f36bff_xmdf.tcl

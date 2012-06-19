@@ -1,0 +1,66 @@
+##############################################################
+#
+# Xilinx Core Generator version K.39
+# Date: Wed Jan 06 06:56:30 2010
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = False
+SET asysymbol = False
+SET busformat = BusFormatParenNotRipped
+SET createndf = True
+SET designentry = VHDL
+SET device = xc2vp2
+SET devicefamily = virtex2p
+SET flowvendor = Other
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = Edif
+SET package = fg256
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -7
+SET verilogsim = True
+SET vhdlsim = True
+# END Project Options
+# BEGIN Select
+SELECT Distributed_Memory family Xilinx,_Inc. 7.1
+# END Select
+# BEGIN Parameters
+CSET ce_overrides=sync_controls_overrides_ce
+CSET coefficient_file=distributed_memory_virtex2p_7_1_4be7d839ed9b4fda.coe
+CSET common_output_ce=false
+CSET common_output_clk=false
+CSET component_name=distributed_memory_virtex2p_7_1_4be7d839ed9b4fda
+CSET create_rpm=false
+CSET data_width=10
+CSET default_data=0
+CSET default_data_radix=16
+CSET depth=1024
+CSET dual_port_address=non_registered
+CSET dual_port_output_clock_enable=false
+CSET input_clock_enable=false
+CSET input_options=non_registered
+CSET latency=0
+CSET memory_type=rom
+CSET multiplexer_construction=lut_based
+CSET output_options=non_registered
+CSET qualify_we_with_i_ce=false
+CSET read_enable=false
+CSET reset_qdpo=false
+CSET reset_qspo=false
+CSET single_port_output_clock_enable=false
+CSET sync_reset_qdpo=false
+CSET sync_reset_qspo=false
+# END Parameters
+GENERATE
+# CRC: 93fabaca
+

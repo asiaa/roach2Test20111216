@@ -1,0 +1,408 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "r4_iadc_spec_xsg_core_config_wrapper_xst.prj"
+
+---- Target Parameters
+Target Device                      : xc5vsx95tff1136-1
+Output File Name                   : "../implementation/r4_iadc_spec_xsg_core_config_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : r4_iadc_spec_xsg_core_config_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/r4_iadc_spec_xsg_core_config_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/hdl/r4_iadc_spec_xsg_core_config_wrapper.vhd" in Library work.
+Entity <r4_iadc_spec_xsg_core_config_wrapper> compiled.
+Entity <r4_iadc_spec_xsg_core_config_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <r4_iadc_spec_xsg_core_config_wrapper> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <r4_iadc_spec_xsg_core_config_wrapper> in library <work> (Architecture <STRUCTURE>).
+Entity <r4_iadc_spec_xsg_core_config_wrapper> analyzed. Unit <r4_iadc_spec_xsg_core_config_wrapper> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <r4_iadc_spec_xsg_core_config_wrapper>.
+    Related source file is "D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/hdl/r4_iadc_spec_xsg_core_config_wrapper.vhd".
+Unit <r4_iadc_spec_xsg_core_config_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/r4_iadc_spec_xsg_core_config_wrapper/r4_iadc_spec.ngc>.
+Loading core <r4_iadc_spec> for timing and area information for instance <r4_iadc_spec_XSG_core_config>.
+Loading device for application Rf_Device from file '5vsx95t.nph' in environment C:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <r4_iadc_spec_xsg_core_config_wrapper> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir4_1752d52923/fir_tap_1_d5d8fe6781/fir_coef_8668a3421a/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 4 FFs/Latches : <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_1_2c4b8d4834/fir_coef_9f29c03f10/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_1_92ad0c4088/fir_coef_8668a3421a/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_1_92ad0c4088/fir_coef_8668a3421a/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_iadc_spec_x0/delay10/op_mem_20_24_0> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/vacc1_3dbe9afff0/pulse_ext_630df177f6/posedge_e4a03e9841/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following FF/Latch : <r4_iadc_spec_x0/vacc3_fd01a2d6dc/pulse_ext_630df177f6/posedge_e4a03e9841/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/pulse_ext2_dbeea50338/posedge_72f9a7df19/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following FF/Latch : <r4_iadc_spec_x0/delay24/op_mem_20_24_1> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/vacc0_c50ee0843b/pulse_ext_630df177f6/posedge_e4a03e9841/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/vacc2_aba41c46f0/pulse_ext_630df177f6/posedge_e4a03e9841/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_iadc_spec_x0/delay26/op_mem_20_24_2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy1_217a9309de/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir4_1752d52923/fir_tap_1_d5d8fe6781/fir_coef_8668a3421a/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 4 FFs/Latches : <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_1_2c4b8d4834/fir_coef_9f29c03f10/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_1_92ad0c4088/fir_coef_8668a3421a/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_1_92ad0c4088/fir_coef_8668a3421a/sync_delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_iadc_spec_x0/delay10/op_mem_20_24_0> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/vacc1_3dbe9afff0/pulse_ext_630df177f6/posedge_e4a03e9841/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following FF/Latch : <r4_iadc_spec_x0/vacc3_fd01a2d6dc/pulse_ext_630df177f6/posedge_e4a03e9841/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy1_b40a7576a2/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy3_49296bb814/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir4_1752d52923/fir_quantize_72dfc19179/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy2_1598a9f876/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy1_6a3cbc160f/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy3_c4d25680be/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy3_e17f9b3d60/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/pulse_ext2_dbeea50338/posedge_72f9a7df19/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following FF/Latch : <r4_iadc_spec_x0/delay24/op_mem_20_24_1> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir2_68bc0c67f0/fir_quantize_bf10af6463/quantize_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy1_dd17634c9e/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_2_799bdb5f7a/r4_twiddle_fe32205649/cmpy2_49bd21265a/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/vacc0_c50ee0843b/pulse_ext_630df177f6/posedge_e4a03e9841/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/vacc2_aba41c46f0/pulse_ext_630df177f6/posedge_e4a03e9841/delay/srl_delay.synth_reg_srl_inst/partial_one.last_srl17e/reg_array[0].fde_used.u2> <r4_iadc_spec_x0/delay26/op_mem_20_24_2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir3_1efe26be5a/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[19].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[20].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_3_2c3798b44c/r4_twiddle_586dcd3c1d/cmpy2_e8fce91a43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[16].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[17].fde_used.u2> <r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_quantize_81904b561f/quantize_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[18].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_re/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[21].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[22].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_4_7c1fdc5031/r4_twiddle_889d43e4c4/cmpy3_41cc9b7c43/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> 
+INFO:Xst:2260 - The FF/Latch <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[23].fde_used.u2> in Unit <r4_iadc_spec_XSG_core_config> is equivalent to the following 2 FFs/Latches : <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[24].fde_used.u2> <r4_iadc_spec_x0/r4_dit_fft_19e496a927/r4_dit_stage_5_9486a46fdf/r4_twiddle_bdb69c3a13/cmpy2_e003fed34b/convert_im/convert/latency_fpr.reg_fpr/partial_one.last_srl17e/reg_array[25].fde_used.u2> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/r4_iadc_spec_xsg_core_config_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 899
+
+Cell Usage :
+# BELS                             : 16857
+#      GND                         : 345
+#      INV                         : 148
+#      LUT1                        : 1589
+#      LUT2                        : 3178
+#      LUT3                        : 1406
+#      LUT4                        : 151
+#      LUT5                        : 24
+#      LUT6                        : 226
+#      MUXCY                       : 4617
+#      VCC                         : 291
+#      XORCY                       : 4882
+# FlipFlops/Latches                : 12648
+#      FD                          : 30
+#      FDE                         : 10570
+#      FDRE                        : 1860
+#      FDSE                        : 188
+# RAMS                             : 102
+#      RAMB18                      : 98
+#      RAMB36_EXP                  : 4
+# Shift Registers                  : 2357
+#      SRL16E                      : 1853
+#      SRLC16E                     : 504
+# DSPs                             : 100
+#      DSP48E                      : 100
+# Others                           : 1
+#      TIMESPEC                    : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:           12648  out of  58880    21%  
+ Number of Slice LUTs:                 9079  out of  58880    15%  
+    Number used as Logic:              6722  out of  58880    11%  
+    Number used as Memory:             2357  out of  24320     9%  
+       Number used as SRL:             2357
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  13088
+   Number with an unused Flip Flop:     440  out of  13088     3%  
+   Number with an unused LUT:          4009  out of  13088    30%  
+   Number of fully used LUT-FF pairs:  8639  out of  13088    66%  
+   Number of unique control sets:       172
+
+IO Utilization: 
+ Number of IOs:                         899
+ Number of bonded IOBs:                   0  out of    640     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               53  out of    244    21%  
+    Number using Block RAM only:         53
+ Number of DSP48Es:                     100  out of    640    15%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                                    | Clock buffer(FF name)                                                                                                                                                                                                                     | Load  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                                                                                                                                             | NONE(r4_iadc_spec_XSG_core_config/default_clock_driver_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp)                                                                                  | 15103 |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_1_d5d8fe6781/fir_core_0a5df8185c/tap_delay_9e67ba768a/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_1_d5d8fe6781/fir_core_0a5df8185c/tap_delay_9e67ba768a/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_1_d5d8fe6781/fir_coef_8668a3421a/c_gen_814ccffc75/mem/comp0.core_instance0/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_1_d5d8fe6781/fir_coef_8668a3421a/c_gen_814ccffc75/mem/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_2_9b4f638e4e/fir_core_cd043bfd46/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_2_9b4f638e4e/fir_core_cd043bfd46/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_2_9b4f638e4e/fir_coef_279a82cb5a/c_gen_0c372febdf/mem/comp1.core_instance1/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_2_9b4f638e4e/fir_coef_279a82cb5a/c_gen_0c372febdf/mem/comp1.core_instance1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_3_7c768f37ff/fir_core_ca3bb781c7/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_3_7c768f37ff/fir_core_ca3bb781c7/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_3_7c768f37ff/fir_coef_7fb83a4178/c_gen_1beac67e43/mem/comp2.core_instance2/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_3_7c768f37ff/fir_coef_7fb83a4178/c_gen_1beac67e43/mem/comp2.core_instance2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_4_c0256d7b4f/fir_core_c46988fe51/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_4_c0256d7b4f/fir_core_c46988fe51/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_4_c0256d7b4f/fir_coef_b172db4c44/c_gen_4bb41c0160/mem/comp3.core_instance3/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_4_c0256d7b4f/fir_coef_b172db4c44/c_gen_4bb41c0160/mem/comp3.core_instance3/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_5_94cb470a41/fir_core_32ede7a64e/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_5_94cb470a41/fir_core_32ede7a64e/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_5_94cb470a41/fir_coef_673a8b0237/c_gen_01e0e4f438/mem/comp4.core_instance4/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_5_94cb470a41/fir_coef_673a8b0237/c_gen_01e0e4f438/mem/comp4.core_instance4/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_6_b76258ff2c/fir_coef_96f3aca08c/c_gen_a7cce86c93/mem/comp5.core_instance5/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir4_1752d52923/fir_tap_6_b76258ff2c/fir_coef_96f3aca08c/c_gen_a7cce86c93/mem/comp5.core_instance5/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_1_2c4b8d4834/fir_core_40051eb817/tap_delay_d70e25e28d/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_1_2c4b8d4834/fir_core_40051eb817/tap_delay_d70e25e28d/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_1_2c4b8d4834/fir_coef_9f29c03f10/c_gen_814ccffc75/mem/comp0.core_instance0/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_1_2c4b8d4834/fir_coef_9f29c03f10/c_gen_814ccffc75/mem/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_2_78bd633e2d/fir_core_cd043bfd46/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_2_78bd633e2d/fir_core_cd043bfd46/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_2_78bd633e2d/fir_coef_279a82cb5a/c_gen_0c372febdf/mem/comp1.core_instance1/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_2_78bd633e2d/fir_coef_279a82cb5a/c_gen_0c372febdf/mem/comp1.core_instance1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_3_2461e963d6/fir_core_ca3bb781c7/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_3_2461e963d6/fir_core_ca3bb781c7/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_3_2461e963d6/fir_coef_7fb83a4178/c_gen_1beac67e43/mem/comp2.core_instance2/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_3_2461e963d6/fir_coef_7fb83a4178/c_gen_1beac67e43/mem/comp2.core_instance2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_4_3a5f0c73ba/fir_core_c46988fe51/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_4_3a5f0c73ba/fir_core_c46988fe51/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_4_3a5f0c73ba/fir_coef_b172db4c44/c_gen_4bb41c0160/mem/comp3.core_instance3/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_4_3a5f0c73ba/fir_coef_b172db4c44/c_gen_4bb41c0160/mem/comp3.core_instance3/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_5_c2aab4d879/fir_core_32ede7a64e/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_5_c2aab4d879/fir_core_32ede7a64e/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_5_c2aab4d879/fir_coef_673a8b0237/c_gen_01e0e4f438/mem/comp4.core_instance4/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_5_c2aab4d879/fir_coef_673a8b0237/c_gen_01e0e4f438/mem/comp4.core_instance4/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_6_9e62165852/fir_coef_d323099000/c_gen_297990f235/mem/comp5.core_instance5/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir2_68bc0c67f0/fir_tap_6_9e62165852/fir_coef_d323099000/c_gen_297990f235/mem/comp5.core_instance5/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_1_92ad0c4088/fir_core_0a5df8185c/tap_delay_9e67ba768a/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_1_92ad0c4088/fir_core_0a5df8185c/tap_delay_9e67ba768a/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_1_92ad0c4088/fir_coef_8668a3421a/c_gen_814ccffc75/mem/comp0.core_instance0/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_1_92ad0c4088/fir_coef_8668a3421a/c_gen_814ccffc75/mem/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_2_3d86da1238/fir_core_cd043bfd46/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_2_3d86da1238/fir_core_cd043bfd46/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_2_3d86da1238/fir_coef_279a82cb5a/c_gen_0c372febdf/mem/comp1.core_instance1/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_2_3d86da1238/fir_coef_279a82cb5a/c_gen_0c372febdf/mem/comp1.core_instance1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_3_08103850b3/fir_core_ca3bb781c7/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_3_08103850b3/fir_core_ca3bb781c7/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_3_08103850b3/fir_coef_7fb83a4178/c_gen_1beac67e43/mem/comp2.core_instance2/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_3_08103850b3/fir_coef_7fb83a4178/c_gen_1beac67e43/mem/comp2.core_instance2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_4_3d4e2be445/fir_core_c46988fe51/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_4_3d4e2be445/fir_core_c46988fe51/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_4_3d4e2be445/fir_coef_b172db4c44/c_gen_4bb41c0160/mem/comp3.core_instance3/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_4_3d4e2be445/fir_coef_b172db4c44/c_gen_4bb41c0160/mem/comp3.core_instance3/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_5_6f4356a60e/fir_core_32ede7a64e/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_5_6f4356a60e/fir_core_32ede7a64e/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_5_6f4356a60e/fir_coef_673a8b0237/c_gen_01e0e4f438/mem/comp4.core_instance4/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_5_6f4356a60e/fir_coef_673a8b0237/c_gen_01e0e4f438/mem/comp4.core_instance4/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_6_d13e1456a5/fir_coef_d323099000/c_gen_297990f235/mem/comp5.core_instance5/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir1_f9d6e39c7e/fir_tap_6_d13e1456a5/fir_coef_d323099000/c_gen_297990f235/mem/comp5.core_instance5/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_1_92ad0c4088/fir_core_0a5df8185c/tap_delay_9e67ba768a/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_1_92ad0c4088/fir_core_0a5df8185c/tap_delay_9e67ba768a/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_1_92ad0c4088/fir_coef_8668a3421a/c_gen_814ccffc75/mem/comp0.core_instance0/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_1_92ad0c4088/fir_coef_8668a3421a/c_gen_814ccffc75/mem/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_2_3d86da1238/fir_core_cd043bfd46/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_2_3d86da1238/fir_core_cd043bfd46/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_2_3d86da1238/fir_coef_279a82cb5a/c_gen_0c372febdf/mem/comp1.core_instance1/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_2_3d86da1238/fir_coef_279a82cb5a/c_gen_0c372febdf/mem/comp1.core_instance1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_3_08103850b3/fir_core_ca3bb781c7/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_3_08103850b3/fir_core_ca3bb781c7/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_3_08103850b3/fir_coef_7fb83a4178/c_gen_1beac67e43/mem/comp2.core_instance2/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_3_08103850b3/fir_coef_7fb83a4178/c_gen_1beac67e43/mem/comp2.core_instance2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_4_3d4e2be445/fir_core_c46988fe51/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_4_3d4e2be445/fir_core_c46988fe51/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_4_3d4e2be445/fir_coef_b172db4c44/c_gen_4bb41c0160/mem/comp3.core_instance3/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_4_3d4e2be445/fir_coef_b172db4c44/c_gen_4bb41c0160/mem/comp3.core_instance3/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_5_6f4356a60e/fir_core_32ede7a64e/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/dbiterr| NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_5_6f4356a60e/fir_core_32ede7a64e/tap_delay_3e7641088b/bram/comp0.core_instance0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)| 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_5_6f4356a60e/fir_coef_673a8b0237/c_gen_01e0e4f438/mem/comp4.core_instance4/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_5_6f4356a60e/fir_coef_673a8b0237/c_gen_01e0e4f438/mem/comp4.core_instance4/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_6_d13e1456a5/fir_coef_d323099000/c_gen_297990f235/mem/comp5.core_instance5/BU2/dbiterr     | NONE(r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/fir3_1efe26be5a/fir_tap_6_d13e1456a5/fir_coef_d323099000/c_gen_297990f235/mem/comp5.core_instance5/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SP.SINGLE_PRIM18.SP)     | 1     |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.870ns (Maximum Frequency: 258.378MHz)
+   Minimum input arrival time before clock: 1.456ns
+   Maximum output required time after clock: 2.237ns
+   Maximum combinational path delay: 0.238ns
+
+=========================================================================
+Timing constraint: TS_clk_4dc2d861 = PERIOD TIMEGRP "clk_4dc2d861" 6.666 nS HIGH 3.333 nS
+  Clock period: 3.870ns (frequency: 258.378MHz)
+  Total number of paths / destination ports: 113396 / 17262
+  Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
+-------------------------------------------------------------------------
+Slack:                  2.796ns
+  Source:               r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/acc_cntrl_48890c2acd/cntr/count_reg_20_23_0 (FF)
+  Destination:          r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/acc_cntrl_48890c2acd/cntr/count_reg_20_23_29 (FF)
+  Data Path Delay:      3.870ns (Levels of Logic = 18)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 6.666ns
+
+  Data Path: r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/acc_cntrl_48890c2acd/cntr/count_reg_20_23_0 (FF) to r4_iadc_spec_XSG_core_config/r4_iadc_spec_x0/acc_cntrl_48890c2acd/cntr/count_reg_20_23_29 (FF)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.471   0.800  r4_iadc_spec_x0/acc_cntrl_48890c2acd/cntr/count_reg_20_23_0 (r4_iadc_spec_x0/acc_cntrl_48890c2acd/cntr/count_reg_20_23(0))
+     LUT4:I0->O            1   0.094   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_lut(0) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_lut(0))
+     MUXCY:S->O            1   0.372   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(0) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(0))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(1) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(1))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(2) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(2))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(3) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(3))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(4) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(4))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(5) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(5))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(6) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(6))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(7) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(7))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(8) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(8))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(9) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(9))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(10) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(10))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(11) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(11))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(12) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(12))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(13) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(13))
+     MUXCY:CI->O           1   0.026   0.000  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(14) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(14))
+     MUXCY:CI->O          32   0.148   0.607  r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5/Mcompar_result_22_3_rel(0)_cy(15) (r4_iadc_spec_x0/acc_cntrl_48890c2acd/relational5_op_net_x0)
+     LUT3:I2->O            3   0.094   0.347  r4_iadc_spec_x0/acc_cntrl_48890c2acd/logical/fully_2_1_bit1 (r4_iadc_spec_x0/acc_cntrl_48890c2acd/cntr/count_reg_20_23_and0000)
+     FDRE:R                    0.573          r4_iadc_spec_x0/acc_cntrl_48890c2acd/cntr/count_reg_20_23_29
+    ----------------------------------------
+    Total                      3.870ns (2.116ns logic, 1.754ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 91.00 secs
+Total CPU time to Xst completion: 90.80 secs
+ 
+--> 
+
+Total memory usage is 455852 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :   73 (   0 filtered)
+

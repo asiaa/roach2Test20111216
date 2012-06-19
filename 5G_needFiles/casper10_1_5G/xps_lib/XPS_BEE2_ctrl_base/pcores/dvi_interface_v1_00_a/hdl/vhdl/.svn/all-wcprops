@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/dvi_interface_v1_00_a/hdl/vhdl
+END
+dvi_interface.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/dvi_interface_v1_00_a/hdl/vhdl/dvi_interface.vhd
+END
+dvi_syncgen.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/dvi_interface_v1_00_a/hdl/vhdl/dvi_syncgen.vhd
+END
+user_logic.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/dvi_interface_v1_00_a/hdl/vhdl/user_logic.vhd
+END
+dvi_pixelgen.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/dvi_interface_v1_00_a/hdl/vhdl/dvi_pixelgen.vhd
+END

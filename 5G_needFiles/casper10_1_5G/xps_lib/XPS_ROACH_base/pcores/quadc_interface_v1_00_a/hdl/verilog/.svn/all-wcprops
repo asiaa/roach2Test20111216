@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2519/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/quadc_interface_v1_00_a/hdl/verilog
+END
+quadc_interface.v
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/2519/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/quadc_interface_v1_00_a/hdl/verilog/quadc_interface.v
+END
+async_fifo_generator_v2_2_33x16.v
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/2211/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/quadc_interface_v1_00_a/hdl/verilog/async_fifo_generator_v2_2_33x16.v
+END

@@ -1,0 +1,51 @@
+Number of Timing Constraints that were not applied: 2
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+* NET "r4_5g_specV5_adc_5g/r4_5g_specV5_adc | SETUP   |     1.049ns|     5.617ns|       0|           0
+  _5g/adc_clk_buf" PERIOD = 6.6667 ns       | HOLD    |    -0.147ns|            |       5|         546
+     HIGH 50%                               |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88  | SETUP   |     0.097ns|    11.266ns|       0|           0
+  MHz HIGH 50%                              | HOLD    |     0.190ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "r4_5g_specV5_adc | SETUP   |     1.701ns|     9.931ns|       0|           0
+  _5g/r4_5g_specV5_adc_5g/adc_clk_dcm" deri | HOLD    |     0.089ns|            |       0|           0
+  ved from  NET "r4_5g_specV5_adc_5g/r4_5g_ |         |            |            |        |            
+  specV5_adc_5g/adc_clk_buf" PERIOD = 6.666 |         |            |            |        |            
+  7 ns         HIGH 50%                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET "epb_cs_n_IBUF" MAXDELAY = 4 ns       | MAXDELAY|     2.364ns|     1.636ns|       0|           0
+------------------------------------------------------------------------------------------------------
+  NET "r4_5g_specV5_adc_5g/r4_5g_specV5_adc | N/A     |         N/A|         N/A|     N/A|         N/A
+  _5g/adc_clk_buf" PERIOD = 6.6667 ns       |         |            |            |        |            
+     HIGH 50%                               |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_clk_f8c60ad6 = PERIOD TIMEGRP "clk_f8c | N/A     |         N/A|         N/A|     N/A|         N/A
+  60ad6" 6.6667 ns HIGH 50%                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for r4_5g_specV5_adc_5g/r4_5g_specV5_adc_5g/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|r4_5g_specV5_adc_5g/r4_5g_specV|      6.667ns|      5.617ns|      4.966ns|            5|            0|          885|       154942|
+|5_adc_5g/adc_clk_buf           |             |             |             |             |             |             |             |
+| r4_5g_specV5_adc_5g/r4_5g_spec|     13.333ns|      9.931ns|          N/A|            0|            0|       154942|            0|
+| V5_adc_5g/adc_clk_dcm         |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+1 constraint not met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+

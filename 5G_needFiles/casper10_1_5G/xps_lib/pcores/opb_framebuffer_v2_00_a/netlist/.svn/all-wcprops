@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_framebuffer_v2_00_a/netlist
+END
+pixel_ram_128.edn
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_framebuffer_v2_00_a/netlist/pixel_ram_128.edn
+END
+pixel_ram_256.edn
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2284/trunk/mlib_devel_10_1/xps_lib/pcores/opb_framebuffer_v2_00_a/netlist/pixel_ram_256.edn
+END

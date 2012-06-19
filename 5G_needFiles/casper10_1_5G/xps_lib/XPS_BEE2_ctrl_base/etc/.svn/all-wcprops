@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/etc
+END
+bitgen.ut
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/etc/bitgen.ut
+END
+fast_runtime.opt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/etc/fast_runtime.opt
+END
+bitgen_spartan3.ut
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/etc/bitgen_spartan3.ut
+END

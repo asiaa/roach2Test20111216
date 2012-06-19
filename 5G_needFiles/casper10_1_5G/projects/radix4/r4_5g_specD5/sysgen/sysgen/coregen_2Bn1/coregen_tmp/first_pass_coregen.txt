@@ -1,0 +1,5 @@
+Release 10.1.03 - Xilinx CORE Generator K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+D:\casper10_1\projects\radix4\r4_5g_specD5\sysgen\sysgen\coregen_2Bn1\coregen_tm
+p/coregen.log

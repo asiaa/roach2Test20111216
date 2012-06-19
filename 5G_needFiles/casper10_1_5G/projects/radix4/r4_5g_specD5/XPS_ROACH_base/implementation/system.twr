@@ -1,0 +1,151 @@
+--------------------------------------------------------------------------------
+Release 10.1.03 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+trce -e 200 -xml system.twx system.ncd system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc5vsx95t,ff1136,-1 (PRODUCTION 1.62 2008-08-19, STEPPING level 0)
+Report level:             error report, limited to 200 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3377 - Intersecting Constraints found and resolved.  For more 
+   information see the TSI report.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "epb_cs_n_IBUF" MAXDELAY = 4 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   1.636ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/adc_clk_buf" PERIOD =        
+ 6.6667 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/adc_clk_buf" PERIOD =        
+ 6.6667 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/adc_clk_dcm" derived from  
+NET "r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/adc_clk_buf" PERIOD =    
+     6.6667 ns HIGH 50%;  duty cycle corrected to 6.667 nS  HIGH 3.333 nS  
+
+ 111844 paths analyzed, 36723 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is   6.012ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_86ebd779 = PERIOD TIMEGRP "clk_86ebd779" 6.6667 ns 
+HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88 MHz HIGH 50%;
+
+ 121425 paths analyzed, 7808 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  11.244ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for r4_5g_specD5_adc_5G_dmux/r4_5g_specD5_adc_5G_dmux/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|r4_5g_specD5_adc_5G_dmux/r4_5g_|      6.667ns|          N/A|      6.012ns|            0|            0|            0|       111844|
+|specD5_adc_5G_dmux/adc_clk_buf |             |             |             |             |             |             |             |
+| r4_5g_specD5_adc_5G_dmux/r4_5g|      6.667ns|      6.012ns|          N/A|            0|            0|       111844|            0|
+| _specD5_adc_5G_dmux/adc_clk_dc|             |             |             |             |             |             |             |
+| m                             |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock adc0clk_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    6.012|         |         |         |
+adc0clk_p      |    6.012|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc0clk_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    6.012|         |         |         |
+adc0clk_p      |    6.012|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock epb_clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+epb_clk_in     |   11.244|         |    1.974|         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 233269 paths, 1 nets, and 42238 connections
+
+Design statistics:
+   Minimum period:  11.244ns   (Maximum frequency:  88.936MHz)
+   Maximum net delay:   1.636ns
+
+
+Analysis completed Thu Sep 02 17:52:43 2010 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 549 MB
+
+
+

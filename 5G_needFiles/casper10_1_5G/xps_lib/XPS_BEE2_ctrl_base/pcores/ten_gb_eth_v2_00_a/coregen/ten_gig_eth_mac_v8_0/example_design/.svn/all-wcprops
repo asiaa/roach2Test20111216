@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design
+END
+address_swap.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/address_swap.vhd
+END
+ten_gig_eth_mac_v8_0_local_link.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/ten_gig_eth_mac_v8_0_local_link.vhd
+END
+ten_gig_eth_mac_v8_0_block.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/ten_gig_eth_mac_v8_0_block.vhd
+END
+client_loopback.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/client_loopback.vhd
+END
+ten_gig_eth_mac_v8_0_example_design.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/ten_gig_eth_mac_v8_0_example_design.ucf
+END
+physical_if.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/physical_if.vhd
+END
+ten_gig_eth_mac_v8_0_top.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/ten_gig_eth_mac_v8_0_top.vhd
+END
+ten_gig_eth_mac_v8_0_example_design.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/ten_gb_eth_v2_00_a/coregen/ten_gig_eth_mac_v8_0/example_design/ten_gig_eth_mac_v8_0_example_design.vhd
+END

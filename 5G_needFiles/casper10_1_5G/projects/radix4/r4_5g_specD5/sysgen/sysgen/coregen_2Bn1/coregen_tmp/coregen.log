@@ -1,0 +1,104 @@
+WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.WARNING:sim:230 - 'BusFormatParen' is no longer a valid value for 'BusFormat'. 
+   It has been set to 'BusFormatParenNotRipped'.  Please check the project
+   settings to ensure they meet your requirements.Regenerating IP...
+WARNING:sim:99 - The Implementation File Type <Edif> is not valid for this core.
+   Overriding with File Type <ngc>.
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating NGC file.
+Finished Regenerating.
+Successfully generated bmg_24_vx5_685a21f0e7f36bff.
+Regenerating IP...
+WARNING:sim:99 - The Implementation File Type <Edif> is not valid for this core.
+   Overriding with File Type <ngc>.
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating NGC file.
+Finished Regenerating.
+Successfully generated bmg_24_vx5_6fb941694e0a834d.
+Regenerating IP...
+WARNING:sim:99 - The Implementation File Type <Edif> is not valid for this core.
+   Overriding with File Type <ngc>.
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating NGC file.
+Finished Regenerating.
+Successfully generated bmg_24_vx5_8710d0c563708d0d.
+Regenerating IP...
+WARNING:sim:99 - The Implementation File Type <Edif> is not valid for this core.
+   Overriding with File Type <ngc>.
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating NGC file.
+Finished Regenerating.
+Successfully generated bmg_24_vx5_9fbc240f5763bb94.
+Regenerating IP...
+WARNING:sim:99 - The Implementation File Type <Edif> is not valid for this core.
+   Overriding with File Type <ngc>.
+Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating NGC file.
+Finished Regenerating.
+Successfully generated bmg_24_vx5_e8ed5e8ae23b2f64.
+Regenerating IP...
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating Verilog structural model.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_0222debb9055fdfb.
+Regenerating IP...
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating Verilog structural model.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_1900b0ff8c195f36.
+Regenerating IP...
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating Verilog structural model.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_1d18c2bc7f1da736.
+Regenerating IP...
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating Verilog structural model.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_541e977e441ad0e7.
+Regenerating IP...
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating Verilog structural model.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_8241330e8139a185.
+Regenerating IP...
+WARNING:sim:217 - The chosen IP does not support a Verilog behavioral model,
+   generating a Verilog structural model instead.Generating Implementation files.
+WARNING:coreutil -  Default charset MS950 not supported, using ISO-8859-1 instea
+Generating Verilog structural model.
+Finished Regenerating.
+Successfully generated multiplier_virtex5_10_1_db7cd8a2c586bcee.

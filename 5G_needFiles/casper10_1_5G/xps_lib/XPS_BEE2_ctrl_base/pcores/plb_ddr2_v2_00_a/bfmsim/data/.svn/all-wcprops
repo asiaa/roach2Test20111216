@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v2_00_a/bfmsim/data
+END
+system.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v2_00_a/bfmsim/data/system.ucf
+END
+bfm_system.ucf
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v2_00_a/bfmsim/data/bfm_system.ucf
+END

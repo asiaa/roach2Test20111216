@@ -1,0 +1,97 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 10.1.3.1386            C:/Xilinx/10.1/DSP_Tools/common/bin/../../sysgen
+AccelDSP 10.1.3.1386                    C:/Xilinx/10.1/DSP_Tools/AccelDSP
+Matlab 7.5.0.342 (R2007b)               C:/Program Files/MATLAB/R2007b
+ISE 10.1.03i                            C:/Xilinx/10.1/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Undriven input port
+     Block: 'adc5gSpecD1/Reinterpret8'
+Error 0002: Undriven input port
+     Block: 'adc5gSpecD1/Reinterpret9'
+Error 0003: Undriven input port
+     Block: 'adc5gSpecD1/Reinterpret10'
+Error 0004: Undriven input port
+     Block: 'adc5gSpecD1/Reinterpret11'
+Error 0005: Undriven input port
+     Block: 'adc5gSpecD1/Reinterpret12'
+Error 0006: Undriven input port
+     Block: 'adc5gSpecD1/Reinterpret13'
+Error 0007: Undriven input port
+     Block: 'adc5gSpecD1/Reinterpret14'
+Error 0008: Undriven input port
+     Block: 'adc5gSpecD1/Reinterpret15'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'adc5gSpecD1/Reinterpret8'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0002:
+
+Reported by:
+  'adc5gSpecD1/Reinterpret9'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0003:
+
+Reported by:
+  'adc5gSpecD1/Reinterpret10'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0004:
+
+Reported by:
+  'adc5gSpecD1/Reinterpret11'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0005:
+
+Reported by:
+  'adc5gSpecD1/Reinterpret12'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0006:
+
+Reported by:
+  'adc5gSpecD1/Reinterpret13'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0007:
+
+Reported by:
+  'adc5gSpecD1/Reinterpret14'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------
+
+Error 0008:
+
+Reported by:
+  'adc5gSpecD1/Reinterpret15'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------

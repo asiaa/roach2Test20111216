@@ -1,0 +1,167 @@
+10
+
+dir
+2556
+http://casper.berkeley.edu/svn/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/mem_tester_sim/ddr2_controller_v1_00_a/sim
+http://casper.berkeley.edu/svn
+
+
+
+2008-08-16T01:39:46.699193Z
+961
+hchen05
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+577e11ce-4b3a-42a0-b907-5d4e03b181e5
+
+parameter
+dir
+
+cal_top
+dir
+
+controller
+dir
+
+unisim_void
+dir
+
+ddr_dq_iob
+dir
+
+cal_div2f
+dir
+
+data_path_72bit_rl
+dir
+
+data_write_72bit
+dir
+
+clk_dcm
+dir
+
+dcmx3y0_2vp70_sim
+dir
+
+ddr2_controller
+dir
+
+cal_ctl
+dir
+
+infrastructure_top
+dir
+
+iobs_72bit
+dir
+
+ddr2_transfer_done
+dir
+
+data_path_iobs_72bit
+dir
+
+ram_8d
+dir
+
+data_read_controller_72bit_rl
+dir
+
+data_path_rst
+dir
+
+infrastructure
+dir
+
+ddr2_dm_72bit
+dir
+
+cal_div2
+dir
+
+mybufg
+dir
+
+_info
+file
+
+
+
+
+2010-01-05T09:42:53.906250Z
+aedf24a80794ee38b37c1cd7bc1b23a6
+2008-08-16T01:39:46.699193Z
+961
+hchen05
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25639
+
+ddr2
+dir
+
+cal_reg
+dir
+
+controller_iobs
+dir
+
+r_w_dly
+dir
+
+ddr2_cntrl_72bit_rl
+dir
+
+ddr2dimm
+dir
+
+infrastructure_iobs_72bit
+dir
+
+ddr2_dqs_div
+dir
+
+dqs_delay
+dir
+
+data_read_72bit_rl
+dir
+
+ddr_dqs_iob
+dir
+
+ddr2_dqbit
+dir
+

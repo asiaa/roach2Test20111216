@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/XAUI_interface_v2_00_a/simhdl/vhdl
+END
+xaui_if.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/XAUI_interface_v2_00_a/simhdl/vhdl/xaui_if.vhd
+END
+rx_fifo_2x.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/XAUI_interface_v2_00_a/simhdl/vhdl/rx_fifo_2x.vhd
+END
+tx_fifo_2x.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/XAUI_interface_v2_00_a/simhdl/vhdl/tx_fifo_2x.vhd
+END
+rx_fifo.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/XAUI_interface_v2_00_a/simhdl/vhdl/rx_fifo.vhd
+END
+tx_fifo.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2283/trunk/mlib_devel_10_1/xps_lib/pcores/XAUI_interface_v2_00_a/simhdl/vhdl/tx_fifo.vhd
+END

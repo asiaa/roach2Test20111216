@@ -1,0 +1,31 @@
+Release 10.1.03 ngcbuild K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+xc5vsx95tff1136-1 -intstyle silent -sd ..
+r4_iadc_spec_xsg_core_config_wrapper.ngc
+../r4_iadc_spec_xsg_core_config_wrapper.ngc
+
+Reading NGO file
+"D:/casper10_1/projects/radix4/r4_iadc_spec/XPS_ROACH_base/implementation/r4_iad
+c_spec_xsg_core_config_wrapper/r4_iadc_spec_xsg_core_config_wrapper.ngc" ...
+Loading design module
+"D:\casper10_1\projects\radix4\r4_iadc_spec\XPS_ROACH_base\implementation\r4_iad
+c_spec_xsg_core_config_wrapper/r4_iadc_spec.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 151176 kilobytes
+
+Writing NGC file "../r4_iadc_spec_xsg_core_config_wrapper.ngc" ...
+
+Writing NGCBUILD log file "../r4_iadc_spec_xsg_core_config_wrapper.blc"...

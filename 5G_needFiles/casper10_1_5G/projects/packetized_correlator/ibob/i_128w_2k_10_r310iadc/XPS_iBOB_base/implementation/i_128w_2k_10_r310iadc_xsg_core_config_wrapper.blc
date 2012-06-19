@@ -1,0 +1,34 @@
+Release 10.1.03 ngcbuild K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngcbuild.exe -p
+xc2vp50ff1152-7 -intstyle silent -sd ..
+i_128w_2k_10_r310iadc_xsg_core_config_wrapper.ngc
+../i_128w_2k_10_r310iadc_xsg_core_config_wrapper.ngc
+
+Reading NGO file
+"D:/casper10_1/projects/packetized_correlator/ibob/i_128w_2k_10_r310iadc/XPS_iBO
+B_base/implementation/i_128w_2k_10_r310iadc_xsg_core_config_wrapper/i_128w_2k_10
+_r310iadc_xsg_core_config_wrapper.ngc" ...
+Loading design module
+"D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBO
+B_base\implementation\i_128w_2k_10_r310iadc_xsg_core_config_wrapper/i_128w_2k_10
+_r310iadc.ngc"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 189444 kilobytes
+
+Writing NGC file "../i_128w_2k_10_r310iadc_xsg_core_config_wrapper.ngc" ...
+
+Writing NGCBUILD log file
+"../i_128w_2k_10_r310iadc_xsg_core_config_wrapper.blc"...

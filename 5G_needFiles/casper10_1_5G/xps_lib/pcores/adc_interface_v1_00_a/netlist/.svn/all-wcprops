@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/adc_interface_v1_00_a/netlist
+END
+adc_fifo.edn
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/adc_interface_v1_00_a/netlist/adc_fifo.edn
+END
+adc_fifo_fifo_generator_v2_2_xst_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/2281/trunk/mlib_devel_10_1/xps_lib/pcores/adc_interface_v1_00_a/netlist/adc_fifo_fifo_generator_v2_2_xst_1.ngc
+END

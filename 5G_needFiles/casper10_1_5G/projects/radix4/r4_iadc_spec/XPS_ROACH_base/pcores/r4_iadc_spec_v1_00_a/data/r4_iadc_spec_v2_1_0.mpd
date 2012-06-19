@@ -1,0 +1,126 @@
+#############################################################################
+##
+## IP Name  : r4_iadc_spec
+## Desc     : Automatically generated IP core wrapping a
+##            Simulink Xilinx System Generator netlist.
+##            Please do not modify by hand, this file will be erased
+##
+#############################################################################
+
+BEGIN r4_iadc_spec
+
+###################
+# Generic Options #
+###################
+OPTION IPTYPE = IP
+OPTION STYLE  = BLACKBOX
+
+###################
+# Clock port      #
+###################
+PORT clk = "", DIR = I, SIGIS = CLK, CLK_FREQ = 150000000
+
+###################
+# Interfaces      #
+###################
+
+# r4_iadc_spec/XSG core config
+
+# r4_iadc_spec/acc_cnt
+PORT r4_iadc_spec_acc_cnt_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_iadc_spec/acc_len
+PORT r4_iadc_spec_acc_len_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_iadc_spec/adc
+PORT r4_iadc_spec_adc_user_data_valid = "", DIR = in
+PORT r4_iadc_spec_adc_user_datai0 = "", DIR = in, VEC = [7:0]
+PORT r4_iadc_spec_adc_user_datai1 = "", DIR = in, VEC = [7:0]
+PORT r4_iadc_spec_adc_user_datai2 = "", DIR = in, VEC = [7:0]
+PORT r4_iadc_spec_adc_user_datai3 = "", DIR = in, VEC = [7:0]
+PORT r4_iadc_spec_adc_user_dataq0 = "", DIR = in, VEC = [7:0]
+PORT r4_iadc_spec_adc_user_dataq1 = "", DIR = in, VEC = [7:0]
+PORT r4_iadc_spec_adc_user_dataq2 = "", DIR = in, VEC = [7:0]
+PORT r4_iadc_spec_adc_user_dataq3 = "", DIR = in, VEC = [7:0]
+PORT r4_iadc_spec_adc_user_outofrangei0 = "", DIR = in
+PORT r4_iadc_spec_adc_user_outofrangei1 = "", DIR = in
+PORT r4_iadc_spec_adc_user_outofrangeq0 = "", DIR = in
+PORT r4_iadc_spec_adc_user_outofrangeq1 = "", DIR = in
+PORT r4_iadc_spec_adc_user_sync0 = "", DIR = in
+PORT r4_iadc_spec_adc_user_sync1 = "", DIR = in
+PORT r4_iadc_spec_adc_user_sync2 = "", DIR = in
+PORT r4_iadc_spec_adc_user_sync3 = "", DIR = in
+
+# r4_iadc_spec/cnt_rst
+PORT r4_iadc_spec_cnt_rst_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_iadc_spec/led0_sync
+PORT r4_iadc_spec_led0_sync_gateway = "", DIR = out
+
+# r4_iadc_spec/led1_new_acc
+PORT r4_iadc_spec_led1_new_acc_gateway = "", DIR = out
+
+# r4_iadc_spec/snap_adc/addr
+PORT r4_iadc_spec_snap_adc_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_iadc_spec/snap_adc/bram
+PORT r4_iadc_spec_snap_adc_bram_data_out = "", DIR = in, VEC = [31:0]
+PORT r4_iadc_spec_snap_adc_bram_addr = "", DIR = out, VEC = [9:0]
+PORT r4_iadc_spec_snap_adc_bram_data_in = "", DIR = out, VEC = [31:0]
+PORT r4_iadc_spec_snap_adc_bram_we = "", DIR = out
+
+# r4_iadc_spec/snap_adc/ctrl
+PORT r4_iadc_spec_snap_adc_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_iadc_spec/snap_vacc0/addr
+PORT r4_iadc_spec_snap_vacc0_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_iadc_spec/snap_vacc0/bram
+PORT r4_iadc_spec_snap_vacc0_bram_data_out = "", DIR = in, VEC = [31:0]
+PORT r4_iadc_spec_snap_vacc0_bram_addr = "", DIR = out, VEC = [9:0]
+PORT r4_iadc_spec_snap_vacc0_bram_data_in = "", DIR = out, VEC = [31:0]
+PORT r4_iadc_spec_snap_vacc0_bram_we = "", DIR = out
+
+# r4_iadc_spec/snap_vacc0/ctrl
+PORT r4_iadc_spec_snap_vacc0_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_iadc_spec/snap_vacc1/addr
+PORT r4_iadc_spec_snap_vacc1_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_iadc_spec/snap_vacc1/bram
+PORT r4_iadc_spec_snap_vacc1_bram_data_out = "", DIR = in, VEC = [31:0]
+PORT r4_iadc_spec_snap_vacc1_bram_addr = "", DIR = out, VEC = [9:0]
+PORT r4_iadc_spec_snap_vacc1_bram_data_in = "", DIR = out, VEC = [31:0]
+PORT r4_iadc_spec_snap_vacc1_bram_we = "", DIR = out
+
+# r4_iadc_spec/snap_vacc1/ctrl
+PORT r4_iadc_spec_snap_vacc1_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_iadc_spec/snap_vacc2/addr
+PORT r4_iadc_spec_snap_vacc2_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_iadc_spec/snap_vacc2/bram
+PORT r4_iadc_spec_snap_vacc2_bram_data_out = "", DIR = in, VEC = [31:0]
+PORT r4_iadc_spec_snap_vacc2_bram_addr = "", DIR = out, VEC = [9:0]
+PORT r4_iadc_spec_snap_vacc2_bram_data_in = "", DIR = out, VEC = [31:0]
+PORT r4_iadc_spec_snap_vacc2_bram_we = "", DIR = out
+
+# r4_iadc_spec/snap_vacc2/ctrl
+PORT r4_iadc_spec_snap_vacc2_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_iadc_spec/snap_vacc3/addr
+PORT r4_iadc_spec_snap_vacc3_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_iadc_spec/snap_vacc3/bram
+PORT r4_iadc_spec_snap_vacc3_bram_data_out = "", DIR = in, VEC = [31:0]
+PORT r4_iadc_spec_snap_vacc3_bram_addr = "", DIR = out, VEC = [9:0]
+PORT r4_iadc_spec_snap_vacc3_bram_data_in = "", DIR = out, VEC = [31:0]
+PORT r4_iadc_spec_snap_vacc3_bram_we = "", DIR = out
+
+# r4_iadc_spec/snap_vacc3/ctrl
+PORT r4_iadc_spec_snap_vacc3_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_iadc_spec/sync_cnt
+PORT r4_iadc_spec_sync_cnt_user_data_in = "", DIR = out, VEC = [31:0]
+
+END

@@ -1,0 +1,2 @@
+C:/Xilinx/10.1/DSP_Tools/common/bin/../../sysgen/bin/saferun.exe -- c:/xilinx/10.1/ise/bin/nt/xst.exe -ifn xst_i_128w_2k_10_r310iadc.scr -ofn i_128w_2k_10_r310iadc.results
+C:/Xilinx/10.1/DSP_Tools/common/bin/../../sysgen/bin/saferun.exe -- c:/xilinx/10.1/ise/bin/nt/ngcbuild.exe -p xc2vp50-7ff1152 i_128w_2k_10_r310iadc_cw i_128w_2k_10_r310iadc_cw_complete.ngc

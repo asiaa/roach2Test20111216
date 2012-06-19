@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/drivers/xps_fifo
+END
+fifo.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/drivers/xps_fifo/fifo.c
+END
+fifo.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/drivers/xps_fifo/fifo.h
+END

@@ -1,0 +1,2 @@
+vhdl dcm_module_v1_00_d "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\dcm_module_v1_00_d\hdl\vhdl\dcm_module.vhd"
+vhdl work "D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB_base\hdl\dcm_0_wrapper.vhd"

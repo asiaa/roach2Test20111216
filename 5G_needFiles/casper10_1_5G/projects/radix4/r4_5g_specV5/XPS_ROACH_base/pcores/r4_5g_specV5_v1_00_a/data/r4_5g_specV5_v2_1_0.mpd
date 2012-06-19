@@ -1,0 +1,130 @@
+#############################################################################
+##
+## IP Name  : r4_5g_specV5
+## Desc     : Automatically generated IP core wrapping a
+##            Simulink Xilinx System Generator netlist.
+##            Please do not modify by hand, this file will be erased
+##
+#############################################################################
+
+BEGIN r4_5g_specV5
+
+###################
+# Generic Options #
+###################
+OPTION IPTYPE = IP
+OPTION STYLE  = BLACKBOX
+
+###################
+# Clock port      #
+###################
+PORT clk = "", DIR = I, SIGIS = CLK, CLK_FREQ = 150000000
+
+###################
+# Interfaces      #
+###################
+
+# r4_5g_specV5/XSG core config
+
+# r4_5g_specV5/acc_cnt
+PORT r4_5g_specV5_acc_cnt_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_5g_specV5/acc_len
+PORT r4_5g_specV5_acc_len_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_5g_specV5/adc_5g
+PORT r4_5g_specV5_adc_5g_user_data_valid = "", DIR = in
+PORT r4_5g_specV5_adc_5g_user_datai0 = "", DIR = in, VEC = [7:0]
+PORT r4_5g_specV5_adc_5g_user_datai1 = "", DIR = in, VEC = [7:0]
+PORT r4_5g_specV5_adc_5g_user_datai2 = "", DIR = in, VEC = [7:0]
+PORT r4_5g_specV5_adc_5g_user_datai3 = "", DIR = in, VEC = [7:0]
+PORT r4_5g_specV5_adc_5g_user_dataq0 = "", DIR = in, VEC = [7:0]
+PORT r4_5g_specV5_adc_5g_user_dataq1 = "", DIR = in, VEC = [7:0]
+PORT r4_5g_specV5_adc_5g_user_dataq2 = "", DIR = in, VEC = [7:0]
+PORT r4_5g_specV5_adc_5g_user_dataq3 = "", DIR = in, VEC = [7:0]
+PORT r4_5g_specV5_adc_5g_user_outofrange0 = "", DIR = in
+PORT r4_5g_specV5_adc_5g_user_outofrange1 = "", DIR = in
+PORT r4_5g_specV5_adc_5g_user_sync0 = "", DIR = in
+PORT r4_5g_specV5_adc_5g_user_sync1 = "", DIR = in
+PORT r4_5g_specV5_adc_5g_user_sync2 = "", DIR = in
+PORT r4_5g_specV5_adc_5g_user_sync3 = "", DIR = in
+
+# r4_5g_specV5/cnt_rst
+PORT r4_5g_specV5_cnt_rst_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_5g_specV5/led0_sync
+PORT r4_5g_specV5_led0_sync_gateway = "", DIR = out
+
+# r4_5g_specV5/led1_new_acc
+PORT r4_5g_specV5_led1_new_acc_gateway = "", DIR = out
+
+# r4_5g_specV5/snap_adc/addr
+PORT r4_5g_specV5_snap_adc_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_5g_specV5/snap_adc/bram_lsb
+PORT r4_5g_specV5_snap_adc_bram_lsb_data_out = "", DIR = in, VEC = [31:0]
+PORT r4_5g_specV5_snap_adc_bram_lsb_addr = "", DIR = out, VEC = [12:0]
+PORT r4_5g_specV5_snap_adc_bram_lsb_data_in = "", DIR = out, VEC = [31:0]
+PORT r4_5g_specV5_snap_adc_bram_lsb_we = "", DIR = out
+
+# r4_5g_specV5/snap_adc/bram_msb
+PORT r4_5g_specV5_snap_adc_bram_msb_data_out = "", DIR = in, VEC = [31:0]
+PORT r4_5g_specV5_snap_adc_bram_msb_addr = "", DIR = out, VEC = [12:0]
+PORT r4_5g_specV5_snap_adc_bram_msb_data_in = "", DIR = out, VEC = [31:0]
+PORT r4_5g_specV5_snap_adc_bram_msb_we = "", DIR = out
+
+# r4_5g_specV5/snap_adc/ctrl
+PORT r4_5g_specV5_snap_adc_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_5g_specV5/snap_vacc0/addr
+PORT r4_5g_specV5_snap_vacc0_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_5g_specV5/snap_vacc0/bram
+PORT r4_5g_specV5_snap_vacc0_bram_data_out = "", DIR = in, VEC = [31:0]
+PORT r4_5g_specV5_snap_vacc0_bram_addr = "", DIR = out, VEC = [9:0]
+PORT r4_5g_specV5_snap_vacc0_bram_data_in = "", DIR = out, VEC = [31:0]
+PORT r4_5g_specV5_snap_vacc0_bram_we = "", DIR = out
+
+# r4_5g_specV5/snap_vacc0/ctrl
+PORT r4_5g_specV5_snap_vacc0_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_5g_specV5/snap_vacc1/addr
+PORT r4_5g_specV5_snap_vacc1_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_5g_specV5/snap_vacc1/bram
+PORT r4_5g_specV5_snap_vacc1_bram_data_out = "", DIR = in, VEC = [31:0]
+PORT r4_5g_specV5_snap_vacc1_bram_addr = "", DIR = out, VEC = [9:0]
+PORT r4_5g_specV5_snap_vacc1_bram_data_in = "", DIR = out, VEC = [31:0]
+PORT r4_5g_specV5_snap_vacc1_bram_we = "", DIR = out
+
+# r4_5g_specV5/snap_vacc1/ctrl
+PORT r4_5g_specV5_snap_vacc1_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_5g_specV5/snap_vacc2/addr
+PORT r4_5g_specV5_snap_vacc2_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_5g_specV5/snap_vacc2/bram
+PORT r4_5g_specV5_snap_vacc2_bram_data_out = "", DIR = in, VEC = [31:0]
+PORT r4_5g_specV5_snap_vacc2_bram_addr = "", DIR = out, VEC = [9:0]
+PORT r4_5g_specV5_snap_vacc2_bram_data_in = "", DIR = out, VEC = [31:0]
+PORT r4_5g_specV5_snap_vacc2_bram_we = "", DIR = out
+
+# r4_5g_specV5/snap_vacc2/ctrl
+PORT r4_5g_specV5_snap_vacc2_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_5g_specV5/snap_vacc3/addr
+PORT r4_5g_specV5_snap_vacc3_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# r4_5g_specV5/snap_vacc3/bram
+PORT r4_5g_specV5_snap_vacc3_bram_data_out = "", DIR = in, VEC = [31:0]
+PORT r4_5g_specV5_snap_vacc3_bram_addr = "", DIR = out, VEC = [9:0]
+PORT r4_5g_specV5_snap_vacc3_bram_data_in = "", DIR = out, VEC = [31:0]
+PORT r4_5g_specV5_snap_vacc3_bram_we = "", DIR = out
+
+# r4_5g_specV5/snap_vacc3/ctrl
+PORT r4_5g_specV5_snap_vacc3_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# r4_5g_specV5/sync_cnt
+PORT r4_5g_specV5_sync_cnt_user_data_in = "", DIR = out, VEC = [31:0]
+
+END

@@ -1,0 +1,319 @@
+(edif test (edifVersion 2 0 0) (edifLevel 0) (keywordMap (keywordLevel 0))
+(status (written (timeStamp 2010 9 1 14 51 15)
+   (author "Xilinx, Inc.")
+   (program "Xilinx CORE Generator" (version "Xilinx CORE Generator 10.1.03; Cores Update # 3"))))
+   (comment "                                                                                
+      This file is owned and controlled by Xilinx and must be used              
+      solely for design, simulation, implementation and creation of             
+      design files limited to Xilinx devices or technologies. Use               
+      with non-Xilinx devices or technologies is expressly prohibited           
+      and immediately terminates your license.                                  
+                                                                                
+      XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION 'AS IS'             
+      SOLELY FOR USE IN DEVELOPING PROGRAMS AND SOLUTIONS FOR                   
+      XILINX DEVICES.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION           
+      AS ONE POSSIBLE IMPLEMENTATION OF THIS FEATURE, APPLICATION               
+      OR STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS                 
+      IMPLEMENTATION IS FREE FROM ANY CLAIMS OF INFRINGEMENT,                   
+      AND YOU ARE RESPONSIBLE FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE          
+      FOR YOUR IMPLEMENTATION.  XILINX EXPRESSLY DISCLAIMS ANY                  
+      WARRANTY WHATSOEVER WITH RESPECT TO THE ADEQUACY OF THE                   
+      IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OR            
+      REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE FROM CLAIMS OF           
+      INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS           
+      FOR A PARTICULAR PURPOSE.                                                 
+                                                                                
+      Xilinx products are not intended for use in life support                  
+      appliances, devices, or systems. Use in such applications are             
+      expressly prohibited.                                                     
+                                                                                
+      (c) Copyright 1995-2007 Xilinx, Inc.                                      
+      All rights reserved.                                                      
+                                                                                
+   ")
+   (comment "Core parameters: ")
+       (comment "c_has_clk = 1 ")
+       (comment "c_has_qdpo_clk = 0 ")
+       (comment "c_has_qdpo_ce = 0 ")
+       (comment "c_has_d = 0 ")
+       (comment "c_elaboration_dir = D:\casper10_1\projects\radix4\r4_5g_specV5\sysgen\sysgen\coregen... ")
+       (comment "                 ..._HpoL\coregen_tmp\.\tmp\_cg\ ")
+       (comment "c_has_spo = 0 ")
+       (comment "c_read_mif = 1 ")
+       (comment "c_has_qspo = 1 ")
+       (comment "c_width = 18 ")
+       (comment "c_reg_a_d_inputs = 0 ")
+       (comment "c_has_we = 0 ")
+       (comment "c_pipeline_stages = 0 ")
+       (comment "c_has_qdpo_rst = 0 ")
+       (comment "c_reg_dpra_input = 0 ")
+       (comment "c_qualify_we = 0 ")
+       (comment "InstanceName = dmg_33_vx5_3b5827b9b9c34c2c ")
+       (comment "c_sync_enable = 1 ")
+       (comment "c_depth = 16 ")
+       (comment "c_has_qspo_srst = 0 ")
+       (comment "c_has_qdpo_srst = 0 ")
+       (comment "c_has_dpra = 0 ")
+       (comment "c_qce_joined = 0 ")
+       (comment "c_mem_type = 0 ")
+       (comment "c_has_i_ce = 0 ")
+       (comment "c_has_dpo = 0 ")
+       (comment "c_mem_init_file = dmg_33_vx5_3b5827b9b9c34c2c.mif ")
+       (comment "c_default_data = 0 ")
+       (comment "c_has_spra = 0 ")
+       (comment "c_has_qspo_ce = 1 ")
+       (comment "c_addr_width = 4 ")
+       (comment "c_has_qdpo = 0 ")
+       (comment "c_has_qspo_rst = 0 ")
+   (external xilinxun (edifLevel 0)
+      (technology (numberDefinition))
+       (cell VCC (cellType GENERIC)
+           (view view_1 (viewType NETLIST)
+               (interface
+                   (port P (direction OUTPUT))
+               )
+           )
+       )
+       (cell GND (cellType GENERIC)
+           (view view_1 (viewType NETLIST)
+               (interface
+                   (port G (direction OUTPUT))
+               )
+           )
+       )
+   )
+   (external dmg_33_vx5_3b5827b9b9c34c2c_dist_mem_gen_v3_3_xst_1_lib (edifLevel 0)
+       (technology (numberDefinition))
+       (cell dmg_33_vx5_3b5827b9b9c34c2c_dist_mem_gen_v3_3_xst_1 (cellType GENERIC)
+           (view view_1 (viewType NETLIST)
+               (interface
+                   (port ( array ( rename a "a(3:0)") 4 ) (direction INPUT))
+                   (port ( array ( rename d "d(17:0)") 18 ) (direction INPUT))
+                   (port ( array ( rename dpra "dpra(3:0)") 4 ) (direction INPUT))
+                   (port ( array ( rename spra "spra(3:0)") 4 ) (direction INPUT))
+                   (port clk (direction INPUT))
+                   (port we (direction INPUT))
+                   (port i_ce (direction INPUT))
+                   (port qspo_ce (direction INPUT))
+                   (port qdpo_ce (direction INPUT))
+                   (port qdpo_clk (direction INPUT))
+                   (port qspo_rst (direction INPUT))
+                   (port qdpo_rst (direction INPUT))
+                   (port qspo_srst (direction INPUT))
+                   (port qdpo_srst (direction INPUT))
+                   (port ( array ( rename spo "spo(17:0)") 18 ) (direction OUTPUT))
+                   (port ( array ( rename dpo "dpo(17:0)") 18 ) (direction OUTPUT))
+                   (port ( array ( rename qspo "qspo(17:0)") 18 ) (direction OUTPUT))
+                   (port ( array ( rename qdpo "qdpo(17:0)") 18 ) (direction OUTPUT))
+               )
+           )
+       )
+   )
+(library test_lib (edifLevel 0) (technology (numberDefinition (scale 1 (E 1 -12) (unit Time))))
+(cell dmg_33_vx5_3b5827b9b9c34c2c
+ (cellType GENERIC) (view view_1 (viewType NETLIST)
+  (interface
+   (port ( array ( rename a "a(3:0)") 4 ) (direction INPUT))
+   (port ( rename clk "clk") (direction INPUT))
+   (port ( rename qspo_ce "qspo_ce") (direction INPUT))
+   (port ( array ( rename qspo "qspo(17:0)") 18 ) (direction OUTPUT))
+   )
+  (contents
+   (instance VCC (viewRef view_1 (cellRef VCC  (libraryRef xilinxun))))
+   (instance GND (viewRef view_1 (cellRef GND  (libraryRef xilinxun))))
+   (instance BU2
+      (viewRef view_1 (cellRef dmg_33_vx5_3b5827b9b9c34c2c_dist_mem_gen_v3_3_xst_1 (libraryRef dmg_33_vx5_3b5827b9b9c34c2c_dist_mem_gen_v3_3_xst_1_lib)))
+   )
+   (net N0
+    (joined
+      (portRef G (instanceRef GND))
+      (portRef (member d 0) (instanceRef BU2))
+      (portRef (member d 1) (instanceRef BU2))
+      (portRef (member d 2) (instanceRef BU2))
+      (portRef (member d 3) (instanceRef BU2))
+      (portRef (member d 4) (instanceRef BU2))
+      (portRef (member d 5) (instanceRef BU2))
+      (portRef (member d 6) (instanceRef BU2))
+      (portRef (member d 7) (instanceRef BU2))
+      (portRef (member d 8) (instanceRef BU2))
+      (portRef (member d 9) (instanceRef BU2))
+      (portRef (member d 10) (instanceRef BU2))
+      (portRef (member d 11) (instanceRef BU2))
+      (portRef (member d 12) (instanceRef BU2))
+      (portRef (member d 13) (instanceRef BU2))
+      (portRef (member d 14) (instanceRef BU2))
+      (portRef (member d 15) (instanceRef BU2))
+      (portRef (member d 16) (instanceRef BU2))
+      (portRef (member d 17) (instanceRef BU2))
+      (portRef (member dpra 0) (instanceRef BU2))
+      (portRef (member dpra 1) (instanceRef BU2))
+      (portRef (member dpra 2) (instanceRef BU2))
+      (portRef (member dpra 3) (instanceRef BU2))
+      (portRef (member spra 0) (instanceRef BU2))
+      (portRef (member spra 1) (instanceRef BU2))
+      (portRef (member spra 2) (instanceRef BU2))
+      (portRef (member spra 3) (instanceRef BU2))
+      (portRef qdpo_clk (instanceRef BU2))
+      (portRef qspo_rst (instanceRef BU2))
+      (portRef qdpo_rst (instanceRef BU2))
+      (portRef qspo_srst (instanceRef BU2))
+      (portRef qdpo_srst (instanceRef BU2))
+    )
+   )
+   (net N1
+    (joined
+      (portRef P (instanceRef VCC))
+      (portRef we (instanceRef BU2))
+      (portRef i_ce (instanceRef BU2))
+      (portRef qdpo_ce (instanceRef BU2))
+    )
+   )
+   (net (rename N2118 "a(3)")
+    (joined
+      (portRef (member a 0))
+      (portRef (member a 0) (instanceRef BU2))
+    )
+   )
+   (net (rename N2119 "a(2)")
+    (joined
+      (portRef (member a 1))
+      (portRef (member a 1) (instanceRef BU2))
+    )
+   )
+   (net (rename N2120 "a(1)")
+    (joined
+      (portRef (member a 2))
+      (portRef (member a 2) (instanceRef BU2))
+    )
+   )
+   (net (rename N2121 "a(0)")
+    (joined
+      (portRef (member a 3))
+      (portRef (member a 3) (instanceRef BU2))
+    )
+   )
+   (net (rename N2148 "clk")
+    (joined
+      (portRef clk)
+      (portRef clk (instanceRef BU2))
+    )
+   )
+   (net (rename N2151 "qspo_ce")
+    (joined
+      (portRef qspo_ce)
+      (portRef qspo_ce (instanceRef BU2))
+    )
+   )
+   (net (rename N2194 "qspo(17)")
+    (joined
+      (portRef (member qspo 0))
+      (portRef (member qspo 0) (instanceRef BU2))
+    )
+   )
+   (net (rename N2195 "qspo(16)")
+    (joined
+      (portRef (member qspo 1))
+      (portRef (member qspo 1) (instanceRef BU2))
+    )
+   )
+   (net (rename N2196 "qspo(15)")
+    (joined
+      (portRef (member qspo 2))
+      (portRef (member qspo 2) (instanceRef BU2))
+    )
+   )
+   (net (rename N2197 "qspo(14)")
+    (joined
+      (portRef (member qspo 3))
+      (portRef (member qspo 3) (instanceRef BU2))
+    )
+   )
+   (net (rename N2198 "qspo(13)")
+    (joined
+      (portRef (member qspo 4))
+      (portRef (member qspo 4) (instanceRef BU2))
+    )
+   )
+   (net (rename N2199 "qspo(12)")
+    (joined
+      (portRef (member qspo 5))
+      (portRef (member qspo 5) (instanceRef BU2))
+    )
+   )
+   (net (rename N2200 "qspo(11)")
+    (joined
+      (portRef (member qspo 6))
+      (portRef (member qspo 6) (instanceRef BU2))
+    )
+   )
+   (net (rename N2201 "qspo(10)")
+    (joined
+      (portRef (member qspo 7))
+      (portRef (member qspo 7) (instanceRef BU2))
+    )
+   )
+   (net (rename N2202 "qspo(9)")
+    (joined
+      (portRef (member qspo 8))
+      (portRef (member qspo 8) (instanceRef BU2))
+    )
+   )
+   (net (rename N2203 "qspo(8)")
+    (joined
+      (portRef (member qspo 9))
+      (portRef (member qspo 9) (instanceRef BU2))
+    )
+   )
+   (net (rename N2204 "qspo(7)")
+    (joined
+      (portRef (member qspo 10))
+      (portRef (member qspo 10) (instanceRef BU2))
+    )
+   )
+   (net (rename N2205 "qspo(6)")
+    (joined
+      (portRef (member qspo 11))
+      (portRef (member qspo 11) (instanceRef BU2))
+    )
+   )
+   (net (rename N2206 "qspo(5)")
+    (joined
+      (portRef (member qspo 12))
+      (portRef (member qspo 12) (instanceRef BU2))
+    )
+   )
+   (net (rename N2207 "qspo(4)")
+    (joined
+      (portRef (member qspo 13))
+      (portRef (member qspo 13) (instanceRef BU2))
+    )
+   )
+   (net (rename N2208 "qspo(3)")
+    (joined
+      (portRef (member qspo 14))
+      (portRef (member qspo 14) (instanceRef BU2))
+    )
+   )
+   (net (rename N2209 "qspo(2)")
+    (joined
+      (portRef (member qspo 15))
+      (portRef (member qspo 15) (instanceRef BU2))
+    )
+   )
+   (net (rename N2210 "qspo(1)")
+    (joined
+      (portRef (member qspo 16))
+      (portRef (member qspo 16) (instanceRef BU2))
+    )
+   )
+   (net (rename N2211 "qspo(0)")
+    (joined
+      (portRef (member qspo 17))
+      (portRef (member qspo 17) (instanceRef BU2))
+    )
+   )
+))))
+(design dmg_33_vx5_3b5827b9b9c34c2c (cellRef dmg_33_vx5_3b5827b9b9c34c2c (libraryRef test_lib))
+  (property X_CORE_INFO (string "dist_mem_gen_v3_3, Xilinx CORE Generator 10.1.03_ip3"))
+  (property PART (string "xc5vlx20t-ff323-2") (owner "Xilinx"))
+))

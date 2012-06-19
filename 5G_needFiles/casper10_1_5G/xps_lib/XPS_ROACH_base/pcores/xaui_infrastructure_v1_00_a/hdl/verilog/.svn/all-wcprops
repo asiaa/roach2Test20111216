@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/1224/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_infrastructure_v1_00_a/hdl/verilog
+END
+transceiver_bank.v
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/1224/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_infrastructure_v1_00_a/hdl/verilog/transceiver_bank.v
+END
+transceiver.v
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/1224/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_infrastructure_v1_00_a/hdl/verilog/transceiver.v
+END
+xaui_infrastructure.v
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/1224/trunk/mlib_devel_10_1/xps_lib/XPS_ROACH_base/pcores/xaui_infrastructure_v1_00_a/hdl/verilog/xaui_infrastructure.v
+END

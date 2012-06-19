@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/drivers/xps_sw_reg
+END
+reg.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/drivers/xps_sw_reg/reg.h
+END
+reg.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/drivers/xps_sw_reg/reg.c
+END

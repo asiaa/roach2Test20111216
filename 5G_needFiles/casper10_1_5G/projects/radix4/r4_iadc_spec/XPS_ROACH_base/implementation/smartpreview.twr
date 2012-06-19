@@ -1,0 +1,51 @@
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  TS_epb_clk = PERIOD TIMEGRP "epb_clk" 88  | SETUP   |     0.004ns|    11.359ns|       0|           0
+  MHz HIGH 50%                              | HOLD    |     0.177ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "r4_iadc_spec_adc | SETUP   |     0.411ns|     6.255ns|       0|           0
+  /r4_iadc_spec_adc/adc_clk_dcm" derived fr | HOLD    |     0.140ns|            |       0|           0
+  om  NET "r4_iadc_spec_adc/r4_iadc_spec_ad |         |            |            |        |            
+  c/adc_clk_buf" PERIOD = 6.6667 ns HIGH    |         |            |            |        |            
+        50%                                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET "epb_cs_n_IBUF" MAXDELAY = 4 ns       | MAXDELAY|     2.364ns|     1.636ns|       0|           0
+------------------------------------------------------------------------------------------------------
+  NET "r4_iadc_spec_adc/r4_iadc_spec_adc/ad | N/A     |         N/A|         N/A|     N/A|         N/A
+  c_clk_buf" PERIOD = 6.6667 ns HIGH        |         |            |            |        |            
+    50%                                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET "r4_iadc_spec_adc/r4_iadc_spec_adc/ad | N/A     |         N/A|         N/A|     N/A|         N/A
+  c_clk_buf" PERIOD = 6.6667 ns HIGH        |         |            |            |        |            
+    50%                                     |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_clk_4dc2d861 = PERIOD TIMEGRP "clk_4dc | N/A     |         N/A|         N/A|     N/A|         N/A
+  2d861" 6.6667 ns HIGH 50%                 |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for r4_iadc_spec_adc/r4_iadc_spec_adc/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|r4_iadc_spec_adc/r4_iadc_spec_a|      6.667ns|          N/A|      6.255ns|            0|            0|            0|       154685|
+|dc/adc_clk_buf                 |             |             |             |             |             |             |             |
+| r4_iadc_spec_adc/r4_iadc_spec_|      6.667ns|      6.255ns|          N/A|            0|            0|       154685|            0|
+| adc/adc_clk_dcm               |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+

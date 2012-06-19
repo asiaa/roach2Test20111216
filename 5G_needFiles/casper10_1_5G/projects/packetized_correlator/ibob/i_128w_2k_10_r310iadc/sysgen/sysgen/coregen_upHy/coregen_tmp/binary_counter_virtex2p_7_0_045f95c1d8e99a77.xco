@@ -1,0 +1,65 @@
+##############################################################
+#
+# Xilinx Core Generator version K.39
+# Date: Wed Aug 19 05:40:49 2009
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = False
+SET asysymbol = False
+SET busformat = BusFormatParenNotRipped
+SET createndf = True
+SET designentry = VHDL
+SET device = xc2vp2
+SET devicefamily = virtex2p
+SET flowvendor = Other
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = Edif
+SET package = fg256
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -7
+SET verilogsim = True
+SET vhdlsim = True
+# END Project Options
+# BEGIN Select
+SELECT Binary_Counter family Xilinx,_Inc. 7.0
+# END Select
+# BEGIN Parameters
+CSET async_init_value=0
+CSET asynchronous_settings=none
+CSET ce_override_for_load=false
+CSET ce_overrides=sync_controls_override_ce
+CSET clock_enable=TRUE
+CSET component_name=binary_counter_virtex2p_7_0_045f95c1d8e99a77
+CSET count_by_value=1
+CSET count_style=count_by_constant
+CSET count_to_value=MAX
+CSET create_rpm=FALSE
+CSET load=FALSE
+CSET load_sense=active_high
+CSET operation=up
+CSET output_width=7
+CSET restrict_count=FALSE
+CSET set_clear_priority=clear_overrides_set
+CSET sync_init_value=0
+CSET synchronous_settings=init
+CSET threshold_0=false
+CSET threshold_0_value=MAX
+CSET threshold_1=false
+CSET threshold_1_value=MAX
+CSET threshold_early=true
+CSET threshold_options=registered
+# END Parameters
+GENERATE
+# CRC:  eb68a4a
+

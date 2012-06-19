@@ -1,0 +1,2 @@
+vhdl ppc405_v2_00_c "C:\Xilinx\10.1\EDK\hw\XilinxProcessorIPLib\pcores\ppc405_v2_00_c\hdl\vhdl\ppc405_top.vhd"
+vhdl work "D:\casper10_1\projects\packetized_correlator\ibob\i_128w_2k_10_r310iadc\XPS_iBOB_base\hdl\ppc405_1_wrapper.vhd"

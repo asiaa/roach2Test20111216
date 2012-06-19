@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2036/trunk/projects/packetized_correlator/corr-0.3.1
+END
+example.conf
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-0.3.1/example.conf
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1245/trunk/projects/packetized_correlator/corr-0.3.1/LICENSE.txt
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1264/trunk/projects/packetized_correlator/corr-0.3.1/setup.py
+END
+PKG-INFO
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1264/trunk/projects/packetized_correlator/corr-0.3.1/PKG-INFO
+END

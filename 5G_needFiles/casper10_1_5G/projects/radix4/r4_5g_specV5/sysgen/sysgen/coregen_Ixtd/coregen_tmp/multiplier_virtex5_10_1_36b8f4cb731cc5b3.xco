@@ -1,0 +1,62 @@
+##############################################################
+#
+# Xilinx Core Generator version K.39
+# Date: Wed Sep 01 06:53:36 2010
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = False
+SET asysymbol = False
+SET busformat = BusFormatParenNotRipped
+SET createndf = True
+SET designentry = VHDL
+SET device = xc5vlx20t
+SET devicefamily = virtex5
+SET flowvendor = Other
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = Edif
+SET package = ff323
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -2
+SET verilogsim = True
+SET vhdlsim = True
+# END Project Options
+# BEGIN Select
+SELECT Multiplier family Xilinx,_Inc. 10.1
+# END Select
+# BEGIN Parameters
+CSET ccmimp=Distributed_Memory
+CSET clockenable=true
+CSET component_name=multiplier_virtex5_10_1_36b8f4cb731cc5b3
+CSET constvalue=129
+CSET internaluser=0
+CSET multiplier_construction=Use_Mults
+CSET multtype=Parallel_Multiplier
+CSET optgoal=Speed
+CSET outputwidthhigh=37
+CSET outputwidthlow=0
+CSET pipestages=4
+CSET portatype=Signed
+CSET portawidth=19
+CSET portbtype=Signed
+CSET portbwidth=19
+CSET roundpoint=0
+CSET sclrcepriority=CE_Overrides_SCLR
+CSET syncclear=true
+CSET use_custom_output_width=false
+CSET userounding=false
+CSET zerodetect=false
+# END Parameters
+GENERATE
+# CRC: 26a91601
+

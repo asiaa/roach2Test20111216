@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/netlist
+END
+fifo_sync_144x16_fifo_generator_v2_1_ss_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/netlist/fifo_sync_144x16_fifo_generator_v2_1_ss_1.ngc
+END
+fifo_sync_128x16_fifo_generator_v2_1_ss_1.ngc
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/netlist/fifo_sync_128x16_fifo_generator_v2_1_ss_1.ngc
+END
+fifo_sync_144x16_fifo_generator_v2_1_ss_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/netlist/fifo_sync_144x16_fifo_generator_v2_1_ss_1_blkmemdp_v6_2_xst.edn
+END
+fifo_sync_128x16_fifo_generator_v2_1_ss_1_blkmemdp_v6_2_xst.edn
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/netlist/fifo_sync_128x16_fifo_generator_v2_1_ss_1_blkmemdp_v6_2_xst.edn
+END
+fifo_sync_144x16.edn
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/netlist/fifo_sync_144x16.edn
+END
+fifo_sync_128x16.edn
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/961/trunk/mlib_devel_10_1/xps_lib/XPS_BEE2_ctrl_base/pcores/plb_ddr2_v1_00_b/netlist/fifo_sync_128x16.edn
+END
